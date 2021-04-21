@@ -158,7 +158,7 @@ enable = false
 # Developer relevant links. These will show up on right side of footer and in the community page if you have one.
 [[params.links.user]]
 	name = "Telegram"
-	url = "https://t.me/lotustoken"
+	url = "https://t.me/givelotus"
 	icon = "fab fa-telegram"
         desc = "Chat with other Lotus users"
 [[params.links.developer]]
