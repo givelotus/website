@@ -164,6 +164,11 @@ enable = false
 	url = "https://t.me/givelotus"
 	icon = "fab fa-telegram"
         desc = "Chat with other Lotus users"
+[[params.links.user]]
+	name ="Reddit"
+	url = "https://www.reddit.com/r/lotusproject/"
+	icon = "fab fa-reddit"
+        desc = "Follow us on Twitter to get the latest news!"
 [[params.links.developer]]
 	name = "GitHub"
 	url = "https://github.com/logosfoundation/website"
