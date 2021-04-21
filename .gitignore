@@ -1,7 +1,5 @@
 public/
-public/
 resources/
 node_modules/
 docker-compose.yml
 Makefile
-node_modules
