@@ -22,16 +22,15 @@ Thus, we propose an entirely new format. This format should meet the following r
 
 1. Able to be double-clicked and copied.
 2. Uses commonly available language primitives to obviate needing to implement complicated checksum algorithms
-3. Checksum can be verified without parsing the individual components of the address string.
-4. Should be unspecific to token being addressed.
-5. Validity of the token prefix and the network are offloaded to the user of libraries which called the parser.
-6. Forward compatibility of new address formats with legacy wallets.
+3. Should be unspecific to token being addressed.
+4. Validity of the token prefix and the network are offloaded to the user of libraries which called the parser.
+5. Forward compatibility of new address formats with legacy wallets.
 
 By creating an address specification that meets the above requirements, developers can easily implement it in any language they are working with. The address format is also forward-compatible so that wallets would not necessarily need to be updated in the future to support new address types.
 
 ## Proposed Format
 
-`[payto:]<token identifier><network byte><Base58(payload)><Pad(Base58(weak hash))>[?query string]`
+`[payto:]<token identifier><network byte><Base58(payload||weak hash)>[?query string]`
 
 ### Payto (Optional)
 
@@ -51,7 +50,7 @@ A single byte identifier used to verify the intended network for the transaction
 
 ### Payload
 
-This can be any string of bytes relevant to the chain being worked with. Other layers can be built on top of a basic address parser with handles this payload based on token type. For Lotus, the intent is that this would be an entire UTXO. Currently valid standard UTXOs are:
+This can be any string of bytes relevant to the chain being worked with. Other layers can be built on top of a basic address parser with handles this payload based on token type. For Lotus, the first byte is a address type, and then another subsequent payload. The address type right now is always `0` and indicates the rest of the address is a fully encoded valid scriptPubKey. Currently valid standard scriptPubKeys are:
 
 1. BIP016 P2SH: `OP_HASH160 <20-byte-hash-value> OP_EQUAL`
 2. P2PKH: `OP_DUP OP_HASH160 <20-byte-hash-value> OP_EQUALVERIFY OP_CHECKSIG`
@@ -59,11 +58,9 @@ This can be any string of bytes relevant to the chain being worked with. Other l
 
 ### Weak hash
 
-The checksum consists of the last four bytes (weak SHA256) of the SHA256 hash of the preceding portions of the address:
+The checksum consists of the last four bytes (weak SHA256) of the SHA256 hash of the other portions of the address:
 
-`<token identifier><network byte><Base58(payload)>`
-
-It is then itself base58 encoded, which results in at most 6 bytes. If it is less than 6 bytes, the ASCII character `1` is padded onto the left of the encoded weak hash. This enables parsers to slice the last 6 bytes off the address and base58 decode them without a delimeter. In most cases the encoded hash of the payload will be 6 bytes. Thus, adding padding in the minority of cases does not result in further size.
+`<token identifier><network byte><payload>`
 
 Unlike Cashaddr, this checksum does not provide any error correction via a BCH code. However, the BCH code specified for cashaddr is specific to that address format and requires re-implementation in every language. This can be non-trivial to do in languages which do not easily support the required integer and bitwise operations.
 
