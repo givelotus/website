@@ -11,11 +11,21 @@ Download and install Lotus for your operating system from [here](https://givelot
 
 ## Windows
 
-1. Press your "`Windows`" key and "`R`" keys simultaneously, enter %appdata% and press enter.
-2. You should be in `.../AppData/Roaming`.
-3. Create a folder here called "Lotus" (without quotes). (It will already exist if you ran the Lotus software before)
-4. Inside the lotus folder create `lotus.conf` if it doesn't exist
-5. Open `lotus.conf` and paste the following:
+1. Download [https://storage.googleapis.com/lotus-project/lotus-1.0.1-win64-setup-unsigned.exe](https://storage.googleapis.com/lotus-project/lotus-1.0.1-win64-setup-unsigned.exe) and install it somewhere convenient. It'll create shortcuts in your start menu.
+2. When you start the wallet, it'll ask you where to place the blockchain data.
+   1. **Don't worry about it telling you about hundreds of GBs of data, the Lotus blockchain is just a few MB big, and we haven't updated the texts yet**.
+   2. You can pick whatever directory you want here, but it's suggested to leave the default one.
+   3. We suggest to uncheck the checkbox for "Discard blocks after verification"; Lotus is still to small for that to be beneficial. It might be useful in a few years though.
+3. It will then start the wallet and download the blockchain, this might take a minute or two depending on your internet speed, but shouldn't take much longer than that.
+4. Backup your wallet.dat: Click on "File" > "Backup Wallet" and store it on a USB drive or somewhere on a different device. Keep it hidden though, people might be able to steal you Lotus!
+5. You're now part of the Lotus network, congrats!
+
+In order to mine, the wallet has to have the RPC server enabled.
+
+1. In the Lotus wallet, click on "Settings" > "Options..." > "Open Configuration File"
+2. Select any text editor of your choice, e.g. Notepad
+3. The config file might already have some contents if you previously used Lotus on the testnet. In this case, you can create a backup of the file and otherwise replace it with the following.
+4. Paste the following into the config file:
 ```
 printtoconsole=1
 server=1
@@ -28,7 +38,8 @@ server=1
 rpcuser=lotus
 rpcpassword=lotus
 ```
-6. Run Lotus-QT.exe, and it should connect up to the network.
+5. Save the config file
+6. Close the Lotus wallet and start it again
 
 ## Mac OS
 
@@ -72,38 +83,35 @@ rpcpassword=lotus
 
 Currently, we do not distribute binaries of the `lotus-gpu-miner` so mining will require setting up a rust development environment. 
 
-### Mining guide:
+# Mining guide:
+
+# Get your wallet address
+
+In order to mine, you need to have an address where to send the mined Lotus to.
+
+1. In the Lotus wallet, click on the "Receive" tab
+2. Enter something descriptive in the Label text box, like "My mining address"
+3. Leave the other fields as is (you can add a Message if desired)
+4. Click "Create new receiving address"
+5. It'll open a new window, click on Copy Address at the bottom, which will copy your Lotus address
+6. Close the window. You can see there's an entry of your address at the bottom now. You can get the previous window again by double clicking on it
 
 ### Windows:
 
-1. Install [rustup](https://rustup.rs/)
-2. Install [Microsoft C++ Build Tools](https://visualstudio.microsoft.com/visual-cpp-build-tools/). (When running this one, be sure to select the "C++ build tools" for installation, it's about \~6GB worth of download)
-3. Install OpenCL SDK,
+1. Download the windows installer for the [Lotus GPU Miner](https://storage.googleapis.com/lotus-project/Lotus%20GPU%20Miner%200.1.0.msi) and install Lotus GPU Miner somewhere convenient. It'll create shortcuts in your start menu.
+2. Open Lotus GPU Miner
+3. You *might* need to install OpenCL if this fails:
     1. For AMD, there's a light installation: [OCL_SDK_Lite](https://github.com/GPUOpen-LibrariesAndSDKs/OCL-SDK/releases/download/1.0/OCL_SDK_Light_AMD.exe)
     2. For NVIDIA, install the [CUDA SDK](https://developer.nvidia.com/cuda-downloads) (Download "exe (local)" version)
-4. Download the latest mining code from Github: [https://github.com/LogosFoundation/lotus-gpu-miner/archive/refs/heads/master.zip](https://github.com/LogosFoundation/lotus-gpu-miner/archive/refs/heads/master.zip)
-5. Open the ZIP folder and extract the contents somewhere (Desktop is OK)
-6. Press your "`Windows`" key (the key with the Windows logo, usually between the left `CTRL` and `ALT` keys) and "`R`" keys simultaneously, the "Run" dialog box will appear. Type `%userprofile%` and click `OK` to open up the Explorer window to the correct location. Then, press `CTRL`+`SHIFT`+`N` to create a new folder, then name the new folder `.lotus-miner`
-7. Launch the Notepad program from the Start Menu, then paste the following contents:
-```
-mine_to_address = "lotus_PASTE_YOUR_ADDRESS_HERE"
-gpu_index = 0
-kernel_size = 18
-rpc_url = "http://127.0.0.1:10604"
-```
-8. Press `CTRL`+`S` to open the "Save As" dialog box
-9. In the top address bar of the "Save As" dialog box (to the left of the "Search" field), type `%userprofile%\.lotus-miner` and press `Enter`. The middle pane will change to the new folder you created previously. Type `config.toml` as the "File name" and set the "Save as type" dropdown option to "All files (\*)", then click the `Save` button. Keep this file open, you will need to adjust the `gpu_index` and `mine_to_address` parameters later.
-10. Open a command prompt (Start Menu -> search "command prompt" -> click search result)
-11. Type: `cd ` (with a space after `cd`) and drag and drop the folder for the extracted `lotus-gpu-miner-master` folder. The full path should then be pasted into the window (e.g. `cd C:\Users\your_name\Desktop\lotus-gpu-miner-master`)
-12. Press `Enter`, and then type `rustup default` and press `Enter` again
-13. After the previous command finishes, type `cargo run` and press `Enter`
-14. It will print out a list of "Platforms" one of which will be your GPU. Make note of the index, return to the open Notepad window, then update the `gpu_index` to match your noted index.
-15. In the Lotus-QT software, go to the "Receive" tab, then generate a new receive address. Copy and paste that over `lotus_PASTE_YOUR_ADDRESS_HERE` in your open Notepad window
-16. Press `CTRL`+`S` to save the Notepad file again (it will automatically save without a "Save As" dialog box).
-17. Back in the command prompt, type `cargo run` and press `Enter` to begin mining
-18. If you ran into problems, join our [Telegram group](https://t.me/givelotus).
+4. Copy you mining address from the previous step into "Miner address:"
+5. Select the GPU you want to use for mining
+6. Click "Apply & Mine"
+7. It should now start mining! Good luck with your first blocks!
+8. If you ran into problems, join our [telegram group](https://t.me/givelotus).
 
-### Mac And Linux 
+### Mac And Linux
+
+Mac and linux do not currently have an installer, and will require setting up the development environment.
 
 1. Install [rustup](https://rustup.rs/)
 2. Install the Open CL libraries.
