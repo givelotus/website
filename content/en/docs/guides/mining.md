@@ -81,26 +81,27 @@ Currently, we do not distribute binaries of the `lotus-gpu-miner` so mining will
 3. Install OpenCL SDK,
     1. For AMD, there's a light installation: [OCL_SDK_Lite](https://github.com/GPUOpen-LibrariesAndSDKs/OCL-SDK/releases/download/1.0/OCL_SDK_Light_AMD.exe)
     2. For NVIDIA, install the [CUDA SDK](https://developer.nvidia.com/cuda-downloads) (Download "exe (local)" version)
-4. Download the latest mining code from Github and extract to desktop: [https://github.com/LogosFoundation/lotus-gpu-miner/archive/refs/heads/master.zip](https://github.com/LogosFoundation/lotus-gpu-miner/archive/refs/heads/master.zip)
-5. Extract it somewhere 
-6. Create the configuration file:
-    * Press your "`Windows`" key and "`R`" keys simultaneously, a dialog box will appear. Type `%userprofile%` and click `Ok`. Within the `%userprofile%` folder, create a folder called `.lotus-miner` and open it.
-7. Within the `%userprofile%\.lotus-miner` folder, create a file called config.toml and paste the following contents:
+4. Download the latest mining code from Github: [https://github.com/LogosFoundation/lotus-gpu-miner/archive/refs/heads/master.zip](https://github.com/LogosFoundation/lotus-gpu-miner/archive/refs/heads/master.zip)
+5. Open the ZIP folder and extract the contents somewhere (Desktop is OK)
+6. Press your "`Windows`" key (the key with the Windows logo, usually between the left `CTRL` and `ALT` keys) and "`R`" keys simultaneously, the "Run" dialog box will appear. Type `%userprofile%` and click `OK` to open up the Explorer window to the correct location. Then, press `CTRL`+`SHIFT`+`N` to create a new folder, then name the new folder `.lotus-miner`
+7. Launch the Notepad program from the Start Menu, then paste the following contents:
 ```
 mine_to_address = "lotus_PASTE_YOUR_ADDRESS_HERE"
-gpu_index = 1
+gpu_index = 0
 kernel_size = 18
 rpc_url = "http://127.0.0.1:10604"
 ```
-8. Save, but keep this file open, you will need to adjust the `gpu_index` and `mine_to_address` parameters later.
-9. Open a command prompt (Start Menu -> search "command prompt" -> click search result)
-10. Type: `cd ` (with a space after `cd`) and drag and drop the folder for the extracted `lotus-gpu-miner` source code.
-11. Press enter, and then type `rustup default`
-12. Type `cargo run`
-13. It will print out a list of "Platforms" one of which will be your gpu. Make note of the index, and returning to the `config.toml` file, update the `gpu_index` to match that.
-14. In the Lotus-QT software goto the "Receive" tab, and generate a new receive address. Copy and paste that over `lotus_PASTE_YOUR_ADDRESS_HERE`
-15. Save, and type `cargo run` again on the command prompt.
-16. If you ran into problems, join our [telegram group](https://t.me/givelotus).
+8. Press `CTRL`+`S` to open the "Save As" dialog box
+9. In the top address bar of the "Save As" dialog box (to the left of the "Search" field), type `%userprofile\.lotus-miner` and press `Enter`. The middle pane will change to the new folder you created previously. Type `config.toml` as the "File name" and set the "Save as type" dropdown option to "All files (\*)", then click the `Save` button. Keep this file open, you will need to adjust the `gpu_index` and `mine_to_address` parameters later.
+10. Open a command prompt (Start Menu -> search "command prompt" -> click search result)
+11. Type: `cd ` (with a space after `cd`) and drag and drop the folder for the extracted `lotus-gpu-miner-master` folder. The full path should then be pasted into the window (e.g. `cd C:\Users\your_name\Desktop\lotus-gpu-miner-master`)
+12. Press `Enter`, and then type `rustup default` and press `Enter` again
+13. After the previous command finishes, type `cargo run` and press `Enter`
+14. It will print out a list of "Platforms" one of which will be your GPU. Make note of the index, return to the open Notepad window, then update the `gpu_index` to match your noted index.
+15. In the Lotus-QT software, go to the "Receive" tab, then generate a new receive address. Copy and paste that over `lotus_PASTE_YOUR_ADDRESS_HERE` in your open Notepad window
+16. Press `CTRL`+`S` to save the Notepad file again (it will automatically save without a "Save As" dialog box).
+17. Back in the command prompt, type `cargo run` and press `Enter` to begin mining
+18. If you ran into problems, join our [Telegram group](https://t.me/givelotus).
 
 ### Mac And Linux 
 
