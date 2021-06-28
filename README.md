@@ -1,6 +1,6 @@
-# GiveLotus.org Website
+# Lotus Website
 
-The official website of the Lotus Token
+The source code of the [givelotus.org](https://givelotus.org) website
 
 ## Quickstart
 
