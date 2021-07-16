@@ -174,3 +174,11 @@ enable = false
 	url = "https://github.com/logosfoundation/website"
 	icon = "fab fa-github"
         desc = "Development takes place here!"
+
+# Additional menu items
+
+[[menu.main]]
+    name = "Block Explorer"
+    weight = 100
+    url = "https://explorer.givelotus.org"
+    pre = ""
