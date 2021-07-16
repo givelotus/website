@@ -58,7 +58,7 @@ This can be any string of bytes relevant to the chain being worked with. Other l
 
 ### Weak hash
 
-The checksum consists of the last four bytes (weak SHA256) of the SHA256 hash of the other portions of the address:
+The checksum consists of the first four bytes (weak SHA256) of the SHA256 hash of the other portions of the address:
 
 `<token identifier><network byte><payload>`
 
