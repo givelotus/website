@@ -5,7 +5,7 @@ weight: 80
 ---
 
 Coin issuance in Lotus is adjusted compared to bitcoin in the following ways:
-* The [issuance](#issuance) of Coinbase rewards will are `260 * log2(difficulty)` megasats.
+* The [issuance](#issuance) of Coinbase rewards will are `260 * (1 + log2(difficulty))` Lotus (megasats).
 * Half of transaction fees are burned.
 * Half of remaining block reward (subsidy + fees) will be distributed to miners,
   and the other half will goto thirteen selected projects. Currently, the
