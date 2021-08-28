@@ -11,7 +11,7 @@ Download and install Lotus for your operating system from [here](https://givelot
 
 ## Windows
 
-1. Download [https://storage.googleapis.com/lotus-project/lotus-1.0.1-win64-setup-unsigned.exe](https://storage.googleapis.com/lotus-project/lotus-1.0.1-win64-setup-unsigned.exe) and install it somewhere convenient. It'll create shortcuts in your start menu.
+1. Download [https://storage.googleapis.com/lotus-project/lotus-1.0.1-win64-setup-unsigned.exe](https://storage.googleapis.com/lotus-project/lotus-1.0.2-win64-setup-unsigned.exe) and install it somewhere convenient. It'll create shortcuts in your start menu.
 2. When you start the wallet, it'll ask you where to place the blockchain data.
    1. **Don't worry about it telling you about hundreds of GBs of data, the Lotus blockchain is just a few MB big, and we haven't updated the texts yet**.
    2. You can pick whatever directory you want here, but it's suggested to leave the default one.
