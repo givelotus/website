@@ -31,7 +31,8 @@ Lotus will be based on the Bitcoin ABC codebase and specifications, with the fol
   * Limit NUM2BIN to 68 bytes
   * Increase integer sizes from 32 bits to 64 bit ones-complement signed integers
   * Disable all unusable opcodes and reserve them for future hardforks
-  * [Add Taproot support and BIP341 signatures]({{< ref "../script/taproot" >}})
+  * [Add Taproot support]({{< ref "../script/taproot" >}})
+  * [SigHash Lotus]({{< ref "../sighash" >}}#sighash-lotus)
 
 ## Genesis Block
 
