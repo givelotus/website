@@ -1,7 +1,7 @@
 ---
 title: "Transaction IDs"
 linkTitle: "Transaction IDs"
-weight: 70
+weight: 90
 ---
 
 The Lotus Tansaction ID is calculated differently than for BTC, BCH, or eCash.
