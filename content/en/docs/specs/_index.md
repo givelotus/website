@@ -1,12 +1,10 @@
-
 ---
-title: "Specifications"
+title: "Lotus Specifications"
 linkTitle: "Specifications"
-weight: 20
-
+weight: 50
 ---
 
 {{% pageinfo %}}
-This is the home of the Lotus technical documentation
+This is the main area for Lotus specifications. Some details are currently located in the bitcoin and bitcoincash specifications until they are merged with the main Lotus specifications.
 {{% /pageinfo %}}
 
