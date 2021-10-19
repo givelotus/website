@@ -2,7 +2,7 @@
 ---
 title: "Bitcoin BIPs"
 linkTitle: "Bitcoin BIPs"
-weight: 99
+weight: 1010
 ---
 
 {{% pageinfo %}}

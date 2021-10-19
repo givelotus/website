@@ -2,7 +2,7 @@
 ---
 title: "Bitcoin Cash Specifications"
 linkTitle: "Bitcoin Cash Specifications"
-weight: 100
+weight: 1000
 ---
 
 {{% pageinfo %}}
