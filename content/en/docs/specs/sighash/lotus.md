@@ -1,10 +1,8 @@
 ---
-title: "Signature Hashes"
-linkTitle: "Signature Hashes"
+title: "SigHash Lotus"
+linkTitle: "SigHash Lotus"
 weight: 100
 ---
-
-# SigHash Lotus
 
 The Lotus blockchain includes a new Signature Hash format (in addition to supporting BIP143 and Legacy signature hashes). It is loosely based on BIP341 signature hashes from Bitcoin Core, but includes several modifications to make it more useful in smart contracts on the lotus blockchain. This format solves several security issues which were discovered with BIP143, and additionally is targetted at TapRoot-style contracts.
 
