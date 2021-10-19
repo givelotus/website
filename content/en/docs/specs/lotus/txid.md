@@ -32,7 +32,7 @@ calculate it's own TxID for covenant verifications.
 | Size | Name | Meaning |
 |------|------|---------|
 | 4 bytes | nVersion | Transaction version |
-| 32 bytes | nInRoot | Merkle root of the transaction inputs |
+| 32 bytes | nInRoot | Merkle root of the transaction inputs without the scriptSig included |
 | 1 byte | nInHeight | Height of the input merkle root  |
 | 32 bytes | nOutRoot | Merkle root of the transaction out |
 | 1 byte | nOutHeight | Height of the outputs merkle root  |
@@ -41,6 +41,28 @@ calculate it's own TxID for covenant verifications.
 # C++ Example
 
 ```C++
+uint256 TxInputsMerkleRoot(const std::vector<CTxIn> &vin, size_t &num_layers) {
+    std::vector<uint256> leaves;
+    leaves.resize(vin.size());
+    for (size_t i = 0; i < vin.size(); i++) {
+        CHashWriter leaf_hash(SER_GETHASH, 0);
+        leaf_hash << vin[i].prevout;
+        leaf_hash << vin[i].nSequence;
+        leaves[i] = leaf_hash.GetHash();
+    }
+    return ComputeMerkleRoot(std::move(leaves), num_layers);
+}
+
+uint256 TxOutputsMerkleRoot(const std::vector<CTxOut> &vout,
+                            size_t &num_layers) {
+    std::vector<uint256> leaves;
+    leaves.resize(vout.size());
+    for (size_t i = 0; i < vout.size(); i++) {
+        leaves[i] = SerializeHash(vout[i]);
+    }
+    return ComputeMerkleRoot(std::move(leaves), num_layers);
+}
+
 static uint256 ComputeTxId(int32_t nVersion, const std::vector<CTxIn> &vin,
                            const std::vector<CTxOut> &vout,
                            uint32_t nLockTime) {
