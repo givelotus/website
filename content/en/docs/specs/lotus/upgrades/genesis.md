@@ -23,6 +23,7 @@ Lotus will be based on the Bitcoin ABC codebase and specifications, with the fol
       public good.
   * Half of fees will be burned, the 25% will go to miners and another 25% will go selected projects.
 * Enforce all standardness rules as consensus
+* [MalFix]({{< ref "../txid.md" >}})
 * [Script changes]({{< ref "../script" >}}):
   * Increase opcode limit to 400 opcodes
   * [Relax OP_XOR and OP_AND operand size constraints]({{< ref "../script/opcodes" >}}#bitwise-operators)
