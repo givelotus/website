@@ -1,7 +1,7 @@
 ---
 title: "Script"
 linkTitle: "Script"
-weight: 50
+weight: 500
 ---
 
 # Basic Script

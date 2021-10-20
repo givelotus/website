@@ -26,9 +26,9 @@ Lotus will be based on the Bitcoin ABC codebase and specifications, with the fol
 * [MalFix]({{< ref "../txid.md" >}})
 * [Script changes]({{< ref "../script" >}}):
   * Increase opcode limit to 400 opcodes
-  * [Relax OP_XOR and OP_AND operand size constraints]({{< ref "../script/opcodes" >}}#bitwise-operators)
-  * [Add OP_RAWBITSHIFT]({{< ref "../script/opcodes" >}}#op_rawbitshift)
-  * [Add OP_MULPOW2]({{< ref "../script/opcodes" >}}/#op_mulpow2)
+  * [Relax OP_XOR and OP_AND operand size constraints]({{< ref "../script/opcodes/bitwise" >}})
+  * [Add OP_RAWBITSHIFT]({{< ref "../script/opcodes/bitwise" >}}#op_rawbitshift)
+  * [Add OP_MULPOW2]({{< ref "../script/opcodes/arithmetic" >}})
   * Limit NUM2BIN to 68 bytes
   * Increase integer sizes from 32 bits to 64 bit ones-complement signed integers
   * Disable all unusable opcodes and reserve them for future hardforks
