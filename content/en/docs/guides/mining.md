@@ -7,7 +7,7 @@ author: Shammah Chancellor ([@micropresident](https://twitter.com/micropresident
 
 Download and install Lotus for your operating system from [here](https://givelotus.org/software/)
 
-# Setting up the Lotus Node software to mine.
+# Setup Lotus Node
 
 ## Windows
 
@@ -83,9 +83,9 @@ rpcpassword=lotus
 
 Currently, we do not distribute binaries of the `lotus-gpu-miner` so mining will require setting up a rust development environment. 
 
-# Mining guide:
+# Mining guide
 
-# Get your wallet address
+## Get your wallet address
 
 In order to mine, you need to have an address where to send the mined Lotus to.
 
@@ -96,7 +96,7 @@ In order to mine, you need to have an address where to send the mined Lotus to.
 5. It'll open a new window, click on Copy Address at the bottom, which will copy your Lotus address
 6. Close the window. You can see there's an entry of your address at the bottom now. You can get the previous window again by double clicking on it
 
-### Windows:
+### Windows
 
 1. Download the windows installer for the [Lotus GPU Miner](https://storage.googleapis.com/lotus-project/Lotus%20GPU%20Miner%200.1.0.msi) and install Lotus GPU Miner somewhere convenient. It'll create shortcuts in your start menu.
 2. Open Lotus GPU Miner
@@ -135,14 +135,14 @@ rpc_url = "http://127.0.0.1:10604"
 12. Save, and type `cargo run` again on the command prompt.
 13. If you ran into problems, join our [telegram group](https://t.me/givelotus).
 
-# Success
+## Success
 
 If all is successful, you should see the following output to indicate that you are now mining:
 
     Running  target\debug\lotus-miner.exe
     Started mining on chain tip:  000000001331242a3179fde731b9d1c8e2c6e535625538262ad8786dedfcb8fc
 
-## Tuning:
+## Tuning
 
 1. You can play around with `kernel_size` in `config.toml` in the config to squeeze out a higher hashrate
 2. If you have multiple GPUs, you can change `gpu_indices` to address the GPU you want to mine on. Currently, only one GPU per `cargo run` is supported, so you'd need to run multiple command prompts to  mine on multiple GPUs. You can see all available devices and their index when the program starts.
