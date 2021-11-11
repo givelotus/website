@@ -11,7 +11,7 @@ Lotus is a digital token used to show appreciation for people who are doing and 
 
 # Mr. Turtle
 Mr. Turtle is a tip sea turtlebot for Lotus, allowing users to show their appreciation of other users' content. 
-He holds onto your flowers for you until you withdraw them to your own Lotus wallet, like Cashew on <a href="https://testflight.apple.com/join/k8geRwGG">iOS</a> and <a href="https://play.google.com/store/apps/details?id=org.cashweb.cashew">Android</a>.
+He holds onto your flowers for you until you withdraw them to your own Lotus wallet, like Cashew on <a href="https://apps.apple.com/us/app/cashew-wallet/id1539306720">iOS</a> and <a href="https://play.google.com/store/apps/details?id=org.cashweb.cashew">Android</a>.
 Being a sea turtlebot, Mr. Turtle regularly rides the currents between <a href="#telegram">Telegram</a>, <a href="#twitter">Twitter</a>, and <a href="#reddit">Reddit</a>, 
 distributing Lotus where requested.
 
