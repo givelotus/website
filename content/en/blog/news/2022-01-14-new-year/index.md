@@ -6,7 +6,7 @@ description: "Lotus offers a new vision in the cryptocurrency space"
 author: Mike C
 ---
 
-On July 21, 2021, the launch of Lotus started a new paradigm, in time for the summer solstice. After six months, begins a new year. A new dawn in a world ready for change. In 2022, innovation and opportunity stretches out in a vast expanse, as people around the world wake up. Lotus has arrived, to take its place in the market. 
+On June 21, 2021, the launch of Lotus started a new paradigm, in time for the summer solstice. After six months, begins a new year. A new dawn in a world ready for change. In 2022, innovation and opportunity stretches out in a vast expanse, as people around the world wake up. Lotus has arrived, to take its place in the market. 
 
 You don't have to be a programmer to participate, or adopt or invest. Or even understand the minutia. The community is growing and overcoming challenges together. Within the first six months, Lotus has successfully updated and educated the user of their responsibility: how to use it as more than something to hold. That happened again on the solstice, December 21st, exactly six months after the launch, within the clockwork of our stars. The timing for Lotus is transparent and planned. That is the path forward.
 
