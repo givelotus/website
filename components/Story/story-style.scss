@@ -1,0 +1,126 @@
+$bg-chart: '/images/hosting/chart_bg.png';
+  
+.main-feature {
+  text-align: center;
+  margin-bottom: $spacing10;
+  position: relative;
+  z-index: 3;
+  @include breakpoints-down(sm) {
+    margin-bottom: $spacing5
+  }
+  figure {
+    @include bg-color-fade($palette-secondary-light, 0.5);
+    position: relative;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: $spacing6;
+    &:before {
+      border-radius: 50%;
+    }
+  }
+  img {
+    position: relative;
+    height: 160px;
+    left: -50%;
+    top: -50%;
+    transform: translate(25%, 25%)
+  }
+  h6 {
+    margin-bottom: $spacing2;
+    font-weight: $font-bold
+  }
+  .item {
+    opacity: 1
+  }
+}
+
+.grid {
+  margin-top: $spacing5
+}
+
+.more-feature {
+  position: relative;
+  z-index: 3;
+  figure {
+    margin: 0
+  }
+  .divider.v-divider {
+    border: none;
+    display: block;
+    background: none;
+    height: 1px;
+    margin: spacing(5, 0);
+    max-height: none;
+    @include breakpoints-down(sm) {
+      margin: spacing(10, 0)
+    }
+    &:before {
+      content: "";
+      @include use-theme(background, $light-divider, $dark-divider);
+      width: 80px;
+      height: 8px;
+      border-radius: 8px;
+      @include left(50%);
+      @include margin-left(-40px);
+      position: absolute;
+      @include breakpoints-up(md) {
+        @include margin-left(-60px)
+      }
+    }
+    &:after {
+      content: "";
+      @include use-theme(background, $light-divider, $dark-divider);
+      width: 20px;
+      height: 8px;
+      @include left(50%);
+      @include margin-left(25px);
+      border-radius: 8px;
+      position: absolute;
+      @include breakpoints-down(xs) {
+        display: none
+      }
+    }
+  }
+}
+
+.chart-deco {
+  width: 100%;
+  height: 420px;
+  bottom: 0;
+  position: absolute;
+  background: url($bg-chart) no-repeat center bottom;
+  background-size: cover
+}
+
+.item {
+  position: relative;
+  padding: spacing(0, 3);
+  &.last {
+    figure {
+      margin-top: $spacing10
+    }
+  }
+  p {
+    margin-bottom: $spacing3
+  }
+}
+
+.text {
+  margin: spacing(8, 0);
+  @include breakpoints-down(sm) {
+    margin: 0
+  }
+}
+
+.illustration {
+  img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    @include breakpoints-between(sm, md) {
+      max-width: 400px;
+    }
+  }
+}

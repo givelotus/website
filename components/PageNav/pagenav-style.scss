@@ -1,0 +1,79 @@
+@import '~/assets/styles';
+
+
+.fab.v-btn {
+  transform: scale(0.5);
+  transition: all 0.5s ease;
+  opacity: 0;
+  background: $palette-primary-light !important;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-weight: $font-bold;
+  .icon {
+    color: $palette-primary-dark;
+    font-size: 40px;
+  }
+}
+
+.page-nav {
+  z-index: 200;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  width: 56px;
+  nav {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s ease;
+    transition-delay: 0.5s;
+  }
+  &.show {
+    .fab {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  .section-nav {
+    section {
+      margin: 0 0 76px 22px;
+      padding: 0;
+      position: relative
+    }
+    a {
+      margin-bottom: $spacing3;
+      opacity: 0;
+      position: relative;
+      transition: all 0.4s ease;
+      width: 12px;
+      height: 12px;
+      @include shadow2;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.3);
+      border: 1px solid $palette-primary-dark;
+      @include use-theme(border-color, $light-text-hint, $dark-text-hint);
+      display: block;
+      transition: all 0.4s ease;
+      color: transparent;
+      &.active {
+        background: $palette-primary-dark;
+        border: 1px solid $palette-primary-light;
+      }
+    }
+  }
+  &:hover {
+    nav {
+      transition-delay: 0s;
+      height: 100%
+    }
+    .section-nav a {
+      opacity: 1;
+      top: 0 !important;
+    }
+  }
+}
+
+.tooltip {
+  text-transform: capitalize;
+  font-size: 14px;
+}

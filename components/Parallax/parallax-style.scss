@@ -1,0 +1,76 @@
+.parallax-wrap {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  @include left(0);
+  top: 0;
+  z-index: 0;
+  transform: scale(0.8);
+  &.dots-wrap {
+    z-index: 40
+  }
+  @include breakpoints-down(md) {
+    display: none
+  }
+}
+
+.inner-parallax {
+  height: 800px;
+  width: 100%;
+  position: absolute;
+  display: block;
+  & > div {
+    height: 500px;
+    width: 100%;
+    display: block;
+    position: absolute;
+  }
+  &.large {
+    top: 600px;
+  }
+  &.medium {
+    top: 200px;
+  }
+  .Masthead {
+    overflow: visible;
+  }
+  .figure {
+    > div {
+      display: block;
+      position: absolute;
+      top: 200px;
+      width: 100%;
+      height: 700px;
+      svg {
+        position: absolute
+      }
+    }
+  }
+}
+
+.plus {
+  fill: #ECA426;
+  @include left(20px);
+  top: 100px;
+  width: 100px;
+  height: 100px;
+  transform: scale(0.5);
+}
+
+.circle {
+  fill: $palette-secondary-main;
+  @include right(70px);
+  top: 20px;
+  width: 120px;
+  height: 120px;
+  transform: scale(0.5);
+}
+
+.zigzag {
+  fill: $palette-primary-main;
+  @include left(0);
+  bottom: 300px;
+  width: 250px;
+  height: 75px;
+  transform: scale(0.5);
+}

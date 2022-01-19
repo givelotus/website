@@ -1,0 +1,281 @@
+$wave-deco-light: '/images/lotus/deco-wave-light.png';
+$wave-deco-dark: '/images/lotus/deco-wave-dark.png';
+
+@keyframes move_wave {
+  0% {
+    background-position: 0 0;
+    transform: scale(2, 1)
+  }
+  50% {
+    background-position: 50% -50%;
+    transform: scale(2.3, 1.2)
+  }
+  100% {
+    background-position: 100% 0;
+    transform: scale(2, 1)
+  }
+}
+
+.root {
+  background: linear-gradient(-45deg, $palette-primary-main 20%, $palette-primary-dark 70%);
+  position: relative;
+  padding: spacing(25, 0, 15);
+  @include breakpoints-up(lg) {
+    height: 1110px;
+    padding: spacing(30, 0, 5)
+  }
+  @include breakpoints-down(xs) {
+    padding: spacing(25, 0, 10);
+    position: relative
+  }
+}
+
+.decoration {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  @include left(0);
+  overflow: hidden;
+  clip: rect(0, auto, auto, 0);
+  svg {
+    fill: $palette-secondary-main;
+    opacity: 0.15;
+    position: fixed;
+    top: 0
+  }
+}
+
+.left-deco {
+  left: 0;
+  right: auto;
+  width: 1200px;
+  height: 1500px;
+  transform: scale(0.8);
+  transform-origin: top left;
+}
+
+.right-deco {
+  left: auto;
+  right: 0;
+  height: 1500px;
+  transform: scale(0.5);
+  transform-origin: top right;
+}
+
+.slider-wrap {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between
+}
+
+.text {
+  max-Width: 720px;
+  @include breakpoints-down(sm) {
+    text-align: center
+  }
+  h3 {
+    color: $palette-common-white;
+    @include breakpoints-up(lg) {
+      @include padding-right($spacing5)
+    }
+    strong {
+      font-weight: $font-bold
+    }
+  }
+  p {
+    color: $palette-common-white;
+    margin: spacing(4, 0);
+    @include breakpoints-up(lg) {
+      @include padding-right($spacing15)
+    }
+  }
+}
+
+.btn-area {
+  display: flex;
+  @include breakpoints-down(sm) {
+    justify-content: center;
+  }
+  @include breakpoints-down(xs) {
+    flex-direction: column-reverse;
+    > * {
+      margin-bottom: $spacing4;
+      height: 56px
+    }
+  }
+}
+
+.play-btn {
+  text-transform: uppercase;
+  color: $palette-common-white;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: $font-regular;
+  background: none;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  @include breakpoints-up(sm) {
+    @include margin-right($spacing4);
+  }
+  .icon {
+    border-radius: 50%;
+    transition: all 0.3s ease-out;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 47px;
+    vertical-align: middle;
+    @include margin-right($spacing1);
+    background: $palette-primary-main;
+  }
+  i {
+    color: $palette-common-white;
+    line-height: 22px;
+    @include margin-left(4px);
+    font-size: 24px
+  }
+  &:hover {
+    .icon {
+      background: $palette-primary-dark;
+      @include left(0)
+    }
+  }
+}
+
+.illustration {
+  @include breakpoints-down(sm) {
+    display: none
+  }
+  img {
+    display: block;
+    @include breakpoints-up(md) {
+      max-width: 400px
+    }
+    @include breakpoints-up(lg) {
+      max-width: 480px
+    }
+  }
+}
+
+.wave {
+  transform: translateZ(0)
+}
+
+.deco {
+  position: absolute;
+  height: 110px;
+  bottom: -35px;
+  @include left(0);
+  width: 100%;
+  @include breakpoints-up(sm) {
+    bottom: -20,
+  }
+  @include breakpoints-up(lg) {
+    bottom: -10,
+  }
+  .wave {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    @include left(0);
+    .theme--dark & {
+      background-image: url($wave-deco-dark)
+    }
+    .theme--light & {
+      background-image: url($wave-deco-light)
+    }
+    background-repeat: repeat-x;
+    transform: scale(2.5, 1);
+    @include breakpoints-down(xs) {
+      transform: scale(6, 1);
+      bottom: 20px;
+    }
+  }
+}
+
+.wave-one {
+  opacity: 0.2;
+  background-position: 0 0;
+  background-size: 50% 100px;
+  animation: 25s linear infinite;
+  animation-name: move_wave;
+}
+
+.wave-two {
+  opacity: 0.2;
+  background-position: 0 0;
+  background-size: 50% 120px;
+  animation: 20s linear infinite;
+  animation-name: move_wave;
+}
+
+.wave-cover {
+  background-size: 51% 100px;
+  background-position: 397px 0;
+  transform: scale(2, 1);
+  @include breakpoints-down(md) {
+    background-size: 51% 70px;
+    background-position: 397px 10px;
+  }
+  @include breakpoints-down(xs) {
+    background-position: center bottom
+  }
+}
+
+.video-popup {
+  max-width: none;
+  width: 690px;
+  h2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center
+  }
+  @include breakpoints-down(md) {
+    width: 100%;
+    > * {
+      padding: $spacing1
+    }
+    &::v-deep iframe {
+      width: 100%
+    }
+  }
+}
+
+.deco-inner {
+  position: absolute;
+  top: 0;
+  @include left(0);
+  width: 100%;
+  height: 100%;
+}
+
+.hide {
+  visibility: hidden
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  z-index: 3;
+  @media (min-width: 1150) {
+    flex-direction: row;
+  }
+}
+
+.item {
+  width: 100%;
+  justify-content: center;
+}
+
+.container > div {
+  flex: 100%; /* or - flex: 0 50% - or - flex-basis: 50% - */
+  /*demo*/
+  // box-shadow: 0 0 0 1px black;
+  margin-bottom: 10px;
+}
