@@ -1,4 +1,0 @@
----
-title: "Releases"
-linkTitle: "Releases"
----
