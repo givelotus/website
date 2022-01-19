@@ -1,0 +1,237 @@
+@import '~/assets/styles';
+
+$footer-deco-light: '/images/lotus/footer-deco-light.svg';
+$footer-deco-dark: '/images/lotus/footer-deco-dark.svg';
+
+.link {
+  margin: spacing(1, 1.5);
+}
+.footer {
+  margin-top: $spacing8;
+  padding-top: $spacing3;
+  padding-bottom: $spacing8;
+  color: $palette-common-white;
+  position: relative;
+  z-index: 100;
+  ul {
+    margin: 0;
+    padding: 0;
+    li {
+      list-style: none;
+      line-height: 32px;
+      a {
+        text-decoration: none;
+        font-size: 14px;
+        color: $palette-common-white;
+        &:hover {
+          color: $palette-primary-light
+        }
+      }
+    }
+  }
+  p {
+    color: $palette-common-white;
+    @include breakpoints-down(sm) {
+      padding: spacing(0, 3)
+    }
+  }
+  .accordion-root {
+    margin: 0 auto;
+    margin-top: $spacing2
+  }
+  &-desc{
+    display: block;
+    font-size: 14px;
+    margin-bottom: $spacing2
+  }
+  &.invert {
+    p {
+      @include palette-text-primary;
+    }
+    li a {
+      @include palette-text-primary;
+    }
+    .logo {
+      h6 {
+        color: $palette-primary-dark
+      }
+    }
+    .title-nav {
+      @include use-theme(color, $palette-primary-dark, $palette-primary-light)
+    }
+    .select-lang.v-text-field.v-text-field--enclosed {
+      ::v-deep .v-select__selections,
+      ::v-deep .v-icon,
+      ::v-deep .v-select__selection {
+        @include palette-text-primary;
+      }
+    }
+  }
+}
+
+.title-nav {
+  color: $palette-common-white;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: $spacing3;
+  font-weight: $font-bold
+}
+.logo {
+  text-align: center;
+  margin-bottom: $spacing3;
+  img {
+    width: 64px;
+  }
+  h6 {
+    color: $palette-common-white;
+  }
+}
+.socmed {
+  display: flex;
+  justify-content: center;
+  margin-bottom: $spacing4;
+  button {
+    margin: $spacing1;
+    color: $palette-primary-dark;
+    background: $palette-primary-main;
+    width: 36px;
+    height: 36px;
+    .icon {
+      color: $palette-common-white
+    }
+  }
+  .icon {
+    font-size: 24px
+  }
+}
+
+.icon {
+  & + div {
+    background: none !important;
+    padding: spacing(1.5, 1.5, 1.5, 4);
+    width: calc(100% - 32px)
+  }
+}
+
+.select-lang.v-text-field.v-text-field--enclosed {
+  margin: 0 auto;
+  width: 200px;
+  display: inherit;
+  margin-top: $spacing2;
+  ::v-deep .v-input__slot{
+    min-height: 43px;
+  }
+  ::v-deep .v-input__append-inner,
+  ::v-deep .v-input__prepend-inner {
+    margin-top: 10px
+  }
+  ::v-deep .v-select__selections,
+  ::v-deep .v-icon{
+    padding: 0;
+    color: var(--v-primarylight-base)
+  }
+  ::v-deep fieldset {
+    box-shadow: 0 1.5px 12px 2px rgba(0, 0, 0, 0.06);
+    border-color: var(--v-primarylight-darken3) !important;
+    legend {
+      top: 5px;
+      position: relative;
+    }
+  }
+  ::v-deep .v-select__selection {
+    color: $palette-common-white
+  }
+}
+.site-map-item {
+  @include breakpoints-down('md') {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important
+  }
+}
+.accordion-root {
+  background: none;
+  box-shadow: none;
+  max-width: 480px
+}
+#main-wrap .accordion-content.v-expansion-panel {
+  background-color: transparent;
+  &:before, &:after {
+    display: none
+  }
+}
+.accordion-icon {
+  padding: 0
+}
+
+.footer-deco {
+  position: relative;
+  z-index: 80;
+  top: 0;
+  background: linear-gradient(-45deg, $palette-primary-dark 30%, $palette-primary-main 90%);
+  padding-top: $spacing20 * 2;
+  @include breakpoints-down(md) {
+    padding-top: $spacing10 * 3;
+  }
+  @include breakpoints-down(xs) {
+    padding-top: $spacing20;
+  }
+  &:before {
+    @include use-theme(background-image, url($footer-deco-light), url($footer-deco-dark));
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: 100% auto;
+    top: -3px;
+    @include left(0);
+    content: "";
+    width: 100%;
+    height: 270px;
+    position: absolute;
+    z-index: 10
+  }
+}
+.decoration {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  @include left(0);
+  overflow: hidden;
+  clip: rect(0, auto, auto, 0);
+  svg {
+    fill: $palette-secondary-main;
+    opacity: 0.15;
+    position: fixed;
+    top: 40px;
+  }
+}
+
+.left-deco {
+  left: 0;
+  right: auto;
+  width: 1200px;
+  height: 1500px;
+  transform: scale(0.5);
+  transform-origin: top left;
+}
+
+.right-deco {
+  left: auto;
+  right: 0;
+  height: 1500px;
+  transform: scale(0.5);
+  transform-origin: top right;
+}
+
+.action {
+  text-align: center;
+  padding: spacing(0, 2);
+  h4 {
+    font-weight: $font-bold;
+    color: $palette-common-white;
+    margin-bottom: $spacing6;
+    @include breakpoints-down(xs) {
+      font-size: 28px;
+      line-height: 44px
+    }
+  }
+}

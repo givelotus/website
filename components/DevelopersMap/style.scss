@@ -1,0 +1,125 @@
+.root {
+  @include use-theme(background-image, linear-gradient(120deg, $palette-secondary-main, $palette-primary-main), linear-gradient(120deg, $palette-secondary-dark, $palette-primary-dark));
+  padding: spacing(10, 0);
+  color: $palette-common-white;
+  position: relative;
+  z-index: 10
+}
+.avatar-wrap {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  .avatar-item {
+    position: absolute;
+  }
+}
+.text {
+  padding-top: $spacing5;
+  h3 {
+    margin-bottom: $spacing3
+  }
+  p {
+    margin-bottom: $spacing3;
+    font-size: 18px;
+    line-height: 32px
+  }
+  .button {
+    min-width: 160px;
+  }
+  @include breakpoints-down(sm) {
+    text-align: center
+  }
+}
+.world-map {
+  background: url(/images/worldMap.svg) no-repeat center center;
+  background-size: 100%;
+  position: relative;
+  margin: 0 auto;
+  @include breakpoints-up(sm) {
+    height: 360px;
+    width: 580px
+  }
+}
+.title-serif {
+  font-family: 'Times New Roman';
+}
+.person {
+  position: absolute
+}
+.avatar {
+  transition: all 0.3s ease-out;
+  &:hover {
+    transform: scale(1.2)
+  }
+}
+.dot {
+  border-radius: 50%;
+  display: block;
+  width: 12px;
+  height: 12px;
+  background: $palette-secondary-main;
+  border: 2px solid #FFF;
+  box-shadow: 0 1.5px 24.5px 4.5px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease-out;
+  &:hover {
+    transform: scale(1.2)
+  }
+}
+.title-main {
+  @include palette-text-secondary;
+}
+.popover {
+  pointer-events: none
+}
+.paper {
+  width: 300px;
+  border-radius: 0 !important;
+  background: none;
+  box-shadow: none;
+  &:before {
+    content: "";
+    border-top: 15px solid;
+    @include use-theme(border-top-color, $light-background-paper, $dark-background-paper);
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    position: absolute;
+    @include left(calc(50% - 25px));
+    bottom: 15px
+  }
+}
+.paper-block {
+  @include palette-background-paper;
+  padding: $spacing3;
+  margin-bottom: 30px;
+  border-radius: 0 !important;
+  position: relative;
+  box-shadow: none !important;
+  h6 {
+    margin-top: $spacing2;
+    font-size: 14px
+  }
+  .title-main {
+    font-style: italic;
+    font-size: 12px;
+  }
+}
+.item-carousel {
+  padding: $spacing2
+}
+.card {
+  padding: $spacing3;
+  border-radius: 4px !important;
+  .avatar {
+    width: 30px;
+    height: 30px
+  }
+}
+.name {
+  display: flex;
+  margin-top: $spacing1;
+  align-items: center;
+  span {
+    display: inline-block;
+    @include margin-left($spacing1);
+  }
+}

@@ -1,0 +1,109 @@
+.root {
+  padding-bottom: $spacing20;
+  position: relative;
+  @include breakpoints-down(md) {
+    padding: spacing(15, 0, 10)
+  }
+}
+
+.carousel-handle {
+  height: 380px;
+  position: relative;
+  z-index: 10
+}
+
+.carousel-wrap {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  overflow: hidden
+}
+
+.item {
+  &:focus {
+    outline: none
+  }
+}
+
+.carousel-prop {
+  @include breakpoints-down(md) {
+    display: none;
+    div {
+      width: 1px;
+    }
+  }
+  div {
+    width: 250px
+  }
+}
+
+.floating-title {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: spacing(5);
+  @include breakpoints-up(lg) {
+    @include left($spacing3);
+    top: $spacing1 * -10
+  }
+  @media (min-width: 1400px) {
+    @include left($spacing10)
+  }
+  .title {
+    @include breakpoints-up(md) {
+      @include margin-right($spacing5)
+    }
+    @include breakpoints-up(lg) {
+      @include float(right)
+    }
+    @media (min-width: 1400px) {
+      @include margin-right($spacing5 * -1)
+    }
+  }
+}
+
+.arrow {
+  .v-application--is-rtl & {
+    direction: rtl
+  }
+  .v-application--is-ltr & {
+    direction: ltr
+  }
+  margin-top: 150px;
+  position: relative;
+  z-index: 10;
+  button {
+    @include palette-background-paper;
+    margin: $spacing1 / 2;
+    @include shadow3;
+    .v-application--is-rtl & {
+      transform: scale(-1)
+    }
+    .theme--dark & {
+      color: $palette-primary-light
+    }
+    .theme--light & {
+      color: $palette-primary-dark
+    }
+  }
+  @media (max-width: 1279px) {
+    display: none
+  }
+  @include breakpoints-down(md) {
+    display: none;
+    margin-top: 560px
+  }
+}
+
+.carousel-arrow-right {
+  position: absolute;
+  right: 0.1em;
+  top: 20em;
+  z-index: 20; /* overlap arrow controls to allow clicks */
+}
+.carousel-arrow-left {
+  position: absolute;
+  left: 0.1em;
+  top: 20em;
+  z-index: 20; /* overlap arrow controls to allow clicks */
+}

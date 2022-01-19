@@ -1,0 +1,15 @@
+@font-face {
+  font-family: 'Brandon';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url('~assets/fonts/Brandon_regular.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Brandon';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('~assets/fonts/Brandon_black.otf') format('truetype');
+}
