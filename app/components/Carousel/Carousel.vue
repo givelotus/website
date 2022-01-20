@@ -49,13 +49,13 @@ export default {
   data() {
     return {
       items: [
-        {
-          title: "Logos Foundation",
-          content:
-            this.$t('lotusLanding.logos_desc'),
-          url: 'https://github.com/LogosFoundation',
-          image: imgApi.projects[3],
-        },
+        // {
+        //   title: "Logos Foundation",
+        //   content:
+        //     this.$t('lotusLanding.logos_desc'),
+        //   url: 'https://github.com/LogosFoundation',
+        //   image: imgApi.projects[3],
+        // },
         {
           title: "Stampchat",
           content: this.$t('lotusLanding.stampchat_desc'),
