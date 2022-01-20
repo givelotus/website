@@ -48,6 +48,15 @@ This mode auto redirects to https. Requires SSL certicate to work.
 You should disable https redirect in your browser to make it reachable.
 https://www.itadminguide.com/disable-https-redirect-in-firefox/
 
+If still can't reach try commenting out:
+
+```
+  if ( $http_x_forwarded_proto != "https" ) {
+      return 301 https://$http_host$request_uri;
+  }
+```
+From nginx.confg
+
 You will then be able to visit the app at localhost:8080
 
 

@@ -15,14 +15,19 @@ WORKDIR /website
 ADD app .
 RUN yarn && yarn generate
 
-# Docs site stage
-# install nuxt dependencies and build statics
-# move /docs folder to the same html folder
-# TODO
+# Build docs stage
+RUN mkdir -p /docs
+WORKDIR /docs
+ADD docs .
+RUN yarn && yarn generate
 
 # Hosting Layer
 FROM nginx
 COPY --from=websitebuild /website/dist/ /usr/share/nginx/html/
+
+                                      # put in random place - no idea where
+                                      # is the best place to put it
+COPY --from=websitebuild /docs/dist/ /srv/www/docs-app/dist/
 
 
 COPY app/nginx.conf /etc/nginx/conf.d/default.conf
