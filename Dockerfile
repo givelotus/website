@@ -8,12 +8,11 @@ ENV NODE_ENV=development
 # ENV SSR=1
 # ENV SSL=0
 
+# Build main site
+# install nuxt dependencies and build static dist folder
 RUN mkdir -p /website
 WORKDIR /website
-ADD . .
-
-# Main site
-# install nuxt dependencies and build statics
+ADD app .
 RUN yarn && yarn generate
 
 # Docs site stage
@@ -26,5 +25,5 @@ FROM nginx
 COPY --from=websitebuild /website/dist/ /usr/share/nginx/html/
 
 
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY app/nginx.conf /etc/nginx/conf.d/default.conf
 
