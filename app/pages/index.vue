@@ -89,14 +89,10 @@ import Header from '~/components/Header'
 import Benefit from '~/components/Benefit'
 import Hidden from '~/components/Hidden'
 import Banner from '~/components/Banner'
-import Counter from '~/components/Counter'
 import Features from '~/components/Features'
 import Story from '~/components/Story'
-import Projects from '~/components/Projects'
-import DevelopersMap from '~/components/DevelopersMap'
 import Faq from '~/components/Faq'
 import FooterWithDeco from '~/components/Footer/FooterWithDeco'
-import Notification from '~/components/Notification'
 import Carousel from '~/components/Carousel'
 
 import brand from '~/static/text/brand'
@@ -106,16 +102,12 @@ export default {
     'main-header': Header,
     Banner,
     Benefit,
-    DevelopersMap,
     Carousel,
-    Counter,
     Features,
     Story,
-    Projects,
     Faq,
     FooterWithDeco,
     Hidden,
-    Notification
   },
   computed: {
     isTablet() {
