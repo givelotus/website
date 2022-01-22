@@ -91,7 +91,6 @@
 import Header from '~/components/Header'
 import Benefit from '~/components/Benefit'
 import Hidden from '~/components/Hidden'
-import PageNav from '~/components/PageNav'
 import Banner from '~/components/Banner'
 import Counter from '~/components/Counter'
 import Features from '~/components/Features'
@@ -118,7 +117,6 @@ export default {
     Projects,
     Faq,
     FooterWithDeco,
-    PageNav,
     Hidden,
     Notification
   },
