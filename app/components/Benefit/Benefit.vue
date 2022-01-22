@@ -1,13 +1,6 @@
 <template>
   <div class="root">
     <div class="parallax-img">
-      <!-- <hidden point="smDown">
-        <v-parallax
-          src="/images/lotus-background.png"
-          :height="670"
-          alt="parallax-bg"
-        />
-      </hidden> -->
     </div>
     <v-container class="fixed-width">
       <div class="wrapper">
@@ -29,9 +22,6 @@
                 <li>Open source software</li>
                 <li>Humanitarian efforts</li>
               </ul>
-              <!-- <v-btn large color="secondary">
-                Learn more?
-              </v-btn> -->
             </div>
           </v-col>
           <v-col md="7" cols="12" class="pa-0 d-flex">
