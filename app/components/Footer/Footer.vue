@@ -152,29 +152,19 @@ export default {
     lang: 'en',
     footers: [
       {
-        title: 'Lotus Foundation',
-        description: ['Team', 'History', 'Contact us', 'Locations'],
-        link: ['#team', '#history', '#contact-us', '#locations']
-      },
-      {
         title: 'Resources',
         description: [
-          'Resource',
-          'Resource name',
-          'Another resource',
-          'Final resource'
+          'Telegram',
+          'Twitter',
+          'Reddit',
+          'Github'
         ],
         link: [
-          '#resource',
-          '#resource-name',
-          '#another-resource',
-          '#final-resource'
+          'https://t.me/givelotus',
+          'https://twitter.com/givelotus',
+          'https://www.reddit.com/r/lotusproject/',
+          'https://github.com/LogosFoundation'
         ]
-      },
-      {
-        title: 'Legal',
-        description: ['Privacy policy', 'Terms of use'],
-        link: ['#privacy-policy', '#terms-of-use']
       }
     ]
   }),
