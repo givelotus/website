@@ -29,6 +29,9 @@
 	"resolutions": {
 		"@babel/preset-env": "7.12.17"
 	},
+	"engines": {
+		"node": "14"
+	},
 	"dependencies": {
 		"@babel/core": "^7.0.0-0",
 		"@babel/preset-env": "7.12.17",
