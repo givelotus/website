@@ -113,6 +113,7 @@
 }
 
 .news {
+
   display: flex;
   .v-application--is-rtl & {
     direction: rtl;
@@ -128,8 +129,8 @@
     border-radius: $rounded-small;
     margin: 0;
     @include margin-right($spacing2);
-    width: 120px;
-    height: 140px;
+    width: 520px;
+    height: 240px;
     @include breakpoints-down(xs) {
       width: auto;
       height: auto;
@@ -137,6 +138,7 @@
       margin: spacing(2, 1)
     }
     img {
+      border-radius: 1px;
       max-height: 100%;
       @include margin-left(50%);
       .v-application--is-rtl & {
@@ -146,7 +148,6 @@
         transform: translateX(-50%);
       }
       @include breakpoints-down(xs) {
-        width: 100%;
         height: auto
       }
     }

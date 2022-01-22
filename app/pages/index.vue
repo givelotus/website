@@ -1,36 +1,23 @@
 <template>
   <div>
     <div class="main-wrap">
-      <main-header />
       <div class="container-wrap">
         <section id="home">
-          <banner />
+          <BannerWithVideo />
         </section>
-
         <section id="about" :class="isMobile ? 'space-top-short' : 'space-top'">
           <features />
           <story />
         </section>
-
         <section id="carousel" :class="isMobile ? 'space-top-short' : 'space-top'">
           <Carousel />
           <benefit />
         </section>
-
-        <br>
-
+        <br />
         <section id="faq" class="space-top-short">
           <faq />
         </section>
-
       </div>
-      <section id="footer">
-        <footer-with-deco />
-      </section>
-      <!-- <hidden point="mdDown">
-        <page-nav />
-      </hidden> -->
-
     </div>
   </div>
 </template>
@@ -85,28 +72,23 @@
 </style>
 
 <script>
-import Header from '~/components/Header'
 import Benefit from '~/components/Benefit'
-import Hidden from '~/components/Hidden'
-import Banner from '~/components/Banner'
+import BannerWithVideo from '~/components/Banner/BannerWithVideo'
 import Features from '~/components/Features'
 import Story from '~/components/Story'
 import Faq from '~/components/Faq'
-import FooterWithDeco from '~/components/Footer/FooterWithDeco'
 import Carousel from '~/components/Carousel'
 import brand from '~/static/text/brand'
 
 export default {
+  layout: 'landing',
   components: {
-    'main-header': Header,
-    Banner,
+    BannerWithVideo,
     Benefit,
     Carousel,
     Features,
     Story,
     Faq,
-    FooterWithDeco,
-    Hidden,
   },
   computed: {
     isTablet() {

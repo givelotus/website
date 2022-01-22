@@ -1,0 +1,86 @@
+.root {
+  position: relative;
+  width: 100%;
+  @include breakpoints-up(sm) {
+    padding-bottom: 20px;
+  }
+  @include breakpoints-between(sm, md) {
+    padding-top: $spacing10;
+  }
+  @include breakpoints-down(xs) {
+    padding-bottom: 0
+  }
+}
+
+.counter-item {
+  align-items: center;
+  display: flex;
+  margin: spacing(2);
+  @include breakpoints-down(xs) {
+    margin: spacing(2, 4);
+  }
+  figure {
+    @include margin-right($spacing5);
+    // border: 1px solid $palette-primary-main;
+    border-radius: 10px;
+    transform: rotate(45deg);
+    width: 70%;
+    height: 70%;
+    line-height: 100px;
+    text-align: center;
+    vertical-align: middle;
+    @include breakpoints-down(xs) {
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+    }
+    @include breakpoints-down(sm) {
+      width: 90px;
+      height: 90px;
+      line-height: 70px;
+    }
+    img {
+      transform: translateY(10px) rotate(-45deg);
+      @include use-theme(filter, none, invert(1));
+      // width: 55%;
+      // max-height: 55%;
+      width: 100%;
+      max-height: 100%;
+      margin: 0 auto;
+    }
+    // &:after {
+    //   content: '';
+    //   background: $palette-primary-main;
+    //   width: 23px;
+    //   height: 23px;
+    //   border-radius: 5px;
+    //   position: absolute;
+    //   bottom: 20px;
+    //   right: -10px;
+    // }
+  }
+  .text {
+    @include breakpoints-down(xs) {
+      flex: 1
+    }
+  }
+  h4 {
+    font-size: 36px;
+    @include breakpoints-down(sm) {
+      margin-top: $spacing3
+    }
+    @include breakpoints-down(xs) {
+      font-size: 24px;
+    }
+  }
+  h6 {
+    @include palette-text-secondary
+  }
+  @include breakpoints-between(sm, md) {
+    flex-direction: column;
+    text-align: center
+  }
+  @include breakpoints-down(xs) {
+    justify-content: center;
+  }
+}

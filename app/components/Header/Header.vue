@@ -31,7 +31,7 @@
                 <img style="border-radius: 50%" :src="logo" alt="logo" />
               </nuxt-link>
               <scrollactive v-if="!invert && loaded" tag="span">
-                <a href="#home" class="anchor-link scrollactive-item">
+                <a :href="'/' + $i18n.locale" class="anchor-link ">
                   <img style="border-radius: 50%" :src="logo" alt="logo" />
                 </a>
               </scrollactive>
@@ -40,15 +40,12 @@
               <scrollactive v-if="loaded" :offset="navOffset" active-class="active" tag="ul">
                 <li v-for="(item, index) in menuList" :key="index">
                   <v-btn
-                    v-if="!invert"
-                    :href="item.url"
-                    class="anchor-link menu-link scrollactive-item"
-                    text
+                    :href="getLocalizedHref(item.url)"
+                    :class="{'anchor-link scrollactive-item' : $nuxt.$route.name.includes('index')}"
+                    class="menu-link"
                     @click="setOffset(item.offset)"
                   >{{ $t(item.translation) }}</v-btn>
-                  <v-btn v-if="invert" :href="item.url" text>{{ $t(item.translation) }}</v-btn>
                 </li>
-
                 <li>
                   <v-btn
                     href="https://explorer.givelotus.org/"
@@ -77,6 +74,7 @@
                 </li>
               </scrollactive>
             </div>
+
           </nav>
           <nav :class="{ invert: invert }" class="nav-menu">
             <hidden v-if="!invert" point="xsDown">
@@ -165,6 +163,21 @@ export default {
     },
     handleToggleOpen: function() {
       this.openDrawer = !this.openDrawer
+    },
+    getLocalizedHref(url) {
+      // refactor using composition API
+      let href = ''
+      // gb is a default language so /gb/#faq doesnt exist and 404s
+      // but we need to include prefix to localized page so there is
+      // no unnecessary redirections when /de/ user hits other pages
+      // e.g /calculator nuxt u18n redirects to /de/calculator
+      // it leads to poor UX
+      if (this.$i18n.locale != 'gb') {
+        href = '/' + this.$i18n.locale + url
+      } else {
+        href = '/' + url
+      }
+      return href
     },
   },
   computed: {

@@ -138,7 +138,7 @@ export default () => {
           q1: {
             question: 'Wie kann ich Lotus minen?',
             answer:
-              'Dafür musst du einen Lotus Node auf deinem Computer ausführen. Eine Anleitung findst du <a href="https://docs.givelotus.org/guides/mining" target="_blank">hier</a>. Um deine Hashrate und die ungefähre Belohnung zu überprüfen, kannst du unseren <a href="/calculator" target="_blank">Mining Rechner</a> verwenden.',
+              'Dafür musst du einen Lotus Node auf deinem Computer ausführen. Eine Anleitung findst du <a href="https://docs.givelotus.org/guides/mining" target="_blank">hier</a>. Um deine Hashrate und die ungefähre Belohnung zu überprüfen, kannst du unseren <a href="/de/calculator">Mining Rechner</a> verwenden.',
           },
           q2: {
             question: 'Welche Wallets kann ich verwenden?',

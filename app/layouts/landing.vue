@@ -12,41 +12,14 @@
       >
         <v-main>
           <main-header />
-            <div class="text-center white--text root">
-
-              <!-- <h3 class="use-text-title">
-                New Page title [layout]
-              </h3>
-              <p class="use-text-subtitle">[layout]</p> -->
-
-              <nuxt />
-            </div>
+          <nuxt />
           <footer-with-deco />
+
         </v-main>
       </div>
     </transition>
   </v-app>
 </template>
-
-<style scoped lang="scss">
-.root {
-  background: linear-gradient(
-    -45deg,
-    $palette-primary-main 20%,
-    $palette-primary-dark 70%
-  );
-  position: relative;
-  // padding: spacing(13, 0, 30);
-  // @include breakpoints-up(lg) {
-  //   height: 1110px;
-  //   padding: spacing(20, 0, 5);
-  // }
-  // @include breakpoints-down(xs) {
-  //   padding: spacing(25, 0, 10);
-  //   position: relative;
-  // }
-}
-</style>
 
 <script>
 import Header from '~/components/Header'

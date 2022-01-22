@@ -1,5 +1,5 @@
 export default () => {
-  return new Promise(function(resolve) {
+  return new Promise(function (resolve) {
     resolve({
       common: {
         title: '',
@@ -136,7 +136,7 @@ export default () => {
           q1: {
             question: 'How can I start mining?',
             answer:
-              'You will need to run Lotus Node on your computer. You can find instructions <a href="https://docs.givelotus.org/guides/mining" target="_blank"> here</a>. To check your hashrate and approximate rewards check our <a href="/calculator" target="_blank">rewards calculator</a>.',
+              'You will need to run Lotus Node on your computer. You can find instructions <a href="https://docs.givelotus.org/guides/mining" target="_blank"> here</a>. To check your hashrate and approximate rewards check our <a href="/calculator">rewards calculator</a>.',
           },
           q2: {
             question: 'What are available wallets?',
@@ -170,7 +170,6 @@ export default () => {
         header_dark: 'dark',
         header_light: 'light',
         header_about: 'about',
-        header_projects: 'projects',
         header_carousel: 'projects',
         header_faq: 'FAQ',
         header_contact: 'contact',

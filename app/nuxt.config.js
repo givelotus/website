@@ -227,8 +227,8 @@ module.exports = {
         shouldPreload: (file, type) => {
           return ['script', 'style', 'font'].includes(type)
         },
-        scroll: function(el, binding) {
-          let f = function(evt) {
+        scroll: function (el, binding) {
+          let f = function (evt) {
             if (binding.value(evt, el)) {
               window.removeEventListener('scroll', f)
             }
@@ -250,7 +250,7 @@ module.exports = {
       vus: { cacheBusting: true },
       scss: { sourceMap: false },
     },
-    extend(config, ctx) {
+    extend (config, ctx) {
       config.plugins.push(
         new FilterWarningsPlugin({
           exclude: /Critical dependency: the request of a dependency is an expression/,
@@ -275,10 +275,10 @@ module.exports = {
   layoutTransition: {
     name: 'layout',
     mode: 'out-in',
-    beforeEnter(el) {
+    beforeEnter (el) {
       console.log('Before enter...')
     },
-    afterLeave(el) {
+    afterLeave (el) {
       console.log('afterLeave', el)
     },
   },

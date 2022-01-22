@@ -132,7 +132,7 @@ export default () => {
           q1: {
             question: '如何开始挖矿？',
             answer:
-              '你需要在电脑上运行Lotus节点。你可以在<a href="https://docs.givelotus.org/guides/mining" target="_blank"> 这里</a>找到使用说明。检查算力，估算奖励可以使用<a href="/calculator" target="_blank">奖励计算器</a>.',
+              '你需要在电脑上运行Lotus节点。你可以在<a href="https://docs.givelotus.org/guides/mining" target="_blank"> 这里</a>找到使用说明。检查算力，估算奖励可以使用<a href="/cn/calculator">奖励计算器</a>.',
           },
           q2: {
             question: '有哪些可用的钱包？',
