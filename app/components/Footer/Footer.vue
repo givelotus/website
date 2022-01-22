@@ -150,23 +150,6 @@ export default {
     logo: logo,
     brand: brand,
     lang: 'en',
-    footers: [
-      {
-        title: 'Resources',
-        description: [
-          'Telegram',
-          'Twitter',
-          'Reddit',
-          'Github'
-        ],
-        link: [
-          'https://t.me/givelotus',
-          'https://twitter.com/givelotus',
-          'https://www.reddit.com/r/lotusproject/',
-          'https://github.com/LogosFoundation'
-        ]
-      }
-    ]
   }),
   props: {
     invert: {
