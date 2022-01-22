@@ -80,14 +80,14 @@
                     text
                     @click="setOffset(item.offset)"
                   >
-                    {{ $t('lotusLanding.header_' + item.name) }}
+                    {{ $t(item.translation) }}
                   </v-btn>
                   <v-btn
                     v-if="invert"
-                    :href="'/' + item.url"
+                    :href="item.url"
                     text
                   >
-                    {{ $t('lotusLanding.header_'+item.name) }}
+                    {{ $t(item.translation) }}
                   </v-btn>
                 </li>
 
@@ -99,6 +99,17 @@
                     class="menu-link"
                   >
                     {{ $t('lotusLanding.header_block_explorer') }}
+                  </v-btn>
+                </li>
+
+                <li>
+                  <v-btn
+                    href="https://docs.givelotus.org/"
+                    target="_blank"
+                    text
+                    class="menu-link"
+                  >
+                    {{ $t('lotusLanding.documentation') }}
                   </v-btn>
                 </li>
 
@@ -161,20 +172,9 @@ import Lotus_C_Icon from '~/static/images/lotus/Lotus_C_Icon.png'
 import link from '~/static/text/link'
 import brand from '~/static/text/brand'
 import Hidden from '../Hidden'
-import navMenu from './menu'
+import {menuList} from './menu'
 import Settings from './Settings'
 import MobileMenu from './MobileMenu'
-
-let counter = 0
-function createData(name, url, offset) {
-  counter += 1
-  return {
-    id: counter,
-    name,
-    url,
-    offset
-  }
-}
 
 export default {
   components: {
@@ -198,11 +198,7 @@ export default {
       fixed: false,
       openDrawer: null,
       navOffset: 20,
-      menuList: [
-        createData(navMenu[0], '#' + navMenu[0]),
-        createData(navMenu[1], '#' + navMenu[1]),
-        createData(navMenu[2], '#' + navMenu[2], -40)
-      ]
+      menuList
     }
   },
   mounted() {
