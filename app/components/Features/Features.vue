@@ -24,14 +24,6 @@
                 </figure>
                 <div class="text" v-if="loaded">
                   <h4 class="use-text-title">
-                    <!-- +<span
-                      v-countUp:onWindowScroll.once="{
-                        watchedElId: 'watched_counter',
-                        startValue: 0,
-                        endValue: 200,
-                        options: { duration: 1 }
-                      }"
-                    /> -->
                     Smart contracts
                   </h4>
                   <h6 class="use-text-subtitle2">
@@ -48,15 +40,6 @@
                 </figure>
                 <div class="text" v-if="loaded">
                   <h4 class="use-text-title">
-                    <!-- $<span
-                      v-countUp:onWindowScroll.once="{
-                        watchedElId: 'watched_counter',
-                        startValue: 0,
-                        endValue: 500,
-                        options: { duration: 2 }
-                      }"
-                    />
-                    -->
                     Self-funding
                   </h4>
                   <h6 class="use-text-subtitle2">
@@ -85,14 +68,6 @@
                 </figure>
                 <div class="text" v-if="loaded">
                   <h4 class="use-text-title">
-                    <!-- +<span
-                      v-countUp:onWindowScroll.once="{
-                        watchedElId: 'watched_counter',
-                        startValue: 0,
-                        endValue: 100,
-                        options: { duration: 1 }
-                      }"
-                    />K -->
                     Stability
                   </h4>
                   <h6 class="use-text-subtitle2">
@@ -101,34 +76,6 @@
                 </div>
               </div>
             </v-col>
-
-            <!-- <v-col sm="6" class="px-8">
-              <div class="counter-item">
-                <figure>
-                  <img src="/images/network.png" alt="unlimited" />
-                </figure>
-                <div class="text" v-if="loaded">
-                  <h4 class="use-text-title">Swarmwise</h4>
-                  <h6 class="use-text-subtitle2">
-                    {{ $t('lotusLanding.feature_5') }}
-                  </h6>
-                </div>
-              </div>
-            </v-col>
-            <v-col sm="6" class="px-8">
-              <div class="counter-item">
-                <figure>
-                  <img src="/images/blockchain.png" alt="unlimited" />
-                </figure>
-                <div class="text" v-if="loaded">
-                  <h4 class="use-text-title">eCash based</h4>
-                  <h6 class="use-text-subtitle2">
-                    {{ $t('lotusLanding.feature_6') }}
-                  </h6>
-                </div>
-              </div>
-            </v-col> -->
-
 
           </v-row>
         </u-animate>

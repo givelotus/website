@@ -15,14 +15,13 @@
         <section id="carousel" :class="isMobile ? 'space-top-short' : 'space-top'">
           <Carousel />
           <benefit />
-
         </section>
+        
         <br>
 
         <section id="faq" class="space-top-short">
           <faq />
         </section>
-        <!-- <developersMap /> -->
 
       </div>
       <section id="footer">
@@ -31,9 +30,7 @@
       <hidden point="mdDown">
         <page-nav />
       </hidden>
-      <!-- <hidden point="mdDown">
-        <notification />
-      </hidden> -->
+
     </div>
   </div>
 </template>

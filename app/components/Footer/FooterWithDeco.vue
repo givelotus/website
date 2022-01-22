@@ -8,14 +8,6 @@
         <use xlink:href="/images/lotus/deco-bg-right.svg#main" />
       </svg>
     </div>
-    <!-- <div class="action">
-      <h4 class="use-text-title2">
-        {{ $t('lotusLanding.footer_waiting') }}
-      </h4>
-      <v-btn color="secondary" large>
-        {{ $t('lotusLanding.learnmore') }}
-      </v-btn>
-    </div> -->
     <footer-main />
   </div>
 </template>

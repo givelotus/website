@@ -1,12 +1,6 @@
 <template>
   <div class="root">
     <v-container>
-      <!-- <title-main dark>
-        {{ $t('profileLanding.testi_title') }}
-        <strong>
-          {{ $t('profileLanding.testi_titleBold') }}
-        </strong>
-      </title-main> -->
       <v-row>
         <v-col md="7" cols="12">
           <div class="world-map">

@@ -1,6 +1,5 @@
 <template>
   <div class="root">
-    <!-- <main-feature /> -->
     <more-feature />
   </div>
 </template>

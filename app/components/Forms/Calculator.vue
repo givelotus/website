@@ -182,17 +182,7 @@
                   </v-btn>
                 </div>
               </v-container>
-<!--
-                <v-col cols="12" class="px-6">
-                  <v-textarea
-                    v-model="message"
-                    rows="6"
-                    color="white"
-                    class="input light"
-                    filled
-                    :label="$t('common.form_message')"
-                  />
-                </v-col> -->
+
               </v-row>
 
 
