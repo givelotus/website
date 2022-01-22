@@ -25,8 +25,8 @@
 export default {
   data() {
     return {
-      snackbar: true
+      snackbar: true,
     }
-  }
+  },
 }
 </script>

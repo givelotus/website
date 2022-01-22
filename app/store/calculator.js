@@ -1,7 +1,5 @@
-
 const exbitronURL = 'https://www.exbitron.com/api/v2'
 const lotusExplorerURL = 'https://explorer.givelotus.org/api'
-
 
 export const state = () => ({
   avg_price: '',
@@ -21,23 +19,26 @@ export const mutations = {
 }
 export const actions = {
   fetchPrice({ commit }) {
-    return this.$axios.get(`${exbitronURL}/peatio/public/markets/xpiusdt/tickers`).then(
-      response => {
+    return this.$axios
+      .get(`${exbitronURL}/peatio/public/markets/xpiusdt/tickers`)
+      .then(response => {
         commit('UPDATE_PRICE', response.data.ticker.avg_price)
-    })
+      })
   },
 
   fetchDifficulty({ commit }) {
-    return this.$axios.get(`${lotusExplorerURL}/getdifficulty`).then(
-      response => {
+    return this.$axios
+      .get(`${lotusExplorerURL}/getdifficulty`)
+      .then(response => {
         commit('UPDATE_DIFFICULTY', response.data)
-    })
+      })
   },
 
   fetchNetworkHashrate({ commit }) {
-    return this.$axios.get(`${lotusExplorerURL}/getnetworkhashps`).then(
-      response => {
+    return this.$axios
+      .get(`${lotusExplorerURL}/getnetworkhashps`)
+      .then(response => {
         commit('UPDATE_NETWORK_HASHRATE', response.data)
-    })
+      })
   },
 }

@@ -24,7 +24,7 @@ export default {
   data() {
     return {
       show: false,
-      play: false
+      play: false,
     }
   },
   mounted: function() {
@@ -45,6 +45,6 @@ export default {
     // RTL initial
     const rtlURL = document.location.pathname.split('/')[1] === 'ar'
     this.$vuetify.rtl = rtlURL
-  }
+  },
 }
 </script>

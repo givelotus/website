@@ -30,24 +30,24 @@ export default {
   props: {
     img: {
       type: String,
-      required: true
+      required: true,
     },
     title: {
       type: String,
-      required: true
+      required: true,
     },
     desc: {
       type: String,
-      required: true
+      required: true,
     },
     url: {
       type: String,
-      required: true
+      required: true,
     },
     button: {
       type: String,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 }
 </script>

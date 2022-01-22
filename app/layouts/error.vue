@@ -27,14 +27,14 @@ export default {
   components: {
     'main-header': Header,
     'main-footer': Footer,
-    Error
+    Error,
   },
   layout: 'empty',
   props: {
     error: {
       type: Object,
-      default: null
-    }
+      default: null,
+    },
   },
   head() {
     const title =
@@ -42,14 +42,14 @@ export default {
         ? brand.lotus.name + ' - ' + this.pageNotFound
         : brand.lotus.name + ' - ' + this.otherError
     return {
-      title
+      title,
     }
   },
   data() {
     return {
       pageNotFound: 'Not Found',
-      otherError: 'An error occurred'
+      otherError: 'An error occurred',
     }
-  }
+  },
 }
 </script>

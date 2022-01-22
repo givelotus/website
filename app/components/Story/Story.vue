@@ -9,13 +9,11 @@
 </style>
 
 <script>
-import MainFeature from './MainFeature'
 import MoreFeature from './MoreFeature'
 
 export default {
   components: {
-    MainFeature,
     MoreFeature,
-  }
+  },
 }
 </script>

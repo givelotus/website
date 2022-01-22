@@ -103,7 +103,7 @@ export default {
   components: {
     SocialAuth,
     TitleSecondary,
-    AuthFrame
+    AuthFrame,
   },
   data() {
     return {
@@ -112,11 +112,11 @@ export default {
       email: '',
       emailRules: [
         v => !!v || 'E-mail is required',
-        v => /.+@.+\..+/.test(v) || 'E-mail must be valid'
+        v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
       ],
       password: '',
       requiredRules: [v => !!v || 'This field is required'],
-      checkbox: false
+      checkbox: false,
     }
   },
   methods: {
@@ -124,13 +124,13 @@ export default {
       if (this.$refs.form.validate()) {
         console.log('data submited')
       }
-    }
+    },
   },
   computed: {
     isMobile() {
       const smDown = this.$store.state.breakpoints.smDown
       return smDown.indexOf(this.$mq) > -1
-    }
-  }
+    },
+  },
 }
 </script>

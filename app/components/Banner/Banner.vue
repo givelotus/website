@@ -10,30 +10,16 @@
     </div>
     <v-container :class="{ fixed: isDesktop }">
       <div class="container">
-        <div class="item text-center  white--text">
+        <div class="item text-center white--text">
           <h3 class="use-text-title">
             {{ $t('lotusLanding.banner_title') }}
-            <strong>
-              {{ $t('lotusLanding.banner_titlestrong') }}
-            </strong>
+            <strong>{{ $t('lotusLanding.banner_titlestrong') }}</strong>
           </h3>
-          <p class="use-text-subtitle">
-            {{ $t('lotusLanding.banner_subtitle') }}
-          </p>
-
+          <p class="use-text-subtitle">{{ $t('lotusLanding.banner_subtitle') }}</p>
         </div>
         <div ref="videoContainer" class="item text-center">
-          <video
-            autoplay
-            muted
-            controls
-            style="border-radius:40px"
-            :width="width"
-            >
-              <source src="/videos/givelotus.mp4"
-                      type="video/mp4">
-
-              Sorry, your browser doesn't support embedded videos.
+          <video autoplay muted controls style="border-radius:40px" :width="width">
+            <source src="/videos/givelotus.mp4" type="video/mp4" />Sorry, your browser doesn't support embedded videos.
           </video>
         </div>
       </div>
@@ -71,29 +57,29 @@ export default {
       dialog: false,
     }
   },
-  mounted () {
+  mounted() {
     this.$nextTick(() => {
       // console.log(this.$refs.videoContainer.offsetWidth);
-      window.addEventListener("resize", this.resizeVideo);
-      this.resizeVideo();
-    });
+      window.addEventListener('resize', this.resizeVideo)
+      this.resizeVideo()
+    })
   },
   methods: {
     getWindowWidth() {
       this.windowWidth = document.documentElement.clientWidth
     },
-    resizeVideo(){
-      this.$nextTick();
+    async resizeVideo() {
+      await this.$nextTick()
 
       this.width = this.$refs.videoContainer.offsetWidth
       // this.height = this.$refs.videoContainer.offsetWidth
-    }
+    },
   },
   computed: {
     isDesktop() {
       const lgUp = this.$store.state.breakpoints.lgUp
       return lgUp.indexOf(this.$mq) > -1
-    }
-  }
+    },
+  },
 }
 </script>
