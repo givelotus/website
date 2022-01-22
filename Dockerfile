@@ -23,12 +23,8 @@ RUN yarn && yarn generate
 
 # Hosting Layer
 FROM nginx
-COPY --from=websitebuild /website/dist/ /usr/share/nginx/html/
+COPY --from=websitebuild /website/dist/ /usr/share/nginx/website/html
+COPY --from=websitebuild /docs/dist/ /usr/share/nginx/docs/html
 
-                                      # put in random place - no idea where
-                                      # is the best place to put it
-COPY --from=websitebuild /docs/dist/ /srv/www/docs-app/dist/
-
-
-COPY app/nginx.conf /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/conf.d/default.conf
 
