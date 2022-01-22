@@ -24,7 +24,7 @@
 		"start": "nuxt start",
 		"heroku-postbuild": "npm run build",
 		"generate": "nuxt generate",
-		"lint": "eslint ."
+		"lint": "eslint --ext .js,.vue ."
 	},
 	"resolutions": {
 		"@babel/preset-env": "7.12.17"

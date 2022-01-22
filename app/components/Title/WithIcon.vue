@@ -21,16 +21,16 @@ export default {
   props: {
     text: {
       type: String,
-      required: true
+      required: true,
     },
     extended: {
       type: Boolean,
-      default: false
+      default: false,
     },
     icon: {
       type: String,
-      default: 'mdi-app'
-    }
-  }
+      default: 'mdi-app',
+    },
+  },
 }
 </script>

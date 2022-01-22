@@ -53,15 +53,15 @@ import Parallax from 'vue-parallaxy'
 
 export default {
   components: {
-    Parallax
+    Parallax,
   },
   data() {
     return {
-      loaded: false
+      loaded: false,
     }
   },
   mounted() {
     this.loaded = true
-  }
+  },
 }
 </script>

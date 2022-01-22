@@ -22,8 +22,8 @@
                 >
                   <div>
                     <main-title
-                      textClass='text-h4 pb-12'
-                      captionClass='purple--text text-h5'
+                      text-class='text-h4 pb-12'
+                      caption-class='purple--text text-h5'
                       :caption="$t('lotusLanding.morefeature_headtitle1')"
                       :text="$t('lotusLanding.morefeature_title1')"
                       :align="isMobile ? 'center' : 'left'"
@@ -52,8 +52,8 @@
                 >
                   <div>
                     <main-title
-                      textClass='text-h4 pb-12'
-                      captionClass='purple--text text-h5'
+                      text-class='text-h4 pb-12'
+                      caption-class='purple--text text-h5'
                       :caption="$t('lotusLanding.morefeature_headtitle2')"
                       :text="$t('lotusLanding.morefeature_title2')"
                       :align="isMobile ? 'center' : 'right'"
@@ -85,8 +85,8 @@
           <v-col cols="12">
             <div class="text text-center">
               <main-title
-                textClass='text-h4 pb-12'
-                captionClass='purple--text text-h5'
+                text-class='text-h4 pb-12'
+                caption-class='purple--text text-h5'
                 :caption="$t('lotusLanding.morefeature_headtitle3')"
                 :text="$t('lotusLanding.morefeature_title3')"
                 align="center"
@@ -115,7 +115,7 @@ import Title from '../Title'
 
 export default {
   components: {
-    'main-title': Title
+    'main-title': Title,
   },
   computed: {
     isDesktop() {
@@ -125,7 +125,7 @@ export default {
     isMobile() {
       const smDown = this.$store.state.breakpoints.smDown
       return smDown.indexOf(this.$mq) > -1
-    }
-  }
+    },
+  },
 }
 </script>

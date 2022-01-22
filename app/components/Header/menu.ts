@@ -18,5 +18,10 @@ export const menuList: MenuItem[] = [
     url: '#faq',
     offset: 60,
   },
+  {
+    translation: 'lotusLanding.header_news',
+    url: '/news',
+    offset: 60,
+  },
 ]
 

@@ -1,14 +1,7 @@
 <template>
-  <div
-    class="main-title"
-    :class="[align, { dark: dark }]"
-  >
-    <p class="caption-title" :class="[captionClass]">
-      {{ caption }}
-    </p>
-    <h4 :class="[textClass]">
-      {{ text }}
-    </h4>
+  <div class="main-title" :class="[align, { dark: dark }]">
+    <p class="caption-title" :class="[captionClass]">{{ caption }}</p>
+    <h4 :class="[textClass]">{{ text }}</h4>
   </div>
 </template>
 
@@ -21,28 +14,30 @@ export default {
   props: {
     align: {
       type: String,
-      default: 'left'
+      default: 'left',
     },
     text: {
       type: String,
-      required: false
+      required: false,
+      default: '',
     },
     caption: {
       type: String,
-      required: false
+      required: false,
+      default: '',
     },
     captionClass: {
       type: String,
-      default: ''
+      default: '',
     },
     textClass: {
       type: String,
-      default: ''
+      default: '',
     },
     dark: {
       type: Boolean,
-      default: false
-    }
-  }
+      default: false,
+    },
+  },
 }
 </script>

@@ -156,7 +156,7 @@ import Hidden from '../Hidden'
 
 export default {
   components: {
-    Hidden
+    Hidden,
   },
   data() {
     return {
@@ -167,7 +167,7 @@ export default {
       email: '',
       emailRules: [
         v => !!v || 'E-mail is required',
-        v => /.+@.+\..+/.test(v) || 'E-mail must be valid'
+        v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
       ],
       phone: '',
       company: '',
@@ -175,7 +175,7 @@ export default {
       checkbox: false,
       logo: logo,
       brand: brand,
-      routeLink: link
+      routeLink: link,
     }
   },
   methods: {
@@ -183,13 +183,13 @@ export default {
       if (this.$refs.form.validate()) {
         this.snackbar = true
       }
-    }
+    },
   },
   computed: {
     isMobile() {
       const smDown = this.$store.state.breakpoints.smDown
       return smDown.indexOf(this.$mq) > -1
-    }
-  }
+    },
+  },
 }
 </script>

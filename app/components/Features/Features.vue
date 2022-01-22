@@ -95,15 +95,15 @@ import Title from '../Title'
 
 export default {
   components: {
-    'title-main': Title
+    'title-main': Title,
   },
   data() {
     return {
-      loaded: false
+      loaded: false,
     }
   },
   mounted() {
     this.loaded = true
-  }
+  },
 }
 </script>

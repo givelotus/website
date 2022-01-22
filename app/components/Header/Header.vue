@@ -121,7 +121,8 @@
             class="nav-menu"
           >
             <hidden v-if="!invert" point="xsDown">
-              <v-btn icon class="social-btn"
+              <v-btn
+icon class="social-btn"
                 href="https://twitter.com/givelotus"
                 target="_blank"
               >
@@ -130,7 +131,8 @@
                </v-icon>
               </v-btn>
 
-              <v-btn icon class="social-btn"
+              <v-btn
+icon class="social-btn"
                 href="https://www.reddit.com/r/lotusproject/"
                 target="_blank"
               >
@@ -138,7 +140,8 @@
                   mdi-reddit
                </v-icon>
               </v-btn>
-              <v-btn icon class="social-btn"
+              <v-btn
+icon class="social-btn"
                 href="https://github.com/LogosFoundation"
                 target="_blank"
               >
@@ -146,7 +149,8 @@
                   mdi-github
                </v-icon>
               </v-btn>
-              <v-btn icon class="social-btn"
+              <v-btn
+icon class="social-btn"
                 href="https://t.me/givelotus"
                 target="_blank"
               >
@@ -172,7 +176,7 @@ import Lotus_C_Icon from '~/static/images/lotus/Lotus_C_Icon.png'
 import link from '~/static/text/link'
 import brand from '~/static/text/brand'
 import Hidden from '../Hidden'
-import {menuList} from './menu'
+import { menuList } from './menu'
 import Settings from './Settings'
 import MobileMenu from './MobileMenu'
 
@@ -180,13 +184,13 @@ export default {
   components: {
     'setting-menu': Settings,
     Hidden,
-    MobileMenu
+    MobileMenu,
   },
   props: {
     invert: {
       type: Boolean,
-      default: false
-    }
+      default: false,
+    },
   },
   data() {
     return {
@@ -198,7 +202,7 @@ export default {
       fixed: false,
       openDrawer: null,
       navOffset: 20,
-      menuList
+      menuList,
     }
   },
   mounted() {
@@ -216,7 +220,7 @@ export default {
     },
     handleToggleOpen: function() {
       this.openDrawer = !this.openDrawer
-    }
+    },
   },
   computed: {
     isMobile() {
@@ -226,7 +230,7 @@ export default {
     isDesktop() {
       const lgUp = this.$store.state.breakpoints.lgUp
       return lgUp.indexOf(this.$mq) > -1
-    }
-  }
+    },
+  },
 }
 </script>

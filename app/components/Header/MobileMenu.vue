@@ -52,14 +52,14 @@ export default {
   data() {
     return {
       link: link,
-      navMenu: menuList
+      navMenu: menuList,
     }
   },
   props: {
     open: {
       type: Boolean,
-      default: false
-    }
-  }
+      default: false,
+    },
+  },
 }
 </script>

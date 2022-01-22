@@ -1,5 +1,5 @@
 const useYoutube = {
-  use: true
+  use: true,
 }
 
 export default useYoutube

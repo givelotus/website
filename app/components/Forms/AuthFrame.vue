@@ -71,23 +71,23 @@ import Hidden from '../Hidden'
 
 export default {
   components: {
-    Hidden
+    Hidden,
   },
   data() {
     return {
       brand: brand,
-      routerLink: routerLink
+      routerLink: routerLink,
     }
   },
   props: {
     title: {
       type: String,
-      required: true
+      required: true,
     },
     subtitle: {
       type: String,
-      default: ''
-    }
-  }
+      default: '',
+    },
+  },
 }
 </script>

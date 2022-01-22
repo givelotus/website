@@ -1,30 +1,27 @@
 <template>
   <div class="root">
     <v-container class="fixed-width">
-      <div class="text-center text-bold">
-         New Lotus are issued through rewards that are split between miners and projects which benefit the public good as a show of appreciation.
-      </div>
-      <div class="text-center text-bold">
-          Whenever you use Lotus to appreciate your friends, you know that you're also supporting these great projects.
-      </div>
+      <div
+        class="text-center text-bold"
+      >New Lotus are issued through rewards that are split between miners and projects which benefit the public good as a show of appreciation.</div>
+      <div
+        class="text-center text-bold"
+      >Whenever you use Lotus to appreciate your friends, you know that you're also supporting these great projects.</div>
 
-      <div v-if="loaded" >
+      <div v-if="loaded">
         <vue-horizontal-list :items="items" :options="options">
-          <template v-slot:default="{ item }">
+          <template #default="{ item }">
             <card
               :img="item.image"
               :title="item.title"
               :desc="item.content"
               :url="item.url"
               :button="$t('lotusLanding.services_button')"
-            >
-            </card>
-
+            ></card>
           </template>
         </vue-horizontal-list>
-
       </div>
-  </v-container>
+    </v-container>
   </div>
 </template>
 
@@ -35,16 +32,12 @@
 <script>
 import imgApi from '~/static/images/imgAPI'
 import Card from '../Cards/Default'
-import TitleIcon from '../Title/WithIcon'
-import VueHorizontal from 'vue-horizontal';
-import VueHorizontalList from "vue-horizontal-list";
+import VueHorizontalList from 'vue-horizontal-list'
 
 export default {
   components: {
     Card,
     VueHorizontalList,
-    VueHorizontal,
-    TitleIcon,
   },
   data() {
     return {
@@ -57,19 +50,19 @@ export default {
         //   image: imgApi.projects[3],
         // },
         {
-          title: "Stampchat",
+          title: 'Stampchat',
           content: this.$t('lotusLanding.stampchat_desc'),
           url: 'https://stampchat.io/',
           image: imgApi.projects[0],
         },
         {
-          title: "Be.cash",
+          title: 'Be.cash',
           content: this.$t('lotusLanding.becash_desc'),
           url: 'https://be.cash/',
           image: imgApi.projects[1],
         },
         {
-          title: "Bitcoin ABC",
+          title: 'Bitcoin ABC',
           content: this.$t('lotusLanding.bitcoin_abc_desc'),
           url: 'https://www.bitcoinabc.org/',
           image: imgApi.projects[2],
@@ -84,7 +77,7 @@ export default {
         navigation: {
           // when to show navigation
           start: 100,
-          color: "#000",
+          color: '#000',
         },
         autoplay: {
           // enable/disable playing slideshow
@@ -107,8 +100,8 @@ export default {
     },
     prev: function() {
       this.$refs.slick.prev()
-    }
-  }
+    },
+  },
 }
 </script>
 
