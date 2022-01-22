@@ -26,16 +26,16 @@ export default {
   props: {
     text: {
       type: String,
-      required: true
+      required: true,
     },
     img: {
       type: String,
-      required: true
+      required: true,
     },
     type: {
       type: String,
-      required: true
-    }
-  }
+      required: true,
+    },
+  },
 }
 </script>

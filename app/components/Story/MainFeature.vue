@@ -40,7 +40,7 @@ import Title from '../Title'
 
 export default {
   components: {
-    'main-title': Title
+    'main-title': Title,
   },
   data() {
     return {
@@ -48,20 +48,20 @@ export default {
         {
           img: '/images/giving.png',
           title: 'titleitem1',
-          desc: 'descitem1'
+          desc: 'descitem1',
         },
         {
           img: '/images/giving.png',
           title: 'titleitem2',
-          desc: 'descitem2'
+          desc: 'descitem2',
         },
         {
           img: '/images/giving.png',
           title: 'titleitem3',
-          desc: 'descitem3'
-        }
-      ]
+          desc: 'descitem3',
+        },
+      ],
     }
-  }
+  },
 }
 </script>

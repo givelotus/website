@@ -115,12 +115,12 @@ export default {
     },
     isMobile() {
       return this.$mq === 'smDown' || this.$mq === 'xsDown'
-    }
+    },
   },
   head() {
     return {
-      title: brand.lotus.name + ' - Home Page'
+      title: brand.lotus.name + ' - Home Page',
     }
-  }
+  },
 }
 </script>

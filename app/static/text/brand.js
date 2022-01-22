@@ -1,7 +1,8 @@
 const brand = {
   lotus: {
     name: 'Lotus',
-    desc: 'Lotus is a priceless digital token of appreciation that you can always keep at hand.',
+    desc:
+      'Lotus is a priceless digital token of appreciation that you can always keep at hand.',
     prefix: 'Lotus - The Token of Appreciation',
     footerText: 'GiveLotus.org',
     logoText: 'Lotus',
@@ -14,8 +15,8 @@ const brand = {
     // above doesn't work.
     img: 'https://givelotus.netlify.app/images/lotus/og_lotus_img.png',
     notifMsg:
-      'Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula.'
-  }
+      'Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula.',
+  },
 }
 
 export default brand

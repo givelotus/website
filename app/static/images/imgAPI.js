@@ -10,7 +10,7 @@ const imgAPI = {
     '/images/avatars/pp_boy2.svg',
     '/images/avatars/pp_boy3.svg',
     '/images/avatars/pp_boy4.svg',
-    '/images/avatars/pp_boy5.svg'
+    '/images/avatars/pp_boy5.svg',
   ],
   photo: [
     'https://via.placeholder.com/675x900/e1ad92/fff',
@@ -26,7 +26,7 @@ const imgAPI = {
     'https://via.placeholder.com/1050x700/ffc4c4/757575',
     'https://via.placeholder.com/640x447/fdffc4/757575',
     'https://via.placeholder.com/1280x851/c4ffd7/757575',
-    'https://via.placeholder.com/640x425/c4cdff/757575'
+    'https://via.placeholder.com/640x425/c4cdff/757575',
   ],
   // lotus: [
   //   'https://via.placeholder.com/1000x625/f2c9ff/757575',
@@ -52,7 +52,7 @@ const imgAPI = {
     '/images/becash.jpg',
     '/images/bitcoinabclogo.png',
     '/images/logos.jpg',
-  ]
+  ],
 }
 
 export default imgAPI

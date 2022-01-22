@@ -126,7 +126,7 @@ export default {
   components: {
     SocialAuth,
     TitleSecondary,
-    AuthFrame
+    AuthFrame,
   },
   data() {
     return {
@@ -136,16 +136,16 @@ export default {
       name: '',
       emailRules: [
         v => !!v || 'E-mail is required',
-        v => /.+@.+\..+/.test(v) || 'E-mail must be valid'
+        v => /.+@.+\..+/.test(v) || 'E-mail must be valid',
       ],
       password: '',
       confirmPassword: '',
       requiredRules: [v => !!v || 'This field is required'],
       passwordRules: [
         v => !!v || 'This field is required',
-        v => v === this.password || 'Passwords do not match'
+        v => v === this.password || 'Passwords do not match',
       ],
-      checkbox: false
+      checkbox: false,
     }
   },
   methods: {
@@ -153,13 +153,13 @@ export default {
       if (this.$refs.form.validate()) {
         console.log('data submited')
       }
-    }
+    },
   },
   computed: {
     isMobile() {
       const smDown = this.$store.state.breakpoints.smDown
       return smDown.indexOf(this.$mq) > -1
-    }
-  }
+    },
+  },
 }
 </script>

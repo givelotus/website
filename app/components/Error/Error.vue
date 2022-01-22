@@ -41,12 +41,12 @@ export default {
   props: {
     errCode: {
       type: String,
-      default: '404'
+      default: '404',
     },
     text: {
       type: String,
-      default: ''
-    }
-  }
+      default: '',
+    },
+  },
 }
 </script>

@@ -9,8 +9,8 @@ export default {
   props: {
     point: {
       type: String,
-      required: true
-    }
+      required: true,
+    },
   },
   computed: {
     breakpoints() {
@@ -32,7 +32,7 @@ export default {
         default:
           return 'xl'
       }
-    }
-  }
+    },
+  },
 }
 </script>

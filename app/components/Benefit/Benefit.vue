@@ -49,12 +49,12 @@ import imgAPI from '~/static/images/imgAPI'
 export default {
   components: {
     Hidden,
-    'main-title': Title
+    'main-title': Title,
   },
   data() {
     return {
-      img: imgAPI
+      img: imgAPI,
     }
-  }
+  },
 }
 </script>

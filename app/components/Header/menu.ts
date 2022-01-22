@@ -19,4 +19,3 @@ export const menuList: MenuItem[] = [
     offset: 60,
   },
 ]
-
