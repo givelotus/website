@@ -27,7 +27,7 @@ yarn dev
 
 You should avoid developing with Docker as it is
 mostly required for production build and it significantly
-increases the feedback loop for making changes and seeing them.
+decreases the feedback loop for making changes and seeing them.
 (you need to rebuild the container each time after you make a change)
 
 
@@ -58,7 +58,7 @@ If still can't reach try commenting out:
 From nginx.confg
 
 You will then be able to visit the app at localhost:8080
-
+and docs at localhost:8081
 
 ## Build for CDN (SSR)
 
