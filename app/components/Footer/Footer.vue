@@ -4,7 +4,7 @@
       <v-row class="spacing4">
         <v-col class="pa-4" md="3" cols="12">
           <div class="logo">
-            <img style="border-radius: 40%" :src="logo" alt="logo" />
+            <img style="border-radius: 25%" :src="logo" alt="logo" />
           </div>
           <p class="body-2 text-center" v-if="isDesktop">
             &copy;&nbsp;
