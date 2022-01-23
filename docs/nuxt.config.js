@@ -15,7 +15,7 @@ export default theme({
       { name: 'description', content: "Home of Lotus Documentation" },
       { name: 'msapplication-TileColor', content: '#FFFFFF' },
       // PWA primary color
-      { name: 'theme-color', content: "#A7008F"},
+      { name: 'theme-color', content: "#A7008F" },
       // Facebook
       { property: 'author', content: 'Lotus - The Token of Appreciation' },
       { property: 'og:site_name', content: 'GiveLotus' },
