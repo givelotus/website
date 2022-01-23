@@ -47,7 +47,7 @@ const faqData = [
   {
     q: 'How can I start mining?',
     a:
-      'You will need to run Lotus Node on your computer. You can find instructions <a href="/calculator" target="_blank"> here</a>. To check your hashrate and approximate rewards check our <a href="/calculator" target="_blank">rewards calculator</a>.',
+      'You will need to run Lotus Node on your computer. You can find instructions <a href="https://docs.givelotus.org/guides/mining" target="_blank"> here</a>. To check your hashrate and approximate rewards check our <a href="/calculator" target="_blank">rewards calculator</a>.',
   },
   {
     q: 'What are available wallets?',
