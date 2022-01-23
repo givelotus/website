@@ -201,8 +201,8 @@ export default {
       ],
       gpuSelected: [],
       showAdvanced: false,
-      user_hashrate: 2200,
-      user_watt: 250,
+      user_hashrate: 0,
+      user_watt: 0,
       user_watt_cost: 0.2,
       valid: true,
       snackbar: false,
@@ -234,45 +234,45 @@ export default {
       dataElectricity: [
         {
           name: this.$t('calculator.hourly'),
-          kwh: 150,
-          usd: 6.0,
+          kwh: 0,
+          usd: 0,
         },
         {
           name: this.$t('calculator.daily'),
-          kwh: 237,
-          usd: 9.0,
+          kwh: 0,
+          usd: 0,
         },
         {
           name: this.$t('calculator.weekly'),
-          kwh: 262,
-          usd: 16.0,
+          kwh: 0,
+          usd: 0,
         },
         {
           name: this.$t('calculator.monthly'),
-          kwh: 305,
-          usd: 3.7,
+          kwh: 0,
+          usd: 0,
         },
       ],
       dataItems: [
         {
           name: this.$t('calculator.hourly'),
-          xpi: 150,
-          usdt: 6.0,
+          xpi: 0,
+          usdt: 0,
         },
         {
           name: this.$t('calculator.daily'),
-          xpi: 237,
-          usdt: 9.0,
+          xpi: 0,
+          usdt: 0,
         },
         {
           name: this.$t('calculator.weekly'),
-          xpi: 262,
-          usdt: 16.0,
+          xpi: 0,
+          usdt: 0,
         },
         {
           name: this.$t('calculator.monthly'),
-          xpi: 305,
-          usdt: 3.7,
+          xpi: 0,
+          usdt: 0,
         },
       ],
       headers_other: [
@@ -361,56 +361,56 @@ export default {
 
       return daily_electricity_cost
     },
-    watch: {
-      dailyRewards(daily_xpi) {
-        let daily_usd = daily_xpi * this.avg_price
+  },
+  watch: {
+    dailyRewards(daily_xpi) {
+      let daily_usd = daily_xpi * this.avg_price
 
-        //hourly
-        this.dataItems[0].usdt = (daily_usd / 24).toFixed(2)
-        this.dataItems[0].xpi = (daily_xpi / 24).toFixed(2)
+      //hourly
+      this.dataItems[0].usdt = (daily_usd / 24).toFixed(2)
+      this.dataItems[0].xpi = (daily_xpi / 24).toFixed(2)
 
-        //daily
-        this.dataItems[1].usdt = daily_usd.toFixed(2)
-        this.dataItems[1].xpi = daily_xpi.toFixed(2)
+      //daily
+      this.dataItems[1].usdt = daily_usd.toFixed(2)
+      this.dataItems[1].xpi = daily_xpi.toFixed(2)
 
-        //weekly
-        this.dataItems[2].usdt = (daily_usd * 7).toFixed(2)
-        this.dataItems[2].xpi = (daily_xpi * 7).toFixed(2)
+      //weekly
+      this.dataItems[2].usdt = (daily_usd * 7).toFixed(2)
+      this.dataItems[2].xpi = (daily_xpi * 7).toFixed(2)
 
-        //monthly
-        this.dataItems[3].usdt = (daily_usd * 30).toFixed(2)
-        this.dataItems[3].xpi = (daily_xpi * 30).toFixed(2)
-      },
-      electricityCosts(daily_electricity_consumption) {
-        let hourly_electricity_consumption = daily_electricity_consumption / 24
-        let weekly_electricity_consumption = daily_electricity_consumption * 7
-        let monthly_electricity_consumption = daily_electricity_consumption * 30
+      //monthly
+      this.dataItems[3].usdt = (daily_usd * 30).toFixed(2)
+      this.dataItems[3].xpi = (daily_xpi * 30).toFixed(2)
+    },
+    electricityCosts(daily_electricity_consumption) {
+      let hourly_electricity_consumption = daily_electricity_consumption / 24
+      let weekly_electricity_consumption = daily_electricity_consumption * 7
+      let monthly_electricity_consumption = daily_electricity_consumption * 30
 
-        let daily_electricity_cost =
-          daily_electricity_consumption * this.user_watt_cost
-        let hourly_electricity_cost =
-          hourly_electricity_consumption * this.user_watt_cost
-        let weekly_electricity_cost =
-          weekly_electricity_consumption * this.user_watt_cost
-        let monthly_electricity_cost =
-          monthly_electricity_consumption * this.user_watt_cost
+      let daily_electricity_cost =
+        daily_electricity_consumption * this.user_watt_cost
+      let hourly_electricity_cost =
+        hourly_electricity_consumption * this.user_watt_cost
+      let weekly_electricity_cost =
+        weekly_electricity_consumption * this.user_watt_cost
+      let monthly_electricity_cost =
+        monthly_electricity_consumption * this.user_watt_cost
 
-        //hourly
-        this.dataElectricity[0].kwh = hourly_electricity_consumption.toFixed(2)
-        this.dataElectricity[0].usd = hourly_electricity_cost.toFixed(2)
+      //hourly
+      this.dataElectricity[0].kwh = hourly_electricity_consumption.toFixed(2)
+      this.dataElectricity[0].usd = hourly_electricity_cost.toFixed(2)
 
-        //daily
-        this.dataElectricity[1].kwh = daily_electricity_consumption.toFixed(2)
-        this.dataElectricity[1].usd = daily_electricity_cost.toFixed(2)
+      //daily
+      this.dataElectricity[1].kwh = daily_electricity_consumption.toFixed(2)
+      this.dataElectricity[1].usd = daily_electricity_cost.toFixed(2)
 
-        //weekly
-        this.dataElectricity[2].kwh = weekly_electricity_consumption.toFixed(2)
-        this.dataElectricity[2].usd = weekly_electricity_cost.toFixed(2)
+      //weekly
+      this.dataElectricity[2].kwh = weekly_electricity_consumption.toFixed(2)
+      this.dataElectricity[2].usd = weekly_electricity_cost.toFixed(2)
 
-        //monthly
-        this.dataElectricity[3].kwh = monthly_electricity_consumption.toFixed(2)
-        this.dataElectricity[3].usd = monthly_electricity_cost.toFixed(2)
-      },
+      //monthly
+      this.dataElectricity[3].kwh = monthly_electricity_consumption.toFixed(2)
+      this.dataElectricity[3].usd = monthly_electricity_cost.toFixed(2)
     },
   },
 }
