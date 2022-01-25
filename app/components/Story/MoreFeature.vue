@@ -24,13 +24,14 @@
                     <main-title
                       text-class='text-h4 pb-12'
                       caption-class='purple--text text-h5'
-                      :caption="$t('lotusLanding.morefeature_headtitle1')"
-                      :text="$t('lotusLanding.morefeature_title1')"
+                      :caption="$t('lotusLanding.story.section1.headtitle')"
+                      :text="$t('lotusLanding.story.section1.title')"
                       :align="isMobile ? 'center' : 'left'"
                     />
                     <div :class="{ 'text-center': isMobile }">
                       <p class="use-text-subtitle2" :class="isMobile ? 'text-center' : 'text-left'">
-                        Every day, in our interactions with other people we have experiences that make life worth living. We say, “thank you” to each other. But, talk is cheap and words are fleeting. It’s easy for someone to express appreciation through words alone. How motivating is “thank you?” What if we could seamlessly back our words with something priceless? What would the world look like if we had a more effective way to express gratitude to each other? What if we could keep the “appreciation,” we receive, forever?                       </p>
+                         {{ $t('lotusLanding.story.section1.text') }}
+                         </p>
                     </div>
                   </div>
                 </u-animate>
@@ -54,8 +55,8 @@
                     <main-title
                       text-class='text-h4 pb-12'
                       caption-class='purple--text text-h5'
-                      :caption="$t('lotusLanding.morefeature_headtitle2')"
-                      :text="$t('lotusLanding.morefeature_title2')"
+                      :caption="$t('lotusLanding.story.section2.headtitle')"
+                      :text="$t('lotusLanding.story.section2.title')"
                       :align="isMobile ? 'center' : 'right'"
                     />
                     <div :class="{ 'text-center': isMobile }">
@@ -63,8 +64,7 @@
                          :class="isMobile ? 'text-center' : 'text-right'"
                          class="use-text-subtitle2"
                       >
-                         The Lotus Project believes that it would foster the spirit of reciprocity. We believe that it would guide people towards positive actions -- and away from things that are not beneficial. And we are creating a way to do exactly that.
-                         Flowers are often given to show appreciation, but we cannot keep perishable flowers at hand. By tokenizing a flower, we can always have the symbol with us. Tokens take up no physical space, and do not perish. The lotus in particular symbolizes purity, enlightenment, rebirth, and regeneration. These are the values which this token seeks to represent.
+                        {{ $t('lotusLanding.story.section2.text') }}
                       </p>
                     </div>
                   </div>
@@ -87,13 +87,12 @@
               <main-title
                 text-class='text-h4 pb-12'
                 caption-class='purple--text text-h5'
-                :caption="$t('lotusLanding.morefeature_headtitle3')"
-                :text="$t('lotusLanding.morefeature_title3')"
+                :caption="$t('lotusLanding.story.section3.headtitle')"
+                :text="$t('lotusLanding.story.section3.title')"
                 align="center"
               />
               <p class="use-text-subtitle2">
-                 The Lotus token ledger is maintained on a permissionless, uncensorable, and open blockchain which is maintained and enabled by software produced by the Logos Foundation. New tokens are minted through proof-of-work mining and given as a reward to the developers who lovingly produce the infrastructure which enables the token to exist and be transferred, and to the miners who carefully maintain the accuracy of the blockchain. This occurs through "block rewards", which are open and transparent.
-                Unlike Bitcoin, which is a speculative asset, Lotus is priceless -- a token of appreciation -- having sentimental value. The reward schedule is programmed to react to changes in the demand for Lotus tokens and is inflationary. By being inflationary, there is no reason to hoard it except as a reminder of how much people value us. Lotus is not to be an investment, but our investments in each other will generate more Lotus.
+                {{ $t('lotusLanding.story.section3.text') }}
               </p>
             </div>
             <figure class="illustration">

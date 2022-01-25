@@ -43,34 +43,6 @@
 import Hidden from '../Hidden'
 import Title from '../Title'
 
-const faqData = [
-  {
-    q: 'How can I start mining?',
-    a:
-      'You will need to run Lotus Node on your computer. You can find instructions <a href="https://docs.givelotus.org/guides/mining" target="_blank"> here</a>. To check your hashrate and approximate rewards check our <a href="/calculator" target="_blank">rewards calculator</a>.',
-  },
-  {
-    q: 'What are available wallets?',
-    a:
-      'Cashew mobile wallet for <a href="https://play.google.com/store/apps/details?id=org.cashweb.cashew" target="_blank"> Android</a> and <a href="https://apps.apple.com/us/app/cashew-wallet/id1539306720" target="_blank">iPhone</a>. You can also run lightweight Lotus Node for <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-win64-setup-unsigned.exe" target="_blank">Windows</a>, <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-osx-unsigned.dmg" target="_blank">MacOS</a> and <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-x86_64-linux-gnu.tar.gz" target="_blank">Linux</a>. ',
-  },
-  {
-    q: 'How do I get Lotus?',
-    a:
-      'You can use our <a href="https://faucet.lotuslounge.org/" target="_blank">faucet</a>. Or you can get gifted on our <a href="https://t.me/givelotus" target="_blank">telegram group</a>. You can also trade your other coins for Lotus [XPI] on <a href="https://www.exbitron.com/" target="_blank">Exbitron exchange</a>. ',
-  },
-  {
-    q: 'Where can I trade?',
-    a:
-      'You can trade Lotus on Exbitron for <a href="https://www.exbitron.com/trading/xpiusdt" target="_blank">USDT</a>, <a href="https://www.exbitron.com/trading/xpidoge" target="_blank">Dogecoin</a> and <a href="https://www.exbitron.com/trading/xpibch" target="_blank">Bitcoin Cash</a>',
-  },
-  {
-    q: 'How can I contribute to the project?',
-    a:
-      'Check the open source code we have <a href="https://github.com/LogosFoundation" target="_blank">here</a> and feel free to contact developers on our <a href="https://t.me/givelotus" target="_blank">telegram group</a>.',
-  },
-]
-
 export default {
   components: {
     Hidden,
@@ -79,7 +51,28 @@ export default {
   data() {
     return {
       panel: 0,
-      faqData: faqData,
+      faqData: [
+        {
+          q: this.$t('lotusLanding.faq.q1.question'),
+          a: this.$t('lotusLanding.faq.q1.answer'),
+        },
+        {
+          q: this.$t('lotusLanding.faq.q2.question'),
+          a: this.$t('lotusLanding.faq.q2.answer'),
+        },
+        {
+          q: this.$t('lotusLanding.faq.q3.question'),
+          a: this.$t('lotusLanding.faq.q3.answer'),
+        },
+        {
+          q: this.$t('lotusLanding.faq.q4.question'),
+          a: this.$t('lotusLanding.faq.q4.answer'),
+        },
+        {
+          q: this.$t('lotusLanding.faq.q5.question'),
+          a: this.$t('lotusLanding.faq.q5.answer'),
+        },
+      ],
     }
   },
   computed: {

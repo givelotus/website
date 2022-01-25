@@ -3,10 +3,10 @@
     <v-container class="fixed-width">
       <div
         class="text-center text-bold"
-      >New Lotus are issued through rewards that are split between miners and projects which benefit the public good as a show of appreciation.</div>
+      >{{ $t('lotusLanding.before_carousel_1') }}</div>
       <div
         class="text-center text-bold"
-      >Whenever you use Lotus to appreciate your friends, you know that you're also supporting these great projects.</div>
+      >{{ $t('lotusLanding.before_carousel_2') }}</div>
 
       <div v-if="loaded">
         <vue-horizontal-list :items="items" :options="options">

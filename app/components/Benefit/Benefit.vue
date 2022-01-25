@@ -8,19 +8,16 @@
           <v-col md="5" cols="12" justify="center" class="pa-0">
             <div class="desc">
               <main-title
-                caption="When you give or accept Lotus you are supporting the commons and adding value to the worldwide economy. "
-                text="The initiatives you support when you use Lotus are: "
+                :caption="$t('lotusLanding.banner.caption')"
+                :text="$t('lotusLanding.banner.text')"
                 align="left"
                 dark
                 class='white--text'
               />
               <ul class="list pt-4">
-                <li>Human rights</li>
-                <li>Renewable power</li>
-                <li>Digital privacy</li>
-                <li>Permaculture</li>
-                <li>Open source software</li>
-                <li>Humanitarian efforts</li>
+                  <li v-for="item in $t('lotusLanding.banner.initiatives')" :key="item">
+                  {{ item }}
+                </li>
               </ul>
             </div>
           </v-col>

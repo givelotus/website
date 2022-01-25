@@ -9,7 +9,7 @@
           duration="0.3s"
         >
           <title-main
-            caption="We are about"
+            :caption="$t('lotusLanding.features.title')"
             align="center"
             class='use-text-title'
             color="primary"
@@ -24,10 +24,10 @@
                 </figure>
                 <div class="text" v-if="loaded">
                   <h4 class="use-text-title">
-                    Smart contracts
+                     {{ $t('lotusLanding.features.feature1.title') }}
                   </h4>
                   <h6 class="use-text-subtitle2">
-                    {{ $t('lotusLanding.feature_3') }}
+                    {{ $t('lotusLanding.features.feature1.description') }}
                   </h6>
                 </div>
               </div>
@@ -40,10 +40,10 @@
                 </figure>
                 <div class="text" v-if="loaded">
                   <h4 class="use-text-title">
-                    Self-funding
+                     {{ $t('lotusLanding.features.feature2.title') }}
                   </h4>
                   <h6 class="use-text-subtitle2">
-                    {{ $t('lotusLanding.feature_2') }}
+                    {{ $t('lotusLanding.features.feature2.description') }}
                   </h6>
                 </div>
               </div>
@@ -54,9 +54,9 @@
                   <img src="/images/scalable.png" alt="unlimited" />
                 </figure>
                 <div class="text" v-if="loaded">
-                  <h4 class="use-text-title">Scalability</h4>
+                  <h4 class="use-text-title">{{ $t('lotusLanding.features.feature3.title') }}</h4>
                   <h6 class="use-text-subtitle2">
-                    {{ $t('lotusLanding.feature_1') }}
+                    {{ $t('lotusLanding.features.feature3.description') }}
                   </h6>
                 </div>
               </div>
@@ -68,20 +68,17 @@
                 </figure>
                 <div class="text" v-if="loaded">
                   <h4 class="use-text-title">
-                    Stability
+                    {{ $t('lotusLanding.features.feature4.title') }}
                   </h4>
                   <h6 class="use-text-subtitle2">
-                    {{ $t('lotusLanding.feature_4') }}
+                    {{ $t('lotusLanding.features.feature4.description') }}
                   </h6>
                 </div>
               </div>
             </v-col>
-
           </v-row>
         </u-animate>
-
       </u-animate-container>
-
     </v-container>
   </div>
 </template>
