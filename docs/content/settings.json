@@ -1,10 +1,10 @@
 {
   "title": "GiveLotus Docs",
-  "url": "docs.givelotus.netlify.app",
+  "url": "docs.givelotus.org",
   "logo": {
     "light": "/logo-light.svg",
     "dark": "/logo-dark.svg"
   },
-  "github": "wiktorcie",
+  "github": "LogosFoundation/website",
   "twitter": "@GiveLotus"
 }
