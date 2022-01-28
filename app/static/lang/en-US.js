@@ -147,6 +147,12 @@ export default () => {
             answer:
               'Check the open source code we have <a href="https://github.com/LogosFoundation" target="_blank">here</a> and feel free to contact developers on our <a href="https://t.me/givelotus" target="_blank">telegram group</a>.',
           },
+          q6: {
+            question:
+              'Do you have any branding guides with logos or images I can use?',
+            answer:
+              'You can download them <a href="https://storage.googleapis.com/lotus-project/Lotus%20Branding.zip" target="_blank">here</a>',
+          },
         },
         header_language: 'language',
         header_theme: 'Theme mode',

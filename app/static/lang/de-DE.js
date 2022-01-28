@@ -153,6 +153,12 @@ export default () => {
             answer:
               'Check the open source code we have <a href="https://github.com/LogosFoundation" target="_blank">here</a> and feel free to contact developers on our <a href="https://t.me/givelotus" target="_blank">telegram group</a>.',
           },
+          // q6: {
+          //   // needs translation
+          //   question: 'How can I contribute to the project?',
+          //   answer:
+          //     'Check the open source code we have <a href="https://github.com/LogosFoundation" target="_blank">here</a> and feel free to contact developers on our <a href="https://t.me/givelotus" target="_blank">telegram group</a>.',
+          // },
         },
         header_language: 'Sprache',
         header_theme: 'Themenmodus',

@@ -72,6 +72,10 @@ export default {
           q: this.$t('lotusLanding.faq.q5.question'),
           a: this.$t('lotusLanding.faq.q5.answer'),
         },
+        {
+          q: this.$t('lotusLanding.faq.q6.question'),
+          a: this.$t('lotusLanding.faq.q6.answer'),
+        },
       ],
     }
   },
