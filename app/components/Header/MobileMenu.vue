@@ -25,6 +25,27 @@
           </v-list-item-content>
         </v-list-item>
 
+        <v-list-item
+          href="https://docs.givelotus.org/"
+          target="_blank"
+          :style="{ animationDuration: navMenu.length * 0.15 + 's' }"
+          link
+        >
+          <v-list-item-content>
+            <v-list-item-title class="menu-list">{{ $t('lotusLanding.documentation') }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item
+          href="https://givelotus.medium.com/"
+          target="_blank"
+          :style="{ animationDuration: navMenu.length * 0.15 + 's' }"
+          link
+        >
+          <v-list-item-content>
+            <v-list-item-title class="menu-list">{{ $t('menu.news') }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
       </v-list>
     </div>
   </div>

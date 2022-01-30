@@ -59,6 +59,9 @@ export default () => {
         monthly: 'Monthly',
         period: 'period',
       },
+      menu: {
+        news: 'News',
+      },
       lotusLanding: {
         features: {
           title: 'We are about',

@@ -66,6 +66,15 @@
                     class="menu-link"
                   >{{ $t('lotusLanding.documentation') }}</v-btn>
                 </li>
+
+                <li>
+                  <v-btn
+                    href="https://givelotus.medium.com/"
+                    target="_blank"
+                    text
+                    class="menu-link"
+                  >{{ $t('menu.news') }}</v-btn>
+                </li>
               </scrollactive>
             </div>
           </nav>
