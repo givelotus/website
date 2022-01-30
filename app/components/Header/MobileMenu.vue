@@ -1,13 +1,7 @@
 <template>
   <div class="mobile-nav">
-    <div
-      :class="{ 'menu-open': open }"
-      class="menu"
-    >
-      <v-list
-        dense
-        tag="nav"
-      >
+    <div :class="{ 'menu-open': open }" class="menu">
+      <v-list dense tag="nav">
         <v-list-item
           v-for="(item, index) in navMenu"
           :key="index"
@@ -16,9 +10,7 @@
           :style="{ animationDuration: index * 0.15 + 's' }"
         >
           <v-list-item-content>
-            <v-list-item-title class="menu-list">
-              {{ $t(item.translation) }}
-            </v-list-item-title>
+            <v-list-item-title class="menu-list">{{ $t(item.translation) }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -29,9 +21,7 @@
           link
         >
           <v-list-item-content>
-            <v-list-item-title class="menu-list">
-              {{ $t('lotusLanding.header_block_explorer') }}
-            </v-list-item-title>
+            <v-list-item-title class="menu-list">{{ $t('lotusLanding.header_block_explorer') }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
