@@ -8,7 +8,7 @@ export default () => {
         '404': 'Diese Seite konnte nicht gefunden werden.',
         '404_subtitle':
           'Sie können entweder hier bleiben und entspannen oder zum Anfang zurückkehren.',
-        zurück: 'zurück zur Homepage', // why is the key 'zurück'??
+        back: 'zurück zur Homepage',
         login: '',
         login_create: '',
         login_or: '',
