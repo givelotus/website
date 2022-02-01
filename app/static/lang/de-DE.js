@@ -8,7 +8,7 @@ export default () => {
         '404': 'Diese Seite konnte nicht gefunden werden.',
         '404_subtitle':
           'Sie können entweder hier bleiben und entspannen oder zum Anfang zurückkehren.',
-        zurück: 'zurück nach Hause',
+        back: 'zurück zur Homepage',
         login: '',
         login_create: '',
         login_or: '',
@@ -60,26 +60,29 @@ export default () => {
         monthly: 'monatlich',
         period: 'Zeitraum',
       },
+      menu: {
+        news: 'News',
+      },
       lotusLanding: {
         features: {
-          title: 'We are about', // needs translation
+          title: 'Über uns',
           feature1: {
-            title: 'Smart contracts', // needs translation
+            title: 'Smart Contracts',
             description:
               'Taproot mit State, größere Ganzzahlen, mehr Opcodes und ein neuer smarter Sighash',
           },
           feature2: {
-            title: 'Self-funding', // needs translation
+            title: 'Selbstfinanzierung',
             description:
               '50% der neuen Coins gehen an Miner, 50% an Projekte zur Unterstützung der Community',
           },
           feature3: {
-            title: 'Scalability', // needs translation
+            title: 'Skalierbarkeit',
             description:
               'Basiert auf dem Code von eCash, die eine organische Skalierung auf +1 Mio. Transaktionen/Sekunde ermöglicht',
           },
           feature4: {
-            title: 'Stability', // needs translation
+            title: 'Stabilität',
             description:
               'Generierung neuer Coins folgt gedämpft Angebot und Nachfrage',
           },
@@ -98,12 +101,11 @@ export default () => {
               'Das Lotus-Projekt glaubt, dass es den Geist der Gegenseitigkeit fördern würde. Wir glauben, dass es die Menschen zu positiven Handlungen führen würde - und weg von Dingen, die nicht nützlich sind. Und wir schaffen eine Möglichkeit, genau das zu tun. \n Blumen werden oft verschenkt, um Wertschätzung zu zeigen, aber wir können keine verderblichen Blumen vorrätig halten. Indem wir eine Blume zu einem Token machen, können wir das Symbol immer bei uns haben. Token nehmen keinen Platz weg und verderben nicht. Insbesondere der Lotus symbolisiert Reinheit, Erleuchtung, Wiedergeburt und Regeneration. Dies sind die Werte, die diese Tokens repräsentieren soll.',
           },
           section3: {
-            headtitle: 'Community first', // needs translation
+            headtitle: 'Community betrieben',
             title:
               'Lotus ist eine von der Community betriebene Innovation, die dafür sorgt, dass deine Anerkennung für immer erhalten bleibt.',
-            // needs translation
             text:
-              'The Lotus token ledger is maintained on a permissionless, uncensorable, and open blockchain which is maintained and enabled by software produced by the Logos Foundation. New tokens are minted through proof-of-work mining and given as a reward to the developers who lovingly produce the infrastructure which enables the token to exist and be transferred, and to the miners who carefully maintain the accuracy of the blockchain. This occurs through "block rewards", which are open and transparent. Unlike Bitcoin, which is a speculative asset, Lotus is priceless -- a token of appreciation -- having sentimental value. The reward schedule is programmed to react to changes in the demand for Lotus tokens and is inflationary. By being inflationary, there is no reason to hoard it except as a reminder of how much people value us. Lotus is not to be an investment, but our investments in each other will generate more Lotus. ',
+              'Das Lotus Token liegt auf einer erlaubnisfreien, unzensierbaren und offenen Blockchain, die durch die von der Logos Foundation entwickelte Software gewartet und ermöglicht wird. Neue Token werden durch Proof-of-Work-Mining generiert und als Belohnung für die Entwickler ausgegeben, die mit viel Liebe die Infrastruktur entwickeln, die es dem Token erlauben zu existieren und versendet zu werden, sowie für die Miner, die sorgfältig die Korrektheit der Blockchain aufrechterhalten. Dies geschieht durch "Block-Belohnungen", die offen und transparent sind. Im Gegensatz zu Bitcoin, das ein spekulativer Vermögenswert ist, ist Lotus unbezahlbar - ein Zeichen der Wertschätzung - mit sentimentalem Wert. Der Belohnungsplan ist so programmiert, dass er auf Veränderungen in der Nachfrage nach Lotus-Token reagiert und inflationär ist. Da er inflationär ist, gibt es keinen Grund, ihn zu horten, außer als Erinnerung daran, wie sehr die Menschen uns schätzen. Lotus soll keine Investition sein, aber unsere Investitionen ineinander werden mehr Lotus erzeugen. ',
           },
         },
         before_carousel_1:
@@ -112,59 +114,56 @@ export default () => {
           'Wenn du Lotus verwendest, um deine Freunde zu würdigen, weißt du, dass du damit auch diese bedeutsamen Projekte unterstützt.',
         banner: {
           caption:
-            // needs translation
-            'When you give or accept Lotus you are supporting the commons and adding value to the worldwide economy.',
+            'Wenn du Lotus gibst oder akzeptierst, unterstützt du die Gemeinschaft und schaffst einen Mehrwert für die Weltwirtschaft.',
           text:
             'Die Initiativen die du unterstützt wenn du Lotus verwendest sind: ',
           initiatives: [
-            // needs translation
-            'Human rights',
-            'Renewable power',
-            'Digital privacy',
-            'Permaculture',
-            'Open source software',
-            'Humanitarian efforts',
+            'Menschenrechte',
+            'Regenerative Energie',
+            'Digitale Privatssphäre',
+            'Permakultur',
+            'Open-source Software',
+            'Humanitäre Hilfe',
           ],
         },
-        // needs translation
         faq: {
           q1: {
-            question: 'How can I start mining?',
+            question: 'Wie kann ich Lotus minen?',
             answer:
-              'You will need to run Lotus Node on your computer. You can find instructions <a href="https://docs.givelotus.org/guides/mining" target="_blank"> here</a>. To check your hashrate and approximate rewards check our <a href="/calculator" target="_blank">rewards calculator</a>.',
+              'Dafür musst du einen Lotus Node auf deinem Computer ausführen. Eine Anleitung findst du <a href="https://docs.givelotus.org/guides/mining" target="_blank">hier</a>. Um deine Hashrate und die ungefähre Belohnung zu überprüfen, kannst du unseren <a href="/calculator" target="_blank">Mining Rechner</a> verwenden.',
           },
           q2: {
-            question: 'What are available wallets?',
+            question: 'Welche Wallets kann ich verwenden?',
             answer:
-              'Cashew mobile wallet for <a href="https://play.google.com/store/apps/details?id=org.cashweb.cashew" target="_blank"> Android</a> and <a href="https://apps.apple.com/us/app/cashew-wallet/id1539306720" target="_blank">iPhone</a>. You can also run lightweight Lotus Node for <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-win64-setup-unsigned.exe" target="_blank">Windows</a>, <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-osx-unsigned.dmg" target="_blank">MacOS</a> and <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-x86_64-linux-gnu.tar.gz" target="_blank">Linux</a>. ',
+              'Cashew Mobile Wallet für <a href="https://play.google.com/store/apps/details?id=org.cashweb.cashew" target="_blank"> Android</a> und <a href="https://apps.apple.com/us/app/cashew-wallet/id1539306720" target="_blank">iOS</a>. Du kannst auch einen Lotus Node für <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-win64-setup-unsigned.exe" target="_blank">Windows</a>, <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-osx-unsigned.dmg" target="_blank">MacOS</a> oder <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-x86_64-linux-gnu.tar.gz" target="_blank">Linux</a> laufen lassen. ',
           },
           q3: {
-            question: 'How do I get Lotus?',
+            question: 'Wie bekomme ich Lotus?',
             answer:
-              'You can use our <a href="https://faucet.lotuslounge.org/" target="_blank">faucet</a>. Or you can get gifted on our <a href="https://t.me/givelotus" target="_blank">telegram group</a>. You can also trade your other coins for Lotus [XPI] on <a href="https://www.exbitron.com/" target="_blank">Exbitron exchange</a>.',
+              'Du kannst unseren <a href="https://faucet.lotuslounge.org/" target="_blank">Faucet</a>. Oder du kannst dich in unserer <a href="https://t.me/givelotus" target="_blank">Telegram Gruppe</a> beschenken lassen. Du kannst auch deine anderen Coins für Lotus [XPI] auf der <a href="https://www.exbitron.com/" target="_blank">Exbitron Handelsplattform</a> tauschen.',
           },
           q4: {
-            question: 'Where can I trade?',
+            question: 'Wo kann ich Lotus handeln?',
             answer:
-              'You can trade Lotus on Exbitron for <a href="https://www.exbitron.com/trading/xpiusdt" target="_blank">USDT</a>, <a href="https://www.exbitron.com/trading/xpidoge" target="_blank">Dogecoin</a> and <a href="https://www.exbitron.com/trading/xpibch" target="_blank">Bitcoin Cash</a>',
+              'Du kannst Lotus auf Exbitron für <a href="https://www.exbitron.com/trading/xpiusdt" target="_blank">USDT</a>, <a href="https://www.exbitron.com/trading/xpidoge" target="_blank">Dogecoin</a> und <a href="https://www.exbitron.com/trading/xpibch" target="_blank">Bitcoin Cash</a> handeln.',
           },
           q5: {
-            question: 'How can I contribute to the project?',
+            question: 'Wie kann ich zum Projekt beitragen?',
             answer:
-              'Check the open source code we have <a href="https://github.com/LogosFoundation" target="_blank">here</a> and feel free to contact developers on our <a href="https://t.me/givelotus" target="_blank">telegram group</a>.',
+              'Du kannst unseren open-source Code <a href="https://github.com/LogosFoundation" target="_blank">hier</a> ansehen und Änderungen vorschlagen, und du kannst dich gerne an die Entwickler in der <a href="https://t.me/givelotus" target="_blank">Telegram Gruppe</a> wenden.',
           },
-          // q6: {
-          //   // needs translation
-          //   question: 'How can I contribute to the project?',
-          //   answer:
-          //     'Check the open source code we have <a href="https://github.com/LogosFoundation" target="_blank">here</a> and feel free to contact developers on our <a href="https://t.me/givelotus" target="_blank">telegram group</a>.',
-          // },
+          q6: {
+            question:
+              'Gibt es einen Branding-Leitfaden mit Logos oder Bildern die ich verwenden kann?',
+            answer:
+              'Du kannst sie <a href="https://storage.googleapis.com/lotus-project/Lotus%20Branding.zip" target="_blank">hier</a> herunterladen',
+          },
         },
         header_language: 'Sprache',
         header_theme: 'Themenmodus',
         header_dark: 'dunkel',
-        header_light: 'Licht',
-        header_about: 'about',
+        header_light: 'hell',
+        header_about: 'Über',
         header_projects: 'Projekte',
         header_carousel: 'Projekte',
         header_faq: 'FAQ',
