@@ -1,5 +1,5 @@
 export default () => {
-  return new Promise(function(resolve) {
+  return new Promise(function (resolve) {
     resolve({
       common: {
         title: '',
@@ -58,6 +58,9 @@ export default () => {
         weekly: 'Weekly',
         monthly: 'Monthly',
         period: 'period',
+      },
+      menu: {
+        news: 'News',
       },
       lotusLanding: {
         features: {

@@ -1,12 +1,6 @@
 <template>
   <fragment>
-    <v-navigation-drawer
-      v-if="isMobile"
-      v-model="openDrawer"
-      fixed
-      temporary
-      class="mobile-nav"
-    >
+    <v-navigation-drawer v-if="isMobile" v-model="openDrawer" fixed temporary class="mobile-nav">
       <mobile-menu :open="openDrawer" />
     </v-navigation-drawer>
     <v-app-bar
@@ -19,10 +13,7 @@
     >
       <v-container :class="{ 'fixed-width': isDesktop }">
         <div class="header-content">
-          <nav
-            :class="{ invert: invert }"
-            class="nav-logo nav-menu"
-          >
+          <nav :class="{ invert: invert }" class="nav-logo nav-menu">
             <v-btn
               v-if="isMobile"
               :class="{ 'is-active': openDrawer }"
@@ -36,59 +27,26 @@
               </span>
             </v-btn>
             <div class="logo">
-              <nuxt-link
-                v-if="invert"
-                :to="link.lotus.home"
-              >
-                <img
-                  style="border-radius: 50%"
-                  :src="logo"
-                  alt="logo"
-                >
+              <nuxt-link v-if="invert" :to="link.lotus.home">
+                <img style="border-radius: 50%" :src="logo" alt="logo" />
               </nuxt-link>
-              <scrollactive
-                v-if="!invert && loaded"
-                tag="span"
-              >
-                <a
-                  href="#home"
-                  class="anchor-link scrollactive-item"
-                >
-                  <img
-                    style="border-radius: 50%"
-                    :src="logo"
-                    alt="logo"
-                  >
+              <scrollactive v-if="!invert && loaded" tag="span">
+                <a href="#home" class="anchor-link scrollactive-item">
+                  <img style="border-radius: 50%" :src="logo" alt="logo" />
                 </a>
               </scrollactive>
             </div>
             <div v-if="isDesktop">
-              <scrollactive
-                v-if="loaded"
-                :offset="navOffset"
-                active-class="active"
-                tag="ul"
-              >
-                <li
-                  v-for="(item, index) in menuList"
-                  :key="index"
-                >
+              <scrollactive v-if="loaded" :offset="navOffset" active-class="active" tag="ul">
+                <li v-for="(item, index) in menuList" :key="index">
                   <v-btn
                     v-if="!invert"
                     :href="item.url"
                     class="anchor-link menu-link scrollactive-item"
                     text
                     @click="setOffset(item.offset)"
-                  >
-                    {{ $t(item.translation) }}
-                  </v-btn>
-                  <v-btn
-                    v-if="invert"
-                    :href="item.url"
-                    text
-                  >
-                    {{ $t(item.translation) }}
-                  </v-btn>
+                  >{{ $t(item.translation) }}</v-btn>
+                  <v-btn v-if="invert" :href="item.url" text>{{ $t(item.translation) }}</v-btn>
                 </li>
 
                 <li>
@@ -97,9 +55,7 @@
                     target="_blank"
                     text
                     class="menu-link"
-                  >
-                    {{ $t('lotusLanding.header_block_explorer') }}
-                  </v-btn>
+                  >{{ $t('lotusLanding.header_block_explorer') }}</v-btn>
                 </li>
 
                 <li>
@@ -108,55 +64,44 @@
                     target="_blank"
                     text
                     class="menu-link"
-                  >
-                    {{ $t('lotusLanding.documentation') }}
-                  </v-btn>
+                  >{{ $t('lotusLanding.documentation') }}</v-btn>
                 </li>
 
+                <li>
+                  <v-btn
+                    href="https://givelotus.medium.com/"
+                    target="_blank"
+                    text
+                    class="menu-link"
+                  >{{ $t('menu.news') }}</v-btn>
+                </li>
               </scrollactive>
             </div>
           </nav>
-          <nav
-            :class="{ invert: invert }"
-            class="nav-menu"
-          >
+          <nav :class="{ invert: invert }" class="nav-menu">
             <hidden v-if="!invert" point="xsDown">
-              <v-btn
-icon class="social-btn"
-                href="https://twitter.com/givelotus"
-                target="_blank"
-              >
-                <v-icon>
-                  mdi-twitter
-               </v-icon>
+              <v-btn icon class="social-btn" href="https://twitter.com/givelotus" target="_blank">
+                <v-icon>mdi-twitter</v-icon>
               </v-btn>
 
               <v-btn
-icon class="social-btn"
+                icon
+                class="social-btn"
                 href="https://www.reddit.com/r/lotusproject/"
                 target="_blank"
               >
-               <v-icon>
-                  mdi-reddit
-               </v-icon>
+                <v-icon>mdi-reddit</v-icon>
               </v-btn>
               <v-btn
-icon class="social-btn"
+                icon
+                class="social-btn"
                 href="https://github.com/LogosFoundation"
                 target="_blank"
               >
-               <v-icon>
-                  mdi-github
-               </v-icon>
+                <v-icon>mdi-github</v-icon>
               </v-btn>
-              <v-btn
-icon class="social-btn"
-                href="https://t.me/givelotus"
-                target="_blank"
-              >
-               <v-icon>
-                  telegram
-               </v-icon>
+              <v-btn icon class="social-btn" href="https://t.me/givelotus" target="_blank">
+                <v-icon>telegram</v-icon>
               </v-btn>
             </hidden>
             <setting-menu :invert="invert" />
