@@ -55,6 +55,7 @@
 		"sass": "1.32.12",
 		"sass-loader": "10.1.1",
 		"vue": "^2.6.12",
+		"vue-country-flag": "^2.3.2",
 		"vue-countup-directive": "^1.2.3",
 		"vue-flv-player": "^1.0.3",
 		"vue-fragment": "1.5.1",

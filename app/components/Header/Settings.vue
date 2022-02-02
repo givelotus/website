@@ -59,7 +59,7 @@
           @click="switchLang(locale.code)"
         >
           <v-list-item-avatar class="flag">
-            <i :class="locale.code" />
+            <country-flag :country="locale.code" rounded size='small'/>
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title class="lang-opt">
@@ -86,6 +86,7 @@
 
 <script>
 import { mapGetters, mapState } from 'vuex'
+import CountryFlag from 'vue-country-flag'
 
 let darkMode = false
 if (typeof Storage !== 'undefined') { // eslint-disable-line
@@ -93,6 +94,9 @@ if (typeof Storage !== 'undefined') { // eslint-disable-line
 }
 
 export default {
+  components: {
+    CountryFlag,
+  },
   props: {
     invert: {
       type: Boolean,
