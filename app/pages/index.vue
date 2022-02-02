@@ -16,7 +16,7 @@
           <Carousel />
           <benefit />
         </section>
-        
+
         <br>
 
         <section id="faq" class="space-top-short">
@@ -27,9 +27,9 @@
       <section id="footer">
         <footer-with-deco />
       </section>
-      <hidden point="mdDown">
+      <!-- <hidden point="mdDown">
         <page-nav />
-      </hidden>
+      </hidden> -->
 
     </div>
   </div>
