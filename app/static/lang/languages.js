@@ -1,11 +1,9 @@
+// The flags are identified using the ISO 3166-1 standard.
+// This component currently supports both alpha-2 and alpha-3 alternatives.
+// https://bestofvue.com/repo/P3trur0-vue-country-flag-vuejs-icons#available-flags
+// Set "code" key to change flag icon.
+
 export default [
-  // {
-  //   code: 'ar',
-  //   iso: 'ar-AR',
-  //   name: 'Arabic',
-  //   file: 'ar-AR.js',
-  //   dir: 'rtl',
-  // },
   {
     code: 'de',
     iso: 'de-DE',
@@ -14,10 +12,17 @@ export default [
     dir: 'ltr',
   },
   {
-    code: 'en',
+    code: 'gb',
     iso: 'en-US',
     name: 'English',
     file: 'en-US.js',
+    dir: 'ltr',
+  },
+  {
+    code: 'in',
+    iso: 'hi-IN',
+    name: 'Hindi',
+    file: 'hi-HI.js',
     dir: 'ltr',
   },
   // {
@@ -25,20 +30,6 @@ export default [
   //   iso: 'pl',
   //   name: 'Polish',
   //   file: 'en-US.js',
-  //   dir: 'ltr',
-  // },
-  // {
-  //   code: 'id',
-  //   iso: 'id-ID',
-  //   name: 'Bahasa Indonesia',
-  //   file: 'id-ID.js',
-  //   dir: 'ltr',
-  // },
-  // {
-  //   code: 'pt',
-  //   iso: 'pt-PT',
-  //   name: 'Portuguese',
-  //   file: 'pt-PT.js',
   //   dir: 'ltr',
   // },
   // {

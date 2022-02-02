@@ -106,6 +106,7 @@ export default {
     logo: logo,
     brand: brand,
     lang: 'en',
+    footers: [],
   }),
   props: {
     invert: {
