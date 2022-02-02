@@ -50,6 +50,7 @@
                     v-model="user_hashrate"
                     :label="$t('calculator.user_hashrate')"
                     color="white"
+                    step="100"
                     type="number"
                     suffix="mh/s"
                     class="input light"
@@ -61,6 +62,7 @@
                   <v-text-field
                     v-model="user_watt"
                     type="number"
+                    step="10"
                     :label="$t('calculator.user_power_consumption')"
                     class="input light"
                     color="white"
@@ -71,6 +73,7 @@
                 <v-col cols="12" sm="12" class="px-6">
                   <v-text-field
                     v-model="user_watt_cost"
+                    step="0.1"
                     type="number"
                     :label="$t('calculator.watt_cost')"
                     color="white"
@@ -111,9 +114,9 @@
                       <v-text-field
                         v-model="current_difficulty"
                         filled
+                        step="100"
                         type="number"
                         class="input light"
-                        @input="value => $store.commit('calculator/UPDATE_DIFFICULTY', value)"
                         :label="$t('calculator.current_difficulty')"
                       ></v-text-field>
                     </v-form>
@@ -126,9 +129,9 @@
                       <v-text-field
                         v-model="total_network_hash_rate"
                         filled
+                        step="1000000000"
                         type="number"
                         class="input light"
-                        @input="value => $store.commit('calculator/UPDATE_NETWORK_HASHRATE', value)"
                         :label="$t('calculator.total_network_hashrate')"
                       ></v-text-field>
                     </v-form>
@@ -352,20 +355,9 @@ export default {
           1000 /
           network_hashrate_gh) *
         720
-      return daily_xpi
-    },
-    electricityCosts() {
-      let daily_electricity_consumption = (this.user_watt * 24) / 1000
-      let daily_electricity_cost =
-        daily_electricity_consumption * this.user_watt_cost
-
-      return daily_electricity_cost
-    },
-  },
-  watch: {
-    dailyRewards(daily_xpi) {
       let daily_usd = daily_xpi * this.avg_price
 
+      // those effects in this computed property need to go
       //hourly
       this.dataItems[0].usdt = (daily_usd / 24).toFixed(2)
       this.dataItems[0].xpi = (daily_xpi / 24).toFixed(2)
@@ -381,8 +373,11 @@ export default {
       //monthly
       this.dataItems[3].usdt = (daily_usd * 30).toFixed(2)
       this.dataItems[3].xpi = (daily_xpi * 30).toFixed(2)
+
+      return daily_xpi
     },
-    electricityCosts(daily_electricity_consumption) {
+    electricityCosts() {
+      let daily_electricity_consumption = (this.user_watt * 24) / 1000
       let hourly_electricity_consumption = daily_electricity_consumption / 24
       let weekly_electricity_consumption = daily_electricity_consumption * 7
       let monthly_electricity_consumption = daily_electricity_consumption * 30
@@ -396,6 +391,7 @@ export default {
       let monthly_electricity_cost =
         monthly_electricity_consumption * this.user_watt_cost
 
+      // those effects in this computed property need to go
       //hourly
       this.dataElectricity[0].kwh = hourly_electricity_consumption.toFixed(2)
       this.dataElectricity[0].usd = hourly_electricity_cost.toFixed(2)
@@ -411,6 +407,8 @@ export default {
       //monthly
       this.dataElectricity[3].kwh = monthly_electricity_consumption.toFixed(2)
       this.dataElectricity[3].usd = monthly_electricity_cost.toFixed(2)
+
+      return daily_electricity_cost
     },
   },
 }
