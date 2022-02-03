@@ -135,10 +135,10 @@ export default () => {
           q2: {
             question: 'कौन से वॉलेट उपलब्ध हैं?',
             answer:
-              '<a href="https://sendlotus.com" target="_blank">SendLotus.com</a> Vase मोबाइल वॉलेट के लिए <a href="https://play.google.com/store/apps/details?id=org.cashweb.cashew" target="_blank"> Android</a> और <a href="https://apps.apple.com/us/app/cashew-wallet/id1539306720" target="_blank">iPhone</a>. आप इसके लिए हल्के लोटस नोड को भी चला सकते हैं <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-win64-setup-unsigned.exe" target="_blank">Windows</a>, <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-osx-unsigned.dmg" target="_blank">MacOS</a> and <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-x86_64-linux-gnu.tar.gz" target="_blank">Linux</a>. ',
+              'आप <a href="https://sendlotus.com" target="_blank">SendLotus.com</a> उपयोग कर सकते हैं या Vase मोबाइल वॉलेट के लिए <a href="https://play.google.com/store/apps/details?id=org.cashweb.cashew" target="_blank"> Android</a> और <a href="https://apps.apple.com/us/app/cashew-wallet/id1539306720" target="_blank">iPhone</a>. आप इसके लिए हल्के लोटस नोड को भी चला सकते हैं <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-win64-setup-unsigned.exe" target="_blank">Windows</a>, <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-osx-unsigned.dmg" target="_blank">MacOS</a> and <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-x86_64-linux-gnu.tar.gz" target="_blank">Linux</a>. ',
           },
           q3: {
-            question: 'मुझे कमल कैसे मिलेगा?',
+            question: 'मुझे लोटस कैसे मिलेगा?',
             answer:
               'आप इसका इस्तेमाल कर सकते हैं <a href="https://faucet.lotuslounge.org/" target="_blank">faucet</a>. या आप इस पर उपहार पा सकते हैं <a href="https://t.me/givelotus" target="_blank">telegram group</a>. आप लोटस [एक्सपीआई] के लिए अपने अन्य सिक्कों का व्यापार भी कर सकते हैं <a href="https://www.exbitron.com/" target="_blank">Exbitron exchange</a>.',
           },
@@ -150,26 +150,26 @@ export default () => {
           q5: {
             question: 'मैं इस परियोजना में कैसे योगदान कर सकता हूं?',
             answer:
-              'हमारे पास मौजूद ओपन सोर्स कोड की जांच करें <a href="https://github.com/LogosFoundation" target="_blank">here</a> और हमारे पर डेवलपर्स से संपर्क करने में संकोच न करें <a href="https://t.me/givelotus" target="_blank">telegram group</a>.',
+              'हमारे पास मौजूद ओपन सोर्स कोड की जांच करें <a href="https://github.com/LogosFoundation" target="_blank"> यहाँ </a> और हमारे पर डेवलपर्स से संपर्क करने में संकोच न करें <a href="https://t.me/givelotus" target="_blank">telegram group</a>.',
           },
           q6: {
             question:
               'क्या आपके पास लोगो या छवियों के साथ कोई ब्रांडिंग गाइड है जिसका मैं उपयोग कर सकता हूँ?',
             answer:
-              'आप उन्हें डाउनलोड कर सकते हैं <a href="https://storage.googleapis.com/lotus-project/Lotus%20Branding.zip" target="_blank">here</a>',
+              'आप उन्हें डाउनलोड कर सकते हैं <a href="https://storage.googleapis.com/lotus-project/Lotus%20Branding.zip" target="_blank"> यहाँ </a>',
           },
         },
         header_language: 'भाषा',
         header_theme: 'थीम मोड',
-        header_dark: 'dark',
-        header_light: 'light',
-        header_about: 'के बारे में',
+        header_dark: 'डार्क थीम',
+        header_light: 'लाइट थीम',
+        header_about: 'बारे में',
         header_projects: 'परियोजनाएं',
         header_carousel: 'परियोजनाएं',
-        header_faq: 'FAQ',
-        header_contact: 'contact',
-        header_block_explorer: 'Block explorer',
-        documentation: 'Docs',
+        header_faq: 'सामान्य प्रश्नोत्तर',
+        header_contact: 'संपर्क करें',
+        header_block_explorer: 'ब्लॉक एक्सप्लोरर',
+        documentation: 'आलेख',
         banner_title: '',
         banner_titlestrong: 'प्रशंसा की निशानी',
         banner_subtitle:
@@ -184,8 +184,8 @@ export default () => {
         becash_desc:
           ' Be.cash लोटस ब्लॉकचैन सॉफ्टवेयर विकसित करने में सहायता करने के लिए लोगो फाउंडेशन के साथ सहयोग करता है, साथ ही पारंपरिक भुगतान विधियों के लिए आवश्यक बुनियादी ढांचे के बिना क्षेत्रों के लिए प्वाइंट ऑफ सेल सिस्टम और मोबाइल भुगतान विधियों को विकसित करने में सहायता करता है।',
         bitcoin_abc_desc:
-          ' बिटकॉइन एबीसी क्रिप्टोटोकन के खनन और हस्तांतरण के लिए अत्यधिक स्केलेबल ओपन-सोर्स सॉफ्टवेयर विकसित करता है। हालांकि बिटकॉइन एबीसी अपने काम के लिए शुल्क नहीं लेता है, लोटस इस सॉफ्टवेयर को नेटवर्क के आधार के रूप में उपयोग करता है और इन डेवलपर्स के लिए इसे उचित मानता है। ',
-        services_button: 'Explore',
+          ' Bitcoin ABC क्रिप्टोटोकन के खनन और हस्तांतरण के लिए अत्यधिक स्केलेबल ओपन-सोर्स सॉफ्टवेयर विकसित करता है। हालांकि बिटकॉइन एबीसी अपने काम के लिए शुल्क नहीं लेता है, लोटस इस सॉफ्टवेयर को नेटवर्क के आधार के रूप में उपयोग करता है और इन डेवलपर्स के लिए इसे उचित मानता है। ',
+        services_button: 'अन्वेषण करना',
       },
     })
   })
