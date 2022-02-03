@@ -135,10 +135,10 @@ export default () => {
           q2: {
             question: 'कौन से वॉलेट उपलब्ध हैं?',
             answer:
-              '<a href="https://sendlotus.com" target="_blank">SendLotus.com</a> Vase मोबाइल वॉलेट के लिए <a href="https://play.google.com/store/apps/details?id=org.cashweb.cashew" target="_blank"> Android</a> और <a href="https://apps.apple.com/us/app/cashew-wallet/id1539306720" target="_blank">iPhone</a>. आप इसके लिए हल्के लोटस नोड को भी चला सकते हैं <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-win64-setup-unsigned.exe" target="_blank">Windows</a>, <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-osx-unsigned.dmg" target="_blank">MacOS</a> and <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-x86_64-linux-gnu.tar.gz" target="_blank">Linux</a>. ',
+              'आप <a href="https://sendlotus.com" target="_blank">SendLotus.com</a> उपयोग कर सकते हैं या Vase मोबाइल वॉलेट के लिए <a href="https://play.google.com/store/apps/details?id=org.cashweb.cashew" target="_blank"> Android</a> और <a href="https://apps.apple.com/us/app/cashew-wallet/id1539306720" target="_blank">iPhone</a>. आप इसके लिए हल्के लोटस नोड को भी चला सकते हैं <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-win64-setup-unsigned.exe" target="_blank">Windows</a>, <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-osx-unsigned.dmg" target="_blank">MacOS</a> and <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-x86_64-linux-gnu.tar.gz" target="_blank">Linux</a>. ',
           },
           q3: {
-            question: 'मुझे कमल कैसे मिलेगा?',
+            question: 'मुझे लोटस कैसे मिलेगा?',
             answer:
               'आप इसका इस्तेमाल कर सकते हैं <a href="https://faucet.lotuslounge.org/" target="_blank">faucet</a>. या आप इस पर उपहार पा सकते हैं <a href="https://t.me/givelotus" target="_blank">telegram group</a>. आप लोटस [एक्सपीआई] के लिए अपने अन्य सिक्कों का व्यापार भी कर सकते हैं <a href="https://www.exbitron.com/" target="_blank">Exbitron exchange</a>.',
           },
@@ -161,15 +161,15 @@ export default () => {
         },
         header_language: 'भाषा',
         header_theme: 'थीम मोड',
-        header_dark: 'dark',
-        header_light: 'light',
+        header_dark: 'डार्क थीम',
+        header_light: 'लाइट थीम',
         header_about: 'के बारे में',
         header_projects: 'परियोजनाएं',
         header_carousel: 'परियोजनाएं',
-        header_faq: 'FAQ',
-        header_contact: 'contact',
-        header_block_explorer: 'Block explorer',
-        documentation: 'Docs',
+        header_faq: 'सामान्य प्रश्नोत्तर',
+        header_contact: 'संपर्क करें',
+        header_block_explorer: 'ब्लॉक एक्सप्लोरर',
+        documentation: 'दस्तावेज़ीकरण',
         banner_title: '',
         banner_titlestrong: 'प्रशंसा की निशानी',
         banner_subtitle:
