@@ -25,13 +25,13 @@ export default [
     file: 'hi-HI.js',
     dir: 'ltr',
   },
-  // {
-  //   code: 'pl',
-  //   iso: 'pl',
-  //   name: 'Polish',
-  //   file: 'en-US.js',
-  //   dir: 'ltr',
-  // },
+  {
+    code: 'pl',
+    iso: 'pl-PL',
+    name: 'Polish',
+    file: 'pl-PL.js',
+    dir: 'ltr',
+  },
   // {
   //   code: 'zh',
   //   iso: 'zh-ZH',

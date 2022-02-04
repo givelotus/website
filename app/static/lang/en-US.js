@@ -30,6 +30,7 @@ export default () => {
         register_subtitle: '',
         accept: '',
         gb: 'English',
+        pl: 'Polski',
         de: 'Deutsch',
         zh: '简体中文',
         pt: '󠁥󠁮󠁧󠁿Português',
@@ -176,8 +177,6 @@ export default () => {
         faq_subtitle:
           'Have a question? Check out our frequently asked questions to find your answer.',
         news_readmore: 'read more',
-        logos_desc:
-          'The Logos Foundation is responsible for running this project and ensuring the infrastructure is in place for all users. Without which, Lotus would not exist. ',
         stampchat_desc:
           ' StampChat is a decentralized end-to-end encrypted messenger which uses the Lotus token to ensure all messages you receive are valuable. This allows spam to be filtered on the platform without centralized moderators. The communication is decentralized, secure, and uncensorable. ',
         becash_desc:
