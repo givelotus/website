@@ -6,9 +6,6 @@ linkTitle: "Mining Lotus"
 author: Shammah Chancellor ([@micropresident](https://twitter.com/micropresident))
 position: 5.0
 ---
-
-Download and install Lotus for your operating system from [here](https://givelotus.org/software/)
-
 ## Setup Lotus Node
 
 ### Windows
@@ -44,6 +41,8 @@ rpcpassword=lotus
 6. Close the Lotus wallet and start it again
 
 ### Mac OS
+https://storage.googleapis.com/lotus-project/lotus-2.0.3-osx-unsigned.dmg
+
 
 1. Run `mkdir -p '~/Library/Application Support/Lotus/'`
 2. Edit `~/Library/Application Support/Lotus/lotus.conf`
