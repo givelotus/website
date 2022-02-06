@@ -31,7 +31,7 @@ export default () => {
         gb: 'English',
         pl: 'Polski',
         de: 'Deutsch',
-        zh: '简体中文',
+        cn: '中国',
         pt: '󠁥󠁮󠁧󠁿Português',
         id: '󠁥󠁮󠁧󠁿Bahasa Indonesia',
         in: '󠁥󠁮󠁧󠁿हिन्दी',

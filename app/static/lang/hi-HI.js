@@ -33,6 +33,7 @@ export default () => {
         pl: 'Polski',
         de: 'Deutsch',
         zh: '简体中文',
+        cn: '简体中文',
         pt: '󠁥󠁮󠁧󠁿Português',
         id: '󠁥󠁮󠁧󠁿Bahasa Indonesia',
         in: '󠁥󠁮󠁧󠁿हिन्दी',

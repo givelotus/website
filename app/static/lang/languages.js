@@ -32,11 +32,11 @@ export default [
     file: 'pl-PL.js',
     dir: 'ltr',
   },
-  // {
-  //   code: 'zh',
-  //   iso: 'zh-ZH',
-  //   name: 'Chinese',
-  //   file: 'zh-ZH.js',
-  //   dir: 'ltr',
-  // },
+  {
+    code: 'cn',
+    iso: 'zh-ZH',
+    name: 'Chinese',
+    file: 'zh-CN.js',
+    dir: 'ltr',
+  },
 ]
