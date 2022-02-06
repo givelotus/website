@@ -13,27 +13,27 @@ Lotus will be based on the Bitcoin ABC codebase and specifications, with the fol
 * Removal of all fork activation code
 * Reset difficulty to 1
 * New Netmagic and Diskmagic Values
-* [Extended Header Format]({{< ref "../blockheader" >}})
+* [Extended Header Format](https://docs.givelotus.org/specs/blockheader)
 * Blocktime to 2 minutes
-* [New address format]({{< ref "../addresses" >}})
-* [Economic adjustments]({{< ref "../subsidy" >}})
+* [New address format](https://docs.givelotus.org/specs/addresses)
+* [Economic adjustments](https://docs.givelotus.org/specs/upgrades/genesis#economic-adjustments)
   * The issuance of Coinbase rewards will be changed to be `260 * log2(difficulty)` megasats.
     * Half will go to miners
     * Half will go to servicing the blockchain and users through a selection of various projects which support the
       public good.
   * Half of fees will be burned, the 25% will go to miners and another 25% will go selected projects.
 * Enforce all standardness rules as consensus
-* [MalFix]({{< ref "../txid.md" >}})
-* [Script changes]({{< ref "../script" >}}):
+* [MalFix](https://docs.givelotus.org/specs/txid)
+* [Script changes](https://docs.givelotus.org/specs/script/intro):
   * Increase opcode limit to 400 opcodes
-  * [Relax OP_XOR and OP_AND operand size constraints]({{< ref "../script/opcodes/bitwise" >}})
-  * [Add OP_RAWBITSHIFT]({{< ref "../script/opcodes/bitwise" >}}#op_rawbitshift)
-  * [Add OP_MULPOW2]({{< ref "../script/opcodes/arithmetic" >}})
+  * [Relax OP_XOR and OP_AND operand size constraints](https://docs.givelotus.org/specs/bitcoincash/may-2018-reenabled-opcodes#bitwise-logic)
+  * [Add OP_RAWBITSHIFT] (/script/opcodes/bitwise#op_rawbitshift)) 
+  * [Add OP_MULPOW2](/script/opcodes/arithmetic)
   * Limit NUM2BIN to 68 bytes
   * Increase integer sizes from 32 bits to 64 bit ones-complement signed integers
   * Disable all unusable opcodes and reserve them for future hardforks
-  * [Add Taproot support]({{< ref "../script/taproot" >}})
-  * [SigHash Lotus]({{< ref "../sighash/lotus" >}})
+  * [Add Taproot support](https://docs.givelotus.org/specs/script/taproot)
+  * [SigHash Lotus](https://docs.givelotus.org/specs/sighash/lotus)
 
 ## Genesis Block
 
