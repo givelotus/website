@@ -62,6 +62,7 @@ rpcpassword=lotus
 4. Start Lotus-QT.app
 
 ### Linux
+Linux download link: [https://storage.googleapis.com/lotus-project/lotus-2.0.3-x86_64-linux-gnu.tar.gz] (https://storage.googleapis.com/lotus-project/lotus-2.0.3-x86_64-linux-gnu.tar.gz)
 
 1. Run `mkdir ~/.lotus`
 2. Edit `~/.lotus/lotus.conf`
