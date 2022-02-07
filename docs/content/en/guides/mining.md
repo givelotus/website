@@ -62,7 +62,7 @@ rpcpassword=lotus
 4. Start Lotus-QT.app
 
 ### Linux
-Linux download link: [https://storage.googleapis.com/lotus-project/lotus-2.0.3-x86_64-linux-gnu.tar.gz] (https://storage.googleapis.com/lotus-project/lotus-2.0.3-x86_64-linux-gnu.tar.gz)
+Linux download link: [https://storage.googleapis.com/lotus-project/lotus-2.0.3-x86_64-linux-gnu.tar.gz](https://storage.googleapis.com/lotus-project/lotus-2.0.3-x86_64-linux-gnu.tar.gz)
 
 1. Run `mkdir ~/.lotus`
 2. Edit `~/.lotus/lotus.conf`
@@ -83,7 +83,7 @@ rpcpassword=lotus
 
 ## Mining guide
 
-Currently, we do not distribute binaries of the `lotus-gpu-miner` so mining will require setting up a rust development environment. 
+Currently, we do not distribute binaries of the `lotus-gpu-miner` so mining will require setting up a rust development environment.
 
 ### Get your wallet address
 
@@ -118,7 +118,7 @@ Mac and linux do not currently have an installer, and will require setting up th
     * For Mac, you should already have the OpenCL drivers installed by default.
     * Linux will require installing OpenCL packages for your particular distribution and graphics card
 3. Download the latest mining code from Github and extract to desktop: [https://github.com/LogosFoundation/lotus-gpu-miner/archive/refs/heads/master.zip](https://github.com/LogosFoundation/lotus-gpu-miner/archive/refs/heads/master.zip)
-4. Extract it somewhere 
+4. Extract it somewhere
 5. Create the configuration file with this command: `mkdir -p ~/.lotus-miner`
 6. Within the `~/.lotus-miner` folder, create a file called config.toml and paste the following contents:
 ```
