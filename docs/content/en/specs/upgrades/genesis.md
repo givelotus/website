@@ -27,7 +27,7 @@ Lotus will be based on the Bitcoin ABC codebase and specifications, with the fol
 * [Script changes](https://docs.givelotus.org/specs/script/intro):
   * Increase opcode limit to 400 opcodes
   * [Relax OP_XOR and OP_AND operand size constraints](https://docs.givelotus.org/specs/bitcoincash/may-2018-reenabled-opcodes#bitwise-logic)
-  * [Add OP_RAWBITSHIFT] (/script/opcodes/bitwise#op_rawbitshift)) 
+  * [Add OP_RAWBITSHIFT](/script/opcodes/bitwise#op_rawbitshift)) 
   * [Add OP_MULPOW2](/script/opcodes/arithmetic)
   * Limit NUM2BIN to 68 bytes
   * Increase integer sizes from 32 bits to 64 bit ones-complement signed integers
