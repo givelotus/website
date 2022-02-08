@@ -193,8 +193,8 @@ module.exports = {
       {
         // Options
         //to make it seo friendly remove below line and add baseUrl option to production domain
-        seo: false,
-        // baseUrl: 'https://my-nuxt-app.com',
+        seo: true,
+        baseUrl: 'https://givelotus.org',
         lazy: true,
         locales: languages,
         defaultLocale: 'gb',
