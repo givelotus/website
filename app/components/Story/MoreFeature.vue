@@ -96,7 +96,7 @@
               </p>
             </div>
             <figure class="illustration">
-              <img src="/images/community.png" alt="feature" />
+              <img src="/images/lotus-community.gif" alt="feature" />
             </figure>
           </v-col>
         </v-row>
