@@ -94,7 +94,6 @@ import Story from '~/components/Story'
 import Faq from '~/components/Faq'
 import FooterWithDeco from '~/components/Footer/FooterWithDeco'
 import Carousel from '~/components/Carousel'
-
 import brand from '~/static/text/brand'
 
 export default {
@@ -119,7 +118,22 @@ export default {
   },
   head() {
     return {
-      title: brand.lotus.name + ' - Home Page',
+      title: brand.lotus.name + ' - Givelotus',
+      meta: [
+        { property: 'author', content: 'givelotus.org' },
+        {
+          name: 'description',
+          content: this.$t('lotusLanding.banner_subtitle'),
+        },
+        {
+          property: 'og:description',
+          content: this.$t('lotusLanding.banner_subtitle'),
+        },
+        {
+          property: 'og:title',
+          content: 'Lotus - ' + this.$t('lotusLanding.banner_titlestrong'),
+        },
+      ],
     }
   },
 }

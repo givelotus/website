@@ -59,6 +59,12 @@ export default () => {
         weekly: 'Tygodniowe',
         monthly: 'Miesięczne',
         period: 'okres',
+        meta: {
+          description:
+            'Oblicz nagrody i koszty energii elektrycznej za wydobycie Lotusa za pomocą swojej karty GPU.',
+          subtitle: 'Kalkulator wydobycia',
+          name: 'Kalkulator',
+        },
       },
       menu: {
         news: 'Newsy',

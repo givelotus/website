@@ -38,18 +38,23 @@ export default {
   },
   head() {
     return {
-      title: brand.lotus.name + ' - Calculator',
+      title: brand.lotus.name + ' - ' + this.$t('calculator.meta.name'),
       meta: [
-        { property: 'author', content: 'Lotus - Rewards Calculator' },
+        {
+          property: 'author',
+          content: 'Lotus - ' + this.$t('calculator.meta.subtitle'),
+        },
         {
           name: 'description',
-          content:
-            'Calculate rewards and electricity costs for mining Lotus with your GPU card.',
+          content: this.$t('calculator.meta.description'),
         },
         {
           property: 'og:description',
-          content:
-            'Calculate rewards and electricity costs for mining Lotus with your GPU card.',
+          content: this.$t('calculator.meta.description'),
+        },
+        {
+          property: 'og:title',
+          content: 'Lotus - ' + this.$t('calculator.meta.subtitle'),
         },
       ],
     }

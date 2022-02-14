@@ -61,6 +61,12 @@ export default () => {
         weekly: 'wöchentlich',
         monthly: 'monatlich',
         period: 'Zeitraum',
+        meta: {
+          description:
+            'Berechnen Sie die Prämien und Stromkosten für das Mining von Lotus mit Ihrer GPU-Karte.',
+          subtitle: 'Belohnungs-Rechner',
+          name: 'Taschenrechner',
+        },
       },
       menu: {
         news: 'News',

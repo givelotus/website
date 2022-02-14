@@ -59,6 +59,11 @@ export default () => {
         weekly: '每周',
         monthly: '每月',
         period: '每个周期',
+        meta: {
+          description: '计算用你的GPU卡开采莲花的奖励和电力成本。',
+          subtitle: '奖励计算器',
+          name: '计算器',
+        },
       },
       menu: {
         news: '新闻',

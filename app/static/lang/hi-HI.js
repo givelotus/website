@@ -61,6 +61,12 @@ export default () => {
         weekly: 'साप्ताहिक',
         monthly: 'महीने के',
         period: 'अवधि',
+        meta: {
+          description:
+            'Calculate rewards and electricity costs for mining Lotus with your GPU card.',
+          subtitle: 'Rewards Calculator',
+          name: 'Calculator',
+        },
       },
       menu: {
         news: 'समाचार',
