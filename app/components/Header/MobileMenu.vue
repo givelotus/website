@@ -37,7 +37,7 @@
         </v-list-item>
 
         <v-list-item
-          href="https://givelotus.medium.com/"
+          href="https://thepassage.news/"
           target="_blank"
           :style="{ animationDuration: navMenu.length * 0.15 + 's' }"
           link

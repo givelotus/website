@@ -69,7 +69,7 @@
 
                 <li>
                   <v-btn
-                    href="https://givelotus.medium.com/"
+                    href="https://thepassage.news/"
                     target="_blank"
                     text
                     class="menu-link"
