@@ -12,26 +12,14 @@
       >
         <v-main>
           <main-header />
-          <div class="text-center white--text root">
-            <nuxt />
-          </div>
+          <nuxt />
           <footer-with-deco />
+
         </v-main>
       </div>
     </transition>
   </v-app>
 </template>
-
-<style scoped lang="scss">
-.root {
-  background: linear-gradient(
-    -45deg,
-    $palette-primary-main 20%,
-    $palette-primary-dark 70%
-  );
-  position: relative;
-}
-</style>
 
 <script>
 import Header from '~/components/Header'

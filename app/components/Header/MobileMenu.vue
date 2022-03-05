@@ -5,7 +5,7 @@
         <v-list-item
           v-for="(item, index) in navMenu"
           :key="index"
-          :href="item.url"
+          :href="getLocalizedHref(item.url)"
           link
           :style="{ animationDuration: index * 0.15 + 's' }"
         >
@@ -114,6 +114,22 @@ export default {
       link: link,
       navMenu: menuList,
     }
+  },
+  methods: {
+    getLocalizedHref(url) {
+      let href = ''
+      // gb is a default language so /gb/#faq doesnt exist and 404s
+      // but we need to include prefix to localized page so there is
+      // no unnecessary redirections when /de/ user hits other pages
+      // e.g /calculator nuxt u18n redirects to /de/calculator
+      // it leads to poor UX
+      if (this.$i18n.locale != 'gb') {
+        href = '/' + this.$i18n.locale + url
+      } else {
+        href = '/' + url
+      }
+      return href
+    },
   },
   props: {
     open: {

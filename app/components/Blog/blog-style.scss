@@ -21,6 +21,7 @@
   }
   figure {
     @include margin-right($spacing5);
+    // border: 1px solid $palette-primary-main;
     border-radius: 10px;
     transform: rotate(45deg);
     width: 70%;
@@ -41,7 +42,8 @@
     img {
       transform: translateY(10px) rotate(-45deg);
       @include use-theme(filter, none, invert(1));
-
+      // width: 55%;
+      // max-height: 55%;
       width: 100%;
       max-height: 100%;
       margin: 0 auto;

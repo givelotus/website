@@ -1,7 +1,6 @@
 <template>
   <v-app>
     <div class="dedicated-page">
-      <main-header />
       <Error
         :error-code="this.error.statusCode"
         :text="$t('common.404')"
@@ -19,13 +18,11 @@
 
 <script>
 import brand from '~/static/text/brand'
-import Header from '~/components/Header'
 import Footer from '~/components/Footer'
 import Error from '../components/Error'
 
 export default {
   components: {
-    'main-header': Header,
     'main-footer': Footer,
     Error,
   },
