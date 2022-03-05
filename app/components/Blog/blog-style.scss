@@ -48,16 +48,6 @@
       max-height: 100%;
       margin: 0 auto;
     }
-    // &:after {
-    //   content: '';
-    //   background: $palette-primary-main;
-    //   width: 23px;
-    //   height: 23px;
-    //   border-radius: 5px;
-    //   position: absolute;
-    //   bottom: 20px;
-    //   right: -10px;
-    // }
   }
   .text {
     @include breakpoints-down(xs) {

@@ -1,19 +1,8 @@
 <template>
   <div class="news">
     <figure>
-      <img :src="img" alt="thumb">
+      <img :src="img" alt="thumb" />
     </figure>
-    <!-- <div class="desc">
-      <div class="text">
-        <p class="type caption">
-          {{ $t('lotusLanding.' + type) }}
-        </p>
-        <p>{{ text }}</p>
-      </div>
-      <v-btn small text class="btn">
-        {{ $t('lotusLanding.news_readmore') }}
-      </v-btn>
-    </div> -->
   </div>
 </template>
 
@@ -27,17 +16,14 @@ export default {
     text: {
       type: String,
       default: '',
-      // required: true,
     },
     img: {
       type: String,
       default: '',
-      // required: true,
     },
     type: {
       type: String,
       default: '',
-      // required: true,
     },
   },
 }

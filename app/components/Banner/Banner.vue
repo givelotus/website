@@ -3,12 +3,8 @@
     <v-container :class="{ fixed: isDesktop }">
       <div class="container">
         <div class="item text-center white--text">
-
-          <h3 class="use-text-title">
-            {{ title }}
-          </h3>
-          <p class="use-text-subtitle"> {{ subtitle }}</p>
-
+          <h3 class="use-text-title">{{ title }}</h3>
+          <p class="use-text-subtitle">{{ subtitle }}</p>
         </div>
       </div>
     </v-container>
@@ -21,8 +17,6 @@
 
 <script>
 export default {
-  // components: {
-  // },
   props: {
     title: {
       type: String,

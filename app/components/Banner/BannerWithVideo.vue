@@ -72,7 +72,6 @@ export default {
       await this.$nextTick()
 
       this.width = this.$refs.videoContainer.offsetWidth
-      // this.height = this.$refs.videoContainer.offsetWidth
     },
   },
   computed: {

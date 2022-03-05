@@ -12,15 +12,9 @@
       >
         <v-main>
           <main-header />
-            <div class="text-center white--text root">
-
-              <!-- <h3 class="use-text-title">
-                New Page title [layout]
-              </h3>
-              <p class="use-text-subtitle">[layout]</p> -->
-
-              <nuxt />
-            </div>
+          <div class="text-center white--text root">
+            <nuxt />
+          </div>
           <footer-with-deco />
         </v-main>
       </div>
@@ -36,15 +30,6 @@
     $palette-primary-dark 70%
   );
   position: relative;
-  // padding: spacing(13, 0, 30);
-  // @include breakpoints-up(lg) {
-  //   height: 1110px;
-  //   padding: spacing(20, 0, 5);
-  // }
-  // @include breakpoints-down(xs) {
-  //   padding: spacing(25, 0, 10);
-  //   position: relative;
-  // }
 }
 </style>
 
