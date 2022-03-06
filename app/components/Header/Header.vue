@@ -31,7 +31,7 @@
                 <img style="border-radius: 50%" :src="logo" alt="logo" />
               </nuxt-link>
               <scrollactive v-if="!invert && loaded" tag="span">
-                <a :href="'/' + $i18n.locale" class="anchor-link ">
+                <a :href=getLocalizedHome() class="anchor-link ">
                   <img style="border-radius: 50%" :src="logo" alt="logo" />
                 </a>
               </scrollactive>
@@ -163,6 +163,15 @@ export default {
     },
     handleToggleOpen: function() {
       this.openDrawer = !this.openDrawer
+    },
+    getLocalizedHome() {
+      let href = ''
+      if (this.$i18n.locale != 'gb') {
+        href = '/' + this.$i18n.locale
+      } else {
+        href = '/'
+      }
+      return href
     },
     getLocalizedHref(url) {
       // refactor using composition API
