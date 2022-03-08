@@ -21,6 +21,16 @@ In other words, a new Epoch now starts when a block undershoots the required tar
 
 Note: Miners will not get any additional reward for finding such a block. It is a consensus rule change in the header structure that miners will have follow in order for their blocks to be accepted. It therefore does not need to be rewarded.
 
+## Old Mechanism
+![](2022-06-21-5040xpow-old-epoch-hash.png)
+
+Above the old epoch hash mechanism. Values which are the same have the same color. Epochs are exactly 5040 blocks long. The block at the end of the epoch becomes the `hashEpochBlock` for all blocks of the following epoch.
+
+## New Mechanism
+![](2022-06-21-5040xpow-new-epoch-hash.png)
+
+Above the new epoch hash mechanism. Values which are the same have the same color. Lucky blocks have a bold gold border. Epochs don't have a fixed length, but on average are 5040 blocks long. A block with a lucky hash becomes the `hashEpochBlock` for all following blocks until (and including) a block has a lucky hash again.
+
 # Motivation
 Currently, blocks that undershoot the target by a large amount are no different than blocks that just barely hit the mark. All of this "extra work" that just happened by pure chance is currently wasted.
 
@@ -28,9 +38,15 @@ However, we can put blocks that happen to provide much more work than necessary 
 
 This is because after this change, finding blocks will be no harder than before, but trying to fake an Epoch Block will require 5040 as much proof of work than trying to fake a normal block.
 
-This is useful for two applications:
+This is useful for various applications:
+- More efficient SPV (ESPV)
 - Very low power devices
 - Cross-chain smart contracts
+
+## More efficient SPV (ESPV)
+![](2022-06-21-5040xpow-espv.png)
+
+Epoch blocks form a chain (through `hashEpochBlock` instead of `hashPrevBlock`). The new epoch mechanism allows for a very efficient variant of Simplified Payment Verification, by only keeping a chain of epoch blocks, instead of all blocks. Combined with the Epoch Merkle Root (specified elsewhere), wallets that only receive a few transactions every now and then can only download the epoch blocks and Merkle proofs of their transactions for the Epoch Merkle Roots of the epoch blocks, instead of normal Merkle proofs for the `hashMerkleRoot` of all the individual blocks.
 
 ## Very low power devices
 A low-power chip, e.g. on a smart card, could very easily verify that a transaction has been buried by certain amount of PoW. It would require another change the Epoch Merkle Root to function well, which is specified elsewhere.
@@ -58,16 +74,16 @@ This could be useful for e.g. wrapping BCH, XEC or similar as a Lotus token (Lot
 2. Minter locks up BCH into a special kind of smart contract, which references the placeholder UTXO on Lotus.
 3. Minter waits for sufficient confirmations on BCH (order of 10-20 confirmations).
 4. Minter provides the following data to the MINT baton on Lotus, which is locked in a smart contract, which verifies the provided data:
-  1. The PoW (chain of blockheaders) of 3.
-  2. The Merkle path of the transaction done in 2.
-  3. An output to send the new lBCH tokens to (on Lotus).
+    1. The PoW (chain of blockheaders) of 3.
+    2. The Merkle path of the transaction done in 2.
+    3. An output to send the new lBCH tokens to (on Lotus).
 5. Minter can use the lBCH tokens right away without waiting for confirmations.
 6. Later, Redeemer has some lBCH tokens they want to redeem for BCH. They burn the lBCH together with the placeholder UTXO (which requires burning lBCH in order to be spent).
 7. Redeemer waits for sufficient confirmations on Lotus (order of 1-2 Epoch Blocks).
 8. Redeemer provides the following to the smart contract of the UTXO created in 2.:
-  1. The PoW (chain of Epoch Block Headers) of 7.
-  2. The Merkle path of the transaction done in 6. to the Epoch Merkle Root.
-  3. An output to send the BCH to.
+    1. The PoW (chain of Epoch Block Headers) of 7.
+    2. The Merkle path of the transaction done in 6. to the Epoch Merkle Root.
+    3. An output to send the BCH to.
 9. Redeemer can use the BCH right away without having to wait for confirmations.
 
 The above setup still has a few attack vectors which can be mitigated with additional measures, but this is part of future work.
@@ -118,4 +134,3 @@ A block shall be considered Epoch Block if:
 The field `hashEpochBlock` of a block must be set to the following, otherwise the block shall be deemed invalid:
 1. If the previous block is an Epoch Block, it must be set to the previous block's hash.
 2. If the previous block is not an Epoch Block, it must be set to the previous block's `hashEpochBlock`.
-
