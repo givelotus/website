@@ -1,19 +1,28 @@
 ---
 date: 2021-06-10
 category: Guides
-title: "Running Node"
-linkTitle: "Full Node"
+title: 'Running Node'
+linkTitle: 'Full Node'
 author: Shammah Chancellor ([@micropresident](https://twitter.com/micropresident))
 position: 5.0
 ---
-## Setup Lotus Node
 
-UNIX BUILD NOTES
-====================
+## Build apps with Lotus Node
+
+Fastest way to start experimenting or building applications with Lotus:
+
+1. Go to https://givelotus.org/#faq
+2. Download unix, macos or windows wallet.
+3. Run ./lotusd daemon.
+4. Check out commands in ./lotus-cli
+
+## Setup Dev Lotus Node
+
+# UNIX BUILD NOTES
+
 Some notes on how to build Bitcoin ABC in Unix.
 
-To Build
----------------------
+## To Build
 
 Before you start building, please make sure that your compiler supports C++17.
 
@@ -29,36 +38,34 @@ ninja install # optional
 
 This will build lotus-qt as well.
 
-Dependencies
----------------------
+## Dependencies
 
-*Note: Bitcoin ABC provides a [Docker image with all the dependencies preinstalled](#build-using-a-docker-container).*
+_Note: Bitcoin ABC provides a [Docker image with all the dependencies preinstalled](#build-using-a-docker-container)._
 
 These dependencies are required:
 
- Library     | Purpose          | Description
- ------------|------------------|----------------------
- libssl      | Crypto           | Random Number Generation, Elliptic Curve Cryptography
- libboost    | Utility          | Library for threading, data structures, etc
- libevent    | Networking       | OS independent asynchronous networking
+| Library  | Purpose    | Description                                           |
+| -------- | ---------- | ----------------------------------------------------- |
+| libssl   | Crypto     | Random Number Generation, Elliptic Curve Cryptography |
+| libboost | Utility    | Library for threading, data structures, etc           |
+| libevent | Networking | OS independent asynchronous networking                |
 
 Optional dependencies:
 
- Library     | Purpose          | Description
- ------------|------------------|----------------------
- miniupnpc   | UPnP Support     | Firewall-jumping support
- libdb       | Berkeley DB      | Wallet storage (only needed when wallet enabled)
- jemalloc    | Memory allocator | Library to enhance the memory allocation and improve performances
- qt          | GUI              | GUI toolkit (only needed when GUI enabled)
- protobuf    | Payments in GUI  | Data interchange format used for payment protocol (only needed when BIP70 enabled)
- libqrencode | QR codes in GUI  | Optional for generating QR codes (only needed when GUI enabled)
- univalue    | Utility          | JSON parsing and encoding (bundled version will be used unless --with-system-univalue passed to configure)
- libzmq3     | ZMQ notification | Optional, allows generating ZMQ notifications (requires ZMQ version >= 4.1.5)
+| Library     | Purpose          | Description                                                                                                |
+| ----------- | ---------------- | ---------------------------------------------------------------------------------------------------------- |
+| miniupnpc   | UPnP Support     | Firewall-jumping support                                                                                   |
+| libdb       | Berkeley DB      | Wallet storage (only needed when wallet enabled)                                                           |
+| jemalloc    | Memory allocator | Library to enhance the memory allocation and improve performances                                          |
+| qt          | GUI              | GUI toolkit (only needed when GUI enabled)                                                                 |
+| protobuf    | Payments in GUI  | Data interchange format used for payment protocol (only needed when BIP70 enabled)                         |
+| libqrencode | QR codes in GUI  | Optional for generating QR codes (only needed when GUI enabled)                                            |
+| univalue    | Utility          | JSON parsing and encoding (bundled version will be used unless --with-system-univalue passed to configure) |
+| libzmq3     | ZMQ notification | Optional, allows generating ZMQ notifications (requires ZMQ version >= 4.1.5)                              |
 
 For the versions used, see [dependencies.md](dependencies.md)
 
-Memory Requirements
---------------------
+## Memory Requirements
 
 C++ compilers are memory-hungry. It is recommended to have at least 1.5 GB of
 memory available when compiling Bitcoin ABC. On systems with less, gcc can be
@@ -66,8 +73,8 @@ tuned to conserve memory with additional CXXFLAGS:
 
     cmake -GNinja .. -DCMAKE_CXX_FLAGS="--param ggc-min-expand=1 --param ggc-min-heapsize=32768"
 
-Dependency Build Instructions: Ubuntu & Debian
-----------------------------------------------
+## Dependency Build Instructions: Ubuntu & Debian
+
 Build requirements:
 
     sudo apt-get install bsdmainutils build-essential libssl-dev libevent-dev lld ninja-build python3
@@ -103,13 +110,13 @@ install the required dependencies with the following instructions.
 
 Options when installing required Boost library files:
 
-1. On at least Ubuntu 16.04+ and Debian 9+ there are generic names for the
-individual boost development packages, so the following can be used to only
-install necessary parts of boost:
+1.  On at least Ubuntu 16.04+ and Debian 9+ there are generic names for the
+    individual boost development packages, so the following can be used to only
+    install necessary parts of boost:
 
-        sudo apt-get install libboost-system-dev libboost-filesystem-dev libboost-test-dev libboost-thread-dev
+            sudo apt-get install libboost-system-dev libboost-filesystem-dev libboost-test-dev libboost-thread-dev
 
-2. If that doesn't work, you can install all boost development packages with:
+2.  If that doesn't work, you can install all boost development packages with:
 
         sudo apt-get install libboost-all-dev
 
@@ -131,8 +138,7 @@ jemalloc dependencies (provides the jemalloc library, can be disabled by passing
 
     sudo apt-get install libjemalloc-dev
 
-Dependencies for the GUI: Ubuntu & Debian
------------------------------------------
+## Dependencies for the GUI: Ubuntu & Debian
 
 If you want to build lotus-qt, make sure that the required packages for Qt development
 are installed. Qt 5 is necessary to build the GUI.
@@ -146,8 +152,8 @@ libqrencode dependencies (can be disabled by passing `-DENABLE_QRCODE=OFF` on th
 
     sudo apt-get install libqrencode-dev
 
-Dependency Build Instructions: Fedora
--------------------------------------
+## Dependency Build Instructions: Fedora
+
 Build requirements:
 
     sudo dnf install boost-devel cmake gcc-c++ libdb-cxx-devel libdb-devel libevent-devel ninja-build openssl-devel python3
@@ -168,82 +174,80 @@ libqrencode dependencies (can be disabled by passing `-DENABLE_QRCODE=OFF`):
 
     sudo dnf install qrencode-devel
 
-Notes
------
+## Notes
+
 The release is built with GCC and then "strip lotusd" to strip the debug
 symbols, which reduces the executable size by about 90%.
 
+## miniupnpc
 
-miniupnpc
----------
-
-[miniupnpc](https://miniupnp.tuxfamily.org) may be used for UPnP port mapping.  It can be downloaded from [here](
-https://miniupnp.tuxfamily.org/files/).  UPnP support is compiled in and
-turned off by default.  See the cmake options for upnp behavior desired:
+[miniupnpc](https://miniupnp.tuxfamily.org) may be used for UPnP port mapping. It can be downloaded from [here](https://miniupnp.tuxfamily.org/files/). UPnP support is compiled in and
+turned off by default. See the cmake options for upnp behavior desired:
 
     ENABLE_UPNP            Enable UPnP support (miniupnp required, default ON)
     START_WITH_UPNP        UPnP support turned on by default at runtime (default OFF)
 
-Boost
------
+## Boost
+
 For documentation on building Boost look at their official documentation: http://www.boost.org/build/doc/html/bbv2/installation.html
 
-Security
---------
+## Security
+
 To help make your Bitcoin ABC installation more secure by making certain attacks impossible to
 exploit even if a vulnerability is found, binaries are hardened by default.
 This can be disabled by passing `-DENABLE_HARDENING=OFF`.
 
 Hardening enables the following features:
-* _Position Independent Executable_: Build position independent code to take advantage of Address Space Layout Randomization
-    offered by some kernels. Attackers who can cause execution of code at an arbitrary memory
-    location are thwarted if they don't know where anything useful is located.
-    The stack and heap are randomly located by default, but this allows the code section to be
-    randomly located as well.
 
-    On an AMD64 processor where a library was not compiled with -fPIC, this will cause an error
-    such as: "relocation R_X86_64_32 against `......' can not be used when making a shared object;"
+- _Position Independent Executable_: Build position independent code to take advantage of Address Space Layout Randomization
+  offered by some kernels. Attackers who can cause execution of code at an arbitrary memory
+  location are thwarted if they don't know where anything useful is located.
+  The stack and heap are randomly located by default, but this allows the code section to be
+  randomly located as well.
 
-    To test that you have built PIE executable, install scanelf, part of paxutils, and use:
+  On an AMD64 processor where a library was not compiled with -fPIC, this will cause an error
+  such as: "relocation R_X86_64_32 against `......' can not be used when making a shared object;"
+
+  To test that you have built PIE executable, install scanelf, part of paxutils, and use:
 
       scanelf -e ./bitcoin
 
-    The output should contain:
+  The output should contain:
 
       TYPE
       ET_DYN
 
-* _Non-executable Stack_: If the stack is executable then trivial stack-based buffer overflow exploits are possible if
-    vulnerable buffers are found. By default, Bitcoin ABC should be built with a non-executable stack,
-    but if one of the libraries it uses asks for an executable stack or someone makes a mistake
-    and uses a compiler extension which requires an executable stack, it will silently build an
-    executable without the non-executable stack protection.
+- _Non-executable Stack_: If the stack is executable then trivial stack-based buffer overflow exploits are possible if
+  vulnerable buffers are found. By default, Bitcoin ABC should be built with a non-executable stack,
+  but if one of the libraries it uses asks for an executable stack or someone makes a mistake
+  and uses a compiler extension which requires an executable stack, it will silently build an
+  executable without the non-executable stack protection.
 
-    To verify that the stack is non-executable after compiling use:
+  To verify that the stack is non-executable after compiling use:
 
       scanelf -e ./bitcoin
 
-    The output should contain:
+  The output should contain:
 
       STK/REL/PTL
       RW- R-- RW-
 
-    The `STK RW-` means that the stack is readable and writeable but not executable.
+  The `STK RW-` means that the stack is readable and writeable but not executable.
 
-Disable-wallet mode
---------------------
+## Disable-wallet mode
+
 When the intention is to run only a P2P node without a wallet, Bitcoin ABC may be compiled in
 disable-wallet mode by passing `-DBUILD_BITCOIN_WALLET=OFF` on the cmake command line.
 
 Mining is also possible in disable-wallet mode using the `getblocktemplate` RPC call.
 
-Additional cmake options
---------------------------
+## Additional cmake options
+
 A list of the cmake options and their current value can be displayed.
 From the build subdirectory (see above), run `cmake -LH ..`.
 
-Setup and Build Example: Arch Linux
------------------------------------
+## Setup and Build Example: Arch Linux
+
 This example lists the steps necessary to setup and build a command line only,
 non-wallet distribution of the latest changes on Arch Linux:
 
@@ -255,8 +259,8 @@ non-wallet distribution of the latest changes on Arch Linux:
     cmake -GNinja .. -DBUILD_BITCOIN_WALLET=OFF -DBUILD_BITCOIN_QT=OFF -DENABLE_UPNP=OFF -DBUILD_BITCOIN_ZMQ=OFF -DUSE_JEMALLOC=OFF
     ninja
 
-ARM Cross-compilation
--------------------
+## ARM Cross-compilation
+
 These steps can be performed on, for example, a Debian VM. The depends system
 will also work on other Linux distributions, however the commands for
 installing the toolchain will be different.
@@ -276,11 +280,9 @@ To build executables for ARM:
     cmake -GNinja .. -DCMAKE_TOOLCHAIN_FILE=../cmake/platforms/LinuxARM.cmake -DENABLE_GLIBC_BACK_COMPAT=ON -DENABLE_STATIC_LIBSTDCXX=ON
     ninja
 
-
 For further documentation on the depends system see [README.md](../depends/README.md) in the depends directory.
 
-Build using a Docker container
--------------------------------
+## Build using a Docker container
 
 Bitcoin ABC provides a
 [Docker image](https://hub.docker.com/r/bitcoinabc/bitcoin-abc-dev) with all the
@@ -288,7 +290,7 @@ dependencies pre-installed, based on Debian. If the dependencies cannot be
 installed on your system but it can run a Docker container, this image can be
 pulled and used for the build.
 
-*Note: The image has all the dependencies and can weight a few gigabytes.*
+_Note: The image has all the dependencies and can weight a few gigabytes._
 
 To get the latest image (current master):
 
