@@ -141,7 +141,7 @@ export default () => {
           q2: {
             question: 'Jakie są dostępne portfele?',
             answer:
-              'Korzystaj z opartego na przeglądarce <a href="https://sendlotus.com" target="_blank">SendLotus.com</a> lub na swoim urządzeniu mobilnym możesz użyć Lotus Vase z <a href="https://play.google.com/store/apps/details?id=org.cashweb.cashew" target="_blank">Android</a> i <a href="https://apps.apple.com/us/app/cashew-wallet/id1539306720" target="_blank">iPhone</a>. Możesz również uruchomić lekki Lotus Node dla <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-win64-setup-unsigned.exe" target="_blank">Windows</a>, <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-osx-unsigned.dmg" target="_blank">MacOS</a> i <a href="https://storage.googleapis.com/lotus-project/lotus-2.0.3-x86_64-linux-gnu.tar.gz" target="_blank">Linux</a>. ',
+              'Korzystaj z opartego na przeglądarce <a href="https://sendlotus.com" target="_blank">SendLotus.com</a> lub na swoim urządzeniu mobilnym możesz użyć Lotus Vase z <a href="https://play.google.com/store/apps/details?id=org.cashweb.cashew" target="_blank">Android</a> i <a href="https://apps.apple.com/us/app/cashew-wallet/id1539306720" target="_blank">iPhone</a>. Możesz również uruchomić lekki Lotus Node dla <a href="https://storage.googleapis.com/lotus-project/lotus-2.1.3-win64-setup-unsigned.exe" target="_blank">Windows</a>, <a href="https://storage.googleapis.com/lotus-project/lotus-2.1.3-osx-unsigned.dmg" target="_blank">MacOS</a> i <a href="https://storage.googleapis.com/lotus-project/lotus-2.1.3-x86_64-linux-gnu.tar.gz" target="_blank">Linux</a>. ',
           },
           q3: {
             question: 'Jak zdobyć Lotusa?',
