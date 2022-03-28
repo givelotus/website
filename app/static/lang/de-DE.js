@@ -70,6 +70,8 @@ export default () => {
       },
       menu: {
         news: 'News',
+        more: 'mehr',
+        calculator: 'Taschenrechner',
       },
       lotusLanding: {
         features: {
@@ -176,6 +178,7 @@ export default () => {
         header_carousel: 'Projekte',
         header_faq: 'FAQ',
         header_contact: 'Kontakt',
+        contributors: 'Mitwirkende',
         header_block_explorer: 'Block Explorer',
         documentation: 'Dokumentation',
         banner_title: '',

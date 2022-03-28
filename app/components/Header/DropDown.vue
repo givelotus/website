@@ -2,14 +2,14 @@
   <div id="app">
     <ul class="header__navbar">
       <li class="header__item">
-        <a href="#" class="header__link">
+        <a  class="header__link">
           <transition name="slide-fade">
             <v-btn
               key="off"
               @click="show = !show"
               text
               class="menu-link"
-              >More</v-btn>
+              > {{ $t('menu.more') }}</v-btn>
           </transition>
         </a>
 
@@ -27,7 +27,7 @@
                 </a>
               </li>
               <li class="header__dropdown-menu-item">
-                <a href="https://docs.givelotus.org/" target="_blank" class="header__dropdown-menu-link" title="Personal info">
+                <a href="https://docs.givelotus.org/" target="_blank" class="header__dropdown-menu-link" title="documentation">
                   <div class="header__dropdown-menu-svg">
                     <v-icon color="grey darken-2">article</v-icon>
                   </div>
@@ -37,22 +37,22 @@
                 </a>
               </li>
               <li class="header__dropdown-menu-item">
-                <a :href="getLocalizedHref('/credits')" class="header__dropdown-menu-link" title="Personal info">
+                <a :href="getLocalizedHref('/credits')" class="header__dropdown-menu-link" title="contributors">
                   <div class="header__dropdown-menu-svg">
                     <v-icon color="grey darken-2">groups</v-icon>
                   </div>
                   <div class="header__dropdown-menu-text">
-                    Contributors
+                     {{ $t('lotusLanding.contributors') }}
                   </div>
                 </a>
               </li>
               <li class="header__dropdown-menu-item">
-                <a :href="getLocalizedHref('/calculator')" class="header__dropdown-menu-link" title="Personal info">
+                <a :href="getLocalizedHref('/calculator')" class="header__dropdown-menu-link" title="rewards calculator">
                   <div class="header__dropdown-menu-svg">
                     <v-icon color="grey darken-2">calculate</v-icon>
                   </div>
                   <div class="header__dropdown-menu-text">
-                    Rewards calculator
+                    {{ $t('menu.calculator') }}
                   </div>
                 </a>
               </li>
@@ -74,7 +74,7 @@
 export default {
   data() {
     return {
-      show: true,
+      show: false,
     }
   },
   methods: {
@@ -89,7 +89,7 @@ export default {
       if (this.$i18n.locale != 'gb') {
         href = '/' + this.$i18n.locale + url
       } else {
-        href = '/' + url
+        href = '' + url
       }
       return href
     },

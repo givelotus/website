@@ -67,6 +67,8 @@ export default () => {
       },
       menu: {
         news: '新闻',
+        more: '更多的',
+        calculator: '计算器',
       },
       lotusLanding: {
         features: {
@@ -171,6 +173,7 @@ export default () => {
         header_contact: '联系方式',
         header_block_explorer: '区块浏览器',
         documentation: '文档',
+        contributors: '贡献者',
         banner_title: '',
         banner_titlestrong: '感恩的符号',
         banner_subtitle:

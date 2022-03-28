@@ -69,6 +69,8 @@ export default () => {
       },
       menu: {
         news: 'Newsy',
+        more: 'Więcej',
+        calculator: 'Kalkulator',
       },
       lotusLanding: {
         features: {
@@ -176,6 +178,7 @@ export default () => {
         header_contact: 'kontakt',
         header_block_explorer: 'Eksplorator bloków',
         documentation: 'Dokumentacja',
+        contributors: 'Wspierający',
         banner_title: '',
         banner_titlestrong: 'Token uznania',
         banner_subtitle:
