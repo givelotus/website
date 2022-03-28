@@ -70,6 +70,8 @@ export default () => {
       },
       menu: {
         news: 'समाचार',
+        more: 'अधिक',
+        calculator: 'कैलकुलेटर',
       },
       lotusLanding: {
         features: {
@@ -176,6 +178,7 @@ export default () => {
         header_carousel: 'परियोजनाएं',
         header_faq: 'सामान्य प्रश्नोत्तर',
         header_contact: 'संपर्क करें',
+        contributors: 'योगदानकर्ताओं',
         header_block_explorer: 'ब्लॉक एक्सप्लोरर',
         documentation: 'आलेख',
         banner_title: '',
