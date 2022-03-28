@@ -46,23 +46,6 @@
                     @click="setOffset(item.offset)"
                   >{{ $t(item.translation) }}</v-btn>
                 </li>
-                <li>
-                  <v-btn
-                    href="https://explorer.givelotus.org/"
-                    target="_blank"
-                    text
-                    class="menu-link"
-                  >{{ $t('lotusLanding.header_block_explorer') }}</v-btn>
-                </li>
-
-                <li>
-                  <v-btn
-                    href="https://docs.givelotus.org/"
-                    target="_blank"
-                    text
-                    class="menu-link"
-                  >{{ $t('lotusLanding.documentation') }}</v-btn>
-                </li>
 
                 <li>
                   <v-btn
@@ -72,6 +55,12 @@
                     class="menu-link"
                   >{{ $t('menu.news') }}</v-btn>
                 </li>
+
+                <li>
+                  <DropDown
+                  />
+                </li>
+
               </scrollactive>
             </div>
 
@@ -122,12 +111,14 @@ import Hidden from '../Hidden'
 import { menuList } from './menu'
 import Settings from './Settings'
 import MobileMenu from './MobileMenu'
+import DropDown from './DropDown'
 
 export default {
   components: {
     'setting-menu': Settings,
     Hidden,
     MobileMenu,
+    DropDown,
   },
   props: {
     invert: {
@@ -146,6 +137,7 @@ export default {
       openDrawer: null,
       navOffset: 20,
       menuList,
+      showMenu: false,
     }
   },
   mounted() {

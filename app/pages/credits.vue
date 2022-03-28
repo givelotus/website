@@ -1,6 +1,6 @@
 <template>
   <v-container class="page-wrap pt-16">
-    <h1 class="pt-16">Credits</h1>
+    <h1 class="pt-16">Contributors</h1>
     <h3 class="pt-8">
       We appreciate all the people that contribute to the Lotus ecosystem.
     </h3>
