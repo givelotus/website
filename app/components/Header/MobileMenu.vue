@@ -24,6 +24,15 @@
         </v-list-item>
 
         <v-list-item
+          :href="getLocalizedHref('/credits', true)"
+          link
+        >
+          <v-list-item-content>
+            <v-list-item-title class="menu-list">{{ $t('lotusLanding.contributors') }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item
           href="https://explorer.givelotus.org/"
           target="_blank"
           :style="{ animationDuration: navMenu.length * 0.15 + 's' }"
