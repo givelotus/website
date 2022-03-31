@@ -72,6 +72,12 @@ export default () => {
         news: 'समाचार',
         more: 'अधिक',
         calculator: 'कैलकुलेटर',
+        wallets: 'पर्स',
+      },
+      walletsPage: {
+        wallets: 'पर्स',
+        title:
+          'पारिस्थितिकी तंत्र के लिए वर्तमान में उपलब्ध लोटस वॉलेट की जाँच करें:',
       },
       lotusLanding: {
         features: {

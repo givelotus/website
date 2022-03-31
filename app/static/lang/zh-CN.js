@@ -69,6 +69,11 @@ export default () => {
         news: '新闻',
         more: '更多的',
         calculator: '计算器',
+        wallets: '钱包',
+      },
+      walletsPage: {
+        wallets: '钱包',
+        title: '检查当前可用于生态系统的 Lotus 钱包：',
       },
       lotusLanding: {
         features: {

@@ -71,6 +71,11 @@ export default () => {
         news: 'News',
         more: 'More',
         calculator: 'Rewards calculator',
+        wallets: 'Wallets',
+      },
+      walletsPage: {
+        wallets: 'Wallets',
+        title: 'Check Lotus wallets currently available for the ecosystem:',
       },
       lotusLanding: {
         features: {
