@@ -51,20 +51,14 @@ export default {
         url: 'https://github.com/wiktorcie/',
       },
       {
-        name: 'Cic',
-        note: 'domains',
-        url: '',
-      },
-
-      {
-        name: 'Jic',
-        note: 'support',
-        url: '',
+        name: 'Matthew',
+        note: 'Explorer and Stamp UX work',
+        url: 'https://github.com/wiktorcie/',
       },
       {
-        name: 'Aic',
-        note: 'something else',
-        url: '',
+        name: 'Please add yourself here',
+        note: 'click link',
+        url: 'https://github.com/LogosFoundation/website/blob/master/app/pages/credits.vue',
       },
     ]
     let contributors_sorted = contributors.sort((a, b) => {
