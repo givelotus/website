@@ -15,6 +15,15 @@
         </v-list-item>
 
         <v-list-item
+          :href="getLocalizedHref('/wallets', true)"
+          link
+        >
+          <v-list-item-content>
+            <v-list-item-title class="menu-list">{{ $t('menu.wallets') }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item
           href="https://explorer.givelotus.org/"
           target="_blank"
           :style="{ animationDuration: navMenu.length * 0.15 + 's' }"
@@ -116,7 +125,7 @@ export default {
     }
   },
   methods: {
-    getLocalizedHref(url) {
+    getLocalizedHref(url, root) {
       let href = ''
       // gb is a default language so /gb/#faq doesnt exist and 404s
       // but we need to include prefix to localized page so there is
@@ -126,7 +135,11 @@ export default {
       if (this.$i18n.locale != 'gb') {
         href = '/' + this.$i18n.locale + url
       } else {
-        href = '/' + url
+        if (root) {
+          href = '' + url
+        } else {
+          href = '/' + url
+        }
       }
       return href
     },
