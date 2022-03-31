@@ -7,7 +7,7 @@
     <div class="pb-16">
       <!-- create a list -->
       <ul style="list-style: none" class="pt-8">
-        <li v-for="wallet in wallets_sorted" :key="wallet.name">
+        <li v-for="wallet in wallets_sorted" :key="wallet.note">
           <a :href="wallet.url" style="color:white" class="text-h5" target="_blank">{{ wallet.name }}</a>
           ({{ wallet.note }})
         </li>
