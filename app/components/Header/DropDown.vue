@@ -17,6 +17,16 @@
           <div class="header__dropdown-menu" :class="{ active: show }" v-if="show">
             <ul class="header__dropdown-menu-nav">
               <li class="header__dropdown-menu-item">
+                <a :href="getLocalizedHref('/wallets')" class="header__dropdown-menu-link" title="Available wallets">
+                  <div class="header__dropdown-menu-svg">
+                    <v-icon color="grey darken-2"> account_balance_wallet</v-icon>
+                  </div>
+                  <div class="header__dropdown-menu-text">
+                    Wallets
+                  </div>
+                </a>
+              </li>
+              <li class="header__dropdown-menu-item">
                 <a href="https://explorer.givelotus.org/" target="_blank" class="header__dropdown-menu-link" title="Block Explorer">
                   <div class="header__dropdown-menu-svg">
                     <v-icon color="grey darken-2"> grid_view</v-icon>
