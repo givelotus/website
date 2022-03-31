@@ -22,7 +22,7 @@
                     <v-icon color="grey darken-2"> account_balance_wallet</v-icon>
                   </div>
                   <div class="header__dropdown-menu-text">
-                    Wallets
+                    {{ $t('menu.wallets') }}
                   </div>
                 </a>
               </li>

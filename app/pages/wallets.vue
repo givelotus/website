@@ -1,8 +1,8 @@
 <template>
   <v-container class="page-wrap pt-16">
-    <h1 class="pt-16">Wallets</h1>
+    <h1 class="pt-16">{{ $t('walletsPage.wallets') }}</h1>
     <h3 class="pt-8">
-      Check Lotus wallets currently available for the ecosystem:
+      {{ $t('walletsPage.title') }}
     </h3>
     <div class="pb-16">
       <!-- create a list -->

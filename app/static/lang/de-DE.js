@@ -72,6 +72,12 @@ export default () => {
         news: 'News',
         more: 'mehr',
         calculator: 'Taschenrechner',
+        wallets: 'Geldbörsen',
+      },
+      walletsPage: {
+        wallets: 'Geldbörsen',
+        title:
+          'Prüfen Sie die derzeit für das Ökosystem verfügbaren Lotus-Geldbörsen:',
       },
       lotusLanding: {
         features: {

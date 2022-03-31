@@ -71,6 +71,12 @@ export default () => {
         news: 'Newsy',
         more: 'Więcej',
         calculator: 'Kalkulator',
+        wallets: 'Portfele',
+      },
+      walletsPage: {
+        wallets: 'Portfele',
+        title:
+          'Sprawdź portfele Lotus dostępne obecnie dla naszego ekosystemu:',
       },
       lotusLanding: {
         features: {
