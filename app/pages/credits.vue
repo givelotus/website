@@ -53,7 +53,7 @@ export default {
       {
         name: 'Matthew',
         note: 'Explorer and Stamp UX work',
-        url: 'https://github.com/wiktorcie/',
+        url: 'https://github.com/maff1989',
       },
       {
         name: 'Please add yourself here',
