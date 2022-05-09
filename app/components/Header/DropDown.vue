@@ -6,7 +6,7 @@
           <transition name="slide-fade">
             <v-btn
               key="off"
-              @click="show = !show"
+              @mouseover="show = true"
               text
               class="menu-link"
               > {{ $t('menu.more') }}</v-btn>
