@@ -47,18 +47,8 @@ export default {
     const contributors = [
       {
         name: 'Vic',
-        note: 'website',
+        note: 'givelotus.org nuxt website',
         url: 'https://github.com/wiktorcie/',
-      },
-      {
-        name: 'Matthew',
-        note: 'Explorer and Stamp UX work',
-        url: 'https://github.com/maff1989',
-      },
-      {
-        name: 'Please add yourself here',
-        note: 'click link',
-        url: 'https://github.com/LogosFoundation/website/blob/master/app/pages/credits.vue',
       },
     ]
     let contributors_sorted = contributors.sort((a, b) => {
