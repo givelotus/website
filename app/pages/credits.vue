@@ -50,6 +50,11 @@ export default {
         note: 'givelotus.org nuxt website',
         url: 'https://github.com/wiktorcie/',
       },
+      {
+        name: 'Mags',
+        note: 'Stamp and Vase',
+        url: 'https://twitter.com/magsmagnoli',
+      },
     ]
     let contributors_sorted = contributors.sort((a, b) => {
       if (a.name < b.name) {
