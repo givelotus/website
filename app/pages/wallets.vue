@@ -55,7 +55,7 @@ export default {
         url: 'https://play.google.com/store/apps/details?id=org.cashweb.cashew',
       },
       {
-        name: 'Cashew Wallet',
+        name: 'Lotus Vase',
         note: 'iPhone',
         url: 'https://apps.apple.com/us/app/cashew-wallet/id1539306720',
       },
