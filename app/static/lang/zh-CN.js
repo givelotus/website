@@ -144,7 +144,7 @@ export default () => {
           q2: {
             question: '有哪些可用的钱包？',
             answer:
-              '欢迎使用基于浏览器的<a href="https://sendlotus.com" target="_blank">SendLotus.com</a> 或者在移动设备上可以使用莲花宝座（Lotus Vase）的 <a href="https://play.google.com/store/apps/details?id=org.cashweb.cashew" target="_blank"> 安卓Android</a> 和 <a href="https://apps.apple.com/us/app/cashew-wallet/id1539306720" target="_blank">苹果iPhone</a>。你也可以跑轻量级的Lotus节点软件：<a href="https://storage.googleapis.com/lotus-project/lotus-3.1.3-win64-setup-unsigned.exe" target="_blank">Windows</a>， <a href="https://storage.googleapis.com/lotus-project/lotus-3.1.3-osx-unsigned.dmg" target="_blank">MacOS</a> 和 <a href="https://storage.googleapis.com/lotus-project/lotus-3.1.3-x86_64-linux-gnu.tar.gz" target="_blank">Linux</a>.。',
+              '欢迎使用基于浏览器的<a href="https://sendlotus.com" target="_blank">SendLotus.com</a> 或者在移动设备上可以使用莲花宝座（Lotus Vase）的 <a href="https://play.google.com/store/apps/details?id=org.cashweb.cashew" target="_blank"> 安卓Android</a> 和 <a href="https://apps.apple.com/us/app/cashew-wallet/id1539306720" target="_blank">苹果iPhone</a>。你也可以跑轻量级的Lotus节点软件：<a href="https://storage.googleapis.com/lotus-project/lotus-3.2.3-win64-setup-unsigned.exe" target="_blank">Windows</a>， <a href="https://storage.googleapis.com/lotus-project/lotus-3.2.3-osx-unsigned.dmg" target="_blank">MacOS</a> 和 <a href="https://storage.googleapis.com/lotus-project/lotus-3.2.3-x86_64-linux-gnu.tar.gz" target="_blank">Linux</a>.。',
           },
           q3: {
             question: '如何获取Lotus?',

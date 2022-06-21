@@ -148,7 +148,7 @@ export default () => {
           q2: {
             question: 'What are available wallets?',
             answer:
-              'Enjoy browser based <a href="https://sendlotus.com" target="_blank">SendLotus.com</a> or for your mobile device you can use Lotus Vase with <a href="https://play.google.com/store/apps/details?id=org.cashweb.cashew" target="_blank"> Android</a> and <a href="https://apps.apple.com/us/app/cashew-wallet/id1539306720" target="_blank">iPhone</a>. You can also run lightweight Lotus Node for <a href="https://storage.googleapis.com/lotus-project/lotus-3.1.3-win64-setup-unsigned.exe" target="_blank">Windows</a>, <a href="https://storage.googleapis.com/lotus-project/lotus-3.1.3-osx-unsigned.dmg" target="_blank">MacOS</a> and <a href="https://storage.googleapis.com/lotus-project/lotus-3.1.3-x86_64-linux-gnu.tar.gz" target="_blank">Linux</a>. ',
+              'Enjoy browser based <a href="https://sendlotus.com" target="_blank">SendLotus.com</a> or for your mobile device you can use Lotus Vase with <a href="https://play.google.com/store/apps/details?id=org.cashweb.cashew" target="_blank"> Android</a> and <a href="https://apps.apple.com/us/app/cashew-wallet/id1539306720" target="_blank">iPhone</a>. You can also run lightweight Lotus Node for <a href="https://storage.googleapis.com/lotus-project/lotus-3.2.3-win64-setup-unsigned.exe" target="_blank">Windows</a>, <a href="https://storage.googleapis.com/lotus-project/lotus-3.2.3-osx-unsigned.dmg" target="_blank">MacOS</a> and <a href="https://storage.googleapis.com/lotus-project/lotus-3.2.3-x86_64-linux-gnu.tar.gz" target="_blank">Linux</a>. ',
           },
           q3: {
             question: 'How do I get Lotus?',
