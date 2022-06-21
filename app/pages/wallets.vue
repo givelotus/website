@@ -63,19 +63,19 @@ export default {
         name: 'Lotus Node',
         note: 'Windows',
         url:
-          'https://storage.googleapis.com/lotus-project/lotus-3.1.3-win64-setup-unsigned.exe',
+          'https://storage.googleapis.com/lotus-project/lotus-3.2.3-win64-setup-unsigned.exe',
       },
       {
         name: 'Lotus Node',
         note: 'OSX',
         url:
-          'https://storage.googleapis.com/lotus-project/lotus-3.1.3-osx-unsigned.dmg',
+          'https://storage.googleapis.com/lotus-project/lotus-3.2.3-osx-unsigned.dmg',
       },
       {
         name: 'Lotus Node',
         note: 'Linux',
         url:
-          'https://storage.googleapis.com/lotus-project/lotus-3.1.3-x86_64-linux-gnu.tar.gz',
+          'https://storage.googleapis.com/lotus-project/lotus-3.2.3-x86_64-linux-gnu.tar.gz',
       },
     ]
     let wallets_sorted = wallets.sort((a, b) => {

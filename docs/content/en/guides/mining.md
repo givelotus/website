@@ -10,7 +10,7 @@ position: 5.0
 
 ### Windows
 
-1. Download the [lotus daemon](https://storage.googleapis.com/lotus-project/lotus-3.1.3-win64-setup-unsigned.exe) and install it somewhere convenient. It'll create shortcuts in your start menu.
+1. Download the [lotus daemon](https://storage.googleapis.com/lotus-project/lotus-3.2.3-win64-setup-unsigned.exe) and install it somewhere convenient. It'll create shortcuts in your start menu.
 2. When you start the wallet, it'll ask you where to place the blockchain data.
    1. **Don't worry about it telling you about hundreds of GBs of data, the Lotus blockchain is just a few MB big, and we haven't updated the texts yet**.
    2. You can pick whatever directory you want here, but it's suggested to leave the default one.
@@ -42,7 +42,7 @@ rpcpassword=lotus
 
 ### Mac OS
 
-Download [OSX lotus daemon](https://storage.googleapis.com/lotus-project/lotus-3.1.3-osx-unsigned.dmg)
+Download [OSX lotus daemon](https://storage.googleapis.com/lotus-project/lotus-3.2.3-osx-unsigned.dmg)
 
 
 1. Run `mkdir -p '~/Library/Application Support/Lotus/'`
@@ -63,7 +63,7 @@ rpcpassword=lotus
 4. Start Lotus-QT.app
 
 ### Linux
-Download [Linux lotus daemon](https://storage.googleapis.com/lotus-project/lotus-3.1.3-x86_64-linux-gnu.tar.gz)
+Download [Linux lotus daemon](https://storage.googleapis.com/lotus-project/lotus-3.2.3-x86_64-linux-gnu.tar.gz)
 
 1. Run `mkdir ~/.lotus`
 2. Edit `~/.lotus/lotus.conf`
