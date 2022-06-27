@@ -126,6 +126,10 @@ export default () => {
           'New Lotus are issued through rewards that are split between miners and projects which benefit the public good as a show of appreciation.',
         before_carousel_2:
           "Whenever you use Lotus to appreciate your friends, you know that you're also supporting these great projects.",
+        subscribe: {
+          caption: 'Subscribe',
+          text: 'Join our community mailing list to keep up to date',
+        },
         banner: {
           caption:
             'When you give or accept Lotus you are supporting the commons and adding value to the worldwide economy.',
