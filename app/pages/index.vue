@@ -5,6 +5,26 @@
         <section id="home">
           <BannerWithVideo />
         </section>
+        <section id="signup">
+          <title-subscribe
+            :caption="$t('lotusLanding.subscribe.caption')"
+            align="center"
+            class="use-text-title"
+            color="primary"
+          />
+          <v-container class="max-md use-text-subtitle2" style="text-align: center">
+            {{ $t('lotusLanding.subscribe.text') }}
+            <br />
+            <div class="mx-auto" style="display: inline-block">
+              <script
+                type="application/javascript"
+                async
+                data-uid="34ee838890"
+                src="https://unique-composer-4819.ck.page/34ee838890/index.js"
+              ></script>
+            </div>
+          </v-container>
+        </section>
         <section id="about" :class="isMobile ? 'space-top-short' : 'space-top'">
           <features />
           <story />
@@ -78,6 +98,8 @@ import Features from '~/components/Features'
 import Story from '~/components/Story'
 import Faq from '~/components/Faq'
 import Carousel from '~/components/Carousel'
+import Title from '~/components/Title'
+
 import brand from '~/static/text/brand'
 
 export default {
@@ -89,6 +111,7 @@ export default {
     Features,
     Story,
     Faq,
+    'title-subscribe': Title,
   },
   computed: {
     isTablet() {
