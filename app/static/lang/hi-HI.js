@@ -151,7 +151,7 @@ export default () => {
           q2: {
             question: 'कौन से वॉलेट उपलब्ध हैं?',
             answer:
-              'आप <a href="https://sendlotus.com" target="_blank">SendLotus.com</a> उपयोग कर सकते हैं या Vase मोबाइल वॉलेट के लिए <a href="https://play.google.com/store/apps/details?id=org.cashweb.cashew" target="_blank"> Android</a> और <a href="https://apps.apple.com/us/app/cashew-wallet/id1539306720" target="_blank">iPhone</a>. आप इसके लिए हल्के लोटस नोड को भी चला सकते हैं <a href="https://storage.googleapis.com/lotus-project/lotus-3.2.3-win64-setup-unsigned.exe" target="_blank">Windows</a>, <a href="https://storage.googleapis.com/lotus-project/lotus-3.2.3-osx-unsigned.dmg" target="_blank">MacOS</a> and <a href="https://storage.googleapis.com/lotus-project/lotus-3.2.3-x86_64-linux-gnu.tar.gz" target="_blank">Linux</a>. ',
+              'आप <a href="https://sendlotus.com" target="_blank">SendLotus.com</a> उपयोग कर सकते हैं या Vase मोबाइल वॉलेट के लिए <a href="https://play.google.com/store/apps/details?id=org.cashweb.cashew" target="_blank"> Android</a> और <a href="https://apps.apple.com/us/app/cashew-wallet/id1539306720" target="_blank">iPhone</a>. आप इसके लिए हल्के लोटस नोड को भी चला सकते हैं <a href="https://storage.googleapis.com/lotus-project/lotus-3.3.3-win64-setup-unsigned.exe" target="_blank">Windows</a>, <a href="https://storage.googleapis.com/lotus-project/lotus-3.3.3-osx-unsigned.dmg" target="_blank">MacOS</a> and <a href="https://storage.googleapis.com/lotus-project/lotus-3.3.3-x86_64-linux-gnu.tar.gz" target="_blank">Linux</a>. ',
           },
           q3: {
             question: 'मुझे लोटस कैसे मिलेगा?',
