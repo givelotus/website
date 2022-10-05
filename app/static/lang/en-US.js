@@ -190,7 +190,7 @@ export default () => {
         banner_title: '',
         banner_titlestrong: 'The token of appreciation',
         banner_subtitle:
-          'Lotus is a priceless digital token of appreciation that you can always keep at hand.',
+          'Lotus is a priceless digital token that you can send over the internet to show your appreciation.',
         faq_subtitle:
           'Have a question? Check out our frequently asked questions to find your answer.',
         news_readmore: 'read more',
@@ -200,6 +200,8 @@ export default () => {
           ' Be.cash collaborates with the Logos Foundation to assist in developing the lotus blockchain software, as well as developing Point of Sale systems and mobile payment methods for areas without the necessary infrastructure for traditional payment methods. ',
         bitcoin_abc_desc:
           ' Bitcoin ABC develops highly scalable open-source software for mining and transferring cryptotokens. Although Bitcoin ABC does not charge for its work, Lotus uses this software as a basis for the network and deems it appropriate to reciprocate to these developers. ',
+        givelotus2vn_desc:
+          ' GiveLotus 2 Vietnam builds custom blockchain software targetting the Vietnamese market ',
         services_button: 'Explore',
       },
     })

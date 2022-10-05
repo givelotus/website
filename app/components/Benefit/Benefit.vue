@@ -41,7 +41,7 @@
 <script>
 import Title from '../Title'
 import Hidden from '../Hidden'
-import imgAPI from '~/static/images/imgAPI'
+import images from '~/static/images/project-images'
 
 export default {
   components: {
@@ -50,7 +50,7 @@ export default {
   },
   data() {
     return {
-      img: imgAPI,
+      img: images,
     }
   },
 }

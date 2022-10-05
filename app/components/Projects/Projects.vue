@@ -9,7 +9,7 @@
       >{{ $t('lotusLanding.before_carousel_2') }}</div>
 
       <div v-if="loaded">
-        <vue-horizontal-list :items="items" :options="options">
+        <vue-horizontal-list :items="items" :options="options" class="project-images">
           <template #default="{ item }">
             <card
               :img="item.image"
@@ -30,7 +30,7 @@
 </style>
 
 <script>
-import imgApi from '~/static/images/imgAPI'
+import images from '~/static/images/project-images'
 import Card from '../Cards/Default'
 import VueHorizontalList from 'vue-horizontal-list'
 
@@ -42,30 +42,29 @@ export default {
   data() {
     return {
       items: [
-        // {
-        //   title: "Logos Foundation",
-        //   content:
-        //     this.$t('lotusLanding.logos_desc'),
-        //   url: 'https://github.com/LogosFoundation',
-        //   image: imgApi.projects[3],
-        // },
         {
           title: 'Stampchat',
           content: this.$t('lotusLanding.stampchat_desc'),
           url: 'https://stampchat.io/',
-          image: imgApi.projects[0],
+          image: images.projects.stampchat,
         },
         {
           title: 'Be.cash',
           content: this.$t('lotusLanding.becash_desc'),
           url: 'https://be.cash/',
-          image: imgApi.projects[1],
+          image: images.projects.becash,
+        },
+        {
+          title: 'GiveLotus2VN',
+          content: this.$t('lotusLanding.givelotus2vn_desc'),
+          url: 'https://www.givelotus.vn/',
+          image: images.projects.givelotus2vn,
         },
         {
           title: 'Bitcoin ABC',
           content: this.$t('lotusLanding.bitcoin_abc_desc'),
           url: 'https://www.bitcoinabc.org/',
-          image: imgApi.projects[2],
+          image: images.projects.bitcoinabc,
         },
       ],
       options: {
@@ -120,14 +119,7 @@ p {
   font-weight: 500;
   margin-bottom: 6px;
 }
-.image-container {
-  border-radius: 3px;
-  overflow: hidden;
-  position: relative;
-  width: 100%;
-  padding-top: 60%;
-}
-img {
+#project-images img {
   object-fit: cover;
   width: 100%;
   height: auto;
