@@ -41,7 +41,6 @@
 </style>
 
 <script>
-import imgAPI from '~/static/images/imgAPI'
 import Hidden from '../Hidden'
 
 export default {
@@ -53,7 +52,6 @@ export default {
       hide: false,
       width: 416,
       height: 600,
-      imgAPI: imgAPI,
       dialog: false,
     }
   },

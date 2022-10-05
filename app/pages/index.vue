@@ -25,15 +25,16 @@
             </div>
           </v-container>
         </section>
+
+        <section id="projects" :class="isMobile ? 'space-top-short' : 'space-top'">
+          <projects />
+          <benefit />
+        </section>
+        <br />
         <section id="about" :class="isMobile ? 'space-top-short' : 'space-top'">
           <features />
           <story />
         </section>
-        <section id="carousel" :class="isMobile ? 'space-top-short' : 'space-top'">
-          <Carousel />
-          <benefit />
-        </section>
-        <br />
         <section id="faq" class="space-top-short">
           <faq />
         </section>
@@ -97,7 +98,7 @@ import BannerWithVideo from '~/components/Banner/BannerWithVideo'
 import Features from '~/components/Features'
 import Story from '~/components/Story'
 import Faq from '~/components/Faq'
-import Carousel from '~/components/Carousel'
+import Projects from '~/components/Projects'
 import Title from '~/components/Title'
 
 import brand from '~/static/text/brand'
@@ -107,7 +108,7 @@ export default {
   components: {
     BannerWithVideo,
     Benefit,
-    Carousel,
+    Projects,
     Features,
     Story,
     Faq,
