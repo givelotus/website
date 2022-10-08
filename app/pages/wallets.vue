@@ -4,24 +4,65 @@
     <h3 class="pt-8">
       {{ $t('walletsPage.title') }}
     </h3>
-    <div class="pb-16">
-      <!-- create a list -->
-      <ul style="list-style: none" class="pt-8">
-        <li v-for="wallet in wallets_sorted" :key="wallet.note">
-          <a :href="wallet.url" style="color:white" class="text-h5" target="_blank">{{ wallet.name }}</a>
-          ({{ wallet.note }})
-        </li>
-      </ul>
-
-        <!-- responsive image -->
-        <div class="container pt-12">
-            <img
-            style="max-width: 50%"
-            class="item"
-            src="/images/lovephone.gif"
-            alt="feature" />
-        </div>
-
+      <div class="pb-16 pt-8">
+      <v-data-table :headers="headers" :items="wallets" :items-per-page="100">
+        <template #item.links="{ item }">
+          <v-btn
+            v-if="item.web"
+            icon
+            class="social-btn"
+            :href="`${item.web}`"
+            target="_blank"
+          >
+            <v-icon>mdi-open-in-new</v-icon>
+          </v-btn>
+          <v-btn
+            v-if="item.iphone"
+            icon
+            class="social-btn"
+            :href="`${item.iphone}`"
+            target="_blank"
+          >
+            <v-icon>mdi-apple-ios</v-icon>
+          </v-btn>
+          <v-btn
+            v-if="item.android"
+            icon
+            class="social-btn"
+            :href="`${item.android}`"
+            target="_blank"
+          >
+            <v-icon>mdi-android</v-icon>
+          </v-btn>
+          <v-btn
+            v-if="item.macos"
+            icon
+            class="social-btn"
+            :href="`${item.macos}`"
+            target="_blank"
+          >
+            <v-icon>mdi-apple</v-icon>
+          </v-btn>
+          <v-btn
+            v-if="item.windows"
+            icon
+            class="social-btn"
+            :href="`${item.windows}`"
+            target="_blank"
+          >
+            <v-icon>mdi-microsoft-windows</v-icon>
+          </v-btn>
+          <v-btn
+            v-if="item.linux"
+            icon
+            class="social-btn"
+            :href="`${item.linux}`"
+            target="_blank"
+          >
+            <v-icon>mdi-linux</v-icon>
+          </v-btn>
+        </template>
+      </v-data-table>
     </div>
   </v-container>
 </template>
@@ -38,89 +79,73 @@
 }
 </style>
 
-<script>
+<script lang="ts">
+type WalletInfo = {
+  name: string
+  description: string
+  iphone?: string
+  android?: string
+  macos?: string
+  linux?: string
+  windows?: string
+  web?: string
+}
+
+const wallets: Array<WalletInfo> = [
+  {
+    name: 'SendLotus.com',
+    description: 'Simple browser-based Lotus wallet',
+    web: 'https://sendlotus.com',
+  },
+  {
+    name: 'Lotus Vase',
+    description: 'Simple to use mobile wallet',
+    android: 'https://play.google.com/store/apps/details?id=org.cashweb.cashew',
+    iphone: 'https://apps.apple.com/us/app/cashew-wallet/id1539306720',
+  },
+  {
+    name: 'lotusd',
+    description: 'Lotus Daemon software (Only receommended for power users)',
+    windows:
+      'https://storage.googleapis.com/lotus-project/lotus-3.3.3-win64-setup-unsigned.exe',
+    macos:
+      'https://storage.googleapis.com/lotus-project/lotus-3.3.3-osx-unsigned.dmg',
+    linux:
+      'https://storage.googleapis.com/lotus-project/lotus-3.3.3-x86_64-linux-gnu.tar.gz',
+  },
+  {
+    name: 'Stamp',
+    description:
+      'Web-based cryptomessenger, allows you to talk to your Lotus friends',
+    web: 'https://sendlotus.com',
+  },
+]
+const headers = [
+  {
+    text: 'Name',
+    sortable: false,
+    value: 'name',
+  },
+  {
+    text: 'Description',
+    sortable: false,
+    value: 'description',
+  },
+  {
+    text: 'Links to Supported Platforms ',
+    sortable: false,
+    value: 'links'
+  },
+]
+
 export default {
   components: {},
   layout: 'default',
   data() {
-    const wallets = [
-      {
-        name: 'SendLotus.com',
-        note: 'browser based',
-        url: 'https://sendlotus.com',
-      },
-      {
-        name: 'Lotus Vase',
-        note: 'Android',
-        url: 'https://play.google.com/store/apps/details?id=org.cashweb.cashew',
-      },
-      {
-        name: 'Lotus Vase',
-        note: 'iPhone',
-        url: 'https://apps.apple.com/us/app/cashew-wallet/id1539306720',
-      },
-      {
-        name: 'Lotus Node',
-        note: 'Windows',
-        url:
-          'https://storage.googleapis.com/lotus-project/lotus-3.3.3-win64-setup-unsigned.exe',
-      },
-      {
-        name: 'Lotus Node',
-        note: 'OSX',
-        url:
-          'https://storage.googleapis.com/lotus-project/lotus-3.3.3-osx-unsigned.dmg',
-      },
-      {
-        name: 'Lotus Node',
-        note: 'Linux',
-        url:
-          'https://storage.googleapis.com/lotus-project/lotus-3.3.3-x86_64-linux-gnu.tar.gz',
-      },
-    ]
-    let wallets_sorted = wallets.sort((a, b) => {
-      if (a.name < b.name) {
-        return -1
-      }
-      if (a.name > b.name) {
-        return 1
-      }
-      return 0
-    })
     return {
-      wallets_sorted,
+      wallets,
+      headers,
     }
   },
-  computed: {
-    isTablet() {
-      return this.$mq === 'mdDown' || this.$mq === 'smDown' || this.$mq === 'xsDown' // eslint-disable-line
-    },
-    isMobile() {
-      return this.$mq === 'smDown' || this.$mq === 'xsDown'
-    },
-  },
-  // head() {
-  //   return {
-  //     title: brand.lotus.name + ' - ' + this.$t('calculator.meta.name'),
-  //     meta: [
-  //       {
-  //         property: 'author',
-  //         content: 'Lotus - ' + this.$t('calculator.meta.subtitle'),
-  //       },
-  //       {
-  //         name: 'description',
-  //         content: this.$t('calculator.meta.description'),
-  //       },
-  //       {
-  //         property: 'og:description',
-  //         content: this.$t('calculator.meta.description'),
-  //       },
-  //       {
-  //         property: 'og:title',
-  //         content: 'Lotus - ' + this.$t('calculator.meta.subtitle'),
-  //       },
-  //     ],
-  //   }
-  // },
 }
 </script>

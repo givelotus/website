@@ -75,7 +75,7 @@ export default () => {
       },
       walletsPage: {
         wallets: 'Wallets',
-        title: 'Check Lotus wallets currently available for the ecosystem:',
+        title: 'Wallets allow you to store and send your lotus tokens',
       },
       lotusLanding: {
         features: {
