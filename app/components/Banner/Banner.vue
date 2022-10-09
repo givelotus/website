@@ -19,23 +19,17 @@
             {{ $t('lotusLanding.banner_subtitle') }}
           </p>
         </div>
-        <div ref="videoContainer" class="item text-center">
-          <video
-            autoplay
-            muted
-            controls
-            style="border-radius: 40px"
-            :width="width"
-          >
-            <source src="/videos/givelotus.mp4" type="video/mp4" />
-            Sorry, your browser doesn't support embedded videos.
-          </video>
-        </div>
+      </div>
+      <div class="thewhy">
+        <p class="text white--text" v-html="$t('banner.why_1')"></p>
+        <p class="text white--text" v-html="$t('banner.why_2')"></p>
+        <p class="text white--text" v-html="$t('banner.why_3')"></p>
+        <p class="text white--text" v-html="$t('banner.why_4')"></p>
       </div>
     </v-container>
     <div class="deco">
       <hidden point="mdDown">
-        <div :class="{ hide: hide }" class="deco-inner">
+        <div class="deco-inner">
           <div class="wave wave-one" />
           <div class="wave wave-two" />
         </div>
@@ -55,31 +49,6 @@ import Hidden from '../Hidden'
 export default {
   components: {
     Hidden,
-  },
-  data() {
-    return {
-      hide: false,
-      width: 416,
-      height: 600,
-      dialog: false,
-    }
-  },
-  mounted() {
-    this.$nextTick(() => {
-      // console.log(this.$refs.videoContainer.offsetWidth);
-      window.addEventListener('resize', this.resizeVideo)
-      this.resizeVideo()
-    })
-  },
-  methods: {
-    getWindowWidth() {
-      this.windowWidth = document.documentElement.clientWidth
-    },
-    async resizeVideo() {
-      await this.$nextTick()
-
-      this.width = this.$refs.videoContainer.offsetWidth
-    },
   },
   computed: {
     isDesktop() {

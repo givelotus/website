@@ -30,10 +30,8 @@
         </section>
         <section id="projects">
           <projects />
-          <benefit />
         </section>
         <section id="about">
-          <features />
           <story />
         </section>
         <section id="faq">
@@ -94,9 +92,7 @@
 </style>
 
 <script>
-import Benefit from '~/components/Benefit'
-import Banner from '~/components/Banner'
-import Features from '~/components/Features'
+import Banner from '~/components/Banner/Banner'
 import Story from '~/components/Story'
 import Faq from '~/components/Faq'
 import Projects from '~/components/Projects'
@@ -108,9 +104,7 @@ export default {
   layout: 'landing',
   components: {
     Banner,
-    Benefit,
     Projects,
-    Features,
     Story,
     Faq,
     'title-subscribe': Title,
