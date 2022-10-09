@@ -88,7 +88,17 @@
               >
                 <v-icon>mdi-twitter</v-icon>
               </v-btn>
-
+              <v-btn
+                icon
+                class="social-btn"
+                href="https://discord.gg/KECbh3JEmm"
+                target="_blank"
+              >
+                <v-img
+                  width="1em"
+                  src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/62595384f934b806f37f4956_145dc557845548a36a82337912ca3ac5.svg"
+                />
+              </v-btn>
               <v-btn
                 icon
                 class="social-btn"
