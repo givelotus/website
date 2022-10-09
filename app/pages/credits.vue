@@ -83,6 +83,16 @@ const contributors: Array<Contributor> = [
     github: 'wiktorcie',
   },
   {
+    name: 'Alex U.',
+    contributions: 'Writes "This week in Stamp" blogs',
+    github: 'wiktorcie',
+  },
+  {
+    name: 'Austin',
+    contributions: 'Newsletter system.',
+    github: 'wiktorcie',
+  },
+  {
     name: 'Mags',
     contributions: 'Maintains Vase, and built blog.givelotus.org',
     twitter: 'magsmagnoli',
