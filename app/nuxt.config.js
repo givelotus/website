@@ -189,7 +189,7 @@ module.exports = {
       },
     ],
     [
-      'nuxt-i18n',
+      '@nuxtjs/i18n',
       {
         // Options
         //to make it seo friendly remove below line and add baseUrl option to production domain
@@ -226,14 +226,6 @@ module.exports = {
       directives: {
         shouldPreload: (file, type) => {
           return ['script', 'style', 'font'].includes(type)
-        },
-        scroll: function (el, binding) {
-          let f = function (evt) {
-            if (binding.value(evt, el)) {
-              window.removeEventListener('scroll', f)
-            }
-          }
-          window.addEventListener('scroll', f)
         },
       },
     },
