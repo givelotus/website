@@ -3,7 +3,7 @@
     <div class="main-wrap">
       <div class="container-wrap">
         <section id="home">
-          <BannerWithVideo />
+          <banner />
         </section>
         <section id="signup">
           <title-subscribe
@@ -95,7 +95,7 @@
 
 <script>
 import Benefit from '~/components/Benefit'
-import BannerWithVideo from '~/components/Banner/BannerWithVideo'
+import Banner from '~/components/Banner'
 import Features from '~/components/Features'
 import Story from '~/components/Story'
 import Faq from '~/components/Faq'
@@ -107,7 +107,7 @@ import brand from '~/static/text/brand'
 export default {
   layout: 'landing',
   components: {
-    BannerWithVideo,
+    Banner,
     Benefit,
     Projects,
     Features,
