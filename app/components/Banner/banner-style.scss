@@ -25,7 +25,7 @@ $wave-deco-dark: '/images/lotus/deco-wave-dark.png';
   position: relative;
   padding: spacing(25, 0, 15);
   @include breakpoints-up(lg) {
-    height: 1110px;
+    height: 800px;
     padding: spacing(20, 0, 5);
   }
   @include breakpoints-down(xs) {
@@ -35,6 +35,7 @@ $wave-deco-dark: '/images/lotus/deco-wave-dark.png';
 }
 
 .decoration {
+  z-index: -1;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -263,10 +264,7 @@ $wave-deco-dark: '/images/lotus/deco-wave-dark.png';
 }
 
 .container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  z-index: 3;
+  margin: auto;
   @media (min-width: 1150) {
     flex-direction: row;
   }
@@ -278,8 +276,15 @@ $wave-deco-dark: '/images/lotus/deco-wave-dark.png';
 }
 
 .container > div {
-  flex: 100%; /* or - flex: 0 50% - or - flex-basis: 50% - */
-  /*demo*/
+  margin: auto;
+  max-width: 720px;
   // box-shadow: 0 0 0 1px black;
   margin-bottom: 10px;
+  justify-content: center;
+}
+
+.thewhy {
+  display: block;
+  margin: auto;
+  max-width: 720px;
 }

@@ -30,7 +30,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import './carousel-style.scss';
+@import './projects.scss';
 </style>
 
 <script>

@@ -1,39 +1,8 @@
 .root {
-  padding-bottom: $spacing20;
+  padding-bottom: $spacing5;
   position: relative;
   @include breakpoints-down(md) {
     padding: spacing(15, 0, 10);
-  }
-}
-
-.carousel-handle {
-  height: 380px;
-  position: relative;
-  z-index: 10;
-}
-
-.carousel-wrap {
-  position: absolute;
-  z-index: 2;
-  width: 100%;
-  overflow: hidden;
-}
-
-.item {
-  &:focus {
-    outline: none;
-  }
-}
-
-.carousel-prop {
-  @include breakpoints-down(md) {
-    display: none;
-    div {
-      width: 1px;
-    }
-  }
-  div {
-    width: 250px;
   }
 }
 

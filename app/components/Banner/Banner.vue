@@ -19,23 +19,52 @@
             {{ $t('lotusLanding.banner_subtitle') }}
           </p>
         </div>
-        <div ref="videoContainer" class="item text-center">
-          <video
-            autoplay
-            muted
-            controls
-            style="border-radius: 40px"
-            :width="width"
+      </div>
+      <div class="thewhy">
+        <p class="text white--text">
+          Society struggles with efficiently funding public goods projects —
+          with allocating resources towards work that is desparately needed but
+          has no direct profit incentive. To this end, Lotus was created. We
+          belive that by re-framing what money is, and challenging the ideas
+          around how it is used, we can solve the problem of funding public
+          goods.
+        </p>
+        <p class="text white--text">
+          Our goal is to show volunteers of charitable projects appreciation by
+          distributing Lotus to them free-of-charge. And, as a culture, being
+          willing to accept those tokens in return for things these volunteers
+          need.
+        </p>
+        <p class="text white--text">
+          Our initial focus is on open source projects, and specifically the
+          projects needed to make Lotus function and exist. However, we are
+          looking for additional charitable projects who are willing to accept
+          and use Lotus. We would love to speak to any volunteer-based projects
+          that are interesting in participating. We have a particular interest
+          in providing tokens to open source, schools, orphanages, doctors, and
+          other public utilities.
+        </p>
+        <p class="text white--text">
+          If you are run such a project, and are interested in using Lotus,
+          please apply to receive tokens through our
+          <a
+            class="white--text"
+            href="https://forms.gle/j9EeY5NN57RcAoY99"
+            target="_blank"
+            >form</a
+          >, or on our
+          <a
+            class="white--text"
+            href="https://discord.gg/KECbh3JEmm"
+            target="_blank"
+            >discord.</a
           >
-            <source src="/videos/givelotus.mp4" type="video/mp4" />
-            Sorry, your browser doesn't support embedded videos.
-          </video>
-        </div>
+        </p>
       </div>
     </v-container>
     <div class="deco">
       <hidden point="mdDown">
-        <div :class="{ hide: hide }" class="deco-inner">
+        <div class="deco-inner">
           <div class="wave wave-one" />
           <div class="wave wave-two" />
         </div>
@@ -55,31 +84,6 @@ import Hidden from '../Hidden'
 export default {
   components: {
     Hidden,
-  },
-  data() {
-    return {
-      hide: false,
-      width: 416,
-      height: 600,
-      dialog: false,
-    }
-  },
-  mounted() {
-    this.$nextTick(() => {
-      // console.log(this.$refs.videoContainer.offsetWidth);
-      window.addEventListener('resize', this.resizeVideo)
-      this.resizeVideo()
-    })
-  },
-  methods: {
-    getWindowWidth() {
-      this.windowWidth = document.documentElement.clientWidth
-    },
-    async resizeVideo() {
-      await this.$nextTick()
-
-      this.width = this.$refs.videoContainer.offsetWidth
-    },
   },
   computed: {
     isDesktop() {
