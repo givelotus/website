@@ -10,10 +10,10 @@
     display: flex;
   }
   @include breakpoints-down(sm) {
-    padding: spacing(5, 0)
+    padding: spacing(5, 0);
   }
   .title-contact {
-    color: $palette-common-white
+    color: $palette-common-white;
   }
   a {
     @include use-theme(color, $palette-primary-main, $palette-primary-light);
@@ -28,14 +28,14 @@
 }
 
 .inner-wrap {
-  @include text-align(left)
+  @include text-align(left);
 }
 
 .full-form-wrap {
   color: $palette-common-white;
   padding-top: $spacing8;
   @include breakpoints-down(xs) {
-    padding-top: $spacing4
+    padding-top: $spacing4;
   }
 }
 
@@ -45,7 +45,7 @@
   background: transparent;
   box-shadow: 0 1.5px 12px 2px rgba(0, 0, 0, 0.28);
   @include breakpoints-down(xs) {
-    box-shadow: none
+    box-shadow: none;
   }
 }
 
@@ -54,27 +54,33 @@
   text-align: center;
   padding: spacing(0, 10);
   @include breakpoints-down(xs) {
-    padding: spacing(0, 2)
+    padding: spacing(0, 2);
   }
 }
 
 .input {
   width: 100%;
   label {
-    @include left(4px)
+    @include left(4px);
   }
   ::v-deep .v-input__slot {
     background: none;
     overflow: hidden;
     border: 1px solid;
-    @include use-theme(border-color, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.25));
-    input, textarea, select {
+    @include use-theme(
+      border-color,
+      rgba(0, 0, 0, 0.2),
+      rgba(255, 255, 255, 0.25)
+    );
+    input,
+    textarea,
+    select {
       @include left($spacing2);
       &:focus {
-        background: none
+        background: none;
       }
       &:hover {
-        background: none
+        background: none;
       }
     }
   }
@@ -84,13 +90,23 @@
         color: $palette-common-white;
       }
       border: 1px solid var(--v-primarylight-darken2);
-      input, textarea, select {
+      input,
+      textarea,
+      select {
         color: $palette-common-white;
         &:focus {
-          @include use-theme(background, rgba(0, 0, 0, 0.08), rgba(255, 255, 255, 0.1))
+          @include use-theme(
+            background,
+            rgba(0, 0, 0, 0.08),
+            rgba(255, 255, 255, 0.1)
+          );
         }
         &:hover {
-          @include use-theme(background, rgba(0, 0, 0, 0.08), rgba(255, 255, 255, 0.1))
+          @include use-theme(
+            background,
+            rgba(0, 0, 0, 0.08),
+            rgba(255, 255, 255, 0.1)
+          );
         }
       }
     }
@@ -102,11 +118,11 @@
   position: relative;
   padding: spacing(0, 15, 10);
   @include breakpoints-down(sm) {
-    padding: spacing(0, 4, 10)
+    padding: spacing(0, 4, 10);
   }
   @include breakpoints-down(xs) {
     padding: spacing(2, 1);
-    margin-top: $spacing2
+    margin-top: $spacing2;
   }
 }
 
@@ -116,16 +132,16 @@
   margin-top: $spacing8;
   padding: spacing(0, 15, 10);
   @include breakpoints-down(sm) {
-    padding: spacing(0, 4, 10)
+    padding: spacing(0, 4, 10);
   }
   @include breakpoints-down(xs) {
     padding: spacing(2, 1);
-    margin-top: $spacing2
+    margin-top: $spacing2;
   }
 }
 
 .rewards_table {
-  background-color: #6B0080;
+  background-color: #6b0080;
   color: $dark-text-primary;
   // color: #6B0080
 }
@@ -155,7 +171,7 @@
   @include breakpoints-down('sm') {
     button {
       margin-top: $spacing4;
-      width: 100%
+      width: 100%;
     }
   }
   @include breakpoints-down(xs) {
@@ -170,25 +186,25 @@
   span {
     a.link {
       text-decoration: none !important;
-      color: $palette-secondary-main
+      color: $palette-secondary-main;
     }
   }
   &.flex {
     display: flex;
     justify-content: space-between;
     @include breakpoints-down(sm) {
-      display: block
+      display: block;
     }
   }
 }
 
 .right-icon {
-  @include margin-left($spacing1)
+  @include margin-left($spacing1);
 }
 
 .check {
   svg {
-    fill: $palette-secondary-main
+    fill: $palette-secondary-main;
   }
 }
 
@@ -215,7 +231,7 @@
   height: 1500px;
   transform-origin: top left;
   @include breakpoints-up(md) {
-    transform: scale(0.8)
+    transform: scale(0.8);
   }
 }
 
@@ -225,7 +241,7 @@
   height: 1500px;
   transform-origin: top right;
   @include breakpoints-up(md) {
-    transform: scale(0.8)
+    transform: scale(0.8);
   }
 }
 
@@ -233,7 +249,7 @@
   display: block;
   position: relative;
   .row > div {
-    padding: 0
+    padding: 0;
   }
 }
 
@@ -247,7 +263,7 @@
   text-align: center;
   color: $palette-common-white;
   h6 {
-    font-weight: $font-regular
+    font-weight: $font-regular;
   }
 }
 
@@ -261,15 +277,16 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    z-index: 10
+    z-index: 10;
   }
   img {
-    width: 64px
+    width: 64px;
   }
-  p, span {
+  p,
+  span {
     display: block;
     padding-bottom: 4px;
-    color: $palette-common-white
+    color: $palette-common-white;
   }
 }
 
@@ -278,13 +295,13 @@
   justify-content: space-between;
   align-items: flex-start;
   a {
-    margin-top: $spacing2
+    margin-top: $spacing2;
   }
   @include breakpoints-down(sm) {
     margin-top: $spacing2;
     justify-content: center;
     a {
-      display: none
+      display: none;
     }
   }
 }
@@ -294,10 +311,10 @@
   position: relative;
   padding: $spacing4;
   @include breakpoints-up(sm) {
-    padding: $spacing5
+    padding: $spacing5;
   }
   @include breakpoints-up(lg) {
-    padding: $spacing8
+    padding: $spacing8;
   }
 }
 
@@ -305,10 +322,10 @@
   display: flex;
   justify-content: space-around;
   @include breakpoints-down(md) {
-    justify-content: center
+    justify-content: center;
   }
   @include breakpoints-down(xs) {
-    display: block
+    display: block;
   }
   > * {
     color: $palette-common-white;
@@ -320,31 +337,31 @@
     }
     @include breakpoints-down(xs) {
       margin-bottom: $spacing2;
-      width: 100%
+      width: 100%;
     }
   }
   i {
     color: $palette-common-white;
-    @include margin-right($spacing1)
+    @include margin-right($spacing1);
   }
 }
 
 .blue-btn {
   background: #28aae1 !important;
   &:hover {
-    background: darken(#28aae1, 20%) !important
+    background: darken(#28aae1, 20%) !important;
   }
 }
 .navi-btn {
   background: #3b579d !important;
   &:hover {
-    background: darken(#3b579d, 20%) !important
+    background: darken(#3b579d, 20%) !important;
   }
 }
 .red-btn {
   background: #dd493c !important;
   &:hover {
-    background: darken(#dd493c, 20%) !important
+    background: darken(#dd493c, 20%) !important;
   }
 }
 .separator {
@@ -355,22 +372,23 @@
   position: relative;
   p {
     @include breakpoints-down(xs) {
-      font-size: 12px
+      font-size: 12px;
     }
   }
-  &:before, &:after {
-    content: "";
+  &:before,
+  &:after {
+    content: '';
     border-top: 1px solid;
     @include use-theme(border-top-color, $light-text-hint, $dark-text-hint);
     top: 50%;
     position: absolute;
-    width: 20%
+    width: 20%;
   }
   &:before {
-    left: 0
+    left: 0;
   }
   &:after {
-    right: 0
+    right: 0;
   }
 }
 
@@ -379,11 +397,11 @@
     min-height: 0;
   }
   > div {
-    margin-top: 0
+    margin-top: 0;
   }
   .white-label {
     ::v-deep label.v-label {
-      color: $palette-common-white
+      color: $palette-common-white;
     }
   }
 }
@@ -398,24 +416,24 @@
   @include breakpoints-down(sm) {
     @include left(calc(50% - 40px));
     top: 40px;
-    margin: 0
+    margin: 0;
   }
   @include breakpoints-down('sm') {
-    display: none
+    display: none;
   }
   i {
     font-size: 32px;
-    color: rgba(255, 255, 255, 0.54)
+    color: rgba(255, 255, 255, 0.54);
   }
   > span i:first-child {
     opacity: 1;
-    transition: opacity 0.3s ease
+    transition: opacity 0.3s ease;
   }
   > span i:last-child {
     position: absolute;
     @include right(0);
     opacity: 0;
-    transition: all 0.3s ease
+    transition: all 0.3s ease;
   }
   &:hover {
     background: rgba(0, 0, 0, 0.05);

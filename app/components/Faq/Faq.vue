@@ -9,7 +9,9 @@
           <p
             class="text use-text-subtitle2"
             :class="[isMobile ? 'text-center' : 'text-left']"
-          >{{ $t('lotusLanding.faq_subtitle') }}</p>
+          >
+            {{ $t('lotusLanding.faq_subtitle') }}
+          </p>
           <hidden point="smDown">
             <div class="illustration">
               <img src="/images/lotus/faq.png" alt="illustration" />
@@ -19,7 +21,11 @@
         <v-col md="6" cols="12" class="pa-6">
           <div class="accordion">
             <v-expansion-panels v-model="panel" active-class="expanded">
-              <v-expansion-panel v-for="(item, index) in faqData" :key="index" class="paper">
+              <v-expansion-panel
+                v-for="(item, index) in faqData"
+                :key="index"
+                class="paper"
+              >
                 <v-expansion-panel-header class="content">
                   <p class="heading">{{ item.q }}</p>
                 </v-expansion-panel-header>

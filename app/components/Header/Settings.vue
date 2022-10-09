@@ -10,17 +10,8 @@
   >
     <template #activator="{ on }">
       <div class="setting">
-        <v-btn
-          fab
-          text
-          small
-          v-on="on"
-          class="ma-3"
-        >
-          <v-icon
-            :class="{ invert: invert, active: open }"
-            class="icon"
-          >
+        <v-btn fab text small v-on="on" class="ma-3">
+          <v-icon :class="{ invert: invert, active: open }" class="icon">
             settings
           </v-icon>
         </v-btn>
@@ -59,18 +50,15 @@
           @click="switchLang(locale.code)"
         >
           <v-list-item-avatar class="flag">
-            <country-flag :country="locale.code" rounded size='small'/>
+            <country-flag :country="locale.code" rounded size="small" />
           </v-list-item-avatar>
           <v-list-item-content>
             <v-list-item-title class="lang-opt">
-              {{ $t('common.'+locale.code) }}
+              {{ $t('common.' + locale.code) }}
             </v-list-item-title>
           </v-list-item-content>
           <v-list-item-action>
-            <v-icon
-              v-if="locale.code === $i18n.locale"
-              color="primary"
-            >
+            <v-icon v-if="locale.code === $i18n.locale" color="primary">
               mdi-check
             </v-icon>
           </v-list-item-action>
@@ -89,7 +77,8 @@ import { mapGetters, mapState } from 'vuex'
 import CountryFlag from 'vue-country-flag'
 
 let darkMode = false
-if (typeof Storage !== 'undefined') { // eslint-disable-line
+if (typeof Storage !== 'undefined') {
+  // eslint-disable-line
   darkMode = localStorage.getItem('DarkMode') || false
 }
 
@@ -114,14 +103,14 @@ export default {
     ...mapGetters(['getDir']),
   },
   methods: {
-    switchLang: function(val) {
+    switchLang: function (val) {
       this.$i18n.setLocale(val)
     },
-    setDark: function() {
+    setDark: function () {
       localStorage.setItem('DarkMode', this.dark)
       this.$vuetify.theme.dark = this.dark
     },
-    setDirection: function() {
+    setDirection: function () {
       this.$vuetify.rtl = this.rtl
       document.dir = this.rtl ? 'rtl' : 'ltr'
     },

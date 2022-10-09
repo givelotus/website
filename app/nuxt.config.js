@@ -7,8 +7,8 @@ import brand from './static/text/brand'
 module.exports = {
   target: 'static',
   /*
-  ** Headers of the page
-  */
+   ** Headers of the page
+   */
   head: {
     htmlAttrs: {
       dir: 'ltr',
@@ -127,18 +127,17 @@ module.exports = {
       },
       {
         rel: 'stylesheet',
-        href:
-          'https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
+        href: 'https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
       },
     ],
   },
   /*
-  ** Customize the progress-bar color
-  */
+   ** Customize the progress-bar color
+   */
   loading: { color: theme.primary },
   /*
-  ** Global CSS
-  */
+   ** Global CSS
+   */
   css: [
     '~/assets/transition.scss',
     '~/assets/vuetify-overide.scss',
@@ -150,8 +149,8 @@ module.exports = {
     '~/assets/global.css',
   ],
   /*
-  ** Plugins to load before mounting the App
-  */
+   ** Plugins to load before mounting the App
+   */
   plugins: [
     '~/plugins/vue-fragment-config',
     '~/plugins/vue-wow-config',
@@ -161,12 +160,12 @@ module.exports = {
     { src: '~/plugins/vue-scroll-nav', ssr: false },
   ],
   /*
-  ** Nuxt.js dev-modules
-  */
+   ** Nuxt.js dev-modules
+   */
   buildModules: ['@nuxt/typescript-build', '@nuxtjs/vuetify'],
   /*
-  ** Nuxt.js modules
-  */
+   ** Nuxt.js modules
+   */
   modules: [
     '@nuxtjs/axios',
     ['@nuxtjs/html-minifier', { log: 'once', logHtml: true }],
@@ -211,16 +210,16 @@ module.exports = {
     ],
   ],
   /*
-  ** vuetify module configuration
-  ** https://github.com/nuxt-community/vuetify-module
-  */
+   ** vuetify module configuration
+   ** https://github.com/nuxt-community/vuetify-module
+   */
   vuetify: {
     customVariables: ['~/assets/styles.scss'],
     optionsPath: './config/vuetify.options.js',
   },
   /*
-  ** Render configuration
-  */
+   ** Render configuration
+   */
   render: {
     bundleRenderer: {
       directives: {
@@ -231,21 +230,22 @@ module.exports = {
     },
   },
   /*
-  ** Build configuration
-  */
+   ** Build configuration
+   */
   build: {
     /*
-    ** You can extend webpack config here
-    */
+     ** You can extend webpack config here
+     */
     // cssSourceMap: false,
     loaders: {
       vus: { cacheBusting: true },
       scss: { sourceMap: false },
     },
-    extend (config, ctx) {
+    extend(config, ctx) {
       config.plugins.push(
         new FilterWarningsPlugin({
-          exclude: /Critical dependency: the request of a dependency is an expression/,
+          exclude:
+            /Critical dependency: the request of a dependency is an expression/,
         }),
       )
       if (ctx.isDev && ctx.isClient) {
@@ -262,21 +262,21 @@ module.exports = {
     },
   },
   /*
-  ** Page Layout transition
-  */
+   ** Page Layout transition
+   */
   layoutTransition: {
     name: 'layout',
     mode: 'out-in',
-    beforeEnter (el) {
+    beforeEnter(el) {
       console.log('Before enter...')
     },
-    afterLeave (el) {
+    afterLeave(el) {
       console.log('afterLeave', el)
     },
   },
   /*
-  ** Application Port
-  */
+   ** Application Port
+   */
   server: {
     port: 8008, // default: 3000
   },

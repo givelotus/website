@@ -2,7 +2,7 @@
   width: 95%;
   margin: 0 auto;
   @include breakpoints-up(lg) {
-    width: 80%
+    width: 80%;
   }
   ::v-deep .v-snack__wrapper {
     width: 100%;
@@ -12,7 +12,7 @@
     color: $palette-primary-dark;
     background: $palette-primary-light;
     @include breakpoints-up(sm) {
-      padding: spacing(0.5, 2)
+      padding: spacing(0.5, 2);
     }
     > div:first-child {
       display: flex;
@@ -20,13 +20,13 @@
       .action {
         @include breakpoints-up(sm) {
           flex: 1;
-          @include margin-right($spacing2)
+          @include margin-right($spacing2);
         }
         @include breakpoints-down(xs) {
-          text-align: center
+          text-align: center;
         }
       }
-    } 
+    }
   }
   .button.v-btn {
     width: 100%;
@@ -35,16 +35,15 @@
       width: 150px;
     }
     @include breakpoints-down(xs) {
-      margin: $spacing2 0
+      margin: $spacing2 0;
     }
   }
 }
-
 
 .action {
   @include breakpoints-down(xs) {
     width: 100%;
     padding: 0;
-    margin: 0
+    margin: 0;
   }
 }

@@ -19,13 +19,17 @@
       border-bottom: 2px dashed;
       @include palette-divider;
       &:last-child {
-        border-bottom: none
+        border-bottom: none;
       }
     }
   }
   &:hover {
-    @include use-theme(box-shadow, 0 0 20px 5px $palette-primary-light, 0 0 20px 5px $dark-background-default);
-    border: 1px solid $palette-primary-main
+    @include use-theme(
+      box-shadow,
+      0 0 20px 5px $palette-primary-light,
+      0 0 20px 5px $dark-background-default
+    );
+    border: 1px solid $palette-primary-main;
   }
 }
 
@@ -43,7 +47,7 @@
     @include palette-text-secondary;
     font-weight: $font-bold;
     text-transform: none;
-    margin-top: $spacing2
+    margin-top: $spacing2;
   }
 }
 
@@ -58,22 +62,26 @@
     @include bg-color-fade($dark-divider, 0.04);
   }
   .button {
-    margin-top: $spacing2
+    margin-top: $spacing2;
   }
   .desc {
-    font-size: 14px
+    font-size: 14px;
   }
 }
 
 .basic {
   .title-card {
-    @include use-theme(color, $palette-secondary-dark, $palette-secondary-light);
+    @include use-theme(
+      color,
+      $palette-secondary-dark,
+      $palette-secondary-light
+    );
   }
   .btn-area {
     @include bg-color-fade($palette-secondary-main, 0.3);
   }
   &:hover {
-    border-color: $palette-secondary-main
+    border-color: $palette-secondary-main;
   }
 }
 
@@ -91,38 +99,45 @@
       color: $palette-common-white;
     }
     p {
-      position: relative
+      position: relative;
     }
     &:before {
-      content: "";
+      content: '';
       width: 160%;
       position: absolute;
       border-radius: 50%;
       bottom: -60px;
       height: 400px;
       left: -30%;
-      background: linear-gradient(-185deg, $palette-primary-main 60%, $palette-primary-dark 100%);
+      background: linear-gradient(
+        -185deg,
+        $palette-primary-main 60%,
+        $palette-primary-dark 100%
+      );
     }
   }
   ul {
-    padding-top: $spacing2
+    padding-top: $spacing2;
   }
   &:hover {
-    @include use-theme(box-shadow, 0 0 20px 5px $palette-primary-light, 0 0 20px 5px $dark-background-default)
+    @include use-theme(
+      box-shadow,
+      0 0 20px 5px $palette-primary-light,
+      0 0 20px 5px $dark-background-default
+    );
   }
 }
 
 .news {
-
   display: flex;
   .v-application--is-rtl & {
     direction: rtl;
   }
   @include breakpoints-down(xs) {
-    flex-direction: column
+    flex-direction: column;
   }
   p {
-    margin-bottom: 0
+    margin-bottom: 0;
   }
   figure {
     overflow: hidden;
@@ -135,7 +150,7 @@
       width: auto;
       height: auto;
       max-height: 200px;
-      margin: spacing(2, 1)
+      margin: spacing(2, 1);
     }
     img {
       border-radius: 1px;
@@ -148,7 +163,7 @@
         transform: translateX(-50%);
       }
       @include breakpoints-down(xs) {
-        height: auto
+        height: auto;
       }
     }
   }
@@ -169,5 +184,5 @@
 .btn {
   margin-top: $spacing2;
   @include margin-left($spacing1);
-  @include use-theme(color, $palette-primary-main, $palette-primary-light)
+  @include use-theme(color, $palette-primary-main, $palette-primary-light);
 }

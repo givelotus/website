@@ -10,13 +10,13 @@ $error-deco: '/images/lotus/error-deco.png';
 
 .flex {
   display: flex;
-  justify-content: center
+  justify-content: center;
 }
 
 .deco {
   position: relative;
   @include breakpoints-down(xs) {
-    margin: spacing(25, 0, 10)
+    margin: spacing(25, 0, 10);
   }
   h3 {
     color: $palette-primary-dark;
@@ -26,10 +26,10 @@ $error-deco: '/images/lotus/error-deco.png';
     padding-top: 40px;
     @include padding-left(20px);
     position: relative;
-    z-index: 1
+    z-index: 1;
   }
   &:before {
-    content: "";
+    content: '';
     width: 320px;
     height: 230px;
     background: url($error-deco) no-repeat;
@@ -38,7 +38,7 @@ $error-deco: '/images/lotus/error-deco.png';
     @include left(-40px);
     @include breakpoints-down(xs) {
       transform: scale(0.9);
-      @include left(-48px)
+      @include left(-48px);
     }
   }
 }
@@ -48,7 +48,7 @@ $error-deco: '/images/lotus/error-deco.png';
   @include breakpoints-up(sm) {
     @include padding-left($spacing5);
     @include border-left(1px solid);
-    @include use-theme(border-left-color, $light-divider, $dark-divider)
+    @include use-theme(border-left-color, $light-divider, $dark-divider);
   }
   @include breakpoints-down(xs) {
     text-align: center;
@@ -57,9 +57,9 @@ $error-deco: '/images/lotus/error-deco.png';
   h4 {
     color: $palette-common-white;
     font-weight: $font-bold;
-    margin-bottom: $spacing4
+    margin-bottom: $spacing4;
   }
 }
 .button {
-  margin-top: $spacing4
+  margin-top: $spacing4;
 }

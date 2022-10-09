@@ -1,10 +1,7 @@
 <template>
   <v-app>
     <div class="dedicated-page">
-      <Error
-        :error-code="this.error.statusCode"
-        :text="$t('common.404')"
-      />
+      <Error :error-code="this.error.statusCode" :text="$t('common.404')" />
       <main-footer />
     </div>
   </v-app>

@@ -2,42 +2,42 @@ export default () => {
   return new Promise(function (resolve) {
     resolve({
       common: {
-        title: '',
-        subtitle: '',
-        error_with_status: 'Auf dem Server ist ein Fehler aufgetreten',
+        'title': '',
+        'subtitle': '',
+        'error_with_status': 'Auf dem Server ist ein Fehler aufgetreten',
         '404': 'Diese Seite konnte nicht gefunden werden.',
         '404_subtitle':
           'Sie können entweder hier bleiben und entspannen oder zum Anfang zurückkehren.',
-        back: 'zurück zur Homepage',
-        login: '',
-        login_create: '',
-        login_or: '',
-        login_email: '',
-        login_password: '',
-        login_remember: '',
-        login_forgot: '',
-        continue: '',
-        login_title: '',
-        login_subtitle: '',
-        register: '',
-        register_already: '',
-        register_or: '',
-        register_name: '',
-        register_email: '',
-        register_password: '',
-        register_confirm: '',
-        register_title: '',
-        register_subtitle: '',
-        accept: '',
-        gb: 'English',
-        pl: 'Polski',
-        de: 'Deutsch',
-        cn: '中国',
-        pt: '󠁥󠁮󠁧󠁿Português',
-        id: '󠁥󠁮󠁧󠁿Bahasa Indonesia',
-        in: '󠁥󠁮󠁧󠁿हिन्दी',
-        ar: '󠁥󠁮󠁧󠁿العربيّة',
-        notif_msg:
+        'back': 'zurück zur Homepage',
+        'login': '',
+        'login_create': '',
+        'login_or': '',
+        'login_email': '',
+        'login_password': '',
+        'login_remember': '',
+        'login_forgot': '',
+        'continue': '',
+        'login_title': '',
+        'login_subtitle': '',
+        'register': '',
+        'register_already': '',
+        'register_or': '',
+        'register_name': '',
+        'register_email': '',
+        'register_password': '',
+        'register_confirm': '',
+        'register_title': '',
+        'register_subtitle': '',
+        'accept': '',
+        'gb': 'English',
+        'pl': 'Polski',
+        'de': 'Deutsch',
+        'cn': '中国',
+        'pt': '󠁥󠁮󠁧󠁿Português',
+        'id': '󠁥󠁮󠁧󠁿Bahasa Indonesia',
+        'in': '󠁥󠁮󠁧󠁿हिन्दी',
+        'ar': '󠁥󠁮󠁧󠁿العربيّة',
+        'notif_msg':
           'Dies ist ein Beispiel für eine Nachricht, die häufig für wichtige Informationen für Besucher oder Benutzer verwendet wird. Bitte klicken Sie auf die Schaltfläche neben, um diese Nachricht zu schließen.',
       },
       calculator: {
@@ -107,21 +107,18 @@ export default () => {
           section1: {
             headtitle: 'Unsere Mission',
             title: 'Mächtiges Symbol der Anerkennung',
-            text:
-              'Jeden Tag machen wir im Umgang mit anderen Menschen Erfahrungen, die das Leben lebenswert machen. Wir sagen "Danke" zueinander. Aber Gerede ist billig und Worte sind flüchtig. Es ist für jemanden leicht, seine Wertschätzung allein durch Worte auszudrücken. Wie motivierend ist ein "Danke"? Was wäre, wenn wir unseren Worten nahtlos etwas Unbezahlbares folgen lassen könnten? Wie sähe die Welt aus, wenn wir eine effektivere Möglichkeit hätten, uns gegenseitig unsere Dankbarkeit auszudrücken? Was wäre, wenn wir die "Wertschätzung", die wir erhalten, für immer behalten könnten?',
+            text: 'Jeden Tag machen wir im Umgang mit anderen Menschen Erfahrungen, die das Leben lebenswert machen. Wir sagen "Danke" zueinander. Aber Gerede ist billig und Worte sind flüchtig. Es ist für jemanden leicht, seine Wertschätzung allein durch Worte auszudrücken. Wie motivierend ist ein "Danke"? Was wäre, wenn wir unseren Worten nahtlos etwas Unbezahlbares folgen lassen könnten? Wie sähe die Welt aus, wenn wir eine effektivere Möglichkeit hätten, uns gegenseitig unsere Dankbarkeit auszudrücken? Was wäre, wenn wir die "Wertschätzung", die wir erhalten, für immer behalten könnten?',
           },
           section2: {
             headtitle: 'Ewige Dankbarkeit',
             title: 'Die Freude des Gebens und Empfangens',
-            text:
-              'Das Lotus-Projekt glaubt, dass es den Geist der Gegenseitigkeit fördern würde. Wir glauben, dass es die Menschen zu positiven Handlungen führen würde - und weg von Dingen, die nicht nützlich sind. Und wir schaffen eine Möglichkeit, genau das zu tun. \n Blumen werden oft verschenkt, um Wertschätzung zu zeigen, aber wir können keine verderblichen Blumen vorrätig halten. Indem wir eine Blume zu einem Token machen, können wir das Symbol immer bei uns haben. Token nehmen keinen Platz weg und verderben nicht. Insbesondere der Lotus symbolisiert Reinheit, Erleuchtung, Wiedergeburt und Regeneration. Dies sind die Werte, die diese Tokens repräsentieren soll.',
+            text: 'Das Lotus-Projekt glaubt, dass es den Geist der Gegenseitigkeit fördern würde. Wir glauben, dass es die Menschen zu positiven Handlungen führen würde - und weg von Dingen, die nicht nützlich sind. Und wir schaffen eine Möglichkeit, genau das zu tun. \n Blumen werden oft verschenkt, um Wertschätzung zu zeigen, aber wir können keine verderblichen Blumen vorrätig halten. Indem wir eine Blume zu einem Token machen, können wir das Symbol immer bei uns haben. Token nehmen keinen Platz weg und verderben nicht. Insbesondere der Lotus symbolisiert Reinheit, Erleuchtung, Wiedergeburt und Regeneration. Dies sind die Werte, die diese Tokens repräsentieren soll.',
           },
           section3: {
             headtitle: 'Community betrieben',
             title:
               'Lotus ist eine von der Community betriebene Innovation, die dafür sorgt, dass deine Anerkennung für immer erhalten bleibt.',
-            text:
-              'Das Lotus Token liegt auf einer erlaubnisfreien, unzensierbaren und offenen Blockchain, die durch die von der Logos Foundation entwickelte Software gewartet und ermöglicht wird. Neue Token werden durch Proof-of-Work-Mining generiert und als Belohnung für die Entwickler ausgegeben, die mit viel Liebe die Infrastruktur entwickeln, die es dem Token erlauben zu existieren und versendet zu werden, sowie für die Miner, die sorgfältig die Korrektheit der Blockchain aufrechterhalten. Dies geschieht durch "Block-Belohnungen", die offen und transparent sind. Im Gegensatz zu Bitcoin, das ein spekulativer Vermögenswert ist, ist Lotus unbezahlbar - ein Zeichen der Wertschätzung - mit sentimentalem Wert. Der Belohnungsplan ist so programmiert, dass er auf Veränderungen in der Nachfrage nach Lotus-Token reagiert und inflationär ist. Da er inflationär ist, gibt es keinen Grund, ihn zu horten, außer als Erinnerung daran, wie sehr die Menschen uns schätzen. Lotus soll keine Investition sein, aber unsere Investitionen ineinander werden mehr Lotus erzeugen. ',
+            text: 'Das Lotus Token liegt auf einer erlaubnisfreien, unzensierbaren und offenen Blockchain, die durch die von der Logos Foundation entwickelte Software gewartet und ermöglicht wird. Neue Token werden durch Proof-of-Work-Mining generiert und als Belohnung für die Entwickler ausgegeben, die mit viel Liebe die Infrastruktur entwickeln, die es dem Token erlauben zu existieren und versendet zu werden, sowie für die Miner, die sorgfältig die Korrektheit der Blockchain aufrechterhalten. Dies geschieht durch "Block-Belohnungen", die offen und transparent sind. Im Gegensatz zu Bitcoin, das ein spekulativer Vermögenswert ist, ist Lotus unbezahlbar - ein Zeichen der Wertschätzung - mit sentimentalem Wert. Der Belohnungsplan ist so programmiert, dass er auf Veränderungen in der Nachfrage nach Lotus-Token reagiert und inflationär ist. Da er inflationär ist, gibt es keinen Grund, ihn zu horten, außer als Erinnerung daran, wie sehr die Menschen uns schätzen. Lotus soll keine Investition sein, aber unsere Investitionen ineinander werden mehr Lotus erzeugen. ',
           },
         },
         before_carousel_1:
@@ -131,8 +128,7 @@ export default () => {
         banner: {
           caption:
             'Wenn du Lotus gibst oder akzeptierst, unterstützt du die Gemeinschaft und schaffst einen Mehrwert für die Weltwirtschaft.',
-          text:
-            'Die Initiativen die du unterstützt wenn du Lotus verwendest sind: ',
+          text: 'Die Initiativen die du unterstützt wenn du Lotus verwendest sind: ',
           initiatives: [
             'Menschenrechte',
             'Regenerative Energie',

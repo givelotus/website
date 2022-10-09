@@ -36,10 +36,10 @@
   -webkit-transform: translate3d(0, 20px, 0);
   -ms-transform: translate3d(0, 20px, 0);
   transform: translate3d(0, 20px, 0);
-  transition-delay: 100ms
+  transition-delay: 100ms;
 }
 
-[class$="transition-enter-done"] .fragment-fadeUp{
+[class$='transition-enter-done'] .fragment-fadeUp {
   opacity: 1;
   -webkit-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);

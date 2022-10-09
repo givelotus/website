@@ -1,15 +1,19 @@
 <template>
   <div class="root">
     <v-container class="fixed-width">
-      <div
-        class="text-center text-bold"
-      >{{ $t('lotusLanding.before_carousel_1') }}</div>
-      <div
-        class="text-center text-bold"
-      >{{ $t('lotusLanding.before_carousel_2') }}</div>
+      <div class="text-center text-bold">
+        {{ $t('lotusLanding.before_carousel_1') }}
+      </div>
+      <div class="text-center text-bold">
+        {{ $t('lotusLanding.before_carousel_2') }}
+      </div>
 
       <div v-if="loaded">
-        <vue-horizontal-list :items="items" :options="options" class="project-images">
+        <vue-horizontal-list
+          :items="items"
+          :options="options"
+          class="project-images"
+        >
           <template #default="{ item }">
             <card
               :img="item.image"
@@ -94,10 +98,10 @@ export default {
     this.loaded = true
   },
   methods: {
-    next: function() {
+    next: function () {
       this.$refs.slick.next()
     },
-    prev: function() {
+    prev: function () {
       this.$refs.slick.prev()
     },
   },

@@ -1,8 +1,7 @@
 <template>
   <div class="main-wrap">
-    <main-header/>
-    <Calculator
-    />
+    <main-header />
+    <Calculator />
   </div>
 </template>
 

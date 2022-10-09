@@ -1,11 +1,11 @@
 .root {
   position: relative;
-  z-index: 56
+  z-index: 56;
 }
 
 .text {
   position: relative;
-  z-index: 20
+  z-index: 20;
 }
 
 .illustration {
@@ -16,7 +16,7 @@
   }
   img {
     display: block;
-    width: 280px
+    width: 280px;
   }
 }
 
@@ -25,7 +25,7 @@
 }
 
 .item {
-  margin-bottom: $spacing3
+  margin-bottom: $spacing3;
 }
 
 .paper {
@@ -33,10 +33,11 @@
   margin-bottom: $spacing3;
   overflow: hidden;
   .theme--dark & {
-    box-shadow: 0px 1px 3px 0px rgba(64, 64, 64, 1), 0px 1px 1px 0px rgba(42, 42, 42, 1), 0px 2px 1px -1px rgba(20, 20, 20, 1)
+    box-shadow: 0px 1px 3px 0px rgba(64, 64, 64, 1),
+      0px 1px 1px 0px rgba(42, 42, 42, 1), 0px 2px 1px -1px rgba(20, 20, 20, 1);
   }
   .theme--light & {
-    box-shadow: 0 1.5px 12px 2px rgba(0, 0, 0, 0.06)
+    box-shadow: 0 1.5px 12px 2px rgba(0, 0, 0, 0.06);
   }
 }
 
@@ -55,7 +56,7 @@
   .icon {
     position: absolute;
     top: 20px;
-    @include right($spacing2)
+    @include right($spacing2);
   }
 }
 
@@ -68,7 +69,7 @@
   }
   ::v-deep .v-icon {
     color: $palette-common-white !important;
-    transform: rotate(180deg)
+    transform: rotate(180deg);
   }
 }
 

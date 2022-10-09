@@ -39,16 +39,16 @@
     }
   }
   &:after {
-    content: "";
+    content: '';
     width: 70px;
     height: 12px;
     bottom: -32px;
     border-radius: 12px;
     background: $palette-primary-main;
-    position: absolute
+    position: absolute;
   }
   & strong {
-    @include palette-text-primary
+    @include palette-text-primary;
   }
 }
 
@@ -58,7 +58,7 @@
   margin-bottom: $spacing12;
   text-transform: capitalize;
   @include breakpoints-down(xs) {
-    margin-bottom: $spacing10
+    margin-bottom: $spacing10;
   }
   h3 {
     @include palette-text-primary;
@@ -76,15 +76,15 @@
     }
   }
   &:after {
-    content: "";
+    content: '';
     width: 70px;
     height: 12px;
     bottom: $spacing4 * -1;
     border-radius: 12px;
     background: $palette-primary-main;
-    position: absolute
+    position: absolute;
   }
   strong {
-    @include palette-text-primary
+    @include palette-text-primary;
   }
 }

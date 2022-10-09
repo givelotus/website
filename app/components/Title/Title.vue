@@ -1,6 +1,8 @@
 <template>
   <div class="main-title" :class="[align, { dark: dark }]">
-    <p class="caption-title" :class="[captionClass]" v-if="caption">{{ caption }}</p>
+    <p class="caption-title" :class="[captionClass]" v-if="caption">
+      {{ caption }}
+    </p>
     <h4 :class="[textClass]" v-if="text">{{ text }}</h4>
   </div>
 </template>

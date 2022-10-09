@@ -5,16 +5,16 @@
 
 @function spacing($top, $right: -1, $bottom: -1, $left: -1) {
   @if ($left > -1) {
-     @return ($top * $unit) ($right * $unit) ($bottom * $unit) ($left * $unit);
+    @return ($top * $unit) ($right * $unit) ($bottom * $unit) ($left * $unit);
   }
-  
+
   @if ($bottom > -1) {
-     @return ($top * $unit) ($right * $unit) ($bottom * $unit) ($right * $unit);
+    @return ($top * $unit) ($right * $unit) ($bottom * $unit) ($right * $unit);
   }
-  
+
   @if ($right > -1) {
-     @return ($top * $unit) ($right * $unit) ($top * $unit) ($right * $unit);
+    @return ($top * $unit) ($right * $unit) ($top * $unit) ($right * $unit);
   }
-  
-  @return ($top * $unit)
+
+  @return ($top * $unit);
 }

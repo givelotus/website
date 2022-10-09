@@ -1,6 +1,6 @@
 type MenuItem = {
-  translation: string,
-  url: string,
+  translation: string
+  url: string
   offset?: number
 }
 

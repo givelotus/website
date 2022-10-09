@@ -1,22 +1,16 @@
 <template>
   <div class="root">
     <v-container class="max-md">
-
       <u-animate-container>
-        <u-animate
-          name="fadeInRightShort"
-          delay="0.4s"
-          duration="0.3s"
-        >
+        <u-animate name="fadeInRightShort" delay="0.4s" duration="0.3s">
           <title-main
             :caption="$t('lotusLanding.features.title')"
             align="center"
-            class='use-text-title'
+            class="use-text-title"
             color="primary"
           >
           </title-main>
           <v-row class="spacing8 grid">
-
             <v-col sm="6" class="px-8">
               <div class="counter-item">
                 <figure>
@@ -24,7 +18,7 @@
                 </figure>
                 <div class="text" v-if="loaded">
                   <h4 class="use-text-title">
-                     {{ $t('lotusLanding.features.feature1.title') }}
+                    {{ $t('lotusLanding.features.feature1.title') }}
                   </h4>
                   <h6 class="use-text-subtitle2">
                     {{ $t('lotusLanding.features.feature1.description') }}
@@ -40,7 +34,7 @@
                 </figure>
                 <div class="text" v-if="loaded">
                   <h4 class="use-text-title">
-                     {{ $t('lotusLanding.features.feature2.title') }}
+                    {{ $t('lotusLanding.features.feature2.title') }}
                   </h4>
                   <h6 class="use-text-subtitle2">
                     {{ $t('lotusLanding.features.feature2.description') }}
@@ -54,7 +48,9 @@
                   <img src="/images/scalable.png" alt="unlimited" />
                 </figure>
                 <div class="text" v-if="loaded">
-                  <h4 class="use-text-title">{{ $t('lotusLanding.features.feature3.title') }}</h4>
+                  <h4 class="use-text-title">
+                    {{ $t('lotusLanding.features.feature3.title') }}
+                  </h4>
                   <h6 class="use-text-subtitle2">
                     {{ $t('lotusLanding.features.feature3.description') }}
                   </h6>
@@ -64,7 +60,7 @@
             <v-col sm="6" class="px-8">
               <div class="counter-item">
                 <figure>
-                  <img src="/images/stable3.png"  />
+                  <img src="/images/stable3.png" />
                 </figure>
                 <div class="text" v-if="loaded">
                   <h4 class="use-text-title">
