@@ -11,7 +11,7 @@ export const menuList: MenuItem[] = [
   },
   {
     translation: 'lotusLanding.header_carousel',
-    url: '#carousel',
+    url: '#projects',
   },
   {
     translation: 'lotusLanding.header_faq',
