@@ -158,19 +158,14 @@ export default () => {
           q3: {
             question: 'Làm sao để tôi có được Lotus?',
             answer:
-              'Bạn có thể dùng <a href="https://faucet.lotuslounge.org/" target="_blank">faucet</a>. Hoặc bạn có thể nhận quà từ <a href="https://t.me/givelotus" target="_blank">telegram group</a>. Bạn cũng có thể giao dịch những đồng tiền khác thành LOTUS [XPI] trên trang <a href="https://www.exbitron.com/" target="_blank">Exbitron exchange</a>.',
+              'Bạn có thể dùng <a href="https://faucet.lotuslounge.org/" target="_blank">faucet</a>. Hoặc bạn có thể nhận quà từ <a href="https://t.me/givelotus" target="_blank">telegram group</a>.',
           },
           q4: {
-            question: 'Tôi có thể giao dịch ở đâu?',
-            answer:
-              'Bạn có thể giao dịch trên Exbitron <a href="https://www.exbitron.com/trading/xpiusdt" target="_blank">USDT</a>, <a href="https://www.exbitron.com/trading/xpidoge" target="_blank">Dogecoin</a> và <a href="https://www.exbitron.com/trading/xpibch" target="_blank">Bitcoin Cash</a>',
-          },
-          q5: {
             question: 'Tôi có thể đóng góp cho dự án như thế nào?',
             answer:
               'Hãy tham khảo mã nguồn mở của chúng tôi <a href="https://github.com/LogosFoundation" target="_blank">here</a> và đừng ngại liên hệ với các lập trình viên trên <a href="https://t.me/givelotus" target="_blank">telegram group</a>.',
           },
-          q6: {
+          q5: {
             question:
               ' Có bất kỳ hướng dẫn quảng bá thương hiệu cùng với logo và hình ảnh nào mà tôi có thể sử dụng không?',
             answer:
