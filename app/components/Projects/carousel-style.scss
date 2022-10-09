@@ -2,26 +2,26 @@
   padding-bottom: $spacing20;
   position: relative;
   @include breakpoints-down(md) {
-    padding: spacing(15, 0, 10)
+    padding: spacing(15, 0, 10);
   }
 }
 
 .carousel-handle {
   height: 380px;
   position: relative;
-  z-index: 10
+  z-index: 10;
 }
 
 .carousel-wrap {
   position: absolute;
   z-index: 2;
   width: 100%;
-  overflow: hidden
+  overflow: hidden;
 }
 
 .item {
   &:focus {
-    outline: none
+    outline: none;
   }
 }
 
@@ -33,7 +33,7 @@
     }
   }
   div {
-    width: 250px
+    width: 250px;
   }
 }
 
@@ -44,30 +44,30 @@
   top: spacing(5);
   @include breakpoints-up(lg) {
     @include left($spacing3);
-    top: $spacing1 * -10
+    top: $spacing1 * -10;
   }
   @media (min-width: 1400px) {
-    @include left($spacing10)
+    @include left($spacing10);
   }
   .title {
     @include breakpoints-up(md) {
-      @include margin-right($spacing5)
+      @include margin-right($spacing5);
     }
     @include breakpoints-up(lg) {
-      @include float(right)
+      @include float(right);
     }
     @media (min-width: 1400px) {
-      @include margin-right($spacing5 * -1)
+      @include margin-right($spacing5 * -1);
     }
   }
 }
 
 .arrow {
   .v-application--is-rtl & {
-    direction: rtl
+    direction: rtl;
   }
   .v-application--is-ltr & {
-    direction: ltr
+    direction: ltr;
   }
   margin-top: 150px;
   position: relative;
@@ -77,21 +77,21 @@
     margin: $spacing1 / 2;
     @include shadow3;
     .v-application--is-rtl & {
-      transform: scale(-1)
+      transform: scale(-1);
     }
     .theme--dark & {
-      color: $palette-primary-light
+      color: $palette-primary-light;
     }
     .theme--light & {
-      color: $palette-primary-dark
+      color: $palette-primary-dark;
     }
   }
   @media (max-width: 1279px) {
-    display: none
+    display: none;
   }
   @include breakpoints-down(md) {
     display: none;
-    margin-top: 560px
+    margin-top: 560px;
   }
 }
 

@@ -2,24 +2,31 @@
   <div id="app">
     <ul class="header__navbar">
       <li class="header__item">
-        <a  class="header__link">
+        <a class="header__link">
           <transition name="slide-fade">
-            <v-btn
-              key="off"
-              @mouseover="show = true"
-              text
-              class="menu-link"
-              > {{ $t('menu.more') }}</v-btn>
+            <v-btn key="off" @mouseover="show = true" text class="menu-link">
+              {{ $t('menu.more') }}</v-btn
+            >
           </transition>
         </a>
 
         <transition name="dropdown">
-          <div class="header__dropdown-menu" :class="{ active: show }" v-if="show">
+          <div
+            class="header__dropdown-menu"
+            :class="{ active: show }"
+            v-if="show"
+          >
             <ul class="header__dropdown-menu-nav">
               <li class="header__dropdown-menu-item">
-                <a :href="getLocalizedHref('/wallets')" class="header__dropdown-menu-link" title="Available wallets">
+                <a
+                  :href="getLocalizedHref('/wallets')"
+                  class="header__dropdown-menu-link"
+                  title="Available wallets"
+                >
                   <div class="header__dropdown-menu-svg">
-                    <v-icon color="grey darken-2"> account_balance_wallet</v-icon>
+                    <v-icon color="grey darken-2">
+                      account_balance_wallet</v-icon
+                    >
                   </div>
                   <div class="header__dropdown-menu-text">
                     {{ $t('menu.wallets') }}
@@ -27,7 +34,12 @@
                 </a>
               </li>
               <li class="header__dropdown-menu-item">
-                <a href="https://explorer.givelotus.org/" target="_blank" class="header__dropdown-menu-link" title="Block Explorer">
+                <a
+                  href="https://explorer.givelotus.org/"
+                  target="_blank"
+                  class="header__dropdown-menu-link"
+                  title="Block Explorer"
+                >
                   <div class="header__dropdown-menu-svg">
                     <v-icon color="grey darken-2"> grid_view</v-icon>
                   </div>
@@ -37,7 +49,12 @@
                 </a>
               </li>
               <li class="header__dropdown-menu-item">
-                <a href="https://docs.givelotus.org/" target="_blank" class="header__dropdown-menu-link" title="documentation">
+                <a
+                  href="https://docs.givelotus.org/"
+                  target="_blank"
+                  class="header__dropdown-menu-link"
+                  title="documentation"
+                >
                   <div class="header__dropdown-menu-svg">
                     <v-icon color="grey darken-2">article</v-icon>
                   </div>
@@ -47,17 +64,25 @@
                 </a>
               </li>
               <li class="header__dropdown-menu-item">
-                <a :href="getLocalizedHref('/credits')" class="header__dropdown-menu-link" title="contributors">
+                <a
+                  :href="getLocalizedHref('/credits')"
+                  class="header__dropdown-menu-link"
+                  title="contributors"
+                >
                   <div class="header__dropdown-menu-svg">
                     <v-icon color="grey darken-2">groups</v-icon>
                   </div>
                   <div class="header__dropdown-menu-text">
-                     {{ $t('lotusLanding.contributors') }}
+                    {{ $t('lotusLanding.contributors') }}
                   </div>
                 </a>
               </li>
               <li class="header__dropdown-menu-item">
-                <a :href="getLocalizedHref('/calculator')" class="header__dropdown-menu-link" title="rewards calculator">
+                <a
+                  :href="getLocalizedHref('/calculator')"
+                  class="header__dropdown-menu-link"
+                  title="rewards calculator"
+                >
                   <div class="header__dropdown-menu-svg">
                     <v-icon color="grey darken-2">calculate</v-icon>
                   </div>
@@ -66,7 +91,6 @@
                   </div>
                 </a>
               </li>
-
             </ul>
           </div>
         </transition>

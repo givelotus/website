@@ -10,25 +10,25 @@
           :style="{ animationDuration: index * 0.15 + 's' }"
         >
           <v-list-item-content>
-            <v-list-item-title class="menu-list">{{ $t(item.translation) }}</v-list-item-title>
+            <v-list-item-title class="menu-list">{{
+              $t(item.translation)
+            }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item
-          :href="getLocalizedHref('/wallets', true)"
-          link
-        >
+        <v-list-item :href="getLocalizedHref('/wallets', true)" link>
           <v-list-item-content>
-            <v-list-item-title class="menu-list">{{ $t('menu.wallets') }}</v-list-item-title>
+            <v-list-item-title class="menu-list">{{
+              $t('menu.wallets')
+            }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item
-          :href="getLocalizedHref('/credits', true)"
-          link
-        >
+        <v-list-item :href="getLocalizedHref('/credits', true)" link>
           <v-list-item-content>
-            <v-list-item-title class="menu-list">{{ $t('lotusLanding.contributors') }}</v-list-item-title>
+            <v-list-item-title class="menu-list">{{
+              $t('lotusLanding.contributors')
+            }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -39,7 +39,9 @@
           link
         >
           <v-list-item-content>
-            <v-list-item-title class="menu-list">{{ $t('lotusLanding.header_block_explorer') }}</v-list-item-title>
+            <v-list-item-title class="menu-list">{{
+              $t('lotusLanding.header_block_explorer')
+            }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -50,7 +52,9 @@
           link
         >
           <v-list-item-content>
-            <v-list-item-title class="menu-list">{{ $t('lotusLanding.documentation') }}</v-list-item-title>
+            <v-list-item-title class="menu-list">{{
+              $t('lotusLanding.documentation')
+            }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -61,7 +65,9 @@
           link
         >
           <v-list-item-content>
-            <v-list-item-title class="menu-list">{{ $t('menu.news') }}</v-list-item-title>
+            <v-list-item-title class="menu-list">{{
+              $t('menu.news')
+            }}</v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -69,47 +75,48 @@
           class="fixedBottom"
           :style="{ animationDuration: navMenu.length * 0.15 + 's' }"
         >
-           <v-btn
-              x-large
-              icon
-              class="social-btn"
-              href="https://twitter.com/givelotus"
-              target="_blank">
-              <v-icon>mdi-twitter</v-icon>
-            </v-btn>
+          <v-btn
+            x-large
+            icon
+            class="social-btn"
+            href="https://twitter.com/givelotus"
+            target="_blank"
+          >
+            <v-icon>mdi-twitter</v-icon>
+          </v-btn>
 
-            <v-btn
-              x-large
-              icon
-              class="social-btn"
-              href="https://www.reddit.com/r/lotusproject/"
-              target="_blank"
-            >
-              <v-icon>mdi-reddit</v-icon>
-            </v-btn>
+          <v-btn
+            x-large
+            icon
+            class="social-btn"
+            href="https://www.reddit.com/r/lotusproject/"
+            target="_blank"
+          >
+            <v-icon>mdi-reddit</v-icon>
+          </v-btn>
 
-            <v-btn
-              x-large
-              icon
-              class="social-btn"
-              href="https://github.com/LogosFoundation"
-              target="_blank"
-            >
-              <v-icon>mdi-github</v-icon>
-            </v-btn>
+          <v-btn
+            x-large
+            icon
+            class="social-btn"
+            href="https://github.com/LogosFoundation"
+            target="_blank"
+          >
+            <v-icon>mdi-github</v-icon>
+          </v-btn>
 
-            <v-btn
-              x-large
-              icon
-              class="social-btn"
-              href="https://t.me/givelotus"
-              target="_blank">
-              <v-icon>telegram</v-icon>
-            </v-btn>
+          <v-btn
+            x-large
+            icon
+            class="social-btn"
+            href="https://t.me/givelotus"
+            target="_blank"
+          >
+            <v-icon>telegram</v-icon>
+          </v-btn>
         </v-list-item-group>
       </v-list>
     </div>
-
   </div>
 </template>
 

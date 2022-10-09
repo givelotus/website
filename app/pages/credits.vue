@@ -5,7 +5,11 @@
       We appreciate all the people that contribute to the Lotus ecosystem.
     </h3>
     <div class="pb-16 pt-16">
-      <v-data-table :headers="headers" :items="contributors" :items-per-page="100">
+      <v-data-table
+        :headers="headers"
+        :items="contributors"
+        :items-per-page="100"
+      >
         <template #item.socials="{ item }">
           <v-btn
             v-if="item.twitter"

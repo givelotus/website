@@ -4,29 +4,33 @@ $wave-deco-dark: '/images/lotus/deco-wave-dark.png';
 @keyframes move_wave {
   0% {
     background-position: 0 0;
-    transform: scale(2, 1)
+    transform: scale(2, 1);
   }
   50% {
     background-position: 50% -50%;
-    transform: scale(2.3, 1.2)
+    transform: scale(2.3, 1.2);
   }
   100% {
     background-position: 100% 0;
-    transform: scale(2, 1)
+    transform: scale(2, 1);
   }
 }
 
 .root {
-  background: linear-gradient(-45deg, $palette-primary-main 20%, $palette-primary-dark 70%);
+  background: linear-gradient(
+    -45deg,
+    $palette-primary-main 20%,
+    $palette-primary-dark 70%
+  );
   position: relative;
   padding: spacing(25, 0, 15);
   @include breakpoints-up(lg) {
     height: 1110px;
-    padding: spacing(20, 0, 5)
+    padding: spacing(20, 0, 5);
   }
   @include breakpoints-down(xs) {
     padding: spacing(25, 0, 10);
-    position: relative
+    position: relative;
   }
 }
 
@@ -42,7 +46,7 @@ $wave-deco-dark: '/images/lotus/deco-wave-dark.png';
     fill: $palette-secondary-main;
     opacity: 0.15;
     position: fixed;
-    top: 0
+    top: 0;
   }
 }
 
@@ -67,28 +71,28 @@ $wave-deco-dark: '/images/lotus/deco-wave-dark.png';
   position: relative;
   z-index: 3;
   display: flex;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
 .text {
-  max-Width: 720px;
+  max-width: 720px;
   @include breakpoints-down(sm) {
-    text-align: center
+    text-align: center;
   }
   h3 {
     color: $palette-common-white;
     @include breakpoints-up(lg) {
-      @include padding-right($spacing5)
+      @include padding-right($spacing5);
     }
     strong {
-      font-weight: $font-bold
+      font-weight: $font-bold;
     }
   }
   p {
     color: $palette-common-white;
     margin: spacing(4, 0);
     @include breakpoints-up(lg) {
-      @include padding-right($spacing15)
+      @include padding-right($spacing15);
     }
   }
 }
@@ -102,7 +106,7 @@ $wave-deco-dark: '/images/lotus/deco-wave-dark.png';
     flex-direction: column-reverse;
     > * {
       margin-bottom: $spacing4;
-      height: 56px
+      height: 56px;
     }
   }
 }
@@ -135,33 +139,33 @@ $wave-deco-dark: '/images/lotus/deco-wave-dark.png';
     color: $palette-common-white;
     line-height: 22px;
     @include margin-left(4px);
-    font-size: 24px
+    font-size: 24px;
   }
   &:hover {
     .icon {
       background: $palette-primary-dark;
-      @include left(0)
+      @include left(0);
     }
   }
 }
 
 .illustration {
   @include breakpoints-down(sm) {
-    display: none
+    display: none;
   }
   img {
     display: block;
     @include breakpoints-up(md) {
-      max-width: 400px
+      max-width: 400px;
     }
     @include breakpoints-up(lg) {
-      max-width: 480px
+      max-width: 480px;
     }
   }
 }
 
 .wave {
-  transform: translateZ(0)
+  transform: translateZ(0);
 }
 
 .deco {
@@ -171,10 +175,10 @@ $wave-deco-dark: '/images/lotus/deco-wave-dark.png';
   @include left(0);
   width: 100%;
   @include breakpoints-up(sm) {
-    bottom: -20,
+    bottom: -20;
   }
   @include breakpoints-up(lg) {
-    bottom: -10,
+    bottom: -10;
   }
   .wave {
     position: absolute;
@@ -183,10 +187,10 @@ $wave-deco-dark: '/images/lotus/deco-wave-dark.png';
     bottom: 0;
     @include left(0);
     .theme--dark & {
-      background-image: url($wave-deco-dark)
+      background-image: url($wave-deco-dark);
     }
     .theme--light & {
-      background-image: url($wave-deco-light)
+      background-image: url($wave-deco-light);
     }
     background-repeat: repeat-x;
     transform: scale(2.5, 1);
@@ -222,7 +226,7 @@ $wave-deco-dark: '/images/lotus/deco-wave-dark.png';
     background-position: 397px 10px;
   }
   @include breakpoints-down(xs) {
-    background-position: center bottom
+    background-position: center bottom;
   }
 }
 
@@ -233,15 +237,15 @@ $wave-deco-dark: '/images/lotus/deco-wave-dark.png';
     display: flex;
     width: 100%;
     justify-content: space-between;
-    align-items: center
+    align-items: center;
   }
   @include breakpoints-down(md) {
     width: 100%;
     > * {
-      padding: $spacing1
+      padding: $spacing1;
     }
     &::v-deep iframe {
-      width: 100%
+      width: 100%;
     }
   }
 }
@@ -255,7 +259,7 @@ $wave-deco-dark: '/images/lotus/deco-wave-dark.png';
 }
 
 .hide {
-  visibility: hidden
+  visibility: hidden;
 }
 
 .container {

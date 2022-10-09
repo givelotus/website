@@ -17,12 +17,7 @@
             <p>
               {{ $t('common.404_subtitle') }}
             </p>
-            <v-btn
-              color="secondary"
-              href="/"
-              large
-              class="button"
-            >
+            <v-btn color="secondary" href="/" large class="button">
               {{ $t('common.back') }}
             </v-btn>
           </div>

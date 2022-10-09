@@ -1,6 +1,12 @@
 <template>
   <div class="page-wrap pt-16">
-    <v-snackbar :timeout="4000" top right v-model="snackbar" class="notification">
+    <v-snackbar
+      :timeout="4000"
+      top
+      right
+      v-model="snackbar"
+      class="notification"
+    >
       <div class="action">Test message/notification</div>
       <v-btn text icon>
         <v-icon>mdi-close</v-icon>
@@ -18,15 +24,19 @@
       </div>
       <v-card class="form-box fragment-fadeUp">
         <div class="full-form-wrap">
-          <h3 class="use-text-title title-contact pb-3 text-center">{{ $t('calculator.title') }}</h3>
+          <h3 class="use-text-title title-contact pb-3 text-center">
+            {{ $t('calculator.title') }}
+          </h3>
           <h4 class="pb-3 text-center">{{ $t('calculator.subtitle') }}</h4>
 
-          <h3
-            class="pb-3 text-center"
-          >{{ $t('calculator.user_rewards_xpi') }} {{dailyRewards.toFixed(2)}} XPI</h3>
-          <h3
-            class="pb-3 text-center"
-          >{{ $t('calculator.user_electricity_costs') }} {{electricityCosts.toFixed(2)}} usd</h3>
+          <h3 class="pb-3 text-center">
+            {{ $t('calculator.user_rewards_xpi') }}
+            {{ dailyRewards.toFixed(2) }} XPI
+          </h3>
+          <h3 class="pb-3 text-center">
+            {{ $t('calculator.user_electricity_costs') }}
+            {{ electricityCosts.toFixed(2) }} usd
+          </h3>
 
           <div class="form">
             <v-form ref="form" v-model="valid">
@@ -145,7 +155,8 @@
                     color="secondary"
                     @click="fetchNewData"
                     large
-                  >{{ $t('calculator.update_data') }}</v-btn>
+                    >{{ $t('calculator.update_data') }}</v-btn
+                  >
                 </div>
               </v-container>
 

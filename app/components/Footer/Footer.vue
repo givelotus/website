@@ -12,7 +12,11 @@
           </p>
         </v-col>
         <v-col class="px-6 py-0" md="6" cols="12">
-          <v-expansion-panels v-if="isMobile" :dark="!invert" class="accordion-root">
+          <v-expansion-panels
+            v-if="isMobile"
+            :dark="!invert"
+            class="accordion-root"
+          >
             <v-expansion-panel
               v-for="(footer, footerIdx) in footers"
               :key="footerIdx"
@@ -23,8 +27,13 @@
               </v-expansion-panel-header>
               <v-expansion-panel-content>
                 <ul>
-                  <li v-for="(item, descIndex) in footer.description" :key="descIndex">
-                    <nuxt-link :to="footer.link[descIndex]">{{ item }}</nuxt-link>
+                  <li
+                    v-for="(item, descIndex) in footer.description"
+                    :key="descIndex"
+                  >
+                    <nuxt-link :to="footer.link[descIndex]">{{
+                      item
+                    }}</nuxt-link>
                   </li>
                 </ul>
               </v-expansion-panel-content>
@@ -40,7 +49,10 @@
             >
               <h6 class="title-nav">{{ footer.title }}</h6>
               <ul>
-                <li v-for="(item, descIndex) in footer.description" :key="descIndex">
+                <li
+                  v-for="(item, descIndex) in footer.description"
+                  :key="descIndex"
+                >
                   <nuxt-link :to="footer.link[index]">{{ item }}</nuxt-link>
                 </li>
               </ul>
@@ -49,7 +61,12 @@
         </v-col>
         <v-col md="3" cols="12" class="pa-4">
           <div class="socmed">
-            <v-btn icon class="social-btn" href="https://twitter.com/givelotus" target="_blank">
+            <v-btn
+              icon
+              class="social-btn"
+              href="https://twitter.com/givelotus"
+              target="_blank"
+            >
               <v-icon large color="white">mdi-twitter</v-icon>
             </v-btn>
 
@@ -69,7 +86,12 @@
             >
               <v-icon large color="white">mdi-github</v-icon>
             </v-btn>
-            <v-btn icon class="social-btn" href="https://t.me/givelotus" target="_blank">
+            <v-btn
+              icon
+              class="social-btn"
+              href="https://t.me/givelotus"
+              target="_blank"
+            >
               <v-icon large color="white">telegram</v-icon>
             </v-btn>
           </div>
@@ -123,7 +145,7 @@ export default {
       const smDown = this.$store.state.breakpoints.smDown
       return smDown.indexOf(this.$mq) > -1
     },
-    langList: function() {
+    langList: function () {
       const list = []
       this.$i18n.locales.map(item => {
         list.push({ text: this.$t('common.' + item.code), value: item.code })
@@ -135,7 +157,7 @@ export default {
     this.lang = this.$i18n.locale
   },
   methods: {
-    switchLang: function(val) {
+    switchLang: function (val) {
       this.$i18n.setLocale(val)
     },
   },

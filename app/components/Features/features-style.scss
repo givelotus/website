@@ -8,7 +8,7 @@
     padding-top: $spacing10;
   }
   @include breakpoints-down(xs) {
-    padding-bottom: 0
+    padding-bottom: 0;
   }
 }
 
@@ -49,24 +49,24 @@
   }
   .text {
     @include breakpoints-down(xs) {
-      flex: 1
+      flex: 1;
     }
   }
   h4 {
     font-size: 36px;
     @include breakpoints-down(sm) {
-      margin-top: $spacing3
+      margin-top: $spacing3;
     }
     @include breakpoints-down(xs) {
       font-size: 24px;
     }
   }
   h6 {
-    @include palette-text-secondary
+    @include palette-text-secondary;
   }
   @include breakpoints-between(sm, md) {
     flex-direction: column;
-    text-align: center
+    text-align: center;
   }
   @include breakpoints-down(xs) {
     justify-content: center;

@@ -6,7 +6,7 @@ $bg-chart: '/images/hosting/chart_bg.png';
   position: relative;
   z-index: 3;
   @include breakpoints-down(sm) {
-    margin-bottom: $spacing5
+    margin-bottom: $spacing5;
   }
   figure {
     @include bg-color-fade($palette-secondary-light, 0.5);
@@ -25,26 +25,26 @@ $bg-chart: '/images/hosting/chart_bg.png';
     height: 160px;
     left: -50%;
     top: -50%;
-    transform: translate(25%, 25%)
+    transform: translate(25%, 25%);
   }
   h6 {
     margin-bottom: $spacing2;
-    font-weight: $font-bold
+    font-weight: $font-bold;
   }
   .item {
-    opacity: 1
+    opacity: 1;
   }
 }
 
 .grid {
-  margin-top: $spacing5
+  margin-top: $spacing5;
 }
 
 .more-feature {
   position: relative;
   z-index: 3;
   figure {
-    margin: 0
+    margin: 0;
   }
   .divider.v-divider {
     border: none;
@@ -54,10 +54,10 @@ $bg-chart: '/images/hosting/chart_bg.png';
     margin: spacing(5, 0);
     max-height: none;
     @include breakpoints-down(sm) {
-      margin: spacing(10, 0)
+      margin: spacing(10, 0);
     }
     &:before {
-      content: "";
+      content: '';
       @include use-theme(background, $light-divider, $dark-divider);
       width: 80px;
       height: 8px;
@@ -66,11 +66,11 @@ $bg-chart: '/images/hosting/chart_bg.png';
       @include margin-left(-40px);
       position: absolute;
       @include breakpoints-up(md) {
-        @include margin-left(-60px)
+        @include margin-left(-60px);
       }
     }
     &:after {
-      content: "";
+      content: '';
       @include use-theme(background, $light-divider, $dark-divider);
       width: 20px;
       height: 8px;
@@ -79,7 +79,7 @@ $bg-chart: '/images/hosting/chart_bg.png';
       border-radius: 8px;
       position: absolute;
       @include breakpoints-down(xs) {
-        display: none
+        display: none;
       }
     }
   }
@@ -91,7 +91,7 @@ $bg-chart: '/images/hosting/chart_bg.png';
   bottom: 0;
   position: absolute;
   background: url($bg-chart) no-repeat center bottom;
-  background-size: cover
+  background-size: cover;
 }
 
 .item {
@@ -99,18 +99,18 @@ $bg-chart: '/images/hosting/chart_bg.png';
   padding: spacing(0, 3);
   &.last {
     figure {
-      margin-top: $spacing10
+      margin-top: $spacing10;
     }
   }
   p {
-    margin-bottom: $spacing3
+    margin-bottom: $spacing3;
   }
 }
 
 .text {
   margin: spacing(8, 0);
   @include breakpoints-down(sm) {
-    margin: 0
+    margin: 0;
   }
 }
 

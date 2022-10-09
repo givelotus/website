@@ -1,21 +1,13 @@
 <template>
   <v-card class="default-card">
     <figure class="image-container">
-      <img
-        :src="img"
-        alt="img"
-      >
+      <img :src="img" alt="img" />
     </figure>
     <div class="text pt-10">
       <h6 class="title">{{ title }}</h6>
       {{ desc }}
     </div>
-    <v-btn
-      color="secondary"
-      class="button"
-      :href="url"
-      target='_blank'
-    >
+    <v-btn color="secondary" class="button" :href="url" target="_blank">
       {{ button }}
     </v-btn>
   </v-card>

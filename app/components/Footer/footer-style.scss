@@ -24,7 +24,7 @@ $footer-deco-dark: '/images/lotus/footer-deco-dark.svg';
         font-size: 14px;
         color: $palette-common-white;
         &:hover {
-          color: $palette-primary-light
+          color: $palette-primary-light;
         }
       }
     }
@@ -32,17 +32,17 @@ $footer-deco-dark: '/images/lotus/footer-deco-dark.svg';
   p {
     color: $palette-common-white;
     @include breakpoints-down(sm) {
-      padding: spacing(0, 3)
+      padding: spacing(0, 3);
     }
   }
   .accordion-root {
     margin: 0 auto;
-    margin-top: $spacing2
+    margin-top: $spacing2;
   }
-  &-desc{
+  &-desc {
     display: block;
     font-size: 14px;
-    margin-bottom: $spacing2
+    margin-bottom: $spacing2;
   }
   &.invert {
     p {
@@ -53,11 +53,11 @@ $footer-deco-dark: '/images/lotus/footer-deco-dark.svg';
     }
     .logo {
       h6 {
-        color: $palette-primary-dark
+        color: $palette-primary-dark;
       }
     }
     .title-nav {
-      @include use-theme(color, $palette-primary-dark, $palette-primary-light)
+      @include use-theme(color, $palette-primary-dark, $palette-primary-light);
     }
     .select-lang.v-text-field.v-text-field--enclosed {
       ::v-deep .v-select__selections,
@@ -74,7 +74,7 @@ $footer-deco-dark: '/images/lotus/footer-deco-dark.svg';
   font-size: 14px;
   text-transform: uppercase;
   margin-bottom: $spacing3;
-  font-weight: $font-bold
+  font-weight: $font-bold;
 }
 .logo {
   text-align: center;
@@ -97,11 +97,11 @@ $footer-deco-dark: '/images/lotus/footer-deco-dark.svg';
     width: 36px;
     height: 36px;
     .icon {
-      color: $palette-common-white
+      color: $palette-common-white;
     }
   }
   .icon {
-    font-size: 24px
+    font-size: 24px;
   }
 }
 
@@ -109,7 +109,7 @@ $footer-deco-dark: '/images/lotus/footer-deco-dark.svg';
   & + div {
     background: none !important;
     padding: spacing(1.5, 1.5, 1.5, 4);
-    width: calc(100% - 32px)
+    width: calc(100% - 32px);
   }
 }
 
@@ -118,17 +118,17 @@ $footer-deco-dark: '/images/lotus/footer-deco-dark.svg';
   width: 200px;
   display: inherit;
   margin-top: $spacing2;
-  ::v-deep .v-input__slot{
+  ::v-deep .v-input__slot {
     min-height: 43px;
   }
   ::v-deep .v-input__append-inner,
   ::v-deep .v-input__prepend-inner {
-    margin-top: 10px
+    margin-top: 10px;
   }
   ::v-deep .v-select__selections,
-  ::v-deep .v-icon{
+  ::v-deep .v-icon {
     padding: 0;
-    color: var(--v-primarylight-base)
+    color: var(--v-primarylight-base);
   }
   ::v-deep fieldset {
     box-shadow: 0 1.5px 12px 2px rgba(0, 0, 0, 0.06);
@@ -139,35 +139,40 @@ $footer-deco-dark: '/images/lotus/footer-deco-dark.svg';
     }
   }
   ::v-deep .v-select__selection {
-    color: $palette-common-white
+    color: $palette-common-white;
   }
 }
 .site-map-item {
   @include breakpoints-down('md') {
     padding-bottom: 0 !important;
-    padding-top: 0 !important
+    padding-top: 0 !important;
   }
 }
 .accordion-root {
   background: none;
   box-shadow: none;
-  max-width: 480px
+  max-width: 480px;
 }
 #main-wrap .accordion-content.v-expansion-panel {
   background-color: transparent;
-  &:before, &:after {
-    display: none
+  &:before,
+  &:after {
+    display: none;
   }
 }
 .accordion-icon {
-  padding: 0
+  padding: 0;
 }
 
 .footer-deco {
   position: relative;
   z-index: 80;
   top: 0;
-  background: linear-gradient(-45deg, $palette-primary-dark 30%, $palette-primary-main 90%);
+  background: linear-gradient(
+    -45deg,
+    $palette-primary-dark 30%,
+    $palette-primary-main 90%
+  );
   padding-top: $spacing20 * 2;
   @include breakpoints-down(md) {
     padding-top: $spacing10 * 3;
@@ -176,17 +181,21 @@ $footer-deco-dark: '/images/lotus/footer-deco-dark.svg';
     padding-top: $spacing20;
   }
   &:before {
-    @include use-theme(background-image, url($footer-deco-light), url($footer-deco-dark));
+    @include use-theme(
+      background-image,
+      url($footer-deco-light),
+      url($footer-deco-dark)
+    );
     background-repeat: no-repeat;
     background-position: top left;
     background-size: 100% auto;
     top: -3px;
     @include left(0);
-    content: "";
+    content: '';
     width: 100%;
     height: 270px;
     position: absolute;
-    z-index: 10
+    z-index: 10;
   }
 }
 .decoration {
@@ -231,7 +240,7 @@ $footer-deco-dark: '/images/lotus/footer-deco-dark.svg';
     margin-bottom: $spacing6;
     @include breakpoints-down(xs) {
       font-size: 28px;
-      line-height: 44px
+      line-height: 44px;
     }
   }
 }

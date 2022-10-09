@@ -8,7 +8,9 @@
 
         <h3>{{ title }}</h3>
         <p>{{ content }}</p>
-        <v-btn color="secondary" class="button" :href="url" target="_blank">Click me</v-btn>
+        <v-btn color="secondary" class="button" :href="url" target="_blank"
+          >Click me</v-btn
+        >
       </div>
     </template>
   </v-card>

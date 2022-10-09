@@ -4,7 +4,7 @@
     <h3 class="pt-8">
       {{ $t('walletsPage.title') }}
     </h3>
-      <div class="pb-16 pt-8">
+    <div class="pb-16 pt-8">
       <v-data-table :headers="headers" :items="wallets" :items-per-page="100">
         <template #item.links="{ item }">
           <v-btn
@@ -134,7 +134,7 @@ const headers = [
   {
     text: 'Links to Supported Platforms ',
     sortable: false,
-    value: 'links'
+    value: 'links',
   },
 ]
 

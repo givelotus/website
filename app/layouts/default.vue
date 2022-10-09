@@ -7,7 +7,7 @@
           'page-fadeUp-transition-enter': !show,
           'page-fadeUp-transition-enter-active': show && play,
           'page-fadeUp-transition-exit': !play,
-          'transition-enter-done': show
+          'transition-enter-done': show,
         }"
       >
         <v-main>
@@ -49,7 +49,7 @@ export default {
       play: false,
     }
   },
-  mounted: function() {
+  mounted: function () {
     // Preloader and Progress bar setup
     this.show = true
     this.play = true

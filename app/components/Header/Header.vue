@@ -1,12 +1,18 @@
 <template>
   <fragment>
-    <v-navigation-drawer v-if="isMobile" v-model="openDrawer" fixed temporary class="mobile-nav">
+    <v-navigation-drawer
+      v-if="isMobile"
+      v-model="openDrawer"
+      fixed
+      temporary
+      class="mobile-nav"
+    >
       <mobile-menu :open="openDrawer" />
     </v-navigation-drawer>
     <v-app-bar
       v-scroll="handleScroll"
       id="header"
-      :class="{ fixed: fixed, 'open-drawer': openDrawer }"
+      :class="{ 'fixed': fixed, 'open-drawer': openDrawer }"
       class="header"
       fixed
       app
@@ -31,20 +37,29 @@
                 <img style="border-radius: 50%" :src="logo" alt="logo" />
               </nuxt-link>
               <scrollactive v-if="!invert && loaded" tag="span">
-                <a :href=getLocalizedHome() class="anchor-link ">
+                <a :href="getLocalizedHome()" class="anchor-link">
                   <img style="border-radius: 50%" :src="logo" alt="logo" />
                 </a>
               </scrollactive>
             </div>
             <div v-if="isDesktop">
-              <scrollactive v-if="loaded" :offset="navOffset" active-class="active" tag="ul">
+              <scrollactive
+                v-if="loaded"
+                :offset="navOffset"
+                active-class="active"
+                tag="ul"
+              >
                 <li v-for="(item, index) in menuList" :key="index">
                   <v-btn
                     :href="getLocalizedHref(item.url)"
-                    :class="{'anchor-link scrollactive-item' : $nuxt.$route.name.includes('index')}"
+                    :class="{
+                      'anchor-link scrollactive-item':
+                        $nuxt.$route.name.includes('index'),
+                    }"
                     class="menu-link"
                     @click="setOffset(item.offset)"
-                  >{{ $t(item.translation) }}</v-btn>
+                    >{{ $t(item.translation) }}</v-btn
+                  >
                 </li>
 
                 <li>
@@ -53,21 +68,24 @@
                     target="_blank"
                     text
                     class="menu-link"
-                  >{{ $t('menu.news') }}</v-btn>
+                    >{{ $t('menu.news') }}</v-btn
+                  >
                 </li>
 
                 <li>
-                  <DropDown
-                  />
+                  <DropDown />
                 </li>
-
               </scrollactive>
             </div>
-
           </nav>
           <nav :class="{ invert: invert }" class="nav-menu">
             <hidden v-if="!invert" point="xsDown">
-              <v-btn icon class="social-btn" href="https://twitter.com/givelotus" target="_blank">
+              <v-btn
+                icon
+                class="social-btn"
+                href="https://twitter.com/givelotus"
+                target="_blank"
+              >
                 <v-icon>mdi-twitter</v-icon>
               </v-btn>
 
@@ -87,7 +105,12 @@
               >
                 <v-icon>mdi-github</v-icon>
               </v-btn>
-              <v-btn icon class="social-btn" href="https://t.me/givelotus" target="_blank">
+              <v-btn
+                icon
+                class="social-btn"
+                href="https://t.me/givelotus"
+                target="_blank"
+              >
                 <v-icon>telegram</v-icon>
               </v-btn>
             </hidden>
@@ -144,16 +167,16 @@ export default {
     this.loaded = true
   },
   methods: {
-    handleScroll: function() {
+    handleScroll: function () {
       if (window.scrollY > 80) {
         return (this.fixed = true)
       }
       return (this.fixed = false)
     },
-    setOffset: function(offset) {
+    setOffset: function (offset) {
       this.navOffset = offset
     },
-    handleToggleOpen: function() {
+    handleToggleOpen: function () {
       this.openDrawer = !this.openDrawer
     },
     getLocalizedHome() {

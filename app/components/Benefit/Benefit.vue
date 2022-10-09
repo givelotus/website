@@ -1,7 +1,6 @@
 <template>
   <div class="root">
-    <div class="parallax-img">
-    </div>
+    <div class="parallax-img"></div>
     <v-container class="fixed-width">
       <div class="wrapper">
         <v-row>
@@ -12,10 +11,13 @@
                 :text="$t('lotusLanding.banner.text')"
                 align="left"
                 dark
-                class='white--text'
+                class="white--text"
               />
               <ul class="list pt-4">
-                  <li v-for="item in $t('lotusLanding.banner.initiatives')" :key="item">
+                <li
+                  v-for="item in $t('lotusLanding.banner.initiatives')"
+                  :key="item"
+                >
                   {{ item }}
                 </li>
               </ul>

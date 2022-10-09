@@ -15,11 +15,20 @@
             {{ $t('lotusLanding.banner_title') }}
             <strong>{{ $t('lotusLanding.banner_titlestrong') }}</strong>
           </h3>
-          <p class="use-text-subtitle">{{ $t('lotusLanding.banner_subtitle') }}</p>
+          <p class="use-text-subtitle">
+            {{ $t('lotusLanding.banner_subtitle') }}
+          </p>
         </div>
         <div ref="videoContainer" class="item text-center">
-          <video autoplay muted controls style="border-radius:40px" :width="width">
-            <source src="/videos/givelotus.mp4" type="video/mp4" />Sorry, your browser doesn't support embedded videos.
+          <video
+            autoplay
+            muted
+            controls
+            style="border-radius: 40px"
+            :width="width"
+          >
+            <source src="/videos/givelotus.mp4" type="video/mp4" />
+            Sorry, your browser doesn't support embedded videos.
           </video>
         </div>
       </div>

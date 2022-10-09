@@ -27,12 +27,12 @@ $frame-deco: '/images/decoration/frame-deco.png';
     padding: spacing(0, 2.5);
   }
   h6 {
-    margin-bottom: $spacing2
+    margin-bottom: $spacing2;
   }
   p {
     height: 70px;
     overflow: hidden;
-    margin-bottom: $spacing3
+    margin-bottom: $spacing3;
   }
   .button {
     width: 50%;
@@ -43,23 +43,23 @@ $frame-deco: '/images/decoration/frame-deco.png';
     right: 0;
     bottom: 0;
     @include shadow10;
-    [dir="ltr"] & {
+    [dir='ltr'] & {
       border-radius: 20px 0 0 0;
     }
-    [dir="rtl"] & {
+    [dir='rtl'] & {
       border-radius: 0 20px 0 0;
     }
   }
 }
 
 .button {
-  box-shadow: none
+  box-shadow: none;
 }
 
 /* Testimonial Card */
 .testi-card {
   direction: ltr;
-  position: relative
+  position: relative;
 }
 
 .v-application .paper.v-card {
@@ -75,11 +75,11 @@ $frame-deco: '/images/decoration/frame-deco.png';
 }
 
 .rating {
-  margin-left: $spacing3
+  margin-left: $spacing3;
 }
 
 .star-icon {
-  color: #FFC107
+  color: #ffc107;
 }
 
 .star-icon-disable {
@@ -93,7 +93,7 @@ $frame-deco: '/images/decoration/frame-deco.png';
 
 .avatar {
   @include shadow8;
-  border: 1px solid #FFF;
+  border: 1px solid #fff;
   box-sizing: content-box;
   @include margin-left($spacing1);
   border-radius: 50% 50% 0 50%;
@@ -110,7 +110,7 @@ $frame-deco: '/images/decoration/frame-deco.png';
     height: 70px;
   }
   .caption {
-    font-weight: $font-medium
+    font-weight: $font-medium;
   }
 }
 
@@ -131,7 +131,7 @@ $frame-deco: '/images/decoration/frame-deco.png';
     border-bottom: none;
     @include palette-divider;
     background: none;
-    margin: spacing(0, 2)
+    margin: spacing(0, 2);
   }
 }
 
@@ -146,14 +146,14 @@ $frame-deco: '/images/decoration/frame-deco.png';
     @include left(-8px);
   }
   .name-card {
-    padding: $spacing1
+    padding: $spacing1;
   }
   h4 {
     font-size: 22px;
   }
   p {
     font-size: 16px;
-    @include palette-text-secondary
+    @include palette-text-secondary;
   }
 }
 
@@ -167,11 +167,11 @@ $frame-deco: '/images/decoration/frame-deco.png';
   .button {
     height: 36px !important;
     @include breakpoints-up(sm) {
-      width: 100px
+      width: 100px;
     }
     @include breakpoints-down(xs) {
       width: 100%;
-      margin-top: $spacing2
+      margin-top: $spacing2;
     }
   }
 }

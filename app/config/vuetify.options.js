@@ -1,7 +1,8 @@
 import colors from 'vuetify/lib/util/colors'
 
 let darkMode = false
-if (typeof Storage !== 'undefined') { // eslint-disable-line
+if (typeof Storage !== 'undefined') {
+  // eslint-disable-line
   darkMode = localStorage.getItem('DarkMode') || false
 }
 
