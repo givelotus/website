@@ -129,6 +129,7 @@ const contributors: Array<Contributor> = [
   {
     name: 'Hiecho',
     contributions: 'Keeping the excitement high in the Phillipines.',
+    twitter: 'HiechoEcash'
   },
   {
     name: 'Avie',
