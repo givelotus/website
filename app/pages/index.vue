@@ -12,7 +12,10 @@
             class="use-text-title"
             color="primary"
           />
-          <v-container class="max-md use-text-subtitle2" style="text-align: center">
+          <v-container
+            class="max-md use-text-subtitle2"
+            style="text-align: center"
+          >
             {{ $t('lotusLanding.subscribe.text') }}
             <br />
             <div class="mx-auto" style="display: inline-block">
@@ -25,17 +28,15 @@
             </div>
           </v-container>
         </section>
-
-        <section id="projects" :class="isMobile ? 'space-top-short' : 'space-top'">
+        <section id="projects">
           <projects />
           <benefit />
         </section>
-        <br />
-        <section id="about" :class="isMobile ? 'space-top-short' : 'space-top'">
+        <section id="about">
           <features />
           <story />
         </section>
-        <section id="faq" class="space-top-short">
+        <section id="faq">
           <faq />
         </section>
       </div>
@@ -116,7 +117,9 @@ export default {
   },
   computed: {
     isTablet() {
-      return this.$mq === 'mdDown' || this.$mq === 'smDown' || this.$mq === 'xsDown' // eslint-disable-line
+      return (
+        this.$mq === 'mdDown' || this.$mq === 'smDown' || this.$mq === 'xsDown'
+      ) // eslint-disable-line
     },
     isMobile() {
       return this.$mq === 'smDown' || this.$mq === 'xsDown'
