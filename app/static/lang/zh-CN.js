@@ -1,5 +1,5 @@
 export default () => {
-  return new Promise(function(resolve) {
+  return new Promise(function (resolve) {
     resolve({
       common: {
         title: '',
@@ -149,19 +149,14 @@ export default () => {
           q3: {
             question: '如何获取Lotus?',
             answer:
-              '你可以使用 <a href="https://faucet.lotuslounge.org/" target="_blank">水龙头</a>. 或者在电报社区里面获赠： <a href="https://t.me/givelotus" target="_blank">telegram社区</a>。 你也可以在<a href="https://www.exbitron.com/" target="_blank">Exbitron交易所</a>用其他虚拟币交易获取Lotus[XPI]。',
+              '你可以使用 <a href="https://faucet.lotuslounge.org/" target="_blank">水龙头</a>. 或者在电报社区里面获赠： <a href="https://t.me/givelotus" target="_blank">telegram社区</a>',
           },
           q4: {
-            question: '可以在哪里交易？',
-            answer:
-              '你可以在Exbitron用这些币种交易： <a href="https://www.exbitron.com/trading/xpiusdt" target="_blank">USDT</a>，<a href="https://www.exbitron.com/trading/xpidoge" target="_blank">狗狗币Dogecoin</a> 和 <a href="https://www.exbitron.com/trading/xpibch" target="_blank">比特现金Bitcoin Cash</a>',
-          },
-          q5: {
             question: '我怎样才能为项目添砖加瓦',
             answer:
               '可以在<a href="https://github.com/LogosFoundation" target="_blank">这里</a>看我们的开源软件，并且欢迎在<a href="https://t.me/givelotus" target="_blank">telegram电报社群</a>里面联系我们的开发人员。',
           },
-          q6: {
+          q5: {
             question: '有没有可以使用的品牌商标或者图案？',
             answer:
               '你可以在<a href="https://storage.googleapis.com/lotus-project/Lotus%20Branding.zip" target="_blank">这里</a>下载',

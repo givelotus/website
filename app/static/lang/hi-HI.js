@@ -1,5 +1,5 @@
 export default () => {
-  return new Promise(function(resolve) {
+  return new Promise(function (resolve) {
     resolve({
       common: {
         title: '',
@@ -156,19 +156,14 @@ export default () => {
           q3: {
             question: 'मुझे लोटस कैसे मिलेगा?',
             answer:
-              'आप इसका इस्तेमाल कर सकते हैं <a href="https://faucet.lotuslounge.org/" target="_blank">faucet</a>. या आप इस पर उपहार पा सकते हैं <a href="https://t.me/givelotus" target="_blank">telegram group</a>. आप लोटस [एक्सपीआई] के लिए अपने अन्य सिक्कों का व्यापार भी कर सकते हैं <a href="https://www.exbitron.com/" target="_blank">Exbitron exchange</a>.',
+              'आप इसका इस्तेमाल कर सकते हैं <a href="https://faucet.lotuslounge.org/" target="_blank">faucet</a>. या आप इस पर उपहार पा सकते हैं <a href="https://t.me/givelotus" target="_blank">telegram group</a>.',
           },
           q4: {
-            question: 'मैं कहां ट्रेड कर सकता हूं?',
-            answer:
-              'आप Exbitron पर लोटस का व्यापार निम्न के लिए कर सकते हैं<a href="https://www.exbitron.com/trading/xpiusdt" target="_blank"> USDT</a>, <a href="https://www.exbitron.com/trading/xpidoge" target="_blank">Dogecoin</a> and <a href="https://www.exbitron.com/trading/xpibch" target="_blank">Bitcoin Cash</a>',
-          },
-          q5: {
             question: 'मैं इस परियोजना में कैसे योगदान कर सकता हूं?',
             answer:
               'हमारे पास मौजूद ओपन सोर्स कोड की जांच करें <a href="https://github.com/LogosFoundation" target="_blank"> यहाँ </a> और हमारे पर डेवलपर्स से संपर्क करने में संकोच न करें <a href="https://t.me/givelotus" target="_blank">telegram group</a>.',
           },
-          q6: {
+          q5: {
             question:
               'क्या आपके पास लोगो या छवियों के साथ कोई ब्रांडिंग गाइड है जिसका मैं उपयोग कर सकता हूँ?',
             answer:

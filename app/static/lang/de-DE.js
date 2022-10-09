@@ -1,5 +1,5 @@
 export default () => {
-  return new Promise(function(resolve) {
+  return new Promise(function (resolve) {
     resolve({
       common: {
         title: '',
@@ -156,19 +156,14 @@ export default () => {
           q3: {
             question: 'Wie bekomme ich Lotus?',
             answer:
-              'Du kannst unseren <a href="https://faucet.lotuslounge.org/" target="_blank">Faucet</a>. Oder du kannst dich in unserer <a href="https://t.me/givelotus" target="_blank">Telegram Gruppe</a> beschenken lassen. Du kannst auch deine anderen Coins für Lotus [XPI] auf der <a href="https://www.exbitron.com/" target="_blank">Exbitron Handelsplattform</a> tauschen.',
+              'Du kannst unseren <a href="https://faucet.lotuslounge.org/" target="_blank">Faucet</a>. Oder du kannst dich in unserer <a href="https://t.me/givelotus" target="_blank">Telegram Gruppe</a> beschenken lassen.',
           },
           q4: {
-            question: 'Wo kann ich Lotus handeln?',
-            answer:
-              'Du kannst Lotus auf Exbitron für <a href="https://www.exbitron.com/trading/xpiusdt" target="_blank">USDT</a>, <a href="https://www.exbitron.com/trading/xpidoge" target="_blank">Dogecoin</a> und <a href="https://www.exbitron.com/trading/xpibch" target="_blank">Bitcoin Cash</a> handeln.',
-          },
-          q5: {
             question: 'Wie kann ich zum Projekt beitragen?',
             answer:
               'Du kannst unseren open-source Code <a href="https://github.com/LogosFoundation" target="_blank">hier</a> ansehen und Änderungen vorschlagen, und du kannst dich gerne an die Entwickler in der <a href="https://t.me/givelotus" target="_blank">Telegram Gruppe</a> wenden.',
           },
-          q6: {
+          q5: {
             question:
               'Gibt es einen Branding-Leitfaden mit Logos oder Bildern die ich verwenden kann?',
             answer:
