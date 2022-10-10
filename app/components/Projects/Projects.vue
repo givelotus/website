@@ -59,10 +59,10 @@ export default {
           image: images.projects.becash,
         },
         {
-          title: 'GiveLotus2VN',
-          content: this.$t('lotusLanding.givelotus2vn_desc'),
+          title: 'bcPro',
+          content: this.$t('lotusLanding.bcpro_desc'),
           url: 'https://www.givelotus.vn/',
-          image: images.projects.givelotus2vn,
+          image: images.projects.bcpro,
         },
         {
           title: 'Bitcoin ABC',
