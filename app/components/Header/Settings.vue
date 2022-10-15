@@ -11,7 +11,7 @@
     <template #activator="{ on }">
       <div class="setting">
         <v-btn fab text small v-on="on" class="ma-3">
-          <v-icon :class="{ invert: invert, active: open }" class="icon">
+          <v-icon color="white" :class="{ invert: invert, active: open }" class="icon">
             settings
           </v-icon>
         </v-btn>
