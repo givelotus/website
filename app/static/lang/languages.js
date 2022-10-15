@@ -41,7 +41,7 @@ export default [
   },
 
   {
-    code: 'vi',
+    code: 'vnm',
     iso: 'vi-Vi',
     name: 'Vietnamese',
     file: 'vi-VI.js',
