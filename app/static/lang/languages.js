@@ -39,4 +39,13 @@ export default [
     file: 'zh-CN.js',
     dir: 'ltr',
   },
+
+  {
+    code: 'vi',
+    iso: 'vi-Vi',
+    name: 'Vietnamese',
+    file: 'vi-VI.js',
+    dir: 'ltr',
+  },
+
 ]
