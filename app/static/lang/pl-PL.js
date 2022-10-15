@@ -78,6 +78,12 @@ export default () => {
         title:
           'Sprawdź portfele Lotus dostępne obecnie dla naszego ekosystemu:',
       },
+      banner: {
+        why_1: 'Społeczeństwo ma problemy z efektywnym finansowaniem projektów dóbr publicznych - z przeznaczeniem środków na prace, które są bardzo potrzebne, ale nie prowadzą do zysku. W tym celu powstał Lotus. Wierzymy, że poprzez przeformułowanie tego, czym są pieniądze i zakwestionowanie idei związanych z ich wykorzystaniem, możemy rozwiązać problem finansowania dóbr publicznych.',
+        why_2: 'Naszym celem jest okazanie wdzięczności wolontariuszom projektów charytatywnych poprzez rozdawanie im tokena Lotus za darmo. A także, jako kultura, bycie gotowym do przyjęcia tych upominków w zamian za rzeczy, których wolontariusze potrzebują.',
+        why_3: 'Początkowo skupiamy się na projektach open source, a w szczególności na projektach potrzebnych do funkcjonowania i istnienia tokena Lotus. Jednakże, szukamy dodatkowych projektów charytatywnych, które są chętne do przyjęcia i używania Lotusa. Chętnie porozmawiamy z każdym projektem opartym na wolontariacie, który jest zainteresowany uczestnictwem. Jesteśmy szczególnie zainteresowani dostarczaniem tokenów do open source, szkół, domów dziecka, lekarzy i innych instytucji użyteczności publicznej.',
+        why_4: 'Jeśli prowadzisz taki projekt i jesteś zainteresowany wykorzystaniem Lotusa, zgłoś się po odbiór tokenów poprzez ten  <a class="white--text" href="https://forms.gle/j9EeY5NN57RcAoY99" target="_blank">formularz</a>, albo poprzez nasz <a class="white--text" href="https://discord.gg/KECbh3JEmm" target="_blank">serwer discord.</a>',
+      },
       lotusLanding: {
         features: {
           title: 'Tu chodzi o',
@@ -124,6 +130,10 @@ export default () => {
           'Nowe Lotusy są wydawane poprzez nagrody, które są dzielone pomiędzy górników i projekty, które przynoszą korzyści dobru publicznemu jako wyraz uznania.',
         before_carousel_2:
           'Ilekroć używasz Lotusa, aby docenić swoich przyjaciół, wiesz, że wspierasz również te wspaniałe projekty.',
+        subscribe: {
+          caption: 'Subskrybuj',
+          text: 'Dołącz do listy mailingowej naszej społeczności, aby być na bieżąco',
+        },
         banner: {
           caption:
             'Kiedy dajesz lub przyjmujesz Lotusa, wspierasz wspólnote i dodajesz wartość do światowej gospodarki.',
@@ -190,6 +200,8 @@ export default () => {
           ' Be.cash współpracuje z Fundacją Logos, aby pomóc w rozwoju oprogramowania lotus blockchain, a także w rozwoju systemów Point of Sale i mobilnych metod płatności dla obszarów bez niezbędnej infrastruktury dla tradycyjnych metod płatności. ',
         bitcoin_abc_desc:
           ' Bitcoin ABC rozwija wysoce skalowalne oprogramowanie open-source do wydobywania i przesyłania kryptotokenów. Chociaż Bitcoin ABC nie pobiera opłat za swoją pracę, Lotus wykorzystuje to oprogramowanie jako podstawę sieci i uważa za stosowne odwzajemnić się tym deweloperom. ',
+        bcpro_desc:
+          ' Fundacja bcPro buduje niestandardowe oprogramowanie blockchain skierowane na rynek wietnamski.',
         services_button: 'Odkryj',
       },
     })
