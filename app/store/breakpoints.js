@@ -6,5 +6,5 @@ export const state = () => ({
   xsDown: ['xsDown'],
   smDown: ['smDown', 'xsDown'],
   mdDown: ['mdDown', 'smDown', 'xsDown'],
-  lgDown: ['lgDown', 'mdDown', 'smDown', 'xsDown'],
+  lgDown: ['lgDown', 'mdDown', 'smDown', 'xsDown']
 })

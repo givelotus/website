@@ -48,12 +48,12 @@ import images from '~/static/images/project-images'
 export default {
   components: {
     Hidden,
-    'main-title': Title,
+    'main-title': Title
   },
   data() {
     return {
-      img: images,
+      img: images
     }
-  },
+  }
 }
 </script>

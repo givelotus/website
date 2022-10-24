@@ -41,7 +41,7 @@ import VueHorizontalList from 'vue-horizontal-list'
 export default {
   components: {
     Card,
-    VueHorizontalList,
+    VueHorizontalList
   },
   data() {
     return {
@@ -50,37 +50,37 @@ export default {
           title: 'Stampchat',
           content: this.$t('lotusLanding.stampchat_desc'),
           url: 'https://stampchat.io/',
-          image: images.projects.stampchat,
+          image: images.projects.stampchat
         },
         {
           title: 'Be.cash',
           content: this.$t('lotusLanding.becash_desc'),
           url: 'https://be.cash/',
-          image: images.projects.becash,
+          image: images.projects.becash
         },
         {
           title: 'bcPro',
           content: this.$t('lotusLanding.bcpro_desc'),
           url: 'https://www.givelotus.vn/',
-          image: images.projects.bcpro,
+          image: images.projects.bcpro
         },
         {
           title: 'Bitcoin ABC',
           content: this.$t('lotusLanding.bitcoin_abc_desc'),
           url: 'https://www.bitcoinabc.org/',
-          image: images.projects.bitcoinabc,
-        },
+          image: images.projects.bitcoinabc
+        }
       ],
       options: {
         responsive: [
           { end: 576, size: 1 },
           { start: 576, end: 768, size: 2 },
-          { size: 3 },
+          { size: 3 }
         ],
         navigation: {
           // when to show navigation
           start: 100,
-          color: '#000',
+          color: '#000'
         },
         autoplay: {
           // enable/disable playing slideshow
@@ -88,10 +88,10 @@ export default {
           // the delay duration between slides in milliseconds
           speed: 15000,
           // if setup, the slideshow will be in the loop.
-          repeat: true,
-        },
+          repeat: true
+        }
       },
-      loaded: false,
+      loaded: false
     }
   },
   mounted() {
@@ -103,8 +103,8 @@ export default {
     },
     prev: function () {
       this.$refs.slick.prev()
-    },
-  },
+    }
+  }
 }
 </script>
 

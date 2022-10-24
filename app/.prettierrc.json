@@ -2,6 +2,7 @@
   "semi": false,
   "quoteProps": "consistent",
   "singleQuote": true,
-  "trailingComma": "all",
-  "arrowParens": "avoid"
+  "trailingComma": "none",
+  "arrowParens": "avoid",
+  "bracketSpacing": true
 }

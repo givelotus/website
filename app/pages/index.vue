@@ -19,6 +19,55 @@
   </div>
 </template>
 
+<script>
+import Banner from '~/components/Banner/Banner'
+import Story from '~/components/Story'
+import Faq from '~/components/Faq'
+import Projects from '~/components/Projects'
+
+import brand from '~/static/text/brand'
+
+export default {
+  components: {
+    Banner,
+    Projects,
+    Story,
+    Faq
+  },
+  layout: 'landing',
+  head() {
+    return {
+      title: brand.lotus.name + ' - Givelotus',
+      meta: [
+        { property: 'author', content: 'givelotus.org' },
+        {
+          name: 'description',
+          content: this.$t('lotusLanding.banner_subtitle')
+        },
+        {
+          property: 'og:description',
+          content: this.$t('lotusLanding.banner_subtitle')
+        },
+        {
+          property: 'og:title',
+          content: 'Lotus - ' + this.$t('lotusLanding.banner_titlestrong')
+        }
+      ]
+    }
+  },
+  computed: {
+    isTablet() {
+      return (
+        this.$mq === 'mdDown' || this.$mq === 'smDown' || this.$mq === 'xsDown'
+      ) // eslint-disable-line
+    },
+    isMobile() {
+      return this.$mq === 'smDown' || this.$mq === 'xsDown'
+    }
+  }
+}
+</script>
+
 <style scoped lang="scss">
 @import '~/assets/styles';
 
@@ -67,54 +116,3 @@
   }
 }
 </style>
-
-<script>
-import Banner from '~/components/Banner/Banner'
-import Story from '~/components/Story'
-import Faq from '~/components/Faq'
-import Projects from '~/components/Projects'
-import Title from '~/components/Title'
-
-import brand from '~/static/text/brand'
-
-export default {
-  layout: 'landing',
-  components: {
-    Banner,
-    Projects,
-    Story,
-    Faq,
-    'title-subscribe': Title,
-  },
-  computed: {
-    isTablet() {
-      return (
-        this.$mq === 'mdDown' || this.$mq === 'smDown' || this.$mq === 'xsDown'
-      ) // eslint-disable-line
-    },
-    isMobile() {
-      return this.$mq === 'smDown' || this.$mq === 'xsDown'
-    },
-  },
-  head() {
-    return {
-      title: brand.lotus.name + ' - Givelotus',
-      meta: [
-        { property: 'author', content: 'givelotus.org' },
-        {
-          name: 'description',
-          content: this.$t('lotusLanding.banner_subtitle'),
-        },
-        {
-          property: 'og:description',
-          content: this.$t('lotusLanding.banner_subtitle'),
-        },
-        {
-          property: 'og:title',
-          content: 'Lotus - ' + this.$t('lotusLanding.banner_titlestrong'),
-        },
-      ],
-    }
-  },
-}
-</script>

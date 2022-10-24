@@ -109,7 +109,7 @@ import Title from '../Title'
 
 export default {
   components: {
-    'main-title': Title,
+    'main-title': Title
   },
   computed: {
     isDesktop() {
@@ -119,7 +119,7 @@ export default {
     isMobile() {
       const smDown = this.$store.state.breakpoints.smDown
       return smDown.indexOf(this.$mq) > -1
-    },
-  },
+    }
+  }
 }
 </script>

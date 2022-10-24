@@ -14,8 +14,8 @@ const brand = {
     // above doesn't work.
     img: 'https://givelotus.netlify.app/images/lotus/og_lotus_img.png',
     notifMsg:
-      'Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula.',
-  },
+      'Donec sit amet nulla sed arcu pulvinar ultricies commodo id ligula.'
+  }
 }
 
 export default brand

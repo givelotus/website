@@ -7,7 +7,7 @@
           'page-fadeUp-transition-enter': !show,
           'page-fadeUp-transition-enter-active': show && play,
           'page-fadeUp-transition-exit': !play,
-          'transition-enter-done': show,
+          'transition-enter-done': show
         }"
       >
         <v-main>
@@ -27,13 +27,13 @@ import FooterWithDeco from '~/components/Footer/FooterWithDeco'
 export default {
   components: {
     'main-header': Header,
-    FooterWithDeco,
+    FooterWithDeco
   },
   loading: false,
   data() {
     return {
       show: false,
-      play: false,
+      play: false
     }
   },
   mounted: function () {
@@ -54,6 +54,6 @@ export default {
     // RTL initial
     const rtlURL = document.location.pathname.split('/')[1] === 'ar'
     this.$vuetify.rtl = rtlURL
-  },
+  }
 }
 </script>

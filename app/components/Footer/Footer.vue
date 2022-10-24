@@ -128,13 +128,13 @@ export default {
     logo: logo,
     brand: brand,
     lang: 'en',
-    footers: [],
+    footers: []
   }),
   props: {
     invert: {
       type: Boolean,
-      default: false,
-    },
+      default: false
+    }
   },
   computed: {
     isDesktop() {
@@ -151,7 +151,7 @@ export default {
         list.push({ text: this.$t('common.' + item.code), value: item.code })
       })
       return list
-    },
+    }
   },
   mounted() {
     this.lang = this.$i18n.locale
@@ -159,7 +159,7 @@ export default {
   methods: {
     switchLang: function (val) {
       this.$i18n.setLocale(val)
-    },
-  },
+    }
+  }
 }
 </script>

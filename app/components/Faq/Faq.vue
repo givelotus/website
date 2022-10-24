@@ -52,7 +52,7 @@ import Title from '../Title'
 export default {
   components: {
     Hidden,
-    'title-main': Title,
+    'title-main': Title
   },
   data() {
     return {
@@ -60,32 +60,32 @@ export default {
       faqData: [
         {
           q: this.$t('lotusLanding.faq.q1.question'),
-          a: this.$t('lotusLanding.faq.q1.answer'),
+          a: this.$t('lotusLanding.faq.q1.answer')
         },
         {
           q: this.$t('lotusLanding.faq.q2.question'),
-          a: this.$t('lotusLanding.faq.q2.answer'),
+          a: this.$t('lotusLanding.faq.q2.answer')
         },
         {
           q: this.$t('lotusLanding.faq.q3.question'),
-          a: this.$t('lotusLanding.faq.q3.answer'),
+          a: this.$t('lotusLanding.faq.q3.answer')
         },
         {
           q: this.$t('lotusLanding.faq.q4.question'),
-          a: this.$t('lotusLanding.faq.q4.answer'),
+          a: this.$t('lotusLanding.faq.q4.answer')
         },
         {
           q: this.$t('lotusLanding.faq.q5.question'),
-          a: this.$t('lotusLanding.faq.q5.answer'),
-        },
-      ],
+          a: this.$t('lotusLanding.faq.q5.answer')
+        }
+      ]
     }
   },
   computed: {
     isMobile() {
       const smDown = this.$store.state.breakpoints.smDown
       return smDown.indexOf(this.$mq) > -1
-    },
-  },
+    }
+  }
 }
 </script>

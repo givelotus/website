@@ -1,34 +1,34 @@
 <template>
   <v-app>
     <div class="dedicated-page">
-      <Error :error-code="this.error.statusCode" :text="$t('common.404')" />
+      <Error :error-code="error.statusCode" :text="$t('common.404')" />
       <main-footer />
     </div>
   </v-app>
 </template>
 
-<style lang="scss" scoped>
-.dedicated-page {
-  background: $palette-primary-dark;
-}
-</style>
-
 <script>
+import Error from '../components/Error'
 import brand from '~/static/text/brand'
 import Footer from '~/components/Footer'
-import Error from '../components/Error'
 
 export default {
   components: {
     'main-footer': Footer,
-    Error,
+    Error
   },
   layout: 'empty',
   props: {
     error: {
       type: Object,
-      default: null,
-    },
+      default: null
+    }
+  },
+  data() {
+    return {
+      pageNotFound: 'Not Found',
+      otherError: 'An error occurred'
+    }
   },
   head() {
     const title =
@@ -36,14 +36,14 @@ export default {
         ? brand.lotus.name + ' - ' + this.pageNotFound
         : brand.lotus.name + ' - ' + this.otherError
     return {
-      title,
+      title
     }
-  },
-  data() {
-    return {
-      pageNotFound: 'Not Found',
-      otherError: 'An error occurred',
-    }
-  },
+  }
 }
 </script>
+
+<style lang="scss" scoped>
+.dedicated-page {
+  background: $palette-primary-dark;
+}
+</style>

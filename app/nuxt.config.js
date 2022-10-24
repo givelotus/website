@@ -11,7 +11,7 @@ module.exports = {
    */
   head: {
     htmlAttrs: {
-      dir: 'ltr',
+      dir: 'ltr'
     },
     title: brand.lotus.name,
     meta: [
@@ -21,7 +21,7 @@ module.exports = {
       { name: 'msapplication-TileColor', content: '#FFFFFF' },
       {
         name: 'msapplication-TileImage',
-        content: '/favicons/ms-icon-144x144.png',
+        content: '/favicons/ms-icon-144x144.png'
       },
       // PWA primary color
       { name: 'theme-color', content: theme.primary },
@@ -44,7 +44,7 @@ module.exports = {
       { name: 'twitter:image', content: brand.lotus.img },
       { property: 'og:image', content: brand.lotus.img },
       { property: 'og:image:width', content: '1200' },
-      { property: 'og:image:height', content: '630' },
+      { property: 'og:image:height', content: '630' }
     ],
     link: [
       // Favicon
@@ -52,84 +52,84 @@ module.exports = {
       {
         rel: 'apple-touch-icon',
         sizes: '57x57',
-        href: '/favicons/apple-icon-57x57.png',
+        href: '/favicons/apple-icon-57x57.png'
       },
       {
         rel: 'apple-touch-icon',
         sizes: '60x60',
-        href: '/favicons/apple-icon-60x60.png',
+        href: '/favicons/apple-icon-60x60.png'
       },
       {
         rel: 'apple-touch-icon',
         sizes: '72x72',
-        href: '/favicons/apple-icon-72x72.png',
+        href: '/favicons/apple-icon-72x72.png'
       },
       {
         rel: 'apple-touch-icon',
         sizes: '76x76',
-        href: '/favicons/apple-icon-76x76.png',
+        href: '/favicons/apple-icon-76x76.png'
       },
       {
         rel: 'apple-touch-icon',
         sizes: '114x114',
-        href: '/favicons/apple-icon-114x114.png',
+        href: '/favicons/apple-icon-114x114.png'
       },
       {
         rel: 'apple-touch-icon',
         sizes: '120x120',
-        href: '/favicons/apple-icon-120x120.png',
+        href: '/favicons/apple-icon-120x120.png'
       },
       {
         rel: 'apple-touch-icon',
         sizes: '144x144',
-        href: '/favicons/apple-icon-144x144.png',
+        href: '/favicons/apple-icon-144x144.png'
       },
       {
         rel: 'apple-touch-icon',
         sizes: '152x152',
-        href: '/favicons/apple-icon-152x152.png',
+        href: '/favicons/apple-icon-152x152.png'
       },
       {
         rel: 'apple-touch-icon',
         sizes: '180x180',
-        href: '/favicons/apple-icon-180x180.png',
+        href: '/favicons/apple-icon-180x180.png'
       },
       {
         rel: 'icon',
         type: 'image/png',
         sizes: '192x192',
-        href: '/favicons/android-icon-192x192.png',
+        href: '/favicons/android-icon-192x192.png'
       },
       {
         rel: 'icon',
         type: 'image/png',
         sizes: '32x32',
-        href: '/favicons/favicon-32x32.png',
+        href: '/favicons/favicon-32x32.png'
       },
       {
         rel: 'icon',
         type: 'image/png',
         sizes: '96x96',
-        href: '/favicons/favicon-96x96.png',
+        href: '/favicons/favicon-96x96.png'
       },
       {
         rel: 'icon',
         type: 'image/png',
         sizes: '16x16',
-        href: '/favicons/favicon-16x16.png',
+        href: '/favicons/favicon-16x16.png'
       },
       { rel: 'manifest', href: '/favicons/manifest.json' },
       // Fonts and Icons
       // { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap' },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/icon?family=Material+Icons',
+        href: 'https://fonts.googleapis.com/icon?family=Material+Icons'
       },
       {
         rel: 'stylesheet',
-        href: 'https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css',
-      },
-    ],
+        href: 'https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -146,7 +146,7 @@ module.exports = {
     '~/assets/vendors/hamburger-menu.css',
     '~/assets/vendors/slick-carousel/slick.css',
     '~/assets/vendors/slick-carousel/slick-theme.css',
-    '~/assets/global.css',
+    '~/assets/global.css'
   ],
   /*
    ** Plugins to load before mounting the App
@@ -154,10 +154,10 @@ module.exports = {
   plugins: [
     '~/plugins/vue-fragment-config',
     '~/plugins/vue-wow-config',
-    { src: '~plugins/i18n-config.js' },
+    { src: '~/plugins/i18n-config.js' },
     { src: '~/plugins/caroussel-config', ssr: false },
     { src: '~/plugins/countup-config', ssr: false },
-    { src: '~/plugins/vue-scroll-nav', ssr: false },
+    { src: '~/plugins/vue-scroll-nav', ssr: false }
   ],
   /*
    ** Nuxt.js dev-modules
@@ -183,9 +183,9 @@ module.exports = {
           mdUp: 1280,
           lgDown: 1919,
           lgUp: 1920,
-          xl: Infinity,
-        },
-      },
+          xl: Infinity
+        }
+      }
     ],
     [
       '@nuxtjs/i18n',
@@ -198,16 +198,16 @@ module.exports = {
         locales: languages,
         defaultLocale: 'gb',
         vueI18n: {
-          fallbackLocale: 'gb',
+          fallbackLocale: 'gb'
         },
         detectBrowserLanguage: {
           useCookie: true,
           cookieKey: 'i18n_redirected',
-          alwaysRedirect: true,
+          alwaysRedirect: true
         },
-        langDir: 'static/lang/',
-      },
-    ],
+        langDir: 'static/lang/'
+      }
+    ]
   ],
   /*
    ** vuetify module configuration
@@ -215,7 +215,7 @@ module.exports = {
    */
   vuetify: {
     customVariables: ['~/assets/styles.scss'],
-    optionsPath: './config/vuetify.options.js',
+    optionsPath: './config/vuetify.options.js'
   },
   /*
    ** Render configuration
@@ -225,9 +225,9 @@ module.exports = {
       directives: {
         shouldPreload: (file, type) => {
           return ['script', 'style', 'font'].includes(type)
-        },
-      },
-    },
+        }
+      }
+    }
   },
   /*
    ** Build configuration
@@ -239,14 +239,14 @@ module.exports = {
     // cssSourceMap: false,
     loaders: {
       vus: { cacheBusting: true },
-      scss: { sourceMap: false },
+      scss: { sourceMap: false }
     },
     extend(config, ctx) {
       config.plugins.push(
         new FilterWarningsPlugin({
           exclude:
-            /Critical dependency: the request of a dependency is an expression/,
-        }),
+            /Critical dependency: the request of a dependency is an expression/
+        })
       )
       if (ctx.isDev && ctx.isClient) {
         config.module.rules.push({
@@ -255,11 +255,11 @@ module.exports = {
           loader: 'eslint-webpack-plugin',
           exclude: /([node_modules, static])/,
           options: {
-            fix: false,
-          },
+            fix: false
+          }
         })
       }
-    },
+    }
   },
   /*
    ** Page Layout transition
@@ -272,12 +272,12 @@ module.exports = {
     },
     afterLeave(el) {
       console.log('afterLeave', el)
-    },
+    }
   },
   /*
    ** Application Port
    */
   server: {
-    port: 8008, // default: 3000
-  },
+    port: 8008 // default: 3000
+  }
 }

@@ -94,7 +94,7 @@
 export default {
   data() {
     return {
-      show: false,
+      show: false
     }
   },
   methods: {
@@ -112,7 +112,7 @@ export default {
         href = '' + url
       }
       return href
-    },
+    }
   },
   created() {
     window.addEventListener('click', e => {
@@ -120,6 +120,6 @@ export default {
         this.show = false
       }
     })
-  },
+  }
 }
 </script>

@@ -16,30 +16,30 @@ export default {
   props: {
     align: {
       type: String,
-      default: 'left',
+      default: 'left'
     },
     text: {
       type: String,
       required: false,
-      default: '',
+      default: ''
     },
     caption: {
       type: String,
       required: false,
-      default: '',
+      default: ''
     },
     captionClass: {
       type: String,
-      default: '',
+      default: ''
     },
     textClass: {
       type: String,
-      default: '',
+      default: ''
     },
     dark: {
       type: Boolean,
-      default: false,
-    },
-  },
+      default: false
+    }
+  }
 }
 </script>

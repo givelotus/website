@@ -3,8 +3,8 @@ const images = {
     stampchat: '/images/stampchat.jpg',
     becash: '/images/becash.jpg',
     bitcoinabc: '/images/bitcoinabclogo.png',
-    bcpro: '/images/bcPro-Logo-Transparent-GOLD.png',
-  },
+    bcpro: '/images/bcPro-Logo-Transparent-GOLD.png'
+  }
 }
 
 export default images
