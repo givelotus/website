@@ -32,6 +32,7 @@ export default () => {
         'gb': 'English',
         'pl': 'Polski',
         'de': 'Deutsch',
+        'vnm': 'Tiếng Việt',
         'cn': '中国',
         'pt': '󠁥󠁮󠁧󠁿Português',
         'id': '󠁥󠁮󠁧󠁿Bahasa Indonesia',
