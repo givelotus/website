@@ -38,37 +38,9 @@ export default () => {
         'ar': '󠁥󠁮󠁧󠁿العربيّة',
         'notif_msg': '',
       },
-      calculator: {
-        title: '莲花币(Lotus)挖矿计算器',
-        subtitle: '',
-        user_rewards_xpi: '你的每日莲花币奖励：',
-        user_electricity_costs: '每日电费开销:',
-        gpu_question: '你用的是什么显卡？',
-        user_hashrate: '你的算力(hashrate)是多少? *',
-        user_power_consumption: '你的能源消耗是多少？ *',
-        watt_cost: '每千瓦时的花费是多少？',
-        advanced: '显示高级选项',
-        avg_price: '平均价格 [USDT]',
-        current_difficulty: '当前难度',
-        total_network_hashrate: '全网算力（hashrate）',
-        update_data: '刷新数据',
-        rewards: '奖励',
-        electricity_costs: '电费开销',
-        hourly: '每小时',
-        daily: '每天',
-        weekly: '每周',
-        monthly: '每月',
-        period: '每个周期',
-        meta: {
-          description: '计算用你的GPU卡开采莲花的奖励和电力成本。',
-          subtitle: '奖励计算器',
-          name: '计算器',
-        },
-      },
       menu: {
         news: '新闻',
         more: '更多的',
-        calculator: '计算器',
         wallets: '钱包',
       },
       walletsPage: {
@@ -136,7 +108,7 @@ export default () => {
           q1: {
             question: '如何开始挖矿？',
             answer:
-              '你需要在电脑上运行Lotus节点。你可以在<a href="https://docs.givelotus.org/guides/mining" target="_blank"> 这里</a>找到使用说明。检查算力，估算奖励可以使用<a href="/cn/calculator">奖励计算器</a>.',
+              '你需要在电脑上运行Lotus节点。你可以在<a href="https://docs.givelotus.org/guides/mining" target="_blank"> 这里</a>找到使用说明',
           },
           q2: {
             question: '有哪些可用的钱包？',

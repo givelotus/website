@@ -40,38 +40,9 @@ export default () => {
         'notif_msg':
           'Dies ist ein Beispiel für eine Nachricht, die häufig für wichtige Informationen für Besucher oder Benutzer verwendet wird. Bitte klicken Sie auf die Schaltfläche neben, um diese Nachricht zu schließen.',
       },
-      calculator: {
-        title: 'Lotus Mining Rechner',
-        subtitle: '[experimentell]',
-        user_rewards_xpi: 'Tägliche Lotus Ausschüttung:',
-        user_electricity_costs: 'Tägliche Stromkosten:',
-        gpu_question: 'Was ist deine GPU-Karte?',
-        user_hashrate: 'Wie hoch ist die Hashrate? *',
-        user_power_consumption: 'Wie hoch ist der Stromverbrauch? *',
-        watt_cost: 'Was kostet 1 kWh an deinem Standort?',
-        advanced: 'Erweitert anzeigen',
-        avg_price: 'Durchschnittspreis [USDT]',
-        current_difficulty: 'Aktuelle Schwierigkeit',
-        total_network_hashrate: 'Gesamtnetzwerk-Hashrate',
-        update_data: 'Neue Daten holen',
-        rewards: 'Ausschüttung',
-        electricity_costs: 'Stromkosten',
-        hourly: 'stündlich',
-        daily: 'täglich',
-        weekly: 'wöchentlich',
-        monthly: 'monatlich',
-        period: 'Zeitraum',
-        meta: {
-          description:
-            'Berechnen Sie die Prämien und Stromkosten für das Mining von Lotus mit Ihrer GPU-Karte.',
-          subtitle: 'Belohnungs-Rechner',
-          name: 'Taschenrechner',
-        },
-      },
       menu: {
         news: 'News',
         more: 'mehr',
-        calculator: 'Taschenrechner',
         wallets: 'Geldbörsen',
       },
       walletsPage: {
@@ -142,7 +113,7 @@ export default () => {
           q1: {
             question: 'Wie kann ich Lotus minen?',
             answer:
-              'Dafür musst du einen Lotus Node auf deinem Computer ausführen. Eine Anleitung findst du <a href="https://docs.givelotus.org/guides/mining" target="_blank">hier</a>. Um deine Hashrate und die ungefähre Belohnung zu überprüfen, kannst du unseren <a href="/de/calculator">Mining Rechner</a> verwenden.',
+              'Dafür musst du einen Lotus Node auf deinem Computer ausführen. Eine Anleitung findst du <a href="https://docs.givelotus.org/guides/mining" target="_blank">hier</a>.',
           },
           q2: {
             question: 'Welche Wallets kann ich verwenden?',

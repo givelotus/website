@@ -39,38 +39,9 @@ export default () => {
         'ar': '󠁥󠁮󠁧󠁿العربيّة',
         'notif_msg': '',
       },
-      calculator: {
-        title: 'Lotus Mining Calculator',
-        subtitle: '',
-        user_rewards_xpi: 'Your daily lotus rewards:',
-        user_electricity_costs: 'Daily electricity cost:',
-        gpu_question: 'What is your GPU card?',
-        user_hashrate: 'What is your hashrate? *',
-        user_power_consumption: 'What is your power consumption? *',
-        watt_cost: 'What does 1 kwh costs in your location?',
-        advanced: 'Show advanced',
-        avg_price: 'Average Price [USDT]',
-        current_difficulty: 'Current difficulty',
-        total_network_hashrate: 'Total network hashrate',
-        update_data: 'Fetch new data',
-        rewards: 'Rewards',
-        electricity_costs: 'Electricity costs',
-        hourly: 'Hourly',
-        daily: 'Daily',
-        weekly: 'Weekly',
-        monthly: 'Monthly',
-        period: 'period',
-        meta: {
-          description:
-            'Calculate rewards and electricity costs for mining Lotus with your GPU card.',
-          subtitle: 'Rewards Calculator',
-          name: 'Calculator',
-        },
-      },
       menu: {
         news: 'News',
         more: 'More',
-        calculator: 'Rewards calculator',
         wallets: 'Wallets',
       },
       walletsPage: {
@@ -150,7 +121,7 @@ export default () => {
           q1: {
             question: 'How can I start mining?',
             answer:
-              'You will need to run Lotus Node on your computer. You can find instructions <a href="https://docs.givelotus.org/guides/mining" target="_blank"> here</a>. To check your hashrate and approximate rewards check our <a href="/calculator">rewards calculator</a>.',
+              'You will need to run Lotus Node on your computer. You can find instructions <a href="https://docs.givelotus.org/guides/mining" target="_blank"> here</a>.',
           },
           q2: {
             question: 'What are available wallets?',

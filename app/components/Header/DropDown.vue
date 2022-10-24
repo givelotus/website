@@ -77,20 +77,6 @@
                   </div>
                 </a>
               </li>
-              <li class="header__dropdown-menu-item">
-                <a
-                  :href="getLocalizedHref('/calculator')"
-                  class="header__dropdown-menu-link"
-                  title="rewards calculator"
-                >
-                  <div class="header__dropdown-menu-svg">
-                    <v-icon color="grey darken-2">calculate</v-icon>
-                  </div>
-                  <div class="header__dropdown-menu-text">
-                    {{ $t('menu.calculator') }}
-                  </div>
-                </a>
-              </li>
             </ul>
           </div>
         </transition>

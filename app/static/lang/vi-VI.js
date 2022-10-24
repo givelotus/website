@@ -40,38 +40,9 @@ export default () => {
         'vi': 'Tiếng Việt',
         'notif_msg': '',
       },
-      calculator: {
-        title: 'Tính năng lực đào Lotus:',
-        subtitle: '',
-        user_rewards_xpi: 'Phần thưởng hằng ngày:',
-        user_electricity_costs: 'Tiền điện hằng ngày:',
-        gpu_question: 'Card đồ họa (GPU) đang sử dụng?',
-        user_hashrate: 'Chỉ số Hashrate là bao nhiêu? *',
-        user_power_consumption: 'Điện năng tiêu thụ là bao nhiêu? *',
-        watt_cost: 'Tại khu vực của bạn 1 kwh điện tốn bao nhiêu tiền?',
-        advanced: 'Hiển thị nâng cao',
-        avg_price: 'Mức giá trung bình [USDT]',
-        current_difficulty: 'Khó khăn hiện tại',
-        total_network_hashrate: 'Mạng lưới hashrate',
-        update_data: 'Nạp dữ liệu',
-        rewards: 'Phần thưởng',
-        electricity_costs: 'Chi phí điện',
-        hourly: 'Giờ',
-        daily: 'Ngày',
-        weekly: 'Tuần',
-        monthly: 'Tháng',
-        period: 'Giai đoạn/ Chu kỳ',
-        meta: {
-          description:
-            'Tính toán phần thưởng và chi phí điện năng để đào Lotus cho card màn hình của bạn.',
-          subtitle: 'Tính toán phần thưởng',
-          name: 'Bản tính',
-        },
-      },
       menu: {
         news: 'Tin tức/ Sự kiện',
         more: 'Thêm',
-        calculator: 'Tính toán phần thưởng',
         wallets: 'Ví',
       },
       walletsPage: {
@@ -145,7 +116,7 @@ export default () => {
           q1: {
             question: 'Tôi có thể bắt đầu đào như thế nào?',
             answer:
-              'Bạn cần chạy Node Lotus trên máy tính của mình. Bạn có thể xem chỉ dẫn tại <a href="https://docs.givelotus.org/guides/mining" target="_blank"> here</a>. Để kiểm tra hashrate và phần thưởng tương xứng, hãy kiểm tra <a href="/calculator" target="_blank">rewards calculator</a>.',
+              'Bạn cần chạy Node Lotus trên máy tính của mình. Bạn có thể xem chỉ dẫn tại <a href="https://docs.givelotus.org/guides/mining" target="_blank"> here</a>.',
           },
           q2: {
             question: 'Ví sẵn có là gì?',
