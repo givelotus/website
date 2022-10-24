@@ -15,16 +15,16 @@ export default {
   props: {
     text: {
       type: String,
-      default: '',
+      default: ''
     },
     img: {
       type: String,
-      default: '',
+      default: ''
     },
     type: {
       type: String,
-      default: '',
-    },
-  },
+      default: ''
+    }
+  }
 }
 </script>

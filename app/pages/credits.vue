@@ -55,18 +55,6 @@
   </v-container>
 </template>
 
-<style>
-.item {
-  width: 100%;
-  max-width: 800px;
-  justify-content: center;
-}
-
-.container > div {
-  margin-bottom: 10px;
-}
-</style>
-
 <script lang="ts">
 type Contributor = {
   name: string
@@ -80,51 +68,51 @@ const contributors: Array<Contributor> = [
   {
     name: 'Vic',
     contributions: 'Built the first iteration of givelotus.org',
-    github: 'wiktorcie',
+    github: 'wiktorcie'
   },
   {
     name: 'Alex U.',
     contributions: 'Writes "This week in Stamp" blogs',
-    github: 'wiktorcie',
+    github: 'wiktorcie'
   },
   {
     name: 'Austin',
     contributions: 'Newsletter system.',
-    github: 'wiktorcie',
+    github: 'wiktorcie'
   },
   {
     name: 'Mags',
     contributions: 'Maintains Vase, and built blog.givelotus.org',
-    twitter: 'magsmagnoli',
+    twitter: 'magsmagnoli'
   },
   {
     name: 'Tobias Ruck',
     contributions: 'Major contributions to lotusd, and wrote chronik',
-    twitter: 'TobiasRuck',
+    twitter: 'TobiasRuck'
   },
   {
     name: 'Shammah',
     contributions: 'Founded Stamp, and major contributions to lotusd',
     github: 'schancel',
-    twitter: 'micropresident',
+    twitter: 'micropresident'
   },
   {
     name: 'Maff',
     contributions: 'Built our excellent block explorer',
-    website: 'https://explorer.givelotus.org',
+    website: 'https://explorer.givelotus.org'
   },
   {
     name: 'Nghia Cao',
     contributions: 'Built SendLotus.com and runs GiveLotus2Vietnam',
-    website: 'https://givelotus.vn',
+    website: 'https://givelotus.vn'
   },
   {
     name: 'Nath Swerve',
-    contributions: 'Branding',
+    contributions: 'Branding'
   },
   {
     name: 'Pierre',
-    contributions: 'Helping keep lotusd up to date!',
+    contributions: 'Helping keep lotusd up to date!'
   },
   {
     name: 'Hiecho',
@@ -133,23 +121,23 @@ const contributors: Array<Contributor> = [
   },
   {
     name: 'Avie',
-    contributions: 'Running fun online community games.',
+    contributions: 'Running fun online community games.'
   },
   {
     name: 'Sean Ballard',
     contributions:
       "Running our online meetings and making sure we don't lose spirit.",
-    twitter: 'seanballard',
+    twitter: 'seanballard'
   },
   {
     name: 'Sunglasses',
     contributions: 'Mr Turtle!',
-    twitter: 'MrTurtleGive',
+    twitter: 'MrTurtleGive'
   },
   {
     name: 'Harry B',
-    contributions: 'Tons of contributions to Stamp',
-  },
+    contributions: 'Tons of contributions to Stamp'
+  }
 ]
 
 export default {
@@ -170,21 +158,33 @@ export default {
         {
           text: 'Name',
           sortable: true,
-          value: 'name',
+          value: 'name'
         },
         {
           text: 'Contributions',
           sortable: false,
-          value: 'contributions',
+          value: 'contributions'
         },
         {
           text: 'Socials',
           sortable: false,
-          value: 'socials',
-        },
+          value: 'socials'
+        }
       ],
-      contributors,
+      contributors
     }
-  },
+  }
 }
 </script>
+
+<style>
+.item {
+  width: 100%;
+  max-width: 800px;
+  justify-content: center;
+}
+
+.container > div {
+  margin-bottom: 10px;
+}
+</style>

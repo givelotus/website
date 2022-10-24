@@ -1,6 +1,8 @@
 <template>
   <v-container class="page-wrap pt-16">
-    <h1 class="pt-16">{{ $t('walletsPage.wallets') }}</h1>
+    <h1 class="pt-16">
+      {{ $t('walletsPage.wallets') }}
+    </h1>
     <h3 class="pt-8">
       {{ $t('walletsPage.title') }}
     </h3>
@@ -67,18 +69,6 @@
   </v-container>
 </template>
 
-<style>
-.item {
-  width: 100%;
-  max-width: 800px;
-  justify-content: center;
-}
-
-.container > div {
-  margin-bottom: 10px;
-}
-</style>
-
 <script lang="ts">
 type WalletInfo = {
   name: string
@@ -95,13 +85,13 @@ const wallets: Array<WalletInfo> = [
   {
     name: 'SendLotus.com',
     description: 'Simple browser-based Lotus wallet',
-    web: 'https://sendlotus.com',
+    web: 'https://sendlotus.com'
   },
   {
     name: 'Lotus Vase',
     description: 'Simple to use mobile wallet',
     android: 'https://play.google.com/store/apps/details?id=org.cashweb.cashew',
-    iphone: 'https://apps.apple.com/us/app/cashew-wallet/id1539306720',
+    iphone: 'https://apps.apple.com/us/app/cashew-wallet/id1539306720'
   },
   {
     name: 'lotusd',
@@ -111,31 +101,31 @@ const wallets: Array<WalletInfo> = [
     macos:
       'https://storage.googleapis.com/lotus-project/lotus-3.3.3-osx-unsigned.dmg',
     linux:
-      'https://storage.googleapis.com/lotus-project/lotus-3.3.3-x86_64-linux-gnu.tar.gz',
+      'https://storage.googleapis.com/lotus-project/lotus-3.3.3-x86_64-linux-gnu.tar.gz'
   },
   {
     name: 'Stamp',
     description:
       'Web-based cryptomessenger, allows you to talk to your Lotus friends',
-    web: 'https://sendlotus.com',
-  },
+    web: 'https://sendlotus.com'
+  }
 ]
 const headers = [
   {
     text: 'Name',
     sortable: false,
-    value: 'name',
+    value: 'name'
   },
   {
     text: 'Description',
     sortable: false,
-    value: 'description',
+    value: 'description'
   },
   {
     text: 'Links to Supported Platforms ',
     sortable: false,
-    value: 'links',
-  },
+    value: 'links'
+  }
 ]
 
 export default {
@@ -144,8 +134,20 @@ export default {
   data() {
     return {
       wallets,
-      headers,
+      headers
     }
-  },
+  }
 }
 </script>
+
+<style>
+.item {
+  width: 100%;
+  max-width: 800px;
+  justify-content: center;
+}
+
+.container > div {
+  margin-bottom: 10px;
+}
+</style>

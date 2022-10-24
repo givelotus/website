@@ -137,7 +137,7 @@ export default {
   data() {
     return {
       link: link,
-      navMenu: menuList,
+      navMenu: menuList
     }
   },
   methods: {
@@ -158,13 +158,13 @@ export default {
         }
       }
       return href
-    },
+    }
   },
   props: {
     open: {
       type: Boolean,
-      default: false,
-    },
-  },
+      default: false
+    }
+  }
 }
 </script>

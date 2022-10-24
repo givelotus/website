@@ -9,43 +9,41 @@ export default [
     iso: 'de-DE',
     name: 'Deutch',
     file: 'de-DE.js',
-    dir: 'ltr',
+    dir: 'ltr'
   },
   {
     code: 'gb',
     iso: 'en-US',
     name: 'English',
     file: 'en-US.js',
-    dir: 'ltr',
+    dir: 'ltr'
   },
   {
     code: 'in',
     iso: 'hi-IN',
     name: 'Hindi',
     file: 'hi-HI.js',
-    dir: 'ltr',
+    dir: 'ltr'
   },
   {
     code: 'pl',
     iso: 'pl-PL',
     name: 'Polish',
     file: 'pl-PL.js',
-    dir: 'ltr',
+    dir: 'ltr'
   },
   {
     code: 'cn',
     iso: 'zh-ZH',
     name: 'Chinese',
     file: 'zh-CN.js',
-    dir: 'ltr',
+    dir: 'ltr'
   },
-
   {
     code: 'vnm',
     iso: 'vi-Vi',
     name: 'Vietnamese',
     file: 'vi-VI.js',
-    dir: 'ltr',
-  },
-
+    dir: 'ltr'
+  }
 ]

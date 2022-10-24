@@ -2,25 +2,36 @@ module.exports = {
   root: true,
   env: {
     browser: true,
-    node: true,
-  },
-  parserOptions: {
-    parser: 'babel-eslint',
+    node: true
   },
   extends: [
     'plugin:vue/strongly-recommended',
     'eslint:recommended',
-    'prettier/vue',
-    'plugin:prettier/recommended',
+    'prettier',
     '@nuxtjs/eslint-config-typescript',
+    'plugin:@intlify/vue-i18n/recommended'
   ],
   // required to lint *.vue files
-  plugins: ['@typescript-eslint', 'vue', 'prettier'],
+  plugins: ['@typescript-eslint', 'vue', 'prettier', '@intlify/vue-i18n'],
   globals: {
-    $nuxt: true,
+    $nuxt: true
+  },
+  settings: {
+    'vue-i18n': {
+      localeDir: './static/lang/*.{js}' // extension is glob formatting!
+    }
   },
   // add your custom rules here
   rules: {
+    'vue/valid-v-slot': [
+      'error',
+      {
+        allowModifiers: true
+      }
+    ],
+    'space-before-function-paren': 'off',
+    'quote-props': 'off',
+    'vue/singleline-html-element-content-newline': 'off',
     'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
     'no-nested-ternary': 0,
@@ -41,5 +52,12 @@ module.exports = {
     'arrow-parens': 0,
     'linebreak-style': 0,
     'vue/multi-word-component-names': 0,
-  },
+    '@intlify/vue-i18n/no-unused-keys': [
+      'error',
+      {
+        extensions: ['.js', '.vue']
+      }
+    ],
+    'prettier/prettier': 'error'
+  }
 }

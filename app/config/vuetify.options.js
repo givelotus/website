@@ -20,12 +20,12 @@ const palette = {
     secondary: colors.lightGreen.base, // secondary main
     secondarylight: colors.lightGreen.lighten4, // secondary light
     secondarydark: colors.lightGreen.darken3, // secondary dark
-    anchor: colors.purple.base, // link
-  },
+    anchor: colors.purple.base // link
+  }
 }
 
 export const theme = {
-  ...palette.violeta,
+  ...palette.violeta
 }
 
 export default {
@@ -34,14 +34,14 @@ export default {
     dark: darkMode === 'true',
     themes: {
       light: {
-        ...theme,
+        ...theme
       },
       dark: {
-        ...theme,
-      },
+        ...theme
+      }
     },
     options: {
-      customProperties: true,
-    },
-  },
+      customProperties: true
+    }
+  }
 }

@@ -21,10 +21,10 @@
         </div>
       </div>
       <div class="thewhy">
-        <p class="text white--text" v-html="$t('banner.why_1')"></p>
-        <p class="text white--text" v-html="$t('banner.why_2')"></p>
-        <p class="text white--text" v-html="$t('banner.why_3')"></p>
-        <p class="text white--text" v-html="$t('banner.why_4')"></p>
+        <p class="text white--text" v-html="$t('banner.why_1')" />
+        <p class="text white--text" v-html="$t('banner.why_2')" />
+        <p class="text white--text" v-html="$t('banner.why_3')" />
+        <p class="text white--text" v-html="$t('banner.why_4')" />
       </div>
     </v-container>
     <v-container class="max-md use-text-subtitle2 white--text text-center">
@@ -53,22 +53,22 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
-@import './banner-style.scss';
-</style>
-
 <script>
 import Hidden from '../Hidden'
 
 export default {
   components: {
-    Hidden,
+    Hidden
   },
   computed: {
     isDesktop() {
       const lgUp = this.$store.state.breakpoints.lgUp
-      return lgUp.indexOf(this.$mq) > -1
-    },
-  },
+      return lgUp.includes(this.$mq)
+    }
+  }
 }
 </script>
+
+<style lang="scss" scoped>
+@import './banner-style.scss';
+</style>

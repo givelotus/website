@@ -7,15 +7,15 @@ type MenuItem = {
 export const menuList: MenuItem[] = [
   {
     translation: 'lotusLanding.header_about',
-    url: '#about',
+    url: '#about'
   },
   {
     translation: 'lotusLanding.header_carousel',
-    url: '#projects',
+    url: '#projects'
   },
   {
     translation: 'lotusLanding.header_faq',
     url: '#faq',
-    offset: 60,
-  },
+    offset: 60
+  }
 ]

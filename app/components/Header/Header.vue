@@ -10,8 +10,8 @@
       <mobile-menu :open="openDrawer" />
     </v-navigation-drawer>
     <v-app-bar
-      v-scroll="handleScroll"
       id="header"
+      v-scroll="handleScroll"
       :class="{ 'fixed': fixed, 'open-drawer': openDrawer }"
       class="header"
       fixed
@@ -54,12 +54,13 @@
                     :href="getLocalizedHref(item.url)"
                     :class="{
                       'anchor-link scrollactive-item':
-                        $nuxt.$route.name.includes('index'),
+                        $nuxt.$route.name.includes('index')
                     }"
                     class="menu-link"
                     @click="setOffset(item.offset)"
-                    >{{ $t(item.translation) }}</v-btn
                   >
+                    {{ $t(item.translation) }}
+                  </v-btn>
                 </li>
 
                 <li>
@@ -68,8 +69,9 @@
                     target="_blank"
                     text
                     class="menu-link"
-                    >{{ $t('menu.news') }}</v-btn
                   >
+                    {{ $t('menu.news') }}
+                  </v-btn>
                 </li>
 
                 <li>
@@ -132,45 +134,51 @@
   </fragment>
 </template>
 
-<style lang="scss" scoped>
-@import './header-style.scss';
-</style>
-
 <script>
-import Lotus_C_Icon from '~/static/images/lotus/Lotus_C_Icon.png'
-import link from '~/static/text/link'
-import brand from '~/static/text/brand'
 import Hidden from '../Hidden'
 import { menuList } from './menu'
 import Settings from './Settings'
 import MobileMenu from './MobileMenu'
 import DropDown from './DropDown'
+import brand from '~/static/text/brand'
+import link from '~/static/text/link'
+import LotusCIcon from '~/static/images/lotus/Lotus_C_Icon.png'
 
 export default {
   components: {
     'setting-menu': Settings,
     Hidden,
     MobileMenu,
-    DropDown,
+    DropDown
   },
   props: {
     invert: {
       type: Boolean,
-      default: false,
-    },
+      default: false
+    }
   },
   data() {
     return {
-      logo: Lotus_C_Icon,
-      link: link,
+      logo: LotusCIcon,
+      link,
       loaded: false,
-      brand: brand,
+      brand,
       section: 0,
       fixed: false,
       openDrawer: null,
       navOffset: 20,
       menuList,
-      showMenu: false,
+      showMenu: false
+    }
+  },
+  computed: {
+    isMobile() {
+      const mdDown = this.$store.state.breakpoints.mdDown
+      return mdDown.includes(this.$mq)
+    },
+    isDesktop() {
+      const lgUp = this.$store.state.breakpoints.lgUp
+      return lgUp.includes(this.$mq)
     }
   },
   mounted() {
@@ -212,17 +220,11 @@ export default {
         href = '/' + url
       }
       return href
-    },
-  },
-  computed: {
-    isMobile() {
-      const mdDown = this.$store.state.breakpoints.mdDown
-      return mdDown.indexOf(this.$mq) > -1
-    },
-    isDesktop() {
-      const lgUp = this.$store.state.breakpoints.lgUp
-      return lgUp.indexOf(this.$mq) > -1
-    },
-  },
+    }
+  }
 }
 </script>
+
+<style lang="scss" scoped>
+@import './header-style.scss';
+</style>

@@ -15,8 +15,8 @@ export default {
   props: {
     align: {
       type: String,
-      default: 'left',
-    },
-  },
+      default: 'left'
+    }
+  }
 }
 </script>

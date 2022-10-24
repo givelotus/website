@@ -84,23 +84,23 @@ if (typeof Storage !== 'undefined') {
 
 export default {
   components: {
-    CountryFlag,
+    CountryFlag
   },
   props: {
     invert: {
       type: Boolean,
-      default: false,
-    },
+      default: false
+    }
   },
   data: () => ({
     dark: darkMode === 'true',
     rtl: false,
     open: false,
-    closeOnContentClick: false,
+    closeOnContentClick: false
   }),
   computed: {
     ...mapState(['counter', 'darkMode']),
-    ...mapGetters(['getDir']),
+    ...mapGetters(['getDir'])
   },
   methods: {
     switchLang: function (val) {
@@ -113,7 +113,7 @@ export default {
     setDirection: function () {
       this.$vuetify.rtl = this.rtl
       document.dir = this.rtl ? 'rtl' : 'ltr'
-    },
-  },
+    }
+  }
 }
 </script>
