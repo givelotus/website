@@ -50,9 +50,9 @@ export default () => {
         title: 'Danh  những ví Lotus đang khả dụng trong hệ thống:',
       },
       banner: {
-        why_1: 'Xã hội thường gặp khó khăn trong việc cấp vốn cho các dự án công cộng - việc phân bổ nguồn lực vào những công việc cấp bách nhưng không có lợi ích kinh tế. Với vấn đề này, Lotus đá được tạo ra. Chúng tôi tin tưởng rầng bằng cách thay đổi cách nhìn nhận về đồng tiền, và thách thức những sáng kiến xung quanh việc sử dụng đồng tiền, chúng tôi có thể giải quyết được việc cấp vốn cho những dự án công cộng.',
+        why_1: 'Xã hội thường gặp khó khăn trong việc cấp vốn cho các dự án công cộng - việc phân bổ nguồn lực vào những công việc cấp bách nhưng không có lợi ích kinh tế. Với vấn đề này, Lotus đã được tạo ra. Chúng tôi tin tưởng rầng bằng cách thay đổi cách nhìn nhận về đồng tiền, và thách thức những sáng kiến xung quanh việc sử dụng đồng tiền, chúng tôi có thể giải quyết được việc cấp vốn cho những dự án công cộng.',
         why_2: 'Mục tiêu của chúng tôi là để bày tỏ lòng tri ân với các tình nguyện viên của các dự án từ thiện bằng cách gửi Lotus cho họ một cách miễn phí. Và, như là một cư xử văn hóa, sẵn lòng chấp nhận những đồng tiền này để đổi lại những thứ mà những tình nguyện viên này cần.',
-        why_3: 'Những tập trung đầu tiên của chúng tôi là các dự án mã nguồn mỡ, và đặc biệt là các dự án thiết yếu để giúp Lotus tồn tại và phát triển. Chúng tôi sẵn lòng để thảo luận với các dự án tự nguyện mong muốn tham gia. Chúng tôi đặc biệt quan tâm cho việc cấp phát vốn cho các dự án mã nguồn mở, trường học, trại mồ côi, bác sỹ, và các tiện ích công cộng khác.',
+        why_3: 'Những tập trung đầu tiên của chúng tôi là các dự án mã nguồn mở, và đặc biệt là các dự án thiết yếu để giúp Lotus tồn tại và phát triển. Chúng tôi sẵn lòng để thảo luận với các dự án tự nguyện mong muốn tham gia. Chúng tôi đặc biệt quan tâm cho việc cấp phát vốn cho các dự án mã nguồn mở, trường học, trại mồ côi, bác sỹ, và các tiện ích công cộng khác.',
         why_4: 'Nếu bạn đang triển khai một dự án như vậy, và mong muốn sử dụng Lotus, xin hãy gửi đơn theo mẫu để được xét nhận Lotus:  <a class="white--text" href="https://forms.gle/j9EeY5NN57RcAoY99" target="_blank">form</a>, hoặc liên hệ qua <a class="white--text" href="https://discord.gg/KECbh3JEmm" target="_blank">discord.</a>',
       },
       lotusLanding: {
