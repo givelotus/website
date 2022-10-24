@@ -27,6 +27,20 @@
         <p class="text white--text" v-html="$t('banner.why_4')"></p>
       </div>
     </v-container>
+    <v-container class="max-md use-text-subtitle2 white--text text-center">
+      {{ $t('lotusLanding.subscribe.text') }}
+      <br /><br />
+      <v-btn
+        rounded
+        outlined
+        x-large
+        href="https://blog.givelotus.org"
+        target="_blank"
+        class="text-bold white--text"
+      >
+        {{ $t('lotusLanding.subscribe.caption') }}
+      </v-btn>
+    </v-container>
     <div class="deco">
       <hidden point="mdDown">
         <div class="deco-inner">

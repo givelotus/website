@@ -5,29 +5,6 @@
         <section id="home">
           <banner />
         </section>
-        <section id="signup">
-          <title-subscribe
-            :caption="$t('lotusLanding.subscribe.caption')"
-            align="center"
-            class="use-text-title"
-            color="primary"
-          />
-          <v-container
-            class="max-md use-text-subtitle2"
-            style="text-align: center"
-          >
-            {{ $t('lotusLanding.subscribe.text') }}
-            <br />
-            <div class="mx-auto" style="display: inline-block">
-              <script
-                type="application/javascript"
-                async
-                data-uid="34ee838890"
-                src="https://unique-composer-4819.ck.page/34ee838890/index.js"
-              ></script>
-            </div>
-          </v-container>
-        </section>
         <section id="projects">
           <projects />
         </section>
