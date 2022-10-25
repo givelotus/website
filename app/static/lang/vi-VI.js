@@ -37,7 +37,7 @@ export default () => {
         'id': '󠁥󠁮󠁧󠁿Bahasa Indonesia',
         'in': '󠁥󠁮󠁧󠁿हिन्दी',
         'ar': '󠁥󠁮󠁧󠁿العربيّة',
-        'vi': 'Tiếng Việt',
+        'vnm': 'Tiếng Việt',
         'notif_msg': ''
       },
       menu: {
@@ -47,7 +47,13 @@ export default () => {
       },
       walletsPage: {
         wallets: 'Ví',
-        title: 'Danh  những ví Lotus đang khả dụng trong hệ thống:'
+        title: 'Danh sách những ví Lotus đang khả dụng trong hệ thống:'
+      },
+      banner: {
+        why_1: 'Xã hội thường gặp khó khăn trong việc cấp vốn cho các dự án công cộng - việc phân bổ nguồn lực vào những công việc cấp bách nhưng không có lợi ích kinh tế. Với vấn đề này, Lotus đã được tạo ra. Chúng tôi tin tưởng rằng bằng cách thay đổi cách nhìn nhận về đồng tiền, và thách thức những sáng kiến xung quanh việc sử dụng đồng tiền, chúng tôi có thể giải quyết được việc cấp vốn cho những dự án công cộng.',
+        why_2: 'Mục tiêu của chúng tôi là để bày tỏ lòng tri ân với các tình nguyện viên của các dự án từ thiện bằng cách gửi Lotus cho họ một cách miễn phí. Và, như là một cư xử văn hóa, sẵn lòng chấp nhận những đồng tiền này để đổi lại những thứ mà những tình nguyện viên này cần.',
+        why_3: 'Những tập trung đầu tiên của chúng tôi là các dự án mã nguồn mở, đặc biệt là các dự án thiết yếu để giúp Lotus tồn tại và phát triển. Chúng tôi sẵn lòng để thảo luận với các dự án tự nguyện mong muốn tham gia. Chúng tôi đặc biệt quan tâm cho việc cấp phát vốn cho các dự án mã nguồn mở, trường học, trại mồ côi, bác sỹ, và các tiện ích công cộng khác.',
+        why_4: 'Nếu bạn đang triển khai một dự án như vậy, và mong muốn sử dụng Lotus, xin hãy gửi đơn theo mẫu để được xét nhận Lotus:  <a class="white--text" href="https://forms.gle/j9EeY5NN57RcAoY99" target="_blank">form</a>, hoặc liên hệ qua <a class="white--text" href="https://discord.gg/KECbh3JEmm" target="_blank">discord.</a>',
       },
       lotusLanding: {
         features: {
@@ -164,6 +170,8 @@ export default () => {
           'Be.cash hợp tác với Logos Foundation để hỗ trợ phát triển phần mềm chuỗi khối Lotus, cũng như phát triển hệ thống Điểm bán hàng và phương thức thanh toán di động cho các kh u vực không có cơ sở hạ tầng thiết yếu phục vụ các phương thức thanh toán truyền thống.',
         bitcoin_abc_desc:
           ' ABC Bitcoin phát triển phần mềm mã nguồn mở có khả năng mở rộng cao để đào và giao dịch crypto token. ABC Bitcoin không hề tính phí, cho phép Lotus sử dụng phần mềm của mình làm cơ sở trong hệ thống và để đáp lại, ABC Bitcoin sẽ nhận được sự tri ân dành cho những nhà phát triển này. ',
+        bcpro_desc:
+          ' bcPro Foundation phát triển các phần mềm tiện ích trên nên tảng chuỗi khối blockchain cho thị trường Việt Nam.',
         services_button: 'Khám phá'
       }
     })
