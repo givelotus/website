@@ -88,7 +88,8 @@
                 href="https://twitter.com/givelotus"
                 target="_blank"
               >
-                <v-icon color="white">mdi-twitter</v-icon>
+                <v-icon v-if="$vuetify.theme.dark" color="white">mdi-twitter</v-icon>
+                <v-icon v-else>mdi-twitter</v-icon>
               </v-btn>
               <v-btn
                 icon
@@ -98,8 +99,15 @@
               >
                 <v-img
                   width="1rem"
-                  src="https://assets-global.website-files.com/6257adef93867e50d84d30e2/62595384f934b806f37f4956_145dc557845548a36a82337912ca3ac5.svg"
+                  v-if="!$vuetify.theme.dark && fixed"
+                  src="/images/discord-pink.svg"
                 />
+                <v-img
+                  width="1rem"
+                  v-else
+                  src="/images/discord.svg"
+                />
+
               </v-btn>
               <v-btn
                 icon
@@ -107,7 +115,8 @@
                 href="https://www.reddit.com/r/lotusproject/"
                 target="_blank"
               >
-                <v-icon color="white">mdi-reddit</v-icon>
+                <v-icon v-if="$vuetify.theme.dark" color="white">mdi-reddit</v-icon>
+                <v-icon v-else >mdi-reddit</v-icon>
               </v-btn>
               <v-btn
                 icon
@@ -115,7 +124,8 @@
                 href="https://github.com/LogosFoundation"
                 target="_blank"
               >
-                <v-icon color="white">mdi-github</v-icon>
+                <v-icon v-if="$vuetify.theme.dark" color="white">mdi-github</v-icon>
+                <v-icon v-else>mdi-github</v-icon>
               </v-btn>
               <v-btn
                 icon
@@ -123,7 +133,8 @@
                 href="https://t.me/givelotus"
                 target="_blank"
               >
-                <v-icon color="white">telegram</v-icon>
+                <v-icon v-if="$vuetify.theme.dark" color="white">telegram</v-icon>
+                <v-icon v-else>telegram</v-icon>
               </v-btn>
             </hidden>
             <setting-menu :invert="invert" />
