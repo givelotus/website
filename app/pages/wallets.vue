@@ -107,7 +107,7 @@ const wallets: Array<WalletInfo> = [
     name: 'Stamp',
     description:
       'Web-based cryptomessenger, allows you to talk to your Lotus friends',
-    web: 'https://sendlotus.com'
+    web: 'https://web.stampchat.io'
   }
 ]
 const headers = [
