@@ -11,9 +11,23 @@
     <template #activator="{ on }">
       <div class="setting">
         <v-btn fab text small v-on="on" class="ma-3">
-          <v-icon color="white" :class="{ invert: invert, active: open }" class="icon">
+          <v-icon
+            v-if="$vuetify.theme.dark"
+            color="white"
+            :class="{ invert: invert, active: open }"
+            class="icon"
+          >
             settings
           </v-icon>
+
+          <v-icon
+            v-else
+            :class="{ invert: invert, active: open }"
+            class="icon"
+          >
+            settings
+          </v-icon>
+
         </v-btn>
       </div>
     </template>

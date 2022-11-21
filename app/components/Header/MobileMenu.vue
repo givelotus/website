@@ -76,7 +76,7 @@
           :style="{ animationDuration: navMenu.length * 0.15 + 's' }"
         >
           <v-btn
-            x-large
+            large
             icon
             class="social-btn"
             href="https://twitter.com/givelotus"
@@ -86,7 +86,7 @@
           </v-btn>
 
           <v-btn
-            x-large
+            large
             icon
             class="social-btn"
             href="https://www.reddit.com/r/lotusproject/"
@@ -96,7 +96,7 @@
           </v-btn>
 
           <v-btn
-            x-large
+            large
             icon
             class="social-btn"
             href="https://github.com/LogosFoundation"
@@ -106,13 +106,23 @@
           </v-btn>
 
           <v-btn
-            x-large
+            large
             icon
             class="social-btn"
             href="https://t.me/givelotus"
             target="_blank"
           >
             <v-icon>telegram</v-icon>
+          </v-btn>
+
+          <v-btn
+            icon
+            class="social-btn"
+            href="https://t.me/givelotus"
+            target="_blank"
+          >
+            <v-img v-if="$vuetify.theme.dark" width="30px" src="/images/discord.svg" />
+            <v-img v-else width="30px" src="/images/discord-grey.svg" />
           </v-btn>
         </v-list-item-group>
       </v-list>
