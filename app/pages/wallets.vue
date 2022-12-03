@@ -95,7 +95,7 @@ const wallets: Array<WalletInfo> = [
   },
   {
     name: 'lotusd',
-    description: 'Lotus Daemon software (Only receommended for power users)',
+    description: 'Lotus Daemon software (Only recommended for power users)',
     windows:
       'https://storage.googleapis.com/lotus-project/lotus-4.3.3-win64-setup-unsigned.exe',
     macos:
