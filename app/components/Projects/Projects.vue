@@ -61,7 +61,7 @@ export default {
         {
           title: 'bcPro',
           content: this.$t('lotusLanding.bcpro_desc'),
-          url: 'https://www.givelotus.vn/',
+          url: 'https://givelotus.vn/bcpro/',
           image: images.projects.bcpro
         },
         {
