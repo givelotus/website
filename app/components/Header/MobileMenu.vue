@@ -16,6 +16,14 @@
           </v-list-item-content>
         </v-list-item>
 
+        <v-list-item :href="getLocalizedHref('/groups', true)" link>
+          <v-list-item-content>
+            <v-list-item-title class="menu-list">{{
+              $t('menu.groups')
+            }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
         <v-list-item :href="getLocalizedHref('/wallets', true)" link>
           <v-list-item-content>
             <v-list-item-title class="menu-list">{{

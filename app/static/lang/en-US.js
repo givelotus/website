@@ -43,7 +43,8 @@ export default () => {
       menu: {
         news: 'News',
         more: 'More',
-        wallets: 'Wallets'
+        wallets: 'Wallets',
+        groups: 'Groups'
       },
       walletsPage: {
         wallets: 'Wallets',

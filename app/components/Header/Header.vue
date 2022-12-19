@@ -75,6 +75,16 @@
                 </li>
 
                 <li>
+                  <v-btn
+                    :href="getLocalizedHref('groups')"
+                    text
+                    class="menu-link"
+                  >
+                    {{ $t('menu.groups') }}
+                  </v-btn>
+                </li>
+
+                <li>
                   <DropDown />
                 </li>
               </scrollactive>
