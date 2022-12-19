@@ -144,8 +144,7 @@ export default () => {
         header_block_explorer: '区块浏览器',
         documentation: '文档',
         contributors: '贡献者',
-        banner_title: '',
-        banner_titlestrong: '感恩的符号',
+        banner_title: '感恩的符号',
         banner_subtitle:
           '莲花代币（Lotus）是一种可以永久保存的，无比珍贵，代表感恩之情的数字标识。',
         faq_subtitle: '有问题？可以查阅常见问题来寻找您想要的答案。',

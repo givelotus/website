@@ -13,7 +13,7 @@
         <div class="item text-center white--text">
           <h3 class="use-text-title">
             {{ $t('lotusLanding.banner_title') }}
-            <strong>{{ $t('lotusLanding.banner_titlestrong') }}</strong>
+            <strong>{{ $t('lotusLanding.banner_title') }}</strong>
           </h3>
           <p class="use-text-subtitle">
             {{ $t('lotusLanding.banner_subtitle') }}

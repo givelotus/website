@@ -159,7 +159,7 @@ export default () => {
         documentation: 'Các tài liệu',
         contributors: 'Tình nguyện viên',
         banner_title: '',
-        banner_titlestrong: 'Biểu trưng của sự tri ân',
+        banner_title: 'Biểu trưng của sự tri ân',
         banner_subtitle:
           'Lotus của sự tri ân, là một biểu trưng (token) kỹ thuật số vô giá mà bạn có thể gửi qua mạng internet để tỏ lòng tri ân.',
         faq_subtitle:

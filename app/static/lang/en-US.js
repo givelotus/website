@@ -161,8 +161,7 @@ export default () => {
         header_block_explorer: 'Block explorer',
         documentation: 'Docs',
         contributors: 'Contributors',
-        banner_title: '',
-        banner_titlestrong: 'The token of appreciation',
+        banner_title: 'The token of appreciation',
         banner_subtitle:
           'Lotus is a priceless digital token that you can send over the internet to show your appreciation.',
         faq_subtitle:
