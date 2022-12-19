@@ -20,10 +20,7 @@
         </div>
       </div>
       <div class="thewhy">
-        <p class="text white--text" v-html="$t('banner.why_1')" />
-        <p class="text white--text" v-html="$t('banner.why_2')" />
-        <p class="text white--text" v-html="$t('banner.why_3')" />
-        <p class="text white--text" v-html="$t('banner.why_4')" />
+        <p class="text white--text" v-html="$t('banner.p_1')" />
       </div>
     </v-container>
     <v-container class="max-md use-text-subtitle2 white--text text-center">

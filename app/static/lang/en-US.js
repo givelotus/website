@@ -50,14 +50,7 @@ export default () => {
         title: 'Wallets allow you to store and send your lotus tokens'
       },
       banner: {
-        why_1:
-          'Society struggles with efficiently funding public goods projects — with allocating resources towards work that is desparately needed but has no direct profit incentive. To this end, Lotus was created. We believe that by reframing what money is, and challenging the ideas around how it is used, we can solve the problem of funding public goods.',
-        why_2:
-          'Our goal is to show volunteers of charitable projects appreciation by distributing Lotus to them free-of-charge. And, as a culture, being willing to accept those tokens in return for things these volunteers need.',
-        why_3:
-          'Our initial focus is on open source projects, and specifically the projects needed to make Lotus function and exist. However, we are looking for additional charitable projects who are willing to accept and use Lotus. We would love to speak to any volunteer-based projects that are interesting in participating. We have a particular interest in providing tokens to open source, schools, orphanages, doctors, and other public utilities.',
-        why_4:
-          'If you are run such a project, and are interested in using Lotus, please apply to receive tokens through our <a class="white--text" href="https://forms.gle/j9EeY5NN57RcAoY99" target="_blank">form</a>, or on our <a class="white--text" href="https://discord.gg/KECbh3JEmm" target="_blank">discord.</a>'
+        p_1: 'We believe that most of our societal problems are best solved at the individual level through peer-to-peer relationships. We are striving to create commonality through a gratuitous token called Lotus. We are creating community for the purpose of creating peer-to-peer relationships.'
       },
       lotusLanding: {
         features: {
@@ -163,7 +156,7 @@ export default () => {
         contributors: 'Contributors',
         banner_title: 'The token of appreciation',
         banner_subtitle:
-          'Lotus is a priceless digital token that you can send over the internet to show your appreciation.',
+          'Restoring community one peer-to-peer relationship at a time.',
         faq_subtitle:
           'Have a question? Check out our frequently asked questions to find your answer.',
         news_readmore: 'read more',
