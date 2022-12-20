@@ -151,7 +151,7 @@ export default () => {
         header_block_explorer: 'Block Explorer',
         documentation: 'Dokumentation',
         banner_title: '',
-        banner_titlestrong: 'Das Token der Anerkennung',
+        banner_title: 'Das Token der Anerkennung',
         banner_subtitle:
           'Lotus ist ein preisloses digitales Token der Anerkennung das du immer zur Hand haben kannst.',
         faq_subtitle:

@@ -162,7 +162,7 @@ export default () => {
         documentation: 'Dokumentacja',
         contributors: 'Wspierający',
         banner_title: '',
-        banner_titlestrong: 'Token uznania',
+        banner_title: 'Token uznania',
         banner_subtitle:
           'Lotus to bezcenny cyfrowy dowód uznania, który możesz mieć zawsze pod ręką.',
         faq_subtitle:

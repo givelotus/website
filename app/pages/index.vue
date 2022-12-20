@@ -50,7 +50,7 @@ export default {
         },
         {
           property: 'og:title',
-          content: 'Lotus - ' + this.$t('lotusLanding.banner_titlestrong')
+          content: 'Lotus - ' + this.$t('lotusLanding.banner_title')
         }
       ]
     }

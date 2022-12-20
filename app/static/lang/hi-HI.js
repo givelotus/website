@@ -151,7 +151,7 @@ export default () => {
         header_block_explorer: 'ब्लॉक एक्सप्लोरर',
         documentation: 'आलेख',
         banner_title: '',
-        banner_titlestrong: 'प्रशंसा की निशानी',
+        banner_title: 'प्रशंसा की निशानी',
         banner_subtitle:
           'लोटस प्रशंसा का एक अमूल्य डिजिटल टोकन है जिसे आप हमेशा संभाल कर रख सकते हैं।',
         faq_subtitle:
