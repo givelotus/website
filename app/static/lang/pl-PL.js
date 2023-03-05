@@ -55,9 +55,7 @@ export default () => {
         why_2:
           'Naszym celem jest okazanie wdzięczności wolontariuszom projektów charytatywnych poprzez rozdawanie im tokena Lotus za darmo. A także, jako kultura, bycie gotowym do przyjęcia tych upominków w zamian za rzeczy, których wolontariusze potrzebują.',
         why_3:
-          'Początkowo skupiamy się na projektach open source, a w szczególności na projektach potrzebnych do funkcjonowania i istnienia tokena Lotus. Jednakże, szukamy dodatkowych projektów charytatywnych, które są chętne do przyjęcia i używania Lotusa. Chętnie porozmawiamy z każdym projektem opartym na wolontariacie, który jest zainteresowany uczestnictwem. Jesteśmy szczególnie zainteresowani dostarczaniem tokenów do open source, szkół, domów dziecka, lekarzy i innych instytucji użyteczności publicznej.',
-        why_4:
-          'Jeśli prowadzisz taki projekt i jesteś zainteresowany wykorzystaniem Lotusa, zgłoś się po odbiór tokenów poprzez ten  <a class="white--text" href="https://forms.gle/j9EeY5NN57RcAoY99" target="_blank">formularz</a>, albo poprzez nasz <a class="white--text" href="https://discord.gg/KECbh3JEmm" target="_blank">serwer discord.</a>'
+          'Początkowo skupiamy się na projektach open source, a w szczególności na projektach potrzebnych do funkcjonowania i istnienia tokena Lotus. Jednakże, szukamy dodatkowych projektów charytatywnych, które są chętne do przyjęcia i używania Lotusa. Chętnie porozmawiamy z każdym projektem opartym na wolontariacie, który jest zainteresowany uczestnictwem. Jesteśmy szczególnie zainteresowani dostarczaniem tokenów do open source, szkół, domów dziecka, lekarzy i innych instytucji użyteczności publicznej.'
       },
       lotusLanding: {
         features: {
