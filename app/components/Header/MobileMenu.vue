@@ -99,7 +99,7 @@
             large
             icon
             class="social-btn"
-            href="https://github.com/LogosFoundation"
+            href="https://github.com/givelotus"
             target="_blank"
           >
             <v-icon>mdi-github</v-icon>

@@ -124,7 +124,7 @@ export default () => {
           q4: {
             question: '我怎样才能为项目添砖加瓦',
             answer:
-              '可以在<a href="https://github.com/LogosFoundation" target="_blank">这里</a>看我们的开源软件，并且欢迎在<a href="https://t.me/givelotus" target="_blank">telegram电报社群</a>里面联系我们的开发人员。'
+              '可以在<a href="https://github.com/givelotus" target="_blank">这里</a>看我们的开源软件，并且欢迎在<a href="https://t.me/givelotus" target="_blank">telegram电报社群</a>里面联系我们的开发人员。'
           },
           q5: {
             question: '有没有可以使用的品牌商标或者图案？',

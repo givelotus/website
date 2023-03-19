@@ -129,7 +129,7 @@ export default () => {
           q4: {
             question: 'Wie kann ich zum Projekt beitragen?',
             answer:
-              'Du kannst unseren open-source Code <a href="https://github.com/LogosFoundation" target="_blank">hier</a> ansehen und Änderungen vorschlagen, und du kannst dich gerne an die Entwickler in der <a href="https://t.me/givelotus" target="_blank">Telegram Gruppe</a> wenden.'
+              'Du kannst unseren open-source Code <a href="https://github.com/givelotus" target="_blank">hier</a> ansehen und Änderungen vorschlagen, und du kannst dich gerne an die Entwickler in der <a href="https://t.me/givelotus" target="_blank">Telegram Gruppe</a> wenden.'
           },
           q5: {
             question:

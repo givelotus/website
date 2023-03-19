@@ -81,7 +81,7 @@
             <v-btn
               icon
               class="social-btn"
-              href="https://github.com/LogosFoundation"
+              href="https://github.com/givelotus"
               target="_blank"
             >
               <v-icon large color="white">mdi-github</v-icon>

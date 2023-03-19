@@ -139,7 +139,7 @@ export default () => {
           q4: {
             question: 'Tôi có thể đóng góp cho dự án như thế nào?',
             answer:
-              'Hãy tham khảo mã nguồn mở của chúng tôi <a href="https://github.com/LogosFoundation" target="_blank">here</a> và đừng ngại liên hệ với các lập trình viên trên <a href="https://t.me/givelotus" target="_blank">telegram group</a>.'
+              'Hãy tham khảo mã nguồn mở của chúng tôi <a href="https://github.com/givelotus" target="_blank">here</a> và đừng ngại liên hệ với các lập trình viên trên <a href="https://t.me/givelotus" target="_blank">telegram group</a>.'
           },
           q5: {
             question:

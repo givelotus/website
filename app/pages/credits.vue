@@ -46,7 +46,7 @@
       If you have contributed to Lotus, please add your name to the list of
       contributors on
       <a
-        href="https://github.com/LogosFoundation/website/edit/master/app/pages/credits.vue"
+        href="https://github.com/givelotus/website/edit/master/app/pages/credits.vue"
         >github.</a
       >
       If you do not know how to use Github, ask someone in the dev chat on the
