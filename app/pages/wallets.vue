@@ -97,11 +97,11 @@ const wallets: Array<WalletInfo> = [
     name: 'lotusd',
     description: 'Lotus Daemon software (Only recommended for power users)',
     windows:
-      'https://storage.googleapis.com/lotus-project/lotus-4.3.3-win64-setup-unsigned.exe',
+      'https://storage.googleapis.com/lotus-project/lotus-5.3.3-win64-setup-unsigned.exe',
     macos:
-      'https://storage.googleapis.com/lotus-project/lotus-4.3.3-osx-unsigned.dmg',
+      'https://storage.googleapis.com/lotus-project/lotus-5.3.3-osx-unsigned.dmg',
     linux:
-      'https://storage.googleapis.com/lotus-project/lotus-4.3.3-x86_64-linux-gnu.tar.gz'
+      'https://storage.googleapis.com/lotus-project/lotus-5.3.3-x86_64-linux-gnu.tar.gz'
   },
   {
     name: 'Stamp',
