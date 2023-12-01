@@ -10,7 +10,7 @@
   >
     <template #activator="{ on }">
       <div class="setting">
-        <v-btn fab text small v-on="on" class="ma-3">
+        <v-btn fab text small class="ma-3" v-on="on">
           <v-icon
             v-if="$vuetify.theme.dark"
             color="white"
@@ -20,14 +20,9 @@
             settings
           </v-icon>
 
-          <v-icon
-            v-else
-            :class="{ invert: invert, active: open }"
-            class="icon"
-          >
+          <v-icon v-else :class="{ invert: invert, active: open }" class="icon">
             settings
           </v-icon>
-
         </v-btn>
       </div>
     </template>
@@ -82,10 +77,6 @@
   </v-menu>
 </template>
 
-<style lang="scss" scoped>
-@import './header-style.scss';
-</style>
-
 <script>
 import { mapGetters, mapState } from 'vuex'
 import CountryFlag from 'vue-country-flag'
@@ -131,3 +122,7 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+@import './header-style.scss';
+</style>

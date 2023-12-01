@@ -2,20 +2,6 @@
   <div class="mobile-nav">
     <div :class="{ 'menu-open': open }" class="menu">
       <v-list dense tag="nav">
-        <v-list-item
-          v-for="(item, index) in navMenu"
-          :key="index"
-          :href="getLocalizedHref(item.url)"
-          link
-          :style="{ animationDuration: index * 0.15 + 's' }"
-        >
-          <v-list-item-content>
-            <v-list-item-title class="menu-list">
-              {{ $t(item.translation) }}
-            </v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
         <v-list-item :href="getLocalizedHref('/wallets', true)" link>
           <v-list-item-content>
             <v-list-item-title class="menu-list">
@@ -27,7 +13,6 @@
         <v-list-item
           href="https://explorer.givelotus.org/"
           target="_blank"
-          :style="{ animationDuration: navMenu.length * 0.15 + 's' }"
           link
         >
           <v-list-item-content>
@@ -37,12 +22,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item
-          href="https://docs.givelotus.org/"
-          target="_blank"
-          :style="{ animationDuration: navMenu.length * 0.15 + 's' }"
-          link
-        >
+        <v-list-item href="https://docs.givelotus.org/" target="_blank" link>
           <v-list-item-content>
             <v-list-item-title class="menu-list">
               {{ $t('lotusLanding.documentation') }}
@@ -50,23 +30,7 @@
           </v-list-item-content>
         </v-list-item>
 
-        <v-list-item
-          href="https://blog.givelotus.org/"
-          target="_blank"
-          :style="{ animationDuration: navMenu.length * 0.15 + 's' }"
-          link
-        >
-          <v-list-item-content>
-            <v-list-item-title class="menu-list">
-              {{ $t('menu.news') }}
-            </v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-list-item-group
-          class="fixedBottom"
-          :style="{ animationDuration: navMenu.length * 0.15 + 's' }"
-        >
+        <v-list-item-group class="fixedBottom">
           <v-btn
             large
             icon
@@ -81,17 +45,7 @@
             large
             icon
             class="social-btn"
-            href="https://www.reddit.com/r/lotusproject/"
-            target="_blank"
-          >
-            <v-icon>mdi-reddit</v-icon>
-          </v-btn>
-
-          <v-btn
-            large
-            icon
-            class="social-btn"
-            href="https://github.com/LogosFoundation"
+            href="https://github.com/givelotus"
             target="_blank"
           >
             <v-icon>mdi-github</v-icon>
@@ -101,24 +55,10 @@
             large
             icon
             class="social-btn"
-            href="https://t.me/givelotus"
+            href="https://t.me/givelotus/1"
             target="_blank"
           >
             <v-icon>telegram</v-icon>
-          </v-btn>
-
-          <v-btn
-            icon
-            class="social-btn"
-            href="https://t.me/givelotus"
-            target="_blank"
-          >
-            <v-img
-              v-if="$vuetify.theme.dark"
-              width="30px"
-              src="/images/discord.svg"
-            />
-            <v-img v-else width="30px" src="/images/discord-grey.svg" />
           </v-btn>
         </v-list-item-group>
       </v-list>
@@ -127,7 +67,6 @@
 </template>
 
 <script>
-import { menuList } from './menu'
 import link from '~/static/text/link'
 
 export default {
@@ -139,8 +78,7 @@ export default {
   },
   data() {
     return {
-      link,
-      navMenu: menuList
+      link
     }
   },
   methods: {
@@ -151,7 +89,7 @@ export default {
       // no unnecessary redirections when /de/ user hits other pages
       // e.g /calculator nuxt u18n redirects to /de/calculator
       // it leads to poor UX
-      if (this.$i18n.locale != 'gb') {
+      if (this.$i18n.locale !== 'gb') {
         href = '/' + this.$i18n.locale + url
       } else if (root) {
         href = '' + url

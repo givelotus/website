@@ -34,11 +34,11 @@
             </v-btn>
             <div class="logo">
               <nuxt-link v-if="invert" :to="link.lotus.home">
-                <img style="border-radius: 50%" :src="logo" alt="logo" />
+                <img style="border-radius: 50%" :src="logo" alt="logo" >
               </nuxt-link>
               <scrollactive v-if="!invert && loaded" tag="span">
                 <a :href="getLocalizedHome()" class="anchor-link">
-                  <img style="border-radius: 50%" :src="logo" alt="logo" />
+                  <img style="border-radius: 50%" :src="logo" alt="logo" >
                 </a>
               </scrollactive>
             </div>
@@ -49,33 +49,34 @@
                 active-class="active"
                 tag="ul"
               >
-                <li v-for="(item, index) in menuList" :key="index">
-                  <v-btn
-                    :href="getLocalizedHref(item.url)"
-                    :class="{
-                      'anchor-link scrollactive-item':
-                        $nuxt.$route.name.includes('index')
-                    }"
-                    class="menu-link"
-                    @click="setOffset(item.offset)"
-                  >
-                    {{ $t(item.translation) }}
-                  </v-btn>
-                </li>
-
                 <li>
                   <v-btn
-                    href="https://blog.givelotus.org/"
+                    href="https://explorer.givelotus.org"
+                    text
+                    class="menu-link"
+                  >
+                    {{ $t('lotusLanding.header_block_explorer') }}
+                  </v-btn>
+                </li>
+                <li>
+                  <v-btn
+                    :href="getLocalizedHref('wallets')"
                     target="_blank"
                     text
                     class="menu-link"
                   >
-                    {{ $t('menu.news') }}
+                    {{ $t('menu.wallets') }}
                   </v-btn>
                 </li>
-
                 <li>
-                  <DropDown />
+                  <v-btn
+                    href="https://docs.givelotus.org/"
+                    target="_blank"
+                    text
+                    class="menu-link"
+                  >
+                    {{ $t('lotusLanding.documentation') }}
+                  </v-btn>
                 </li>
               </scrollactive>
             </div>
@@ -85,46 +86,12 @@
               <v-btn
                 icon
                 class="social-btn"
-                href="https://twitter.com/givelotus"
+                href="https://github.com/givelotus"
                 target="_blank"
               >
-                <v-icon v-if="$vuetify.theme.dark" color="white">mdi-twitter</v-icon>
-                <v-icon v-else>mdi-twitter</v-icon>
-              </v-btn>
-              <v-btn
-                icon
-                class="social-btn"
-                href="https://discord.gg/KECbh3JEmm"
-                target="_blank"
-              >
-                <v-img
-                  width="1rem"
-                  v-if="!$vuetify.theme.dark && fixed"
-                  src="/images/discord-pink.svg"
-                />
-                <v-img
-                  width="1rem"
-                  v-else
-                  src="/images/discord.svg"
-                />
-
-              </v-btn>
-              <v-btn
-                icon
-                class="social-btn"
-                href="https://www.reddit.com/r/lotusproject/"
-                target="_blank"
-              >
-                <v-icon v-if="$vuetify.theme.dark" color="white">mdi-reddit</v-icon>
-                <v-icon v-else >mdi-reddit</v-icon>
-              </v-btn>
-              <v-btn
-                icon
-                class="social-btn"
-                href="https://github.com/LogosFoundation"
-                target="_blank"
-              >
-                <v-icon v-if="$vuetify.theme.dark" color="white">mdi-github</v-icon>
+                <v-icon v-if="$vuetify.theme.dark" color="white">
+                  mdi-github
+                </v-icon>
                 <v-icon v-else>mdi-github</v-icon>
               </v-btn>
               <v-btn
@@ -133,7 +100,9 @@
                 href="https://t.me/givelotus"
                 target="_blank"
               >
-                <v-icon v-if="$vuetify.theme.dark" color="white">telegram</v-icon>
+                <v-icon v-if="$vuetify.theme.dark" color="white">
+                  telegram
+                </v-icon>
                 <v-icon v-else>telegram</v-icon>
               </v-btn>
             </hidden>
@@ -147,10 +116,8 @@
 
 <script>
 import Hidden from '../Hidden'
-import { menuList } from './menu'
 import Settings from './Settings'
 import MobileMenu from './MobileMenu'
-import DropDown from './DropDown'
 import brand from '~/static/text/brand'
 import link from '~/static/text/link'
 import LotusCIcon from '~/static/images/lotus/Lotus_C_Icon.png'
@@ -159,8 +126,7 @@ export default {
   components: {
     'setting-menu': Settings,
     Hidden,
-    MobileMenu,
-    DropDown
+    MobileMenu
   },
   props: {
     invert: {
@@ -178,7 +144,6 @@ export default {
       fixed: false,
       openDrawer: null,
       navOffset: 20,
-      menuList,
       showMenu: false
     }
   },
@@ -217,16 +182,17 @@ export default {
       }
       return href
     },
-    getLocalizedHref(url) {
-      // refactor using composition API
+    getLocalizedHref(url, root) {
       let href = ''
       // gb is a default language so /gb/#faq doesnt exist and 404s
       // but we need to include prefix to localized page so there is
       // no unnecessary redirections when /de/ user hits other pages
       // e.g /calculator nuxt u18n redirects to /de/calculator
       // it leads to poor UX
-      if (this.$i18n.locale != 'gb') {
+      if (this.$i18n.locale !== 'gb') {
         href = '/' + this.$i18n.locale + url
+      } else if (root) {
+        href = '' + url
       } else {
         href = '/' + url
       }

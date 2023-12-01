@@ -97,47 +97,6 @@ export default () => {
           'Neue Lotus werden zur Hälfte an Miner generiert und zur Hälfte an Projekte die dem Gemeinwohl dienen generiert, als Zeichen der Anerkennung.',
         before_carousel_2:
           'Wenn du Lotus verwendest, um deine Freunde zu würdigen, weißt du, dass du damit auch diese bedeutsamen Projekte unterstützt.',
-        banner: {
-          caption:
-            'Wenn du Lotus gibst oder akzeptierst, unterstützt du die Gemeinschaft und schaffst einen Mehrwert für die Weltwirtschaft.',
-          text: 'Die Initiativen die du unterstützt wenn du Lotus verwendest sind: ',
-          initiatives: [
-            'Menschenrechte',
-            'Regenerative Energie',
-            'Digitale Privatssphäre',
-            'Permakultur',
-            'Open-source Software',
-            'Humanitäre Hilfe'
-          ]
-        },
-        faq: {
-          q1: {
-            question: 'Wie kann ich Lotus minen?',
-            answer:
-              'Dafür musst du einen Lotus Node auf deinem Computer ausführen. Eine Anleitung findst du <a href="https://docs.givelotus.org/guides/mining" target="_blank">hier</a>.'
-          },
-          q2: {
-            question: 'Welche Wallets kann ich verwenden?',
-            answer:
-              'Genießen Sie browserbasiertes <a href="https://sendlotus.com" target="_blank">SendLotus.com</a> oder Lotus Vase für <a href="https://play.google.com/store/apps/details?id=org.cashweb.cashew" target="_blank"> Android</a> und <a href="https://apps.apple.com/us/app/cashew-wallet/id1539306720" target="_blank">iOS</a>. Du kannst auch einen Lotus Node für <a href="https://storage.googleapis.com/lotus-project/lotus-5.3.3-win64-setup-unsigned.exe" target="_blank">Windows</a>, <a href="https://storage.googleapis.com/lotus-project/lotus-5.3.3-osx-unsigned.dmg" target="_blank">MacOS</a> oder <a href="https://storage.googleapis.com/lotus-project/lotus-5.3.3-x86_64-linux-gnu.tar.gz" target="_blank">Linux</a> laufen lassen. '
-          },
-          q3: {
-            question: 'Wie bekomme ich Lotus?',
-            answer:
-              'Du kannst unseren <a href="https://faucet.lotuslounge.org/" target="_blank">Faucet</a>. Oder du kannst dich in unserer <a href="https://t.me/givelotus" target="_blank">Telegram Gruppe</a> beschenken lassen.'
-          },
-          q4: {
-            question: 'Wie kann ich zum Projekt beitragen?',
-            answer:
-              'Du kannst unseren open-source Code <a href="https://github.com/LogosFoundation" target="_blank">hier</a> ansehen und Änderungen vorschlagen, und du kannst dich gerne an die Entwickler in der <a href="https://t.me/givelotus" target="_blank">Telegram Gruppe</a> wenden.'
-          },
-          q5: {
-            question:
-              'Gibt es einen Branding-Leitfaden mit Logos oder Bildern die ich verwenden kann?',
-            answer:
-              'Du kannst sie <a href="https://storage.googleapis.com/lotus-project/Lotus%20Branding.zip" target="_blank">hier</a> herunterladen'
-          }
-        },
         header_language: 'Sprache',
         header_theme: 'Themenmodus',
         header_dark: 'dunkel',
@@ -150,10 +109,6 @@ export default () => {
         contributors: 'Mitwirkende',
         header_block_explorer: 'Block Explorer',
         documentation: 'Dokumentation',
-        banner_title: '',
-        banner_title: 'Das Token der Anerkennung',
-        banner_subtitle:
-          'Lotus ist ein preisloses digitales Token der Anerkennung das du immer zur Hand haben kannst.',
         faq_subtitle:
           'Hast du eine Frage? In unseren häufig gestellten Fragen findest du deine Antwort.',
         stampchat_desc:

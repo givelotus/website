@@ -92,46 +92,7 @@ export default () => {
           '新的莲花代币（Lotus）会分发给矿工和那些有利于社会大众的项目，这本身也是一种感恩的表现。',
         before_carousel_2:
           '每当您使用Lotus来表达感激之情的时候，您其实也同时在支持这些优秀的项目。',
-        banner: {
-          caption:
-            '当您给予或接收Lotus的时候，您在给社会增加正能量的同时，也给世界经济增加价值。',
-          text: '在您使用Lotus的时候，您也在支持了这些事项：',
-          initiatives: [
-            '人权',
-            '再生资源',
-            '数字化隐私',
-            '永续设计',
-            '开源代码',
-            '人道主义工作'
-          ]
-        },
-        faq: {
-          q1: {
-            question: '如何开始挖矿？',
-            answer:
-              '你需要在电脑上运行Lotus节点。你可以在<a href="https://docs.givelotus.org/guides/mining" target="_blank"> 这里</a>找到使用说明'
-          },
-          q2: {
-            question: '有哪些可用的钱包？',
-            answer:
-              '欢迎使用基于浏览器的<a href="https://sendlotus.com" target="_blank">SendLotus.com</a> 或者在移动设备上可以使用莲花宝座（Lotus Vase）的 <a href="https://play.google.com/store/apps/details?id=org.cashweb.cashew" target="_blank"> 安卓Android</a> 和 <a href="https://apps.apple.com/us/app/cashew-wallet/id1539306720" target="_blank">苹果iPhone</a>。你也可以跑轻量级的Lotus节点软件：<a href="https://storage.googleapis.com/lotus-project/lotus-5.3.3-win64-setup-unsigned.exe" target="_blank">Windows</a>， <a href="https://storage.googleapis.com/lotus-project/lotus-5.3.3-osx-unsigned.dmg" target="_blank">MacOS</a> 和 <a href="https://storage.googleapis.com/lotus-project/lotus-5.3.3-x86_64-linux-gnu.tar.gz" target="_blank">Linux</a>.。'
-          },
-          q3: {
-            question: '如何获取Lotus?',
-            answer:
-              '你可以使用 <a href="https://faucet.lotuslounge.org/" target="_blank">水龙头</a>. 或者在电报社区里面获赠： <a href="https://t.me/givelotus" target="_blank">telegram社区</a>'
-          },
-          q4: {
-            question: '我怎样才能为项目添砖加瓦',
-            answer:
-              '可以在<a href="https://github.com/LogosFoundation" target="_blank">这里</a>看我们的开源软件，并且欢迎在<a href="https://t.me/givelotus" target="_blank">telegram电报社群</a>里面联系我们的开发人员。'
-          },
-          q5: {
-            question: '有没有可以使用的品牌商标或者图案？',
-            answer:
-              '你可以在<a href="https://storage.googleapis.com/lotus-project/Lotus%20Branding.zip" target="_blank">这里</a>下载'
-          }
-        },
+
         header_language: '语言',
         header_theme: '主题模式',
         header_dark: '深色',
@@ -144,9 +105,6 @@ export default () => {
         header_block_explorer: '区块浏览器',
         documentation: '文档',
         contributors: '贡献者',
-        banner_title: '感恩的符号',
-        banner_subtitle:
-          '莲花代币（Lotus）是一种可以永久保存的，无比珍贵，代表感恩之情的数字标识。',
         faq_subtitle: '有问题？可以查阅常见问题来寻找您想要的答案。',
         news_readmore: '了解更多',
         stampchat_desc:

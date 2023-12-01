@@ -12,32 +12,16 @@
       <div class="container">
         <div class="item text-center white--text">
           <h3 class="use-text-title">
-            <strong>{{ $t('lotusLanding.banner_title') }}</strong>
+            <v-btn
+              href="https://t.me/givelotus/1"
+              target="_blank"
+              rel="noopener"
+            >
+              <strong>{{ $t('lotusLanding.banner_title') }}</strong>
+            </v-btn>
           </h3>
-          <p class="use-text-subtitle">
-            {{ $t('lotusLanding.banner_subtitle') }}
-          </p>
         </div>
       </div>
-      <div class="thewhy">
-        <p class="text white--text" v-html="$t('banner.why_1')" />
-        <p class="text white--text" v-html="$t('banner.why_2')" />
-        <p class="text white--text" v-html="$t('banner.why_3')" />
-      </div>
-    </v-container>
-    <v-container class="max-md use-text-subtitle2 white--text text-center">
-      {{ $t('lotusLanding.subscribe.text') }}
-      <br /><br />
-      <v-btn
-        rounded
-        outlined
-        x-large
-        href="https://blog.givelotus.org"
-        target="_blank"
-        class="text-bold white--text"
-      >
-        {{ $t('lotusLanding.subscribe.caption') }}
-      </v-btn>
     </v-container>
     <div class="deco">
       <hidden point="mdDown">
@@ -55,9 +39,7 @@
 import Hidden from '../Hidden'
 
 export default {
-  components: {
-    Hidden
-  },
+  components: { Hidden },
   computed: {
     isDesktop() {
       const lgUp = this.$store.state.breakpoints.lgUp

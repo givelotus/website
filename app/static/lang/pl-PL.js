@@ -102,51 +102,6 @@ export default () => {
           'Nowe Lotusy są wydawane poprzez nagrody, które są dzielone pomiędzy górników i projekty, które przynoszą korzyści dobru publicznemu jako wyraz uznania.',
         before_carousel_2:
           'Ilekroć używasz Lotusa, aby docenić swoich przyjaciół, wiesz, że wspierasz również te wspaniałe projekty.',
-        subscribe: {
-          caption: 'Subskrybuj',
-          text: 'Dołącz do listy mailingowej naszej społeczności, aby być na bieżąco'
-        },
-        banner: {
-          caption:
-            'Kiedy dajesz lub przyjmujesz Lotusa, wspierasz wspólnote i dodajesz wartość do światowej gospodarki.',
-          text: 'Inicjatywy, które wspierasz używając Lotusa to: ',
-          initiatives: [
-            'Prawa człowieka',
-            'Energia odnawialna',
-            'Prywatność cyfrowa',
-            'Permakultura',
-            'Oprogramowanie open source',
-            'Działania humanitarne'
-          ]
-        },
-        faq: {
-          q1: {
-            question: 'Jak mogę zacząć wydobywać?',
-            answer:
-              'Będziesz potrzebował uruchomić Lotus Node na swoim komputerze. Możesz znaleźć instrukcje <a href="https://docs.givelotus.org/guides/mining" target="_blank">tutaj</a>. Aby sprawdzić swój hashrate i przybliżone nagrody sprawdź nasz'
-          },
-          q2: {
-            question: 'Jakie są dostępne portfele?',
-            answer:
-              'Korzystaj z opartego na przeglądarce <a href="https://sendlotus.com" target="_blank">SendLotus.com</a> lub na swoim urządzeniu mobilnym możesz użyć Lotus Vase z <a href="https://play.google.com/store/apps/details?id=org.cashweb.cashew" target="_blank">Android</a> i <a href="https://apps.apple.com/us/app/cashew-wallet/id1539306720" target="_blank">iPhone</a>. Możesz również uruchomić lekki Lotus Node dla <a href="https://storage.googleapis.com/lotus-project/lotus-5.3.3-win64-setup-unsigned.exe" target="_blank">Windows</a>, <a href="https://storage.googleapis.com/lotus-project/lotus-5.3.3-osx-unsigned.dmg" target="_blank">MacOS</a> i <a href="https://storage.googleapis.com/lotus-project/lotus-5.3.3-x86_64-linux-gnu.tar.gz" target="_blank">Linux</a>. '
-          },
-          q3: {
-            question: 'Jak zdobyć Lotusa?',
-            answer:
-              'Możesz użyć naszego <a href="https://faucet.lotuslounge.org/" target="_blank">fauceta</a>. Lub możesz dostać go w prezencei na naszej grupie <a href="https://t.me/givelotus" target="_blank">na telegramie</a>.'
-          },
-          q4: {
-            question: 'Jak mogę wesprzeć projekt?',
-            answer:
-              'Sprawdź otwarty kod źródłowy, który mamy <a href="https://github.com/LogosFoundation" target="_blank">tutaj</a> i nie krępuj się skontaktować z deweloperami na naszej <a href="https://t.me/givelotus" target="_blank">grupie telegramowej</a>.'
-          },
-          q5: {
-            question:
-              'Czy są jakieś przewodniki brandingowe z logotypami lub obrazami, których mogę użyć?',
-            answer:
-              'Można je pobrać <a href="https://storage.googleapis.com/lotus-project/Lotus%20Branding.zip" target="_blank">tutaj</a>'
-          }
-        },
         header_language: 'język',
         header_theme: 'kolor interfejsu',
         header_dark: 'ciemny',
@@ -159,10 +114,6 @@ export default () => {
         header_block_explorer: 'Eksplorator bloków',
         documentation: 'Dokumentacja',
         contributors: 'Wspierający',
-        banner_title: '',
-        banner_title: 'Token uznania',
-        banner_subtitle:
-          'Lotus to bezcenny cyfrowy dowód uznania, który możesz mieć zawsze pod ręką.',
         faq_subtitle:
           'Masz pytanie? Sprawdź nasze najczęściej zadawane pytania, aby znaleźć odpowiedź.',
         news_readmore: 'czytaj więcej',

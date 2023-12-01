@@ -5,15 +5,6 @@
         <section id="home">
           <banner />
         </section>
-        <section id="projects">
-          <projects />
-        </section>
-        <section id="about">
-          <story />
-        </section>
-        <section id="faq">
-          <faq />
-        </section>
       </div>
     </div>
   </div>
@@ -21,18 +12,11 @@
 
 <script>
 import Banner from '~/components/Banner/Banner'
-import Story from '~/components/Story'
-import Faq from '~/components/Faq'
-import Projects from '~/components/Projects'
-
 import brand from '~/static/text/brand'
 
 export default {
   components: {
-    Banner,
-    Projects,
-    Story,
-    Faq
+    Banner
   },
   layout: 'landing',
   head() {

@@ -150,10 +150,6 @@ export default () => {
         contributors: 'योगदानकर्ताओं',
         header_block_explorer: 'ब्लॉक एक्सप्लोरर',
         documentation: 'आलेख',
-        banner_title: '',
-        banner_title: 'प्रशंसा की निशानी',
-        banner_subtitle:
-          'लोटस प्रशंसा का एक अमूल्य डिजिटल टोकन है जिसे आप हमेशा संभाल कर रख सकते हैं।',
         faq_subtitle:
           'कोई सवाल है? अपना उत्तर खोजने के लिए हमारे अक्सर पूछे जाने वाले प्रश्नों की जाँच करें।',
         news_readmore: 'और पढ़ें',
