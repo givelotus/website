@@ -10,25 +10,17 @@
           :style="{ animationDuration: index * 0.15 + 's' }"
         >
           <v-list-item-content>
-            <v-list-item-title class="menu-list">{{
-              $t(item.translation)
-            }}</v-list-item-title>
+            <v-list-item-title class="menu-list">
+              {{ $t(item.translation) }}
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
         <v-list-item :href="getLocalizedHref('/wallets', true)" link>
           <v-list-item-content>
-            <v-list-item-title class="menu-list">{{
-              $t('menu.wallets')
-            }}</v-list-item-title>
-          </v-list-item-content>
-        </v-list-item>
-
-        <v-list-item :href="getLocalizedHref('/credits', true)" link>
-          <v-list-item-content>
-            <v-list-item-title class="menu-list">{{
-              $t('lotusLanding.contributors')
-            }}</v-list-item-title>
+            <v-list-item-title class="menu-list">
+              {{ $t('menu.wallets') }}
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -39,9 +31,9 @@
           link
         >
           <v-list-item-content>
-            <v-list-item-title class="menu-list">{{
-              $t('lotusLanding.header_block_explorer')
-            }}</v-list-item-title>
+            <v-list-item-title class="menu-list">
+              {{ $t('lotusLanding.header_block_explorer') }}
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -52,9 +44,9 @@
           link
         >
           <v-list-item-content>
-            <v-list-item-title class="menu-list">{{
-              $t('lotusLanding.documentation')
-            }}</v-list-item-title>
+            <v-list-item-title class="menu-list">
+              {{ $t('lotusLanding.documentation') }}
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -65,9 +57,9 @@
           link
         >
           <v-list-item-content>
-            <v-list-item-title class="menu-list">{{
-              $t('menu.news')
-            }}</v-list-item-title>
+            <v-list-item-title class="menu-list">
+              {{ $t('menu.news') }}
+            </v-list-item-title>
           </v-list-item-content>
         </v-list-item>
 
@@ -121,7 +113,11 @@
             href="https://t.me/givelotus"
             target="_blank"
           >
-            <v-img v-if="$vuetify.theme.dark" width="30px" src="/images/discord.svg" />
+            <v-img
+              v-if="$vuetify.theme.dark"
+              width="30px"
+              src="/images/discord.svg"
+            />
             <v-img v-else width="30px" src="/images/discord-grey.svg" />
           </v-btn>
         </v-list-item-group>
@@ -130,23 +126,20 @@
   </div>
 </template>
 
-<style scoped lang="scss">
-@import './header-style';
-.fixedBottom {
-  position: fixed !important;
-  bottom: 15px !important;
-  width: 100%;
-}
-</style>
-
 <script>
 import { menuList } from './menu'
 import link from '~/static/text/link'
 
 export default {
+  props: {
+    open: {
+      type: Boolean,
+      default: false
+    }
+  },
   data() {
     return {
-      link: link,
+      link,
       navMenu: menuList
     }
   },
@@ -160,21 +153,22 @@ export default {
       // it leads to poor UX
       if (this.$i18n.locale != 'gb') {
         href = '/' + this.$i18n.locale + url
+      } else if (root) {
+        href = '' + url
       } else {
-        if (root) {
-          href = '' + url
-        } else {
-          href = '/' + url
-        }
+        href = '/' + url
       }
       return href
-    }
-  },
-  props: {
-    open: {
-      type: Boolean,
-      default: false
     }
   }
 }
 </script>
+
+<style scoped lang="scss">
+@import './header-style';
+.fixedBottom {
+  position: fixed !important;
+  bottom: 15px !important;
+  width: 100%;
+}
+</style>

@@ -4,17 +4,16 @@
       <li class="header__item">
         <a class="header__link">
           <transition name="slide-fade">
-            <v-btn key="off" @mouseover="show = true" text class="menu-link">
-              {{ $t('menu.more') }}</v-btn
-            >
+            <v-btn key="off" text class="menu-link" @mouseover="show = true">
+              {{ $t('menu.more') }}</v-btn>
           </transition>
         </a>
 
         <transition name="dropdown">
           <div
+            v-if="show"
             class="header__dropdown-menu"
             :class="{ active: show }"
-            v-if="show"
           >
             <ul class="header__dropdown-menu-nav">
               <li class="header__dropdown-menu-item">
@@ -25,8 +24,7 @@
                 >
                   <div class="header__dropdown-menu-svg">
                     <v-icon color="grey darken-2">
-                      account_balance_wallet</v-icon
-                    >
+                      account_balance_wallet</v-icon>
                   </div>
                   <div class="header__dropdown-menu-text">
                     {{ $t('menu.wallets') }}
@@ -63,20 +61,6 @@
                   </div>
                 </a>
               </li>
-              <li class="header__dropdown-menu-item">
-                <a
-                  :href="getLocalizedHref('/credits')"
-                  class="header__dropdown-menu-link"
-                  title="contributors"
-                >
-                  <div class="header__dropdown-menu-svg">
-                    <v-icon color="grey darken-2">groups</v-icon>
-                  </div>
-                  <div class="header__dropdown-menu-text">
-                    {{ $t('lotusLanding.contributors') }}
-                  </div>
-                </a>
-              </li>
             </ul>
           </div>
         </transition>
@@ -85,17 +69,19 @@
   </div>
 </template>
 
-<style lang="scss" scoped>
-@import './dropdown.scss';
-@import './header-style.scss';
-</style>
-
 <script>
 export default {
   data() {
     return {
       show: false
     }
+  },
+  created() {
+    window.addEventListener('click', e => {
+      if (!this.$el.contains(e.target)) {
+        this.show = false
+      }
+    })
   },
   methods: {
     getLocalizedHref(url) {
@@ -113,13 +99,11 @@ export default {
       }
       return href
     }
-  },
-  created() {
-    window.addEventListener('click', e => {
-      if (!this.$el.contains(e.target)) {
-        this.show = false
-      }
-    })
   }
 }
 </script>
+
+<style lang="scss" scoped>
+@import './dropdown.scss';
+@import './header-style.scss';
+</style>
