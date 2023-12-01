@@ -123,7 +123,7 @@ export default () => {
           q1: {
             question: 'Jak mogę zacząć wydobywać?',
             answer:
-              'Będziesz potrzebował uruchomić Lotus Node na swoim komputerze. Możesz znaleźć instrukcje <a href="https://docs.givelotus.org/guides/mining" target="_blank">tutaj</a>. Aby sprawdzić swój hashrate i przybliżone nagrody sprawdź nasz <a href="/pl/calculator">kalkulator wydobycia</a>.'
+              'Będziesz potrzebował uruchomić Lotus Node na swoim komputerze. Możesz znaleźć instrukcje <a href="https://docs.givelotus.org/guides/mining" target="_blank">tutaj</a>. Aby sprawdzić swój hashrate i przybliżone nagrody sprawdź nasz'
           },
           q2: {
             question: 'Jakie są dostępne portfele?',
