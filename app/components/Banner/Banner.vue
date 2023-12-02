@@ -13,13 +13,21 @@
         <div class="item text-center white--text">
           <h3 class="use-text-title">
             <v-btn
-              href="https://t.me/givelotus/1"
+              href="https://www.patreon.com/shammahchancellor"
               target="_blank"
               rel="noopener"
             >
               <strong>{{ $t('lotusLanding.banner_title') }}</strong>
             </v-btn>
           </h3>
+        </div>
+        <div class="item text-center white--text">
+          <p class="text">
+            {{ $t('lotusLanding.banner.p_1') }}
+          </p>
+          <p class="text">
+            {{ $t('lotusLanding.banner.p_2') }}
+          </p>
         </div>
       </div>
     </v-container>

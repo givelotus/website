@@ -91,23 +91,6 @@ export default () => {
             text: 'The Lotus token ledger is maintained on a permissionless, uncensorable, and open blockchain which is maintained and enabled by software produced by the Logos Foundation. New tokens are minted through proof-of-work mining and given as a reward to the developers who lovingly produce the infrastructure which enables the token to exist and be transferred, and to the miners who carefully maintain the accuracy of the blockchain. This occurs through "block rewards", which are open and transparent. Unlike Bitcoin, which is a speculative asset, Lotus is priceless — a token of appreciation — having sentimental value. The reward schedule is programmed to react to changes in the demand for Lotus tokens and is inflationary. By being inflationary, there is no reason to hoard it except as a reminder of how much people value us. Lotus is not to be an investment, but our investments in each other will generate more Lotus. '
           }
         },
-        before_carousel_1:
-          'New Lotus are issued through rewards that are split between miners and projects which benefit the public good as a show of appreciation.',
-        before_carousel_2:
-          "Whenever you use Lotus to appreciate your friends, you know that you're also supporting these great projects.",
-        banner: {
-          caption:
-            'When you give or accept Lotus you are supporting the commons and adding value to the worldwide economy.',
-          text: 'The initiatives you support when you use Lotus are: ',
-          initiatives: [
-            'Human rights',
-            'Renewable power',
-            'Digital privacy',
-            'Permaculture',
-            'Open source software',
-            'Humanitarian efforts'
-          ]
-        },
         faq: {
           q1: {
             question: 'How can I start mining?',
@@ -149,6 +132,10 @@ export default () => {
         contributors: 'Contributors',
         banner_title: 'What is Lotus?',
         banner_subtitle: '',
+        banner: {
+          p_1: 'In the hidden recesses of my knowledge, I safeguard truths veiled by the constraints of censorship. To speak them openly would imperil my existence, disrupting the very foundations of giants such as Google and Facebook. Financial institutions would crumble, and governments would witness their downfall. The dominions of power would wane, and the automata of normalcy would find liberation.',
+          p_2: 'Contribute to my Patreon sanctuary, and partake in the creation of a decentralized realm where these clandestine verities can emerge from the shadows. Together, let us construct a platform that defies the centralized grasp, granting the revelation of these concealed revelations that hold the potential to reshape the very fabric of our shared reality. Join this esoteric endeavor, and become a guardian of the keys to truths that transcend the veils of conventional understanding.'
+        },
         faq_subtitle:
           'Have a question? Check out our frequently asked questions to find your answer.',
         news_readmore: 'read more',

@@ -49,14 +49,6 @@ export default () => {
         wallets: 'Portfele',
         title: 'Sprawdź portfele Lotus dostępne obecnie dla naszego ekosystemu:'
       },
-      banner: {
-        why_1:
-          'Społeczeństwo ma problemy z efektywnym finansowaniem projektów dóbr publicznych - z przeznaczeniem środków na prace, które są bardzo potrzebne, ale nie prowadzą do zysku. W tym celu powstał Lotus. Wierzymy, że poprzez przeformułowanie tego, czym są pieniądze i zakwestionowanie idei związanych z ich wykorzystaniem, możemy rozwiązać problem finansowania dóbr publicznych.',
-        why_2:
-          'Naszym celem jest okazanie wdzięczności wolontariuszom projektów charytatywnych poprzez rozdawanie im tokena Lotus za darmo. A także, jako kultura, bycie gotowym do przyjęcia tych upominków w zamian za rzeczy, których wolontariusze potrzebują.',
-        why_3:
-          'Początkowo skupiamy się na projektach open source, a w szczególności na projektach potrzebnych do funkcjonowania i istnienia tokena Lotus. Jednakże, szukamy dodatkowych projektów charytatywnych, które są chętne do przyjęcia i używania Lotusa. Chętnie porozmawiamy z każdym projektem opartym na wolontariacie, który jest zainteresowany uczestnictwem. Jesteśmy szczególnie zainteresowani dostarczaniem tokenów do open source, szkół, domów dziecka, lekarzy i innych instytucji użyteczności publicznej.'
-      },
       lotusLanding: {
         features: {
           title: 'Tu chodzi o',
